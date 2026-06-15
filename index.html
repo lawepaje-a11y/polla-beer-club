@@ -211,6 +211,23 @@ tr:hover td{background:#fafafa}
 .bph-done{color:var(--green)}
 .bph-prog2{color:var(--yellow)}
 .bracket-arr{flex-shrink:0;color:var(--muted);font-size:1.6rem;padding:0 .3rem;line-height:1;opacity:.35;display:flex;align-items:center}
+
+/* ── Planilla modal ─────────────────────────────────────── */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity .2s}
+.modal-overlay.open{opacity:1;pointer-events:all}
+.modal-box{background:#fff;border-radius:1rem;overflow:hidden;max-width:860px;width:100%;max-height:92vh;display:flex;flex-direction:column;box-shadow:0 24px 64px rgba(0,0,0,.45)}
+.modal-header{display:flex;align-items:center;justify-content:space-between;padding:.7rem 1rem;border-bottom:1px solid var(--border);background:var(--surface2)}
+.modal-title{font-weight:700;font-size:.92rem}
+.modal-close{background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--muted);line-height:1;padding:.15rem .45rem;border-radius:.35rem}
+.modal-close:hover{background:var(--border);color:var(--text)}
+.modal-body{overflow:auto;flex:1;display:flex;align-items:flex-start;justify-content:center;padding:.5rem;background:#374151}
+.modal-body img{max-width:100%;height:auto;border-radius:.5rem;display:block}
+.modal-footer{padding:.55rem 1rem;border-top:1px solid var(--border);display:flex;gap:.5rem;justify-content:flex-end;background:var(--surface2)}
+.btn-pl{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1rem;border-radius:.6rem;font-size:.83rem;font-weight:700;cursor:pointer;border:none;text-decoration:none;transition:all .15s}
+.btn-pl-ver{background:var(--accent);color:#fff}
+.btn-pl-ver:hover{background:#b45309;color:#fff}
+.btn-pl-dl{background:var(--surface);color:var(--text);border:1px solid var(--border)}
+.btn-pl-dl:hover{background:var(--border)}
 </style>
 </head>
 <body>
@@ -338,6 +355,22 @@ tr:hover td{background:#fafafa}
 </div>
 
 </div><!-- /content -->
+
+<!-- ══════ MODAL — planilla original ══════ -->
+<div class="modal-overlay" id="planilla-modal" onclick="closePlanillaModal(event)">
+  <div class="modal-box">
+    <div class="modal-header">
+      <span class="modal-title" id="modal-title">Planilla original</span>
+      <button class="modal-close" onclick="closePlanillaModal(null)" title="Cerrar (Esc)">✕</button>
+    </div>
+    <div class="modal-body">
+      <img id="modal-img" src="" alt="Planilla" loading="lazy">
+    </div>
+    <div class="modal-footer">
+      <a id="modal-dl" href="" download class="btn-pl btn-pl-dl">⬇ Descargar imagen</a>
+    </div>
+  </div>
+</div>
 
 <script src="data.js"></script>
 <script>
@@ -756,7 +789,13 @@ function renderPlanilla() {
   const pct = Math.round(p.pts.total/maxPts*100);
   const posicion = D.participants.findIndex(x=>x.id==pid)+1;
 
+  const imgNum = String(p.pagina).padStart(3,'0');
   let html = `
+  <div style="margin-bottom:.875rem">
+    <button class="btn-pl btn-pl-ver" onclick="openPlanillaModal('${p.nombre.replace(/'/g,"\\'")}',${p.pagina})">
+      📄 Ver planilla original
+    </button>
+  </div>
   <div class="metrics">
     <div class="metric">
       <div class="metric-val" style="color:var(--accent)">${p.pts.total}</div>
@@ -934,6 +973,28 @@ function renderGoleadores() {
   }).join('');
   document.getElementById('gol-pickers').innerHTML = pickHtml;
 }
+
+/* ════════════════════════════════════════════════════════
+   MODAL — planilla original
+═════════════════════════════════════════════════════════ */
+function openPlanillaModal(nombre, pagina) {
+  const url = `planillas/p${String(pagina).padStart(3,'0')}.jpg`;
+  document.getElementById('modal-title').textContent = `📄 ${nombre}`;
+  document.getElementById('modal-img').src = url;
+  const dl = document.getElementById('modal-dl');
+  dl.href = url;
+  dl.download = `planilla_${nombre.replace(/\s+/g,'_')}.jpg`;
+  document.getElementById('planilla-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closePlanillaModal(e) {
+  if (e && e.target !== document.getElementById('planilla-modal')) return;
+  document.getElementById('planilla-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closePlanillaModal(null);
+});
 
 /* ════════════════════════════════════════════════════════
    Init
