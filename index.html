@@ -212,6 +212,16 @@ tr:hover td{background:#fafafa}
 .bph-prog2{color:var(--yellow)}
 .bracket-arr{flex-shrink:0;color:var(--muted);font-size:1.6rem;padding:0 .3rem;line-height:1;opacity:.35;display:flex;align-items:center}
 
+/* ── Mi Planilla — grupos colapsables ──────────────────── */
+.grp-section{border:1px solid var(--border);border-radius:.75rem;overflow:hidden;margin-bottom:.5rem}
+.grp-section-hd{display:flex;align-items:center;gap:.6rem;padding:.6rem .875rem;background:var(--surface2);cursor:pointer;user-select:none;transition:background .15s}
+.grp-section-hd:hover{background:#e2e8f0}
+.grp-section.collapsed .grp-section-body{display:none}
+.grp-section.collapsed .grp-chev{transform:rotate(-90deg)}
+.grp-lbl{font-size:.73rem;font-weight:800;letter-spacing:.07em;color:var(--blue);background:var(--blue-l);padding:.2rem .55rem;border-radius:.4rem;white-space:nowrap}
+.grp-chev{font-size:.85rem;color:var(--muted);transition:transform .15s;margin-left:.2rem}
+.grp-section-body th{background:var(--surface);font-size:.67rem}
+
 /* ── Planilla modal ─────────────────────────────────────── */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity .2s}
 .modal-overlay.open{opacity:1;pointer-events:all}
@@ -836,28 +846,57 @@ function renderPlanilla() {
     <div class="pts-bar-bg" style="height:10px"><div class="pts-bar-fill" style="width:${pct}%;height:10px;background:${pct===100?'var(--green)':'var(--accent)'}"></div></div>
   </div>`;
 
-  // Groups table
+  // Groups table — agrupado por grupo A-L
   let exactCount=0, resultCount=0, wrongCount=0, pendCount=0;
+
+  const byGrp = {};
+  D.matches_grupos.forEach(m => { (byGrp[m.grupo] = byGrp[m.grupo]||[]).push(m); });
+
   let groupsHtml = '';
-  D.matches_grupos.forEach(m => {
-    const pred = gPreds[m.numero];
-    const g1p = pred?pred[0]:null, g2p = pred?pred[1]:null;
-    const cls = scoreClass(g1p,g2p,m.g1_real,m.g2_real);
-    const pts = cls==='pill-exact'?3:cls==='pill-result'?1:0;
-    if (cls==='pill-exact') exactCount++;
-    else if (cls==='pill-result') resultCount++;
-    else if (cls==='pill-wrong') wrongCount++;
-    else pendCount++;
-    groupsHtml += `<tr>
-      <td style="color:var(--muted);font-size:.72rem">${m.numero}</td>
-      <td style="font-size:.82rem;font-weight:500">${m.eq1}</td>
-      <td style="text-align:center">
-        <span class="pill ${m.jugado?cls:'pill-pend'}">${g1p!=null?`${g1p}-${g2p}`:'—'}</span>
-      </td>
-      <td style="text-align:center;font-weight:700">${m.jugado?`${m.g1_real}-${m.g2_real}`:'<span style="color:var(--muted)">—</span>'}</td>
-      <td style="font-size:.82rem;font-weight:500">${m.eq2}</td>
-      <td class="num" style="font-weight:700;color:var(--accent)">${m.jugado&&pred?pts:'—'}</td>
-    </tr>`;
+  GRUPOS.forEach(grp => {
+    const matches = byGrp[grp] || [];
+    if (!matches.length) return;
+    let grpPts=0, grpExact=0, grpResult=0, grpWrong=0, grpPend=0, rows='';
+    matches.forEach(m => {
+      const pred = gPreds[m.numero];
+      const g1p=pred?pred[0]:null, g2p=pred?pred[1]:null;
+      const cls = scoreClass(g1p,g2p,m.g1_real,m.g2_real);
+      const pts = cls==='pill-exact'?3:cls==='pill-result'?1:0;
+      if      (cls==='pill-exact')  { exactCount++;  grpExact++;  grpPts+=3; }
+      else if (cls==='pill-result') { resultCount++; grpResult++; grpPts+=1; }
+      else if (cls==='pill-wrong')  { wrongCount++;  grpWrong++; }
+      else                          { pendCount++;   grpPend++; }
+      rows += `<tr>
+        <td style="color:var(--muted);font-size:.72rem">${m.numero}</td>
+        <td style="font-size:.82rem;font-weight:500">${m.eq1}</td>
+        <td style="text-align:center"><span class="pill ${m.jugado?cls:'pill-pend'}">${g1p!=null?`${g1p}-${g2p}`:'—'}</span></td>
+        <td style="text-align:center;font-weight:700">${m.jugado?`${m.g1_real}-${m.g2_real}`:'<span style="color:var(--muted)">—</span>'}</td>
+        <td style="font-size:.82rem;font-weight:500">${m.eq2}</td>
+        <td class="num" style="font-weight:700;color:var(--accent)">${m.jugado&&pred?pts:'—'}</td>
+      </tr>`;
+    });
+    const jugados = matches.filter(m=>m.jugado).length;
+    const ptsColor = grpPts>0 ? 'var(--green)' : 'var(--muted)';
+    groupsHtml += `
+    <div class="grp-section">
+      <div class="grp-section-hd" onclick="this.parentElement.classList.toggle('collapsed')">
+        <span class="grp-lbl">GRUPO ${grp}</span>
+        <div style="display:flex;align-items:center;gap:.5rem;margin-left:auto;flex-wrap:wrap">
+          ${grpPts>0?`<span class="badge badge-green" style="font-size:.7rem">${grpPts} pts</span>`:''}
+          ${grpExact>0?`<span class="badge badge-green" style="font-size:.65rem">✅${grpExact}</span>`:''}
+          ${grpResult>0?`<span class="badge badge-yellow" style="font-size:.65rem">🟡${grpResult}</span>`:''}
+          ${grpWrong>0?`<span class="badge" style="background:var(--red-l);color:var(--red);font-size:.65rem">❌${grpWrong}</span>`:''}
+          <span style="font-size:.72rem;color:var(--muted)">${jugados}/6</span>
+          <span class="grp-chev">▾</span>
+        </div>
+      </div>
+      <div class="grp-section-body">
+        <div class="table-wrap"><table>
+          <thead><tr><th>#</th><th>Equipo 1</th><th style="text-align:center">Tu pred.</th><th style="text-align:center">Real</th><th>Equipo 2</th><th class="num">Pts</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table></div>
+      </div>
+    </div>`;
   });
 
   html += `<div class="card">
@@ -868,10 +907,7 @@ function renderPlanilla() {
       <span class="badge" style="background:var(--red-l);color:var(--red)">❌ ${wrongCount} incorrectos</span>
       <span class="badge badge-gray">⏳ ${pendCount} pendientes</span>
     </div>
-    <div class="table-wrap"><table>
-      <thead><tr><th>#</th><th>Equipo 1</th><th style="text-align:center">Tu pred.</th><th style="text-align:center">Real</th><th>Equipo 2</th><th class="num">Pts</th></tr></thead>
-      <tbody>${groupsHtml}</tbody>
-    </table></div>
+    ${groupsHtml}
   </div>`;
 
   // Eliminatorias table
