@@ -910,7 +910,7 @@ function renderPlanilla() {
    GOLEADORES
 ═════════════════════════════════════════════════════════ */
 function renderGoleadoresReales() {
-  const reales = D.goleadores_reales || [];
+  const reales = (D.goleadores_reales || []).slice(0, 5);
   const totalPart = D.meta.total_participantes;
   const maxGoles  = reales.length ? reales[0].goles : 1;
   const maxVotos  = Math.max(...reales.map(g => g.votos_polla), 1);
