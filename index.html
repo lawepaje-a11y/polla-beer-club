@@ -784,7 +784,7 @@ function populateSelect() {
   const sel = document.getElementById('participant-select');
   D.participants
     .slice()
-    .sort((a,b)=>a.nombre.localeCompare(b.nombre,'es'))
+    .sort((a,b)=>a.pagina-b.pagina)
     .forEach(p => {
       const o=document.createElement('option');
       o.value=p.id; o.textContent=`${p.pagina}. ${p.nombre}`;
