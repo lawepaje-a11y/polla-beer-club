@@ -4,7 +4,7 @@ window.POLLA_DATA = {
     "nombre_polla": "POLLA BEER CLUB",
     "torneo": "MUNDIAL FIFA 2026",
     "total_participantes": 67,
-    "partidos_jugados_grupos": 13,
+    "partidos_jugados_grupos": 14,
     "partidos_totales_grupos": 72,
     "goleador_real": null
   },
@@ -14,6 +14,18 @@ window.POLLA_DATA = {
       "pagina": 22,
       "nombre": "Cristian Rodriguez",
       "goleador": "Cristiano Ronaldo",
+      "pts": {
+        "grupos": 14,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 14
+      }
+    },
+    {
+      "id": 25,
+      "pagina": 25,
+      "nombre": "Miguel Zelidez",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 11,
         "eliminatorias": 0,
@@ -94,6 +106,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 30,
+      "pagina": 30,
+      "nombre": "Ricardo Sanchez",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 10,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 10
+      }
+    },
+    {
       "id": 19,
       "pagina": 19,
       "nombre": "Diego Jose De Silvestri Leon",
@@ -166,6 +190,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 24,
+      "pagina": 24,
+      "nombre": "Angela Milena",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 8,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 8
+      }
+    },
+    {
       "id": 37,
       "pagina": 37,
       "nombre": "FELIPE SÁNCHEZ Y LA IA",
@@ -178,9 +214,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 2,
-      "pagina": 2,
-      "nombre": "Juan David Nandar",
+      "id": 64,
+      "pagina": 64,
+      "nombre": "Franco N. Vargas",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 8,
@@ -190,9 +226,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 25,
-      "pagina": 25,
-      "nombre": "Miguel Zelidez",
+      "id": 2,
+      "pagina": 2,
+      "nombre": "Juan David Nandar",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 8,
@@ -298,18 +334,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 64,
-      "pagina": 64,
-      "nombre": "Franco N. Vargas",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 7,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 7
-      }
-    },
-    {
       "id": 11,
       "pagina": 11,
       "nombre": "Juan Pablo Alvarado",
@@ -362,18 +386,6 @@ window.POLLA_DATA = {
       "pagina": 55,
       "nombre": "Miguel Laiton",
       "goleador": "Ousmane Dembélé",
-      "pts": {
-        "grupos": 7,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 7
-      }
-    },
-    {
-      "id": 30,
-      "pagina": 30,
-      "nombre": "Ricardo Sanchez",
-      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 7,
         "eliminatorias": 0,
@@ -514,6 +526,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 6,
+      "pagina": 6,
+      "nombre": "Olga Lucia Carranza",
+      "goleador": "Michael Olise",
+      "pts": {
+        "grupos": 6,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 6
+      }
+    },
+    {
       "id": 8,
       "pagina": 8,
       "nombre": "Omar Yesid Russi",
@@ -574,18 +598,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 24,
-      "pagina": 24,
-      "nombre": "Angela Milena",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 5,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 5
-      }
-    },
-    {
       "id": 14,
       "pagina": 14,
       "nombre": "Felipe Sanchez",
@@ -626,18 +638,6 @@ window.POLLA_DATA = {
       "pagina": 5,
       "nombre": "Leandro Murcia #2",
       "goleador": "Lamine Yamal",
-      "pts": {
-        "grupos": 5,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 5
-      }
-    },
-    {
-      "id": 6,
-      "pagina": 6,
-      "nombre": "Olga Lucia Carranza",
-      "goleador": "Michael Olise",
       "pts": {
         "grupos": 5,
         "eliminatorias": 0,
@@ -1180,9 +1180,9 @@ window.POLLA_DATA = {
       "grupo": "G",
       "eq1": "Bélgica",
       "eq2": "Egipto",
-      "g1_real": null,
-      "g2_real": null,
-      "jugado": false,
+      "g1_real": 1,
+      "g2_real": 1,
+      "jugado": true,
       "fecha": "2026-06-15"
     },
     {
@@ -30186,6 +30186,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Mattias Svanberg",
       "equipo": "Suecia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Emam Ashour",
+      "equipo": "Egipto",
       "goles": 1,
       "votos_polla": 0
     }
