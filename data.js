@@ -823,7 +823,8 @@ window.POLLA_DATA = {
       "g1_real": 2,
       "g2_real": 0,
       "jugado": true,
-      "fecha": "2026-06-11"
+      "fecha": "2026-06-11",
+      "hora": "02:00 PM"
     },
     {
       "numero": 2,
@@ -833,7 +834,8 @@ window.POLLA_DATA = {
       "g1_real": 2,
       "g2_real": 1,
       "jugado": true,
-      "fecha": "2026-06-12"
+      "fecha": "2026-06-11",
+      "hora": "09:00 PM"
     },
     {
       "numero": 3,
@@ -843,7 +845,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-18"
+      "fecha": "2026-06-18",
+      "hora": "11:00 AM"
     },
     {
       "numero": 4,
@@ -853,7 +856,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-19"
+      "fecha": "2026-06-18",
+      "hora": "08:00 PM"
     },
     {
       "numero": 5,
@@ -863,7 +867,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-25"
+      "fecha": "2026-06-24",
+      "hora": "08:00 PM"
     },
     {
       "numero": 6,
@@ -873,7 +878,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-25"
+      "fecha": "2026-06-24",
+      "hora": "08:00 PM"
     },
     {
       "numero": 7,
@@ -883,7 +889,8 @@ window.POLLA_DATA = {
       "g1_real": 1,
       "g2_real": 1,
       "jugado": true,
-      "fecha": "2026-06-12"
+      "fecha": "2026-06-12",
+      "hora": "02:00 PM"
     },
     {
       "numero": 8,
@@ -893,7 +900,8 @@ window.POLLA_DATA = {
       "g1_real": 1,
       "g2_real": 1,
       "jugado": true,
-      "fecha": "2026-06-13"
+      "fecha": "2026-06-13",
+      "hora": "02:00 PM"
     },
     {
       "numero": 9,
@@ -903,7 +911,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-18"
+      "fecha": "2026-06-18",
+      "hora": "02:00 PM"
     },
     {
       "numero": 10,
@@ -913,7 +922,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-18"
+      "fecha": "2026-06-18",
+      "hora": "05:00 PM"
     },
     {
       "numero": 11,
@@ -923,7 +933,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-24"
+      "fecha": "2026-06-24",
+      "hora": "02:00 PM"
     },
     {
       "numero": 12,
@@ -933,7 +944,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-24"
+      "fecha": "2026-06-24",
+      "hora": "02:00 PM"
     },
     {
       "numero": 13,
@@ -943,7 +955,8 @@ window.POLLA_DATA = {
       "g1_real": 1,
       "g2_real": 1,
       "jugado": true,
-      "fecha": "2026-06-13"
+      "fecha": "2026-06-13",
+      "hora": "05:00 PM"
     },
     {
       "numero": 14,
@@ -953,7 +966,8 @@ window.POLLA_DATA = {
       "g1_real": 0,
       "g2_real": 1,
       "jugado": true,
-      "fecha": "2026-06-14"
+      "fecha": "2026-06-13",
+      "hora": "08:00 PM"
     },
     {
       "numero": 15,
@@ -963,7 +977,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-19"
+      "fecha": "2026-06-19",
+      "hora": "05:00 PM"
     },
     {
       "numero": 16,
@@ -973,7 +988,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-20"
+      "fecha": "2026-06-19",
+      "hora": "07:30 PM"
     },
     {
       "numero": 17,
@@ -983,7 +999,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-24"
+      "fecha": "2026-06-24",
+      "hora": "05:00 PM"
     },
     {
       "numero": 18,
@@ -993,7 +1010,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-24"
+      "fecha": "2026-06-24",
+      "hora": "05:00 PM"
     },
     {
       "numero": 19,
@@ -1003,7 +1021,8 @@ window.POLLA_DATA = {
       "g1_real": 4,
       "g2_real": 1,
       "jugado": true,
-      "fecha": "2026-06-13"
+      "fecha": "2026-06-12",
+      "hora": "08:00 PM"
     },
     {
       "numero": 20,
@@ -1013,7 +1032,8 @@ window.POLLA_DATA = {
       "g1_real": 2,
       "g2_real": 0,
       "jugado": true,
-      "fecha": "2026-06-14"
+      "fecha": "2026-06-13",
+      "hora": "11:00 PM"
     },
     {
       "numero": 21,
@@ -1023,7 +1043,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-19"
+      "fecha": "2026-06-19",
+      "hora": "02:00 PM"
     },
     {
       "numero": 22,
@@ -1033,7 +1054,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-20"
+      "fecha": "2026-06-19",
+      "hora": "10:00 PM"
     },
     {
       "numero": 23,
@@ -1043,7 +1065,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-26"
+      "fecha": "2026-06-25",
+      "hora": "09:00 PM"
     },
     {
       "numero": 24,
@@ -1053,7 +1076,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-26"
+      "fecha": "2026-06-25",
+      "hora": "09:00 PM"
     },
     {
       "numero": 25,
@@ -1063,7 +1087,8 @@ window.POLLA_DATA = {
       "g1_real": 7,
       "g2_real": 1,
       "jugado": true,
-      "fecha": "2026-06-14"
+      "fecha": "2026-06-14",
+      "hora": "12:00 PM"
     },
     {
       "numero": 26,
@@ -1073,7 +1098,8 @@ window.POLLA_DATA = {
       "g1_real": 1,
       "g2_real": 0,
       "jugado": true,
-      "fecha": "2026-06-14"
+      "fecha": "2026-06-14",
+      "hora": "06:00 PM"
     },
     {
       "numero": 27,
@@ -1083,7 +1109,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-20"
+      "fecha": "2026-06-20",
+      "hora": "03:00 PM"
     },
     {
       "numero": 28,
@@ -1093,7 +1120,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-21"
+      "fecha": "2026-06-20",
+      "hora": "07:00 PM"
     },
     {
       "numero": 29,
@@ -1103,7 +1131,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-25"
+      "fecha": "2026-06-25",
+      "hora": "03:00 PM"
     },
     {
       "numero": 30,
@@ -1113,7 +1142,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-25"
+      "fecha": "2026-06-25",
+      "hora": "03:00 PM"
     },
     {
       "numero": 31,
@@ -1123,7 +1153,8 @@ window.POLLA_DATA = {
       "g1_real": 2,
       "g2_real": 2,
       "jugado": true,
-      "fecha": "2026-06-14"
+      "fecha": "2026-06-14",
+      "hora": "03:00 PM"
     },
     {
       "numero": 32,
@@ -1133,7 +1164,8 @@ window.POLLA_DATA = {
       "g1_real": 5,
       "g2_real": 1,
       "jugado": true,
-      "fecha": "2026-06-15"
+      "fecha": "2026-06-14",
+      "hora": "09:00 PM"
     },
     {
       "numero": 33,
@@ -1143,7 +1175,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-20"
+      "fecha": "2026-06-20",
+      "hora": "12:00 PM"
     },
     {
       "numero": 34,
@@ -1153,7 +1186,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-21"
+      "fecha": "2026-06-20",
+      "hora": "11:00 PM"
     },
     {
       "numero": 35,
@@ -1163,7 +1197,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-25"
+      "fecha": "2026-06-25",
+      "hora": "06:00 PM"
     },
     {
       "numero": 36,
@@ -1173,7 +1208,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-25"
+      "fecha": "2026-06-25",
+      "hora": "06:00 PM"
     },
     {
       "numero": 37,
@@ -1183,7 +1219,8 @@ window.POLLA_DATA = {
       "g1_real": 1,
       "g2_real": 1,
       "jugado": true,
-      "fecha": "2026-06-15"
+      "fecha": "2026-06-15",
+      "hora": "02:00 PM"
     },
     {
       "numero": 38,
@@ -1193,7 +1230,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-16"
+      "fecha": "2026-06-15",
+      "hora": "08:00 PM"
     },
     {
       "numero": 39,
@@ -1203,7 +1241,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-21"
+      "fecha": "2026-06-21",
+      "hora": "02:00 PM"
     },
     {
       "numero": 40,
@@ -1213,7 +1252,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-22"
+      "fecha": "2026-06-21",
+      "hora": "08:00 PM"
     },
     {
       "numero": 41,
@@ -1223,7 +1263,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-27"
+      "fecha": "2026-06-26",
+      "hora": "10:00 PM"
     },
     {
       "numero": 42,
@@ -1233,7 +1274,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-27"
+      "fecha": "2026-06-26",
+      "hora": "10:00 PM"
     },
     {
       "numero": 43,
@@ -1243,7 +1285,8 @@ window.POLLA_DATA = {
       "g1_real": 0,
       "g2_real": 0,
       "jugado": true,
-      "fecha": "2026-06-15"
+      "fecha": "2026-06-15",
+      "hora": "11:00 AM"
     },
     {
       "numero": 44,
@@ -1253,7 +1296,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-15"
+      "fecha": "2026-06-15",
+      "hora": "05:00 PM"
     },
     {
       "numero": 45,
@@ -1263,7 +1307,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-21"
+      "fecha": "2026-06-21",
+      "hora": "11:00 AM"
     },
     {
       "numero": 46,
@@ -1273,7 +1318,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-21"
+      "fecha": "2026-06-21",
+      "hora": "05:00 PM"
     },
     {
       "numero": 47,
@@ -1283,7 +1329,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-27"
+      "fecha": "2026-06-26",
+      "hora": "07:00 PM"
     },
     {
       "numero": 48,
@@ -1293,7 +1340,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-27"
+      "fecha": "2026-06-26",
+      "hora": "07:00 PM"
     },
     {
       "numero": 49,
@@ -1303,7 +1351,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-16"
+      "fecha": "2026-06-16",
+      "hora": "02:00 PM"
     },
     {
       "numero": 50,
@@ -1313,7 +1362,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-16"
+      "fecha": "2026-06-16",
+      "hora": "05:00 PM"
     },
     {
       "numero": 51,
@@ -1323,7 +1373,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-22"
+      "fecha": "2026-06-22",
+      "hora": "04:00 PM"
     },
     {
       "numero": 52,
@@ -1333,7 +1384,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-23"
+      "fecha": "2026-06-22",
+      "hora": "07:00 PM"
     },
     {
       "numero": 53,
@@ -1343,7 +1395,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-26"
+      "fecha": "2026-06-26",
+      "hora": "02:00 PM"
     },
     {
       "numero": 54,
@@ -1353,7 +1406,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-26"
+      "fecha": "2026-06-26",
+      "hora": "02:00 PM"
     },
     {
       "numero": 55,
@@ -1363,7 +1417,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-17"
+      "fecha": "2026-06-16",
+      "hora": "08:00 PM"
     },
     {
       "numero": 56,
@@ -1373,7 +1428,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-17"
+      "fecha": "2026-06-16",
+      "hora": "11:00 PM"
     },
     {
       "numero": 57,
@@ -1383,7 +1439,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-22"
+      "fecha": "2026-06-22",
+      "hora": "12:00 PM"
     },
     {
       "numero": 58,
@@ -1393,7 +1450,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-23"
+      "fecha": "2026-06-22",
+      "hora": "10:00 PM"
     },
     {
       "numero": 59,
@@ -1403,7 +1461,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-28"
+      "fecha": "2026-06-27",
+      "hora": "09:00 PM"
     },
     {
       "numero": 60,
@@ -1413,7 +1472,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-28"
+      "fecha": "2026-06-27",
+      "hora": "09:00 PM"
     },
     {
       "numero": 61,
@@ -1423,7 +1483,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-17"
+      "fecha": "2026-06-17",
+      "hora": "12:00 PM"
     },
     {
       "numero": 62,
@@ -1433,7 +1494,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-18"
+      "fecha": "2026-06-17",
+      "hora": "09:00 PM"
     },
     {
       "numero": 63,
@@ -1443,7 +1505,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-23"
+      "fecha": "2026-06-23",
+      "hora": "12:00 PM"
     },
     {
       "numero": 64,
@@ -1453,7 +1516,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-24"
+      "fecha": "2026-06-23",
+      "hora": "09:00 PM"
     },
     {
       "numero": 65,
@@ -1463,7 +1527,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-27"
+      "fecha": "2026-06-27",
+      "hora": "06:30 PM"
     },
     {
       "numero": 66,
@@ -1473,7 +1538,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-27"
+      "fecha": "2026-06-27",
+      "hora": "06:30 PM"
     },
     {
       "numero": 67,
@@ -1483,7 +1549,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-17"
+      "fecha": "2026-06-17",
+      "hora": "03:00 PM"
     },
     {
       "numero": 68,
@@ -1493,7 +1560,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-17"
+      "fecha": "2026-06-17",
+      "hora": "06:00 PM"
     },
     {
       "numero": 69,
@@ -1503,7 +1571,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-23"
+      "fecha": "2026-06-23",
+      "hora": "03:00 PM"
     },
     {
       "numero": 70,
@@ -1513,7 +1582,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-23"
+      "fecha": "2026-06-23",
+      "hora": "06:00 PM"
     },
     {
       "numero": 71,
@@ -1523,7 +1593,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-27"
+      "fecha": "2026-06-27",
+      "hora": "04:00 PM"
     },
     {
       "numero": 72,
@@ -1533,7 +1604,8 @@ window.POLLA_DATA = {
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
-      "fecha": "2026-06-27"
+      "fecha": "2026-06-27",
+      "hora": "04:00 PM"
     }
   ],
   "matches_elim": [

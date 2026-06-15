@@ -678,6 +678,7 @@ function _matchCardG(m) {
     <div class="mcard-hd">
       <span class="mcard-badge grp-badge">Grp ${m.grupo}</span>
       ${m.fecha?`<span class="mcard-badge" style="background:#f0fdf4;color:#15803d">${fmtDate(m.fecha)}</span>`:''}
+      ${!m.jugado&&m.hora?`<span class="mcard-badge" style="background:#eff6ff;color:#1d4ed8;font-weight:700">${m.hora}</span>`:''}
       ${m.jugado?'<span class="mcard-badge done-badge">✅ Final</span>':'<span class="mcard-badge pend-badge">⏳</span>'}
       <span class="mcard-num">P${m.numero}</span>
     </div>
