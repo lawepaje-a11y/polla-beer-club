@@ -334,15 +334,23 @@ tr:hover td{background:#fafafa}
 <!-- ══════════════════════════ GOLEADORES ══════════════════════════ -->
 <div id="tab-goleadores" class="tab-panel">
   <div class="section-hd">Goleador del torneo</div>
-  <div class="section-desc">Cada participante apostó por un goleador del Mundial. Aquí se muestra la distribución de predicciones. Si el goleador real ya se conoce, se destacará en verde y se sumarán 20 puntos a los acertados.</div>
+  <div class="section-desc">Ranking en tiempo real de los anotadores del Mundial y cómo se compara con las predicciones de la polla.</div>
+
+  <!-- ── Tabla goleadores reales ───────────────────────────── -->
+  <div class="card" id="card-gol-reales">
+    <div class="card-title">⚽ Máximos anotadores del torneo — en vivo</div>
+    <div class="card-desc">Goles reales marcados en el Mundial (sin autogoles). La columna <strong>Polla</strong> muestra cuántos participantes apostaron por ese jugador como goleador del torneo.</div>
+    <div id="gol-reales-table"></div>
+  </div>
 
   <div class="two-col">
     <div class="card">
-      <div class="card-title">📊 Distribución de predicciones</div>
+      <div class="card-title">📊 ¿A quién apostó la polla?</div>
+      <div class="card-desc" style="margin-bottom:.5rem">Distribución de votos entre los 67 participantes.</div>
       <div class="chart-box"><canvas id="chart-goleadores"></canvas></div>
     </div>
     <div class="card">
-      <div class="card-title">Detalle por jugador</div>
+      <div class="card-title">Votos por jugador</div>
       <div id="gol-table"></div>
     </div>
   </div>
@@ -901,7 +909,80 @@ function renderPlanilla() {
 /* ════════════════════════════════════════════════════════
    GOLEADORES
 ═════════════════════════════════════════════════════════ */
+function renderGoleadoresReales() {
+  const reales = D.goleadores_reales || [];
+  const totalPart = D.meta.total_participantes;
+  const maxGoles  = reales.length ? reales[0].goles : 1;
+  const maxVotos  = Math.max(...reales.map(g => g.votos_polla), 1);
+
+  if (!reales.length) {
+    document.getElementById('gol-reales-table').innerHTML =
+      '<p style="color:var(--muted);font-size:.85rem;text-align:center;padding:1rem">Aún no hay goles registrados en el torneo.</p>';
+    return;
+  }
+
+  let html = `<div class="table-wrap"><table>
+    <thead><tr>
+      <th style="width:32px">#</th>
+      <th>Jugador</th>
+      <th>Selección</th>
+      <th class="num" style="width:56px">Goles</th>
+      <th style="width:38%">Tendencia</th>
+      <th class="num" style="width:70px" title="Participantes que apostaron por este jugador">Polla</th>
+    </tr></thead><tbody>`;
+
+  let lastGoles = -1, rank = 0, tied = 0;
+  reales.forEach((g, i) => {
+    if (g.goles !== lastGoles) { rank += 1 + tied; tied = 0; lastGoles = g.goles; }
+    else { tied++; }
+
+    const pct      = Math.round(g.goles / maxGoles * 100);
+    const pollaPct = Math.round(g.votos_polla / totalPart * 100);
+    const hasVotos = g.votos_polla > 0;
+    const rowStyle = hasVotos ? 'background:linear-gradient(90deg,#fffbeb 0%,#fff 100%)' : '';
+    const nameStyle= hasVotos ? 'font-weight:700;color:var(--text)' : '';
+
+    html += `<tr style="${rowStyle}">
+      <td style="color:var(--muted);font-size:.8rem;font-weight:700">${rank}</td>
+      <td>
+        <div style="${nameStyle};display:flex;align-items:center;gap:.4rem">
+          ${hasVotos ? '<span title="Alguien en la polla apostó por este jugador" style="font-size:.8rem">⭐</span>' : ''}
+          ${g.nombre}
+        </div>
+      </td>
+      <td style="font-size:.82rem;color:var(--muted)">${g.equipo}</td>
+      <td class="num" style="font-size:1.1rem;font-weight:800;color:var(--green)">${g.goles}</td>
+      <td>
+        <div style="display:flex;align-items:center;gap:.5rem">
+          <div class="pts-bar-bg" style="flex:1"><div class="pts-bar-fill" style="width:${pct}%;background:var(--green)"></div></div>
+          <span style="font-size:.68rem;color:var(--muted);min-width:20px">${g.goles}g</span>
+        </div>
+      </td>
+      <td class="num">
+        ${hasVotos
+          ? `<span class="badge badge-yellow" style="font-size:.75rem">${g.votos_polla} 👥</span>`
+          : '<span style="color:var(--border);font-size:.8rem">—</span>'}
+      </td>
+    </tr>`;
+  });
+
+  html += '</tbody></table></div>';
+
+  // Nota al pie: cuántos jugadores pronosticados NO han anotado aún
+  const nombresReales = new Set(reales.map(g => g.nombre));
+  const pollaNames = [...new Set((D.goleadores_ranking || []).map(g => g.goleador))];
+  const sinGol = pollaNames.filter(n => !nombresReales.has(n));
+  if (sinGol.length) {
+    html += `<p style="font-size:.75rem;color:var(--muted);margin-top:.75rem;padding-top:.5rem;border-top:1px solid var(--border)">
+      ⏳ Pronosticados sin gol aún: ${sinGol.join(' · ')}
+    </p>`;
+  }
+
+  document.getElementById('gol-reales-table').innerHTML = html;
+}
+
 function renderGoleadores() {
+  renderGoleadoresReales();
   const real = D.meta.goleador_real;
   const total = D.meta.total_participantes;
   const data = D.goleadores_ranking;
