@@ -1,4 +1,4 @@
-// Generado automáticamente por update_data.py — no editar manualmente
+// Generado automáticamente por export_data.py — no editar manualmente
 window.POLLA_DATA = {
   "meta": {
     "nombre_polla": "POLLA BEER CLUB",
@@ -240,7 +240,7 @@ window.POLLA_DATA = {
     {
       "id": 29,
       "pagina": 29,
-      "nombre": "NICOL Santos E.",
+      "nombre": "Nicolás Andrés",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 8,
@@ -358,18 +358,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 28,
-      "pagina": 28,
-      "nombre": "Justis",
-      "goleador": "Cavani",
-      "pts": {
-        "grupos": 7,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 7
-      }
-    },
-    {
       "id": 39,
       "pagina": 39,
       "nombre": "LEONARDO RIVERA - CARLOS LAITON",
@@ -386,6 +374,18 @@ window.POLLA_DATA = {
       "pagina": 55,
       "nombre": "Miguel Laiton",
       "goleador": "Ousmane Dembélé",
+      "pts": {
+        "grupos": 7,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 7
+      }
+    },
+    {
+      "id": 28,
+      "pagina": 28,
+      "nombre": "Santos Camargo",
+      "goleador": "Cavani",
       "pts": {
         "grupos": 7,
         "eliminatorias": 0,
@@ -446,6 +446,18 @@ window.POLLA_DATA = {
       "pagina": 38,
       "nombre": "CARLOS LAITON",
       "goleador": "Michael Olise",
+      "pts": {
+        "grupos": 6,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 6
+      }
+    },
+    {
+      "id": 58,
+      "pagina": 58,
+      "nombre": "Fabián Montaña",
+      "goleador": "Vinicius Jr.",
       "pts": {
         "grupos": 6,
         "eliminatorias": 0,
@@ -566,18 +578,6 @@ window.POLLA_DATA = {
       "pagina": 66,
       "nombre": "Sebastian Flaco",
       "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 6,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 6
-      }
-    },
-    {
-      "id": 58,
-      "pagina": 58,
-      "nombre": "Tabián Montaní",
-      "goleador": "Vinicius Jr.",
       "pts": {
         "grupos": 6,
         "eliminatorias": 0,
