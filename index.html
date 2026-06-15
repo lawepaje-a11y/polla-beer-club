@@ -787,7 +787,7 @@ function populateSelect() {
     .sort((a,b)=>a.nombre.localeCompare(b.nombre,'es'))
     .forEach(p => {
       const o=document.createElement('option');
-      o.value=p.id; o.textContent=p.nombre;
+      o.value=p.id; o.textContent=`${p.pagina}. ${p.nombre}`;
       sel.appendChild(o);
     });
 }
