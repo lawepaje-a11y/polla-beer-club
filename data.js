@@ -766,18 +766,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 62,
-      "pagina": 62,
-      "nombre": "Melissa I. Reloyas Swilaram",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 3,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 3
-      }
-    },
-    {
       "id": 17,
       "pagina": 17,
       "nombre": "Miguel Andrés",
@@ -794,6 +782,18 @@ window.POLLA_DATA = {
       "pagina": 13,
       "nombre": "SANTIAGO MEDINA",
       "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 3,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 3
+      }
+    },
+    {
+      "id": 62,
+      "pagina": 62,
+      "nombre": "Wilson Rodriguez Saavedra",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 3,
         "eliminatorias": 0,
