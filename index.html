@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polla Beer Club · Mundial 2026</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+/* ── Tokens ─────────────────────────────────────────────── */
+:root {
+  --bg:       #f1f5f9;
+  --surface:  #ffffff;
+  --surface2: #f8fafc;
+  --border:   #e2e8f0;
+  --shadow:   0 1px 4px rgba(0,0,0,.08);
+  --shadow-md:0 4px 16px rgba(0,0,0,.10);
+  --text:     #1e293b;
+  --muted:    #64748b;
+  --accent:   #d97706;
+  --accent-l: #fef3c7;
+  --green:    #16a34a;
+  --green-l:  #dcfce7;
+  --yellow:   #ca8a04;
+  --yellow-l: #fef9c3;
+  --red:      #dc2626;
+  --red-l:    #fee2e2;
+  --blue:     #2563eb;
+  --blue-l:   #dbeafe;
+  --gold:     #f59e0b;
+  --silver:   #9ca3af;
+  --bronze:   #b45309;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;font-size:15px}
+
+/* ── Header ─────────────────────────────────────────────── */
+.header{background:linear-gradient(135deg,#1e3a5f 0%,#1e293b 60%,#0f172a 100%);padding:1.25rem 1.5rem 1rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.header-top{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.header h1{font-size:1.3rem;font-weight:800;color:#fff;letter-spacing:.03em}
+.header h1 em{color:var(--gold);font-style:normal}
+.header-badge{background:var(--gold);color:#000;font-size:.65rem;font-weight:700;padding:.15rem .5rem;border-radius:999px;text-transform:uppercase;letter-spacing:.08em}
+.header-sub{color:#94a3b8;font-size:.78rem;margin-top:.3rem}
+.header-tabs{display:flex;gap:.25rem;margin-top:.75rem;overflow-x:auto;scrollbar-width:none}
+.header-tabs::-webkit-scrollbar{display:none}
+.tab-btn{padding:.45rem 1rem;border:none;border-radius:.5rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;background:rgba(255,255,255,.08);color:#cbd5e1;transition:all .18s}
+.tab-btn.active{background:var(--gold);color:#000}
+.tab-btn:hover:not(.active){background:rgba(255,255,255,.15);color:#fff}
+
+/* ── Stats bar ──────────────────────────────────────────── */
+.stats-bar{display:flex;gap:.75rem;padding:.75rem 1.5rem;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--border);background:var(--surface)}
+.stats-bar::-webkit-scrollbar{display:none}
+.stat{background:var(--surface2);border:1px solid var(--border);border-radius:.75rem;padding:.5rem 1rem;text-align:center;min-width:90px;white-space:nowrap}
+.stat-val{font-size:1.4rem;font-weight:800;color:var(--accent);line-height:1}
+.stat-lbl{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-top:.2rem}
+
+/* ── Layout ─────────────────────────────────────────────── */
+.content{padding:1.25rem 1.5rem;max-width:1200px;margin:0 auto}
+.tab-panel{display:none;animation:fadeIn .2s ease}
+.tab-panel.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:700px){.two-col{grid-template-columns:1fr}}
+
+/* ── Cards ──────────────────────────────────────────────── */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:.875rem;padding:1.25rem;margin-bottom:1rem;box-shadow:var(--shadow)}
+.card-title{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:.75rem;display:flex;align-items:center;gap:.4rem}
+.card-desc{font-size:.82rem;color:var(--muted);margin-bottom:1rem;line-height:1.5}
+
+/* Metric cards */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-bottom:1rem}
+@media(max-width:600px){.metrics{grid-template-columns:repeat(2,1fr)}}
+.metric{background:var(--surface2);border:1px solid var(--border);border-radius:.75rem;padding:.875rem 1rem;text-align:center}
+.metric-val{font-size:1.75rem;font-weight:800;line-height:1}
+.metric-lbl{font-size:.72rem;color:var(--muted);margin-top:.3rem;text-transform:uppercase;letter-spacing:.05em}
+.metric-sub{font-size:.7rem;color:var(--muted);margin-top:.15rem}
+
+/* ── Podium ─────────────────────────────────────────────── */
+.podium{display:flex;gap:.75rem;margin-bottom:1rem;align-items:flex-end;justify-content:center;flex-wrap:wrap}
+.podium-card{flex:1;min-width:120px;max-width:200px;background:var(--surface);border-radius:.875rem;padding:1rem .75rem;text-align:center;border:2px solid var(--border);box-shadow:var(--shadow)}
+.podium-card.p1{border-color:var(--gold);background:linear-gradient(160deg,#fffbeb,#fff)}
+.podium-card.p2{border-color:var(--silver)}
+.podium-card.p3{border-color:var(--bronze)}
+.podium-medal{font-size:1.8rem;margin-bottom:.3rem}
+.podium-name{font-weight:700;font-size:.9rem;margin-bottom:.2rem}
+.podium-pts{font-size:1.5rem;font-weight:800;color:var(--accent)}
+.podium-detail{font-size:.7rem;color:var(--muted);margin-top:.2rem}
+
+/* ── Tables ─────────────────────────────────────────────── */
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.84rem}
+th{text-align:left;padding:.5rem .75rem;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);border-bottom:2px solid var(--border);background:var(--surface2)}
+td{padding:.55rem .75rem;border-bottom:1px solid #f1f5f9}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#fafafa}
+.num{text-align:right;font-variant-numeric:tabular-nums}
+.clickable{cursor:pointer}
+
+/* pts bar inline */
+.pts-bar-bg{background:var(--border);border-radius:4px;height:6px;width:100%;margin-top:3px}
+.pts-bar-fill{background:var(--accent);border-radius:4px;height:6px}
+
+/* ── Pills ──────────────────────────────────────────────── */
+.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:.35rem;font-size:.75rem;font-weight:700;padding:.1rem .45rem;min-width:2rem}
+.pill-exact {background:var(--green-l);color:var(--green)}
+.pill-result{background:var(--yellow-l);color:var(--yellow)}
+.pill-wrong {background:var(--red-l);color:var(--red)}
+.pill-pend  {background:var(--border);color:var(--muted)}
+
+/* ── Group filter buttons ──────────────────────────────── */
+.filter-tabs{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1rem}
+.ftab{padding:.3rem .65rem;border-radius:.5rem;font-size:.78rem;font-weight:600;cursor:pointer;background:var(--surface2);color:var(--muted);border:1px solid var(--border);transition:all .15s}
+.ftab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.ftab:hover:not(.active){border-color:var(--accent);color:var(--accent)}
+
+/* ── Match cards ────────────────────────────────────────── */
+.match-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+@media(max-width:640px){.match-grid{grid-template-columns:1fr}}
+.match-card{background:var(--surface);border:1px solid var(--border);border-radius:.75rem;padding:.875rem;box-shadow:var(--shadow)}
+.match-card.jugado{border-left:3px solid var(--green)}
+.match-card.pendiente{border-left:3px solid var(--border)}
+.match-num{font-size:.68rem;color:var(--muted);font-weight:600;margin-bottom:.4rem}
+.match-row{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.match-team{font-size:.85rem;font-weight:600;flex:1}
+.match-team.r{text-align:right}
+.match-score{font-size:1.2rem;font-weight:800;color:var(--green);padding:0 .5rem}
+.match-score.pend{color:var(--muted);font-size:.85rem;font-weight:400}
+.match-stats{margin-top:.5rem;font-size:.7rem;color:var(--muted);display:flex;gap:.75rem}
+
+/* ── Selectors ──────────────────────────────────────────── */
+.big-select{width:100%;padding:.75rem 1rem;border:2px solid var(--border);border-radius:.75rem;font-size:.95rem;background:var(--surface);color:var(--text);cursor:pointer;transition:border-color .15s}
+.big-select:focus{outline:none;border-color:var(--accent)}
+.search-box{width:100%;padding:.55rem .9rem;border:1px solid var(--border);border-radius:.6rem;font-size:.875rem;background:var(--surface);color:var(--text);margin-bottom:.75rem}
+.search-box:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(217,119,6,.1)}
+
+/* ── Donut legend ───────────────────────────────────────── */
+.legend-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+.legend-row{display:flex;align-items:center;padding:.3rem 0;font-size:.82rem;border-bottom:1px solid var(--border)}
+.legend-row:last-child{border-bottom:none}
+.legend-bar-bg{background:var(--border);border-radius:4px;height:8px;flex:1;margin:0 .75rem}
+.legend-bar{border-radius:4px;height:8px}
+
+/* ── Section headers ────────────────────────────────────── */
+.section-hd{font-size:.95rem;font-weight:700;margin-bottom:.3rem;color:var(--text)}
+.section-desc{font-size:.8rem;color:var(--muted);margin-bottom:1rem;line-height:1.5}
+
+/* ── Initials avatar ────────────────────────────────────── */
+.avatar{width:32px;height:32px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:.75rem;flex-shrink:0}
+
+/* ── Badges ─────────────────────────────────────────────── */
+.badge{display:inline-block;padding:.1rem .5rem;border-radius:999px;font-size:.7rem;font-weight:600}
+.badge-green {background:var(--green-l);color:var(--green)}
+.badge-yellow{background:var(--yellow-l);color:var(--yellow)}
+.badge-gray  {background:var(--border);color:var(--muted)}
+.badge-blue  {background:var(--blue-l);color:var(--blue)}
+
+/* ── Chart wrappers ─────────────────────────────────────── */
+.chart-box{position:relative;height:320px}
+.chart-box-sm{position:relative;height:200px}
+
+/* ── Tipo selector (Grupos / Eliminatorias) ──────────────── */
+.tipo-wrap{display:flex;gap:.5rem;margin-bottom:1rem}
+.tipo-btn{flex:1;padding:.6rem;border:2px solid var(--border);border-radius:.75rem;font-size:.85rem;font-weight:700;cursor:pointer;background:var(--surface);color:var(--muted);transition:all .15s;text-align:center}
+.tipo-btn.active{border-color:var(--accent);background:var(--accent-l);color:var(--accent)}
+@media(max-width:480px){.tipo-wrap{flex-direction:column}}
+
+/* ── Date / group pills ─────────────────────────────────── */
+.date-strip{display:flex;gap:.35rem;overflow-x:auto;scrollbar-width:none;padding-bottom:.2rem}
+.date-strip::-webkit-scrollbar{display:none}
+.filter-row-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:.35rem}
+.dpill,.gpill{flex-shrink:0;padding:.3rem .7rem;border-radius:.5rem;font-size:.78rem;font-weight:600;cursor:pointer;background:var(--surface2);color:var(--muted);border:1px solid var(--border);white-space:nowrap;transition:all .15s}
+.dpill.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.gpill.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.dpill:hover:not(.active){border-color:var(--blue);color:var(--blue)}
+.gpill:hover:not(.active){border-color:var(--accent);color:var(--accent)}
+.dpill-cnt{background:rgba(0,0,0,.12);border-radius:999px;padding:0 .3rem;font-size:.65rem;margin-left:.2rem}
+.dpill.active .dpill-cnt{background:rgba(255,255,255,.25)}
+
+/* ── Date group heading ─────────────────────────────────── */
+.date-group{margin-bottom:1.5rem}
+.date-group-hd{font-size:.82rem;font-weight:700;color:var(--text);margin-bottom:.6rem;border-left:3px solid var(--accent);padding-left:.6rem;text-transform:capitalize}
+
+/* ── Match cards rediseñadas ────────────────────────────── */
+.mcard{background:var(--surface);border:1px solid var(--border);border-radius:.75rem;padding:.875rem;box-shadow:var(--shadow);overflow:hidden}
+.mcard-j{border-left:3px solid var(--green)}
+.mcard-p{border-left:3px solid var(--border)}
+.mcard-hd{display:flex;align-items:center;gap:.35rem;margin-bottom:.6rem;flex-wrap:wrap}
+.mcard-num{font-size:.65rem;color:var(--muted);font-weight:600;margin-left:auto}
+.mcard-badge{font-size:.65rem;font-weight:700;padding:.1rem .4rem;border-radius:.35rem}
+.grp-badge{background:#eff6ff;color:#3b82f6}
+.done-badge{background:var(--green-l);color:var(--green)}
+.pend-badge{background:var(--border);color:var(--muted)}
+.mcard-body{display:flex;align-items:center;gap:.5rem;margin:.2rem 0}
+.mteam{font-size:.88rem;font-weight:700;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mteam.l{text-align:left}
+.mteam.r{text-align:right}
+.mscore{font-size:1.3rem;font-weight:900;color:var(--green);padding:0 .4rem;white-space:nowrap;text-align:center;min-width:64px}
+.mscore.pend{color:var(--muted);font-size:.85rem;font-weight:400}
+.mcard-stats{margin-top:.5rem;font-size:.72rem;color:var(--muted);display:flex;gap:.6rem;align-items:center;border-top:1px solid var(--border);padding-top:.4rem}
+
+/* ── Bracket timeline (eliminatorias) ──────────────────── */
+.bracket-flow{display:flex;align-items:stretch;gap:0;overflow-x:auto;scrollbar-width:none;padding:.25rem .1rem .5rem}
+.bracket-flow::-webkit-scrollbar{display:none}
+.bracket-box{flex-shrink:0;background:var(--surface2);border:2px solid var(--border);border-radius:.75rem;padding:.65rem .9rem;text-align:center;cursor:pointer;min-width:90px;transition:all .2s;display:flex;flex-direction:column;justify-content:center}
+.bracket-box:hover{border-color:var(--accent)}
+.bracket-active{border-color:var(--accent)!important;background:var(--accent-l)!important}
+.bracket-done{border-color:var(--green)}
+.bracket-prog{border-color:var(--yellow)}
+.bph-name{font-size:.78rem;font-weight:800;white-space:nowrap}
+.bph-prog{font-size:.68rem;color:var(--muted);margin-top:.15rem}
+.bph-status{font-size:.62rem;font-weight:700;margin-top:.2rem;text-transform:uppercase;letter-spacing:.05em}
+.bph-done{color:var(--green)}
+.bph-prog2{color:var(--yellow)}
+.bracket-arr{flex-shrink:0;color:var(--muted);font-size:1.6rem;padding:0 .3rem;line-height:1;opacity:.35;display:flex;align-items:center}
+</style>
+</head>
+<body>
+
+<!-- ══════════ HEADER ══════════ -->
+<div class="header">
+  <div class="header-top">
+    <h1>⚽ <em>POLLA BEER CLUB</em> · Mundial FIFA 2026</h1>
+    <span class="header-badge">En vivo</span>
+  </div>
+  <div class="header-sub" id="header-sub">Cargando datos...</div>
+  <div class="header-tabs">
+    <button class="tab-btn active" onclick="showTab('ranking',this)">🏆 Ranking</button>
+    <button class="tab-btn" onclick="showTab('partidos',this)">⚽ Partidos</button>
+    <button class="tab-btn" onclick="showTab('planilla',this)">📋 Mi Planilla</button>
+    <button class="tab-btn" onclick="showTab('goleadores',this)">🎯 Goleadores</button>
+  </div>
+</div>
+
+<!-- ══════════ STATS BAR ══════════ -->
+<div class="stats-bar" id="stats-bar"></div>
+
+<div class="content">
+
+<!-- ══════════════════════════ RANKING ══════════════════════════ -->
+<div id="tab-ranking" class="tab-panel active">
+  <div class="section-hd">Tabla de posiciones</div>
+  <div class="section-desc">Puntos acumulados por cada participante según los resultados reales del torneo. Haz clic en cualquier fila para ver la planilla completa.</div>
+
+  <div class="podium" id="podium"></div>
+
+  <div class="card">
+    <div class="card-title">📊 Top 15 — Puntos totales</div>
+    <div class="card-desc">Visualización comparativa de los 15 mejores participantes.</div>
+    <div class="chart-box"><canvas id="chart-ranking"></canvas></div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Clasificación completa</div>
+    <input class="search-box" id="ranking-search" placeholder="🔍 Buscar por nombre..." oninput="renderRankingTable()">
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th style="width:36px">#</th>
+          <th>Participante</th>
+          <th class="num" title="Puntos por fase de grupos">Grupos</th>
+          <th class="num" title="Puntos por eliminatorias">Elim.</th>
+          <th class="num" title="Puntos por goleador">Gol.</th>
+          <th class="num">Total</th>
+        </tr></thead>
+        <tbody id="ranking-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════ PARTIDOS ══════════════════════════ -->
+<div id="tab-partidos" class="tab-panel">
+  <div class="section-hd">Resultados del torneo</div>
+  <div class="section-desc">Filtra por fecha, grupo o fase de eliminación. Verde = partido jugado · el score muestra cuántos participantes acertaron.</div>
+
+  <!-- Tipo -->
+  <div class="tipo-wrap">
+    <button class="tipo-btn active" id="tipo-grupos" onclick="setTipo('grupos')">⚽ Fase de Grupos</button>
+    <button class="tipo-btn" id="tipo-elim" onclick="setTipo('eliminatorias')">🏆 Eliminatorias</button>
+  </div>
+
+  <!-- ── GRUPOS ────────────────── -->
+  <div id="pview-grupos">
+    <div class="card" style="padding:.875rem 1rem;margin-bottom:.75rem">
+      <div class="filter-row-label">📅 Fecha</div>
+      <div class="date-strip" id="date-pills"></div>
+      <div class="filter-row-label" style="margin-top:.75rem">🏟 Grupo</div>
+      <div class="date-strip" id="grp-pills"></div>
+    </div>
+    <div id="grupos-summary"></div>
+    <div id="grupos-cards"></div>
+  </div>
+
+  <!-- ── ELIMINATORIAS ─────────── -->
+  <div id="pview-elim" style="display:none">
+    <div class="card" style="padding:1rem;margin-bottom:.75rem">
+      <div class="card-title">🏆 Ruta al título — selecciona una fase</div>
+      <div class="bracket-flow" id="bracket-flow"></div>
+    </div>
+    <div id="elim-cards"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════ MI PLANILLA ══════════════════════════ -->
+<div id="tab-planilla" class="tab-panel">
+  <div class="section-hd">Mi Planilla</div>
+  <div class="section-desc">Selecciona tu nombre para ver todas tus predicciones y cuántos puntos has acumulado. Los colores indican: 🟢 exacto (3 pts) · 🟡 resultado correcto (1 pt) · 🔴 incorrecto · ⬜ pendiente.</div>
+
+  <div class="card">
+    <div class="card-title">¿Quién eres?</div>
+    <select class="big-select" id="participant-select" onchange="renderPlanilla()">
+      <option value="">— Selecciona tu nombre —</option>
+    </select>
+  </div>
+  <div id="planilla-container"></div>
+</div>
+
+<!-- ══════════════════════════ GOLEADORES ══════════════════════════ -->
+<div id="tab-goleadores" class="tab-panel">
+  <div class="section-hd">Goleador del torneo</div>
+  <div class="section-desc">Cada participante apostó por un goleador del Mundial. Aquí se muestra la distribución de predicciones. Si el goleador real ya se conoce, se destacará en verde y se sumarán 20 puntos a los acertados.</div>
+
+  <div class="two-col">
+    <div class="card">
+      <div class="card-title">📊 Distribución de predicciones</div>
+      <div class="chart-box"><canvas id="chart-goleadores"></canvas></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Detalle por jugador</div>
+      <div id="gol-table"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Quién eligió a cada goleador</div>
+    <div class="card-desc">Haz clic en un jugador para ver la lista de participantes que lo eligieron.</div>
+    <div id="gol-pickers"></div>
+  </div>
+</div>
+
+</div><!-- /content -->
+
+<script src="data.js"></script>
+<script>
+/* ════════════════════════════════════════════════════════
+   Constantes y helpers
+═════════════════════════════════════════════════════════ */
+const D = window.POLLA_DATA;
+const GRUPOS = ['A','B','C','D','E','F','G','H','I','J','K','L'];
+const FASES_ELIM = ['DIECISEISAVOS','OCTAVOS','CUARTOS','SEMIFINAL','TERCER_PUESTO','FINAL'];
+const FASE_LABEL = {DIECISEISAVOS:'Dieciseisavos',OCTAVOS:'Octavos de Final',CUARTOS:'Cuartos de Final',SEMIFINAL:'Semifinales',TERCER_PUESTO:'3er Puesto',FINAL:'Gran Final'};
+const FASE_PTS = {DIECISEISAVOS:3,OCTAVOS:5,CUARTOS:10,SEMIFINAL:20,TERCER_PUESTO:20,FINAL:50};
+
+const COLORS = ['#f59e0b','#3b82f6','#10b981','#8b5cf6','#ef4444','#06b6d4','#84cc16','#f97316','#ec4899','#6366f1','#14b8a6','#eab308'];
+
+let _activeGroup = 'A';
+let _chartRanking = null;
+let _chartGol = null;
+
+function initials(name) {
+  return name.split(' ').slice(0,2).map(w=>w[0]||'').join('').toUpperCase();
+}
+function avatarColor(id) {
+  const hue = (id * 47) % 360;
+  return `hsl(${hue},60%,55%)`;
+}
+
+function scoreClass(g1p,g2p,g1r,g2r) {
+  if (g1r==null||g1p==null||g2p==null) return 'pill-pend';
+  if (+g1p===+g1r && +g2p===+g2r) return 'pill-exact';
+  if (Math.sign(g1p-g2p)===Math.sign(g1r-g2r)) return 'pill-result';
+  return 'pill-wrong';
+}
+function elimPts(pred,match) {
+  if (!match.jugado||!pred) return 0;
+  const [eq1p,eq2p] = pred;
+  let pts=0, base=FASE_PTS[match.fase]||0;
+  if (match.fase==='FINAL') {
+    const maxP=50, minP=30;
+    if (eq1p===match.eq_ganador) pts+=maxP; else if(eq1p===match.eq1_real||eq1p===match.eq2_real) pts+=minP;
+    if (eq2p&&eq2p!==eq1p) { if(eq2p===match.eq_ganador) pts+=maxP; else if(eq2p===match.eq1_real||eq2p===match.eq2_real) pts+=minP; }
+  } else if (match.fase==='TERCER_PUESTO') {
+    const maxP=20, minP=10;
+    if (eq1p===match.eq_ganador) pts+=maxP; else if(eq1p===match.eq1_real||eq1p===match.eq2_real) pts+=minP;
+    if (eq2p&&eq2p!==eq1p) { if(eq2p===match.eq_ganador) pts+=maxP; else if(eq2p===match.eq1_real||eq2p===match.eq2_real) pts+=minP; }
+  } else {
+    if (eq1p&&(eq1p===match.eq1_real||eq1p===match.eq2_real)) pts+=base;
+    if (eq2p&&eq2p!==eq1p&&(eq2p===match.eq1_real||eq2p===match.eq2_real)) pts+=base;
+  }
+  return pts;
+}
+
+/* ════════════════════════════════════════════════════════
+   Header & Stats
+═════════════════════════════════════════════════════════ */
+function renderHeader() {
+  const m = D.meta;
+  const pctGrupos = Math.round(m.partidos_jugados_grupos/m.partidos_totales_grupos*100);
+  const now = new Date().toLocaleDateString('es-CO',{day:'2-digit',month:'short',year:'numeric'});
+  document.getElementById('header-sub').innerHTML =
+    `Actualizado: ${now} &nbsp;·&nbsp; ${m.total_participantes} participantes &nbsp;·&nbsp; ${pctGrupos}% de grupos completados`;
+
+  const top = D.participants[0];
+  const jugadosElim = D.matches_elim.filter(x=>x.jugado).length;
+  document.getElementById('stats-bar').innerHTML = `
+    <div class="stat"><div class="stat-val">${m.total_participantes}</div><div class="stat-lbl">Participantes</div></div>
+    <div class="stat"><div class="stat-val">${m.partidos_jugados_grupos}</div><div class="stat-lbl">Grupos<br>jugados</div></div>
+    <div class="stat"><div class="stat-val">${m.partidos_totales_grupos-m.partidos_jugados_grupos}</div><div class="stat-lbl">Por jugar</div></div>
+    <div class="stat"><div class="stat-val">${jugadosElim}</div><div class="stat-lbl">Elim.<br>jugados</div></div>
+    ${top ? `<div class="stat"><div class="stat-val">${top.pts.total}</div><div class="stat-lbl">Puntos<br>lider</div></div>` : ''}
+    ${m.goleador_real ? `<div class="stat"><div class="stat-val" style="font-size:.85rem;color:var(--green)">${m.goleador_real}</div><div class="stat-lbl">Goleador<br>real</div></div>` : ''}
+  `;
+}
+
+/* ════════════════════════════════════════════════════════
+   Tabs
+═════════════════════════════════════════════════════════ */
+function showTab(name, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById(`tab-${name}`).classList.add('active');
+  if (btn) btn.classList.add('active');
+
+  if (name==='partidos' && !window._partInit) { initPartidos(); window._partInit=true; }
+  if (name==='goleadores' && !window._golInit) { renderGoleadores(); window._golInit=true; }
+  if (name==='ranking' && !window._chartRankingDone) { renderChartRanking(); window._chartRankingDone=true; }
+}
+
+/* ════════════════════════════════════════════════════════
+   RANKING
+═════════════════════════════════════════════════════════ */
+function renderPodium() {
+  const top3 = D.participants.slice(0,3);
+  const icons = ['🥇','🥈','🥉'];
+  const cls   = ['p1','p2','p3'];
+  const order = [1,0,2]; // 2nd, 1st, 3rd display order for visual podium
+  const ordered = [top3[1],top3[0],top3[2]].filter(Boolean);
+  const orderCls = ['p2','p1','p3'];
+
+  document.getElementById('podium').innerHTML = ordered.map((p,i)=>{
+    const orig = i===1?0:(i===0?1:2);
+    return `<div class="podium-card ${orderCls[i]}" style="${i===1?'margin-bottom:1.5rem':''}">
+      <div class="podium-medal">${icons[orig]}</div>
+      <div class="podium-name">${p.nombre}</div>
+      <div class="podium-pts">${p.pts.total} pts</div>
+      <div class="podium-detail">Grupos ${p.pts.grupos} · Elim ${p.pts.eliminatorias} · Gol ${p.pts.goleador}</div>
+      <div class="podium-detail" style="margin-top:.2rem;font-style:italic">${p.goleador||'—'}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderChartRanking() {
+  const top = D.participants.slice(0,15);
+  const ctx = document.getElementById('chart-ranking');
+  if (!ctx) return;
+  if (_chartRanking) _chartRanking.destroy();
+  _chartRanking = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: top.map(p=>p.nombre.split(' ').slice(0,2).join(' ')),
+      datasets: [
+        {label:'Grupos',data:top.map(p=>p.pts.grupos),backgroundColor:'#f59e0b',borderRadius:3},
+        {label:'Eliminatorias',data:top.map(p=>p.pts.eliminatorias),backgroundColor:'#3b82f6',borderRadius:3},
+        {label:'Goleador',data:top.map(p=>p.pts.goleador),backgroundColor:'#10b981',borderRadius:3},
+      ]
+    },
+    options: {
+      indexAxis:'y', responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{position:'top',labels:{font:{size:11},boxWidth:12}},tooltip:{mode:'index'}},
+      scales:{
+        x:{stacked:true,grid:{color:'#f1f5f9'},ticks:{font:{size:11}}},
+        y:{stacked:true,grid:{display:false},ticks:{font:{size:11}}}
+      }
+    }
+  });
+}
+
+function renderRankingTable() {
+  const q=(document.getElementById('ranking-search').value||'').toLowerCase();
+  const list=D.participants.filter(p=>!q||p.nombre.toLowerCase().includes(q));
+  const maxPts=D.participants[0]?.pts.total||1;
+
+  let pos=0;
+  document.getElementById('ranking-body').innerHTML = list.map(p=>{
+    pos++;
+    const medal = pos===1?'🥇':pos===2?'🥈':pos===3?'🥉':`<span style="color:var(--muted);font-size:.85rem">${pos}</span>`;
+    const pct=Math.round(p.pts.total/maxPts*100);
+    const gSplit=p.goleador?`<span style="font-size:.72rem;color:var(--muted)">⚽ ${p.goleador}</span>`:'';
+    return `<tr class="clickable" onclick="goToPlanilla(${p.id})" title="Ver planilla de ${p.nombre}">
+      <td style="font-size:.9rem">${medal}</td>
+      <td>
+        <div style="display:flex;align-items:center;gap:.5rem">
+          <div class="avatar" style="background:${avatarColor(p.id)};color:#fff">${initials(p.nombre)}</div>
+          <div><div style="font-weight:600">${p.nombre}</div>${gSplit}</div>
+        </div>
+      </td>
+      <td class="num">${p.pts.grupos}</td>
+      <td class="num">${p.pts.eliminatorias}</td>
+      <td class="num">${p.pts.goleador}</td>
+      <td class="num">
+        <strong style="font-size:1rem;color:var(--accent)">${p.pts.total}</strong>
+        <div class="pts-bar-bg"><div class="pts-bar-fill" style="width:${pct}%"></div></div>
+      </td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:1.5rem">Sin resultados</td></tr>';
+}
+
+function goToPlanilla(id) {
+  document.getElementById('participant-select').value = id;
+  showTab('planilla', document.querySelectorAll('.tab-btn')[2]);
+  renderPlanilla();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ════════════════════════════════════════════════════════
+   PARTIDOS — estado y renders
+═════════════════════════════════════════════════════════ */
+let _tipo  = 'grupos';
+let _fecha = 'todas';
+let _grupo = 'todos';
+let _fase  = 'DIECISEISAVOS';
+
+const MES = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
+const DOW = ['dom','lun','mar','mié','jue','vie','sáb'];
+function fmtDate(d)     { if(!d)return'?'; const[,m,day]=d.split('-'); return`${MES[+m-1]} ${+day}`; }
+function fmtDateLong(d) { if(!d)return null; const[,m,day]=d.split('-'); const dt=new Date(d+'T12:00:00Z'); return`${DOW[dt.getUTCDay()]} ${+day} de ${MES[+m-1]}`; }
+
+const BRACKET_FASES = [
+  {k:'DIECISEISAVOS', n:'Dieciseisavos', t:16},
+  {k:'OCTAVOS',       n:'Octavos de Final', t:8},
+  {k:'CUARTOS',       n:'Cuartos de Final', t:4},
+  {k:'SEMIFINAL',     n:'Semifinales',  t:2},
+  {k:'TERCER_PUESTO', n:'3er Puesto',   t:1},
+  {k:'FINAL',         n:'Final 🏆',      t:1},
+];
+
+function initPartidos() {
+  _buildDatePills();
+  _buildGrpPills();
+  _buildBracket();
+  _renderGruposCards();
+  _renderElimCards();
+}
+
+function setTipo(t) {
+  _tipo = t;
+  document.getElementById('tipo-grupos').classList.toggle('active', t==='grupos');
+  document.getElementById('tipo-elim').classList.toggle('active', t==='eliminatorias');
+  document.getElementById('pview-grupos').style.display = t==='grupos' ? '' : 'none';
+  document.getElementById('pview-elim').style.display   = t==='eliminatorias' ? '' : 'none';
+}
+
+/* ── Date pills ─────────────────────────────────────────── */
+function _buildDatePills() {
+  const dates = [...new Set(D.matches_grupos.map(m=>m.fecha).filter(Boolean))].sort();
+  const cnt = d => D.matches_grupos.filter(m=>m.fecha===d).length;
+  let html = `<button class="dpill active" onclick="setFecha('todas')" id="dpill-todas">Todas <span class="dpill-cnt">${D.matches_grupos.length}</span></button>`;
+  html += dates.map(d=>`<button class="dpill" onclick="setFecha('${d}')" id="dpill-${d.replace(/\W/g,'_')}">${fmtDate(d)} <span class="dpill-cnt">${cnt(d)}</span></button>`).join('');
+  document.getElementById('date-pills').innerHTML = html;
+}
+function setFecha(f) {
+  _fecha = f;
+  document.querySelectorAll('.dpill').forEach(b=>b.classList.remove('active'));
+  const id = f==='todas' ? 'dpill-todas' : `dpill-${f.replace(/\W/g,'_')}`;
+  document.getElementById(id)?.classList.add('active');
+  _renderGruposCards();
+}
+
+/* ── Group pills ────────────────────────────────────────── */
+function _buildGrpPills() {
+  let html = `<button class="gpill active" onclick="setGrupo('todos')" id="gpill-todos">Todos</button>`;
+  html += GRUPOS.map(g => {
+    const j = D.matches_grupos.filter(m=>m.grupo===g&&m.jugado).length;
+    const t = D.matches_grupos.filter(m=>m.grupo===g).length;
+    return `<button class="gpill" onclick="setGrupo('${g}')" id="gpill-${g}">Grp ${g} <span style="opacity:.65;font-size:.68rem">${j}/${t}</span></button>`;
+  }).join('');
+  document.getElementById('grp-pills').innerHTML = html;
+}
+function setGrupo(g) {
+  _grupo = g;
+  document.querySelectorAll('.gpill').forEach(b=>b.classList.remove('active'));
+  document.getElementById(`gpill-${g}`)?.classList.add('active');
+  _renderGruposCards();
+}
+
+/* ── Render grupo cards ─────────────────────────────────── */
+function _renderGruposCards() {
+  let matches = D.matches_grupos;
+  if (_fecha !== 'todas') matches = matches.filter(m=>m.fecha===_fecha);
+  if (_grupo !== 'todos') matches = matches.filter(m=>m.grupo===_grupo);
+  const jugados = matches.filter(m=>m.jugado).length;
+
+  document.getElementById('grupos-summary').innerHTML = `
+    <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap">
+      <span style="font-size:.82rem;color:var(--muted)">${matches.length} partido${matches.length!==1?'s':''}</span>
+      <span class="badge badge-green">✅ ${jugados} jugados</span>
+      ${matches.length-jugados>0?`<span class="badge badge-gray">⏳ ${matches.length-jugados} pendientes</span>`:''}
+      ${_fecha!=='todas'?`<span style="font-size:.82rem;font-weight:600;color:var(--text)">${fmtDateLong(_fecha)}</span>`:''}
+    </div>`;
+
+  let html = '';
+  if (_fecha === 'todas' && _grupo === 'todos') {
+    // Agrupar por fecha
+    const byDate = {};
+    matches.forEach(m => { const k=m.fecha||'~'; (byDate[k]=byDate[k]||[]).push(m); });
+    Object.keys(byDate).sort().forEach(d => {
+      const label = d==='~' ? 'Fecha por confirmar' : fmtDateLong(d);
+      const dayJ = byDate[d].filter(m=>m.jugado).length;
+      html += `<div class="date-group">
+        <div class="date-group-hd">${label} <span style="font-size:.7rem;opacity:.6;font-weight:400">${dayJ}/${byDate[d].length} jugados</span></div>
+        <div class="match-grid">${byDate[d].map(m=>_matchCardG(m)).join('')}</div>
+      </div>`;
+    });
+  } else {
+    html = `<div class="match-grid">${matches.map(m=>_matchCardG(m)).join('')}</div>`;
+  }
+  document.getElementById('grupos-cards').innerHTML = html ||
+    `<div style="text-align:center;padding:3rem;color:var(--muted)">Sin partidos para este filtro</div>`;
+}
+
+function _matchCardG(m) {
+  const sc = m.jugado
+    ? `<span class="mscore">${m.g1_real} — ${m.g2_real}</span>`
+    : `<span class="mscore pend">vs</span>`;
+  const stats = m.jugado ? _matchStats(m) : null;
+  const n = D.participants.length;
+  return `<div class="mcard ${m.jugado?'mcard-j':'mcard-p'}">
+    <div class="mcard-hd">
+      <span class="mcard-badge grp-badge">Grp ${m.grupo}</span>
+      ${m.fecha?`<span class="mcard-badge" style="background:#f0fdf4;color:#15803d">${fmtDate(m.fecha)}</span>`:''}
+      ${m.jugado?'<span class="mcard-badge done-badge">✅ Final</span>':'<span class="mcard-badge pend-badge">⏳</span>'}
+      <span class="mcard-num">P${m.numero}</span>
+    </div>
+    <div class="mcard-body">
+      <span class="mteam l">${m.eq1}</span>
+      ${sc}
+      <span class="mteam r">${m.eq2}</span>
+    </div>
+    ${stats?`<div class="mcard-stats">
+      <span title="Acertaron marcador exacto">✅ ${stats.exact}</span>
+      <span title="Acertaron resultado">🟡 ${stats.result}</span>
+      <span title="Fallaron">❌ ${stats.wrong}</span>
+      <span style="margin-left:auto;font-size:.65rem;opacity:.6">${stats.exact+stats.result+stats.wrong}/${n}</span>
+    </div>`:''}
+  </div>`;
+}
+
+function _matchStats(m) {
+  let exact=0,result=0,wrong=0;
+  D.participants.forEach(p => {
+    const pred = D.predictions.grupos[String(p.id)]?.[m.numero];
+    if (!pred) return;
+    const cls = scoreClass(pred[0],pred[1],m.g1_real,m.g2_real);
+    if (cls==='pill-exact') exact++;
+    else if (cls==='pill-result') result++;
+    else wrong++;
+  });
+  return {exact,result,wrong};
+}
+
+/* ── Bracket eliminatorias ──────────────────────────────── */
+function _buildBracket() {
+  const html = BRACKET_FASES.map((f,i)=>{
+    const matches = D.matches_elim.filter(m=>m.fase===f.k);
+    const j = matches.filter(m=>m.jugado).length;
+    const done = j===f.t && f.t>0;
+    const prog = j>0 && !done;
+    return `${i>0?'<div class="bracket-arr">›</div>':''}
+      <div class="bracket-box ${_fase===f.k?'bracket-active':''} ${done?'bracket-done':prog?'bracket-prog':''}"
+           onclick="setFase('${f.k}')" id="bphase-${f.k}">
+        <div class="bph-name">${f.n.replace(' 🏆','')}</div>
+        <div class="bph-prog">${j}/${f.t} ${f.k==='FINAL'?'🏆':''}</div>
+        ${done?'<div class="bph-status bph-done">Completo</div>':prog?'<div class="bph-status bph-prog2">En curso</div>':''}
+      </div>`;
+  }).join('');
+  document.getElementById('bracket-flow').innerHTML = html;
+}
+
+function setFase(f) {
+  _fase = f;
+  document.querySelectorAll('.bracket-box').forEach(b=>b.classList.remove('bracket-active'));
+  document.getElementById(`bphase-${f}`)?.classList.add('bracket-active');
+  _renderElimCards();
+}
+
+function _renderElimCards() {
+  const info = BRACKET_FASES.find(f=>f.k===_fase);
+  const matches = D.matches_elim.filter(m=>m.fase===_fase);
+  const j = matches.filter(m=>m.jugado).length;
+  const desc = {
+    DIECISEISAVOS:'Los 32 clasificados de la fase de grupos se enfrentan. El ganador avanza a Octavos.',
+    OCTAVOS:'16 equipos quedan. El ganador avanza a Cuartos de Final.',
+    CUARTOS:'8 equipos quedan. El ganador avanza a Semifinales.',
+    SEMIFINAL:'4 equipos quedan. Los perdedores van al partido por el 3er puesto.',
+    TERCER_PUESTO:'Los dos equipos eliminados en Semifinales compiten por el tercer lugar.',
+    FINAL:'Los dos mejores equipos del torneo disputan el título mundial.'
+  };
+  document.getElementById('elim-cards').innerHTML = `<div class="card">
+    <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem;flex-wrap:wrap">
+      <span style="font-weight:800;font-size:1rem">${info?.n||_fase}</span>
+      <span class="badge ${j>0?'badge-green':'badge-gray'}">${j}/${matches.length} jugados</span>
+    </div>
+    <p style="font-size:.8rem;color:var(--muted);margin-bottom:1rem">${desc[_fase]||''}</p>
+    <div class="match-grid">${matches.map(m=>_matchCardE(m)).join('')}</div>
+  </div>`;
+}
+
+function _matchCardE(m) {
+  const eq1 = m.eq1_real||'<em style="color:var(--muted);font-weight:400;font-style:italic;font-size:.8rem">Por determinar</em>';
+  const eq2 = m.eq2_real||'<em style="color:var(--muted);font-weight:400;font-style:italic;font-size:.8rem">Por determinar</em>';
+  return `<div class="mcard ${m.jugado?'mcard-j':'mcard-p'}">
+    <div class="mcard-hd">
+      <span class="mcard-badge grp-badge">${FASE_LABEL[m.fase]}</span>
+      ${m.jugado?'<span class="mcard-badge done-badge">✅ Jugado</span>':'<span class="mcard-badge pend-badge">⏳</span>'}
+      <span class="mcard-num">P${m.numero}</span>
+    </div>
+    <div class="mcard-body">
+      <span class="mteam l" style="font-size:.82rem">${eq1}</span>
+      <span class="mscore pend" style="min-width:30px">vs</span>
+      <span class="mteam r" style="font-size:.82rem">${eq2}</span>
+    </div>
+    ${m.eq_ganador?`<div class="mcard-stats"><span style="color:var(--green)">🏆 Avanza: <strong>${m.eq_ganador}</strong></span></div>`:''}
+  </div>`;
+}
+
+/* ── getMatchStats (usado en Mi Planilla) ──────────────── */
+function getMatchStats(m) { return _matchStats(m); }
+
+/* ════════════════════════════════════════════════════════
+   MI PLANILLA
+═════════════════════════════════════════════════════════ */
+function populateSelect() {
+  const sel = document.getElementById('participant-select');
+  D.participants
+    .slice()
+    .sort((a,b)=>a.nombre.localeCompare(b.nombre,'es'))
+    .forEach(p => {
+      const o=document.createElement('option');
+      o.value=p.id; o.textContent=p.nombre;
+      sel.appendChild(o);
+    });
+}
+
+function renderPlanilla() {
+  const pid = document.getElementById('participant-select').value;
+  const pc  = document.getElementById('planilla-container');
+  if (!pid) { pc.innerHTML=''; return; }
+
+  const p = D.participants.find(x=>x.id==pid);
+  if (!p) return;
+
+  const gPreds = D.predictions.grupos[String(pid)] || {};
+  const ePreds = D.predictions.eliminatorias[String(pid)] || {};
+
+  // Stat cards
+  const maxPts = D.participants[0]?.pts.total||1;
+  const pct = Math.round(p.pts.total/maxPts*100);
+  const posicion = D.participants.findIndex(x=>x.id==pid)+1;
+
+  let html = `
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-val" style="color:var(--accent)">${p.pts.total}</div>
+      <div class="metric-lbl">Puntos totales</div>
+      <div class="metric-sub">Posición ${posicion}° de ${D.participants.length}</div>
+    </div>
+    <div class="metric">
+      <div class="metric-val" style="color:var(--blue)">${p.pts.grupos}</div>
+      <div class="metric-lbl">Grupos</div>
+      <div class="metric-sub">Fase de grupos</div>
+    </div>
+    <div class="metric">
+      <div class="metric-val" style="color:var(--green)">${p.pts.eliminatorias}</div>
+      <div class="metric-lbl">Eliminatorias</div>
+      <div class="metric-sub">Dieciseisavos a Final</div>
+    </div>
+    <div class="metric">
+      <div class="metric-val" style="color:${D.meta.goleador_real&&p.goleador===D.meta.goleador_real?'var(--green)':'var(--muted)'}">${p.pts.goleador}</div>
+      <div class="metric-lbl">Goleador</div>
+      <div class="metric-sub">${p.goleador||'—'}</div>
+    </div>
+  </div>`;
+
+  // Progress bar vs leader
+  html += `<div class="card" style="padding:.875rem 1.25rem">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem">
+      <span style="font-size:.8rem;color:var(--muted)">Progreso vs líder</span>
+      <span style="font-size:.8rem;font-weight:600">${p.pts.total} / ${maxPts} pts</span>
+    </div>
+    <div class="pts-bar-bg" style="height:10px"><div class="pts-bar-fill" style="width:${pct}%;height:10px;background:${pct===100?'var(--green)':'var(--accent)'}"></div></div>
+  </div>`;
+
+  // Groups table
+  let exactCount=0, resultCount=0, wrongCount=0, pendCount=0;
+  let groupsHtml = '';
+  D.matches_grupos.forEach(m => {
+    const pred = gPreds[m.numero];
+    const g1p = pred?pred[0]:null, g2p = pred?pred[1]:null;
+    const cls = scoreClass(g1p,g2p,m.g1_real,m.g2_real);
+    const pts = cls==='pill-exact'?3:cls==='pill-result'?1:0;
+    if (cls==='pill-exact') exactCount++;
+    else if (cls==='pill-result') resultCount++;
+    else if (cls==='pill-wrong') wrongCount++;
+    else pendCount++;
+    groupsHtml += `<tr>
+      <td style="color:var(--muted);font-size:.72rem">${m.numero}</td>
+      <td style="font-size:.82rem;font-weight:500">${m.eq1}</td>
+      <td style="text-align:center">
+        <span class="pill ${m.jugado?cls:'pill-pend'}">${g1p!=null?`${g1p}-${g2p}`:'—'}</span>
+      </td>
+      <td style="text-align:center;font-weight:700">${m.jugado?`${m.g1_real}-${m.g2_real}`:'<span style="color:var(--muted)">—</span>'}</td>
+      <td style="font-size:.82rem;font-weight:500">${m.eq2}</td>
+      <td class="num" style="font-weight:700;color:var(--accent)">${m.jugado&&pred?pts:'—'}</td>
+    </tr>`;
+  });
+
+  html += `<div class="card">
+    <div class="card-title">Fase de grupos · 72 partidos</div>
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+      <span class="badge badge-green">✅ ${exactCount} exactos (3 pts c/u)</span>
+      <span class="badge badge-yellow">🟡 ${resultCount} resultado (1 pt c/u)</span>
+      <span class="badge" style="background:var(--red-l);color:var(--red)">❌ ${wrongCount} incorrectos</span>
+      <span class="badge badge-gray">⏳ ${pendCount} pendientes</span>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>#</th><th>Equipo 1</th><th style="text-align:center">Tu pred.</th><th style="text-align:center">Real</th><th>Equipo 2</th><th class="num">Pts</th></tr></thead>
+      <tbody>${groupsHtml}</tbody>
+    </table></div>
+  </div>`;
+
+  // Eliminatorias table
+  let elimHtml = '';
+  D.matches_elim.forEach(m => {
+    const pred = ePreds[m.numero];
+    const eq1p=pred?pred[0]:null, eq2p=pred?pred[1]:null;
+    const pts = elimPts(pred,m);
+    const ok1 = m.jugado && eq1p && (eq1p===m.eq1_real||eq1p===m.eq2_real);
+    const ok2 = m.jugado && eq2p && (eq2p===m.eq1_real||eq2p===m.eq2_real);
+    elimHtml += `<tr>
+      <td style="color:var(--muted);font-size:.72rem">${m.numero}</td>
+      <td style="font-size:.75rem;color:var(--muted)">${FASE_LABEL[m.fase]}</td>
+      <td style="font-size:.82rem">
+        ${eq1p?`<span style="color:${ok1?'var(--green)':'inherit'};font-weight:${ok1?'700':'400'}">${eq1p}</span>`:'—'}
+        ${eq2p?` / <span style="color:${ok2?'var(--green)':'inherit'};font-weight:${ok2?'700':'400'}">${eq2p}</span>`:''}
+      </td>
+      <td style="font-size:.82rem;color:var(--muted)">${m.jugado?`${m.eq1_real||'?'} / ${m.eq2_real||'?'}`:'<span>Pendiente</span>'}</td>
+      <td class="num" style="font-weight:700;color:var(--accent)">${m.jugado&&pred?pts:'—'}</td>
+    </tr>`;
+  });
+
+  html += `<div class="card">
+    <div class="card-title">Eliminatorias · 32 partidos</div>
+    <div class="card-desc">Equipos que predijiste para cada fase. Verde = equipo acertado.</div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>#</th><th>Fase</th><th>Tu predicción</th><th>Real</th><th class="num">Pts</th></tr></thead>
+      <tbody>${elimHtml}</tbody>
+    </table></div>
+  </div>`;
+
+  pc.innerHTML = html;
+}
+
+/* ════════════════════════════════════════════════════════
+   GOLEADORES
+═════════════════════════════════════════════════════════ */
+function renderGoleadores() {
+  const real = D.meta.goleador_real;
+  const total = D.meta.total_participantes;
+  const data = D.goleadores_ranking;
+
+  // Donut chart
+  const ctx = document.getElementById('chart-goleadores');
+  if (_chartGol) _chartGol.destroy();
+  _chartGol = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: data.map(g=>g.goleador),
+      datasets:[{
+        data: data.map(g=>g.votos),
+        backgroundColor: COLORS,
+        borderWidth: 2,
+        borderColor: '#fff'
+      }]
+    },
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{
+        legend:{position:'right',labels:{font:{size:11},boxWidth:12,padding:8}},
+        tooltip:{callbacks:{label:ctx=>`${ctx.label}: ${ctx.parsed} votos (${Math.round(ctx.parsed/total*100)}%)`}}
+      },
+      cutout:'65%'
+    }
+  });
+
+  // Table
+  document.getElementById('gol-table').innerHTML = `
+    ${real?`<div style="background:var(--green-l);border:1px solid var(--green);border-radius:.5rem;padding:.5rem .75rem;margin-bottom:.75rem;font-size:.82rem;color:var(--green)">
+      ⚽ Goleador oficial: <strong>${real}</strong> · 20 pts para acertados
+    </div>`:'<div style="background:var(--accent-l);border:1px solid var(--accent);border-radius:.5rem;padding:.5rem .75rem;margin-bottom:.75rem;font-size:.82rem">⏳ Goleador pendiente de confirmar al final del torneo</div>'}
+    <table><thead><tr><th>Jugador</th><th class="num">Votos</th><th style="width:40%">Distribución</th></tr></thead>
+    <tbody>${data.map((g,i)=>{
+      const pct=Math.round(g.votos/total*100);
+      const isReal=real&&g.goleador===real;
+      return `<tr>
+        <td>
+          <div style="display:flex;align-items:center;gap:.4rem">
+            <div style="width:10px;height:10px;border-radius:50%;background:${COLORS[i%COLORS.length]};flex-shrink:0"></div>
+            <strong ${isReal?'style="color:var(--green)"':''}>${isReal?'⚽ ':''} ${g.goleador}</strong>
+          </div>
+        </td>
+        <td class="num">${g.votos}</td>
+        <td>
+          <div style="display:flex;align-items:center;gap:.5rem">
+            <div class="legend-bar-bg"><div class="legend-bar" style="width:${pct}%;background:${COLORS[i%COLORS.length]}"></div></div>
+            <span style="font-size:.72rem;color:var(--muted);min-width:28px">${pct}%</span>
+          </div>
+        </td>
+      </tr>`;
+    }).join('')}</tbody></table>`;
+
+  // Pickers
+  let pickHtml = data.map((g,i) => {
+    const names = D.participants.filter(p=>p.goleador===g.goleador);
+    const isReal = real&&g.goleador===real;
+    return `<div style="margin-bottom:.875rem">
+      <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.35rem">
+        <div style="width:12px;height:12px;border-radius:50%;background:${COLORS[i%COLORS.length]}"></div>
+        <strong ${isReal?'style="color:var(--green)"':''}>${isReal?'⚽ ':''} ${g.goleador}</strong>
+        <span class="badge badge-gray">${g.votos} ${g.votos===1?'voto':'votos'}</span>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:.3rem;padding-left:1.25rem">
+        ${names.map(p=>`<span style="background:${avatarColor(p.id)};color:#fff;border-radius:999px;padding:.15rem .6rem;font-size:.75rem">${p.nombre.split(' ')[0]} ${p.nombre.split(' ')[1]||''}</span>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('gol-pickers').innerHTML = pickHtml;
+}
+
+/* ════════════════════════════════════════════════════════
+   Init
+═════════════════════════════════════════════════════════ */
+function init() {
+  if (!window.POLLA_DATA) {
+    document.body.innerHTML='<div style="padding:3rem;text-align:center;color:#dc2626"><h2>⚠️ datos no encontrados</h2><p style="margin-top:.5rem;color:#64748b">Ejecuta <code>python3 export_data.py</code> para generar data.js</p></div>';
+    return;
+  }
+  renderHeader();
+  renderPodium();
+  renderRankingTable();
+  renderChartRanking();
+  populateSelect();
+}
+
+init();
+</script>
+</body>
+</html>
