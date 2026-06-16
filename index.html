@@ -720,7 +720,8 @@ function _matchStats(m) {
 function _buildBracket() {
   const html = BRACKET_FASES.map((f,i)=>{
     const matches = D.matches_elim.filter(m=>m.fase===f.k);
-    const j = matches.filter(m=>m.jugado).length;
+    const j    = matches.filter(m=>m.jugado).length;
+    const live = matches.some(m=>m.en_vivo);
     const done = j===f.t && f.t>0;
     const prog = j>0 && !done;
     return `${i>0?'<div class="bracket-arr">›</div>':''}
@@ -728,7 +729,9 @@ function _buildBracket() {
            onclick="setFase('${f.k}')" id="bphase-${f.k}">
         <div class="bph-name">${f.n.replace(' 🏆','')}</div>
         <div class="bph-prog">${j}/${f.t} ${f.k==='FINAL'?'🏆':''}</div>
-        ${done?'<div class="bph-status bph-done">Completo</div>':prog?'<div class="bph-status bph-prog2">En curso</div>':''}
+        ${done?'<div class="bph-status bph-done">Completo</div>'
+              :live?'<div class="bph-status" style="color:#ef4444;animation:pulse-badge 1.4s ease-in-out infinite">🔴 En vivo</div>'
+              :prog?'<div class="bph-status bph-prog2">En curso</div>':''}
       </div>`;
   }).join('');
   document.getElementById('bracket-flow').innerHTML = html;
@@ -764,17 +767,21 @@ function _renderElimCards() {
 }
 
 function _matchCardE(m) {
+  const live = !!m.en_vivo;
   const eq1 = m.eq1_real||'<em style="color:var(--muted);font-weight:400;font-style:italic;font-size:.8rem">Por determinar</em>';
   const eq2 = m.eq2_real||'<em style="color:var(--muted);font-weight:400;font-style:italic;font-size:.8rem">Por determinar</em>';
-  return `<div class="mcard ${m.jugado?'mcard-j':'mcard-p'}">
+  const cardCls = live ? 'mcard-live' : (m.jugado ? 'mcard-j' : 'mcard-p');
+  return `<div class="mcard ${cardCls}">
     <div class="mcard-hd">
       <span class="mcard-badge grp-badge">${FASE_LABEL[m.fase]}</span>
-      ${m.jugado?'<span class="mcard-badge done-badge">✅ Jugado</span>':'<span class="mcard-badge pend-badge">⏳</span>'}
+      ${live ? '<span class="mcard-badge live-badge">🔴 EN VIVO</span>'
+             : m.jugado ? '<span class="mcard-badge done-badge">✅ Jugado</span>'
+                        : '<span class="mcard-badge pend-badge">⏳</span>'}
       <span class="mcard-num">P${m.numero}</span>
     </div>
     <div class="mcard-body">
       <span class="mteam l" style="font-size:.82rem">${eq1}</span>
-      <span class="mscore pend" style="min-width:30px">vs</span>
+      <span class="mscore pend" style="min-width:30px;${live?'color:#ef4444;font-size:1rem':''}">${live?'🔴':'vs'}</span>
       <span class="mteam r" style="font-size:.82rem">${eq2}</span>
     </div>
     ${m.eq_ganador?`<div class="mcard-stats"><span style="color:var(--green)">🏆 Avanza: <strong>${m.eq_ganador}</strong></span></div>`:''}
@@ -1151,16 +1158,24 @@ async function _doRefresh() {
     if (!match) return;
     const newD = JSON.parse(match[1]);
 
-    // Detectar si hubo cambios comparando meta y goles
+    // Detectar si hubo cambios comparando meta, grupos y eliminatorias
     const old = window.POLLA_DATA;
-    const hayPartidoVivo = newD.matches_grupos.some(m => m.en_vivo);
+    const hayPartidoVivo = newD.matches_grupos.some(m => m.en_vivo)
+                        || newD.matches_elim.some(m => m.en_vivo);
     const cambio =
       newD.meta.partidos_jugados_grupos !== old.meta.partidos_jugados_grupos ||
+      (newD.meta.partidos_jugados_elim || 0) !== (old.meta.partidos_jugados_elim || 0) ||
       (newD.goleadores_reales || []).length !== (old.goleadores_reales || []).length ||
       newD.matches_grupos.some((m, i) => {
         const o = old.matches_grupos[i];
         return !o || m.g1_real !== o.g1_real || m.g2_real !== o.g2_real
                || m.jugado !== o.jugado || m.en_vivo !== o.en_vivo;
+      }) ||
+      newD.matches_elim.some((m, i) => {
+        const o = old.matches_elim[i];
+        return !o || m.jugado !== o.jugado || !!m.en_vivo !== !!o.en_vivo
+               || m.eq1_real !== o.eq1_real || m.eq2_real !== o.eq2_real
+               || m.eq_ganador !== o.eq_ganador;
       });
 
     if (cambio) {
