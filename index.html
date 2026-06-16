@@ -242,6 +242,7 @@ tr:hover td{background:#fafafa}
 .btn-pl-ver:hover{background:#b45309;color:#fff}
 .btn-pl-dl{background:var(--surface);color:var(--text);border:1px solid var(--border)}
 .btn-pl-dl:hover{background:var(--border)}
+#tv-url-input:focus{outline:none;border-color:var(--accent)}
 </style>
 </head>
 <body>
@@ -258,6 +259,7 @@ tr:hover td{background:#fafafa}
     <button class="tab-btn" onclick="showTab('partidos',this)">⚽ Partidos</button>
     <button class="tab-btn" onclick="showTab('planilla',this)">📋 Mi Planilla</button>
     <button class="tab-btn" onclick="showTab('goleadores',this)">🎯 Goleadores</button>
+    <button class="tab-btn" onclick="showTab('tv',this)">📺 TV</button>
   </div>
 </div>
 
@@ -376,6 +378,59 @@ tr:hover td{background:#fafafa}
   </div>
 </div>
 
+<!-- ══════════════════════════ TV ══════════════════════════ -->
+<div id="tab-tv" class="tab-panel">
+  <div class="section-hd">📺 Canal en vivo</div>
+  <div class="section-desc">Stream HLS directo. Pega la URL M3U8 de tu sesión en BikersTV — se guarda en tu navegador.</div>
+
+  <div class="card" style="max-width:900px;margin:0 auto">
+
+    <!-- Player -->
+    <div style="position:relative;background:#000;border-radius:.6rem;overflow:hidden;aspect-ratio:16/9;margin-bottom:1rem">
+      <video id="tv-video" controls playsinline
+        style="width:100%;height:100%;display:block;background:#000"
+        poster=""></video>
+      <div id="tv-overlay" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,.7);color:#94a3b8;font-size:.85rem;gap:.6rem">
+        <span style="font-size:2.5rem">📺</span>
+        <span id="tv-overlay-msg">Ingresa la URL del stream y presiona Cargar</span>
+      </div>
+    </div>
+
+    <!-- URL input -->
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">
+      <input id="tv-url-input" type="text"
+        placeholder="https://...bufalo9/index.m3u8?token=..."
+        style="flex:1;min-width:0;background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:.5rem;padding:.55rem .9rem;font-size:.82rem;font-family:monospace"
+        onkeydown="if(event.key==='Enter')loadStream()" />
+      <button onclick="loadStream()"
+        style="background:var(--accent);color:#fff;border:none;border-radius:.5rem;padding:.55rem 1.2rem;font-size:.85rem;font-weight:700;cursor:pointer;white-space:nowrap">
+        ▶ Cargar
+      </button>
+      <button onclick="stopStream()"
+        style="background:var(--surface2);color:var(--muted);border:1px solid var(--border);border-radius:.5rem;padding:.55rem .9rem;font-size:.85rem;cursor:pointer">
+        ■ Stop
+      </button>
+    </div>
+
+    <div id="tv-status" style="font-size:.75rem;color:var(--muted);min-height:1.2em"></div>
+
+    <!-- Cómo obtener la URL -->
+    <details style="margin-top:1rem;border-top:1px solid var(--border);padding-top:.75rem">
+      <summary style="cursor:pointer;font-size:.78rem;font-weight:600;color:var(--muted);user-select:none">
+        ¿Cómo obtener la URL del stream?
+      </summary>
+      <ol style="font-size:.78rem;color:var(--muted);margin-top:.6rem;padding-left:1.2rem;line-height:1.8">
+        <li>Entra a <strong>bikerscolombia.com</strong> e inicia sesión</li>
+        <li>Abre el canal que quieres ver (ej. Canal 9)</li>
+        <li>Abre las DevTools del navegador → pestaña <strong>Network</strong></li>
+        <li>Filtra por <code>m3u8</code> — verás una URL tipo <code>https://bufaloweb.com/.../index.m3u8?token=...</code></li>
+        <li>Copia esa URL completa y pégala arriba</li>
+        <li>La URL dura mientras tu sesión esté activa</li>
+      </ol>
+    </details>
+  </div>
+</div>
+
 </div><!-- /content -->
 
 <!-- ══════ MODAL — planilla original ══════ -->
@@ -478,6 +533,7 @@ function showTab(name, btn) {
   if (name==='partidos' && !window._partInit) { initPartidos(); window._partInit=true; }
   if (name==='goleadores' && !window._golInit) { renderGoleadores(); window._golInit=true; }
   if (name==='ranking' && !window._chartRankingDone) { renderChartRanking(); window._chartRankingDone=true; }
+  if (name==='tv' && !window._tvInit) { initTV(); window._tvInit=true; }
 }
 
 /* ════════════════════════════════════════════════════════
@@ -1123,6 +1179,94 @@ document.addEventListener('keydown', e => {
 /* ════════════════════════════════════════════════════════
    Init
 ═════════════════════════════════════════════════════════ */
+/* ════════════════════════════════════════════════════════
+   TV — HLS player
+════════════════════════════════════════════════════════ */
+let _hls = null;
+
+function initTV() {
+  const saved = localStorage.getItem('bktv_url') || '';
+  if (saved) {
+    document.getElementById('tv-url-input').value = saved;
+    _loadHls(saved);
+  }
+}
+
+function loadStream() {
+  const url = document.getElementById('tv-url-input').value.trim();
+  if (!url) { tvStatus('Pega la URL M3U8 primero', 'err'); return; }
+  localStorage.setItem('bktv_url', url);
+  _loadHls(url);
+}
+
+function stopStream() {
+  if (_hls) { _hls.destroy(); _hls = null; }
+  const v = document.getElementById('tv-video');
+  v.pause(); v.src = '';
+  showOverlay('Stream detenido — presiona Cargar para reiniciar');
+  tvStatus('');
+}
+
+function _loadHls(url) {
+  const v = document.getElementById('tv-video');
+
+  // Destruir instancia anterior
+  if (_hls) { _hls.destroy(); _hls = null; }
+
+  hideOverlay();
+  tvStatus('⏳ Conectando…');
+
+  const start = () => {
+    if (typeof Hls === 'undefined') {
+      tvStatus('❌ HLS.js no cargó — revisa tu conexión', 'err'); return;
+    }
+    if (Hls.isSupported()) {
+      _hls = new Hls({ enableWorker: true, lowLatencyMode: true });
+      _hls.loadSource(url);
+      _hls.attachMedia(v);
+      _hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        v.play().catch(() => {});
+        tvStatus('🔴 EN VIVO');
+        hideOverlay();
+      });
+      _hls.on(Hls.Events.ERROR, (_, data) => {
+        if (data.fatal) {
+          tvStatus('❌ Error de stream — puede que el token haya expirado. Obtén una nueva URL.', 'err');
+          showOverlay('Token expirado · obtén una nueva URL M3U8');
+        }
+      });
+    } else if (v.canPlayType('application/vnd.apple.mpegurl')) {
+      // Safari nativo
+      v.src = url;
+      v.addEventListener('loadedmetadata', () => { v.play().catch(() => {}); tvStatus('🔴 EN VIVO'); hideOverlay(); }, { once: true });
+      v.addEventListener('error', () => { tvStatus('❌ Error — verifica la URL', 'err'); }, { once: true });
+    } else {
+      tvStatus('❌ Tu navegador no soporta HLS', 'err');
+    }
+  };
+
+  if (typeof Hls !== 'undefined') { start(); return; }
+
+  // Cargar HLS.js dinámicamente la primera vez
+  const s = document.createElement('script');
+  s.src = 'https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js';
+  s.onload  = start;
+  s.onerror = () => tvStatus('❌ No se pudo cargar HLS.js', 'err');
+  document.head.appendChild(s);
+}
+
+function hideOverlay() { document.getElementById('tv-overlay').style.display = 'none'; }
+function showOverlay(msg) {
+  const el = document.getElementById('tv-overlay');
+  document.getElementById('tv-overlay-msg').textContent = msg;
+  el.style.display = '';
+}
+function tvStatus(msg, type) {
+  const el = document.getElementById('tv-status');
+  el.textContent = msg;
+  el.style.color = type === 'err' ? 'var(--red)' : (msg.startsWith('🔴') ? 'var(--green)' : 'var(--muted)');
+}
+
 function init() {
   if (!window.POLLA_DATA) {
     document.body.innerHTML='<div style="padding:3rem;text-align:center;color:#dc2626"><h2>⚠️ datos no encontrados</h2><p style="margin-top:.5rem;color:#64748b">Ejecuta <code>python3 export_data.py</code> para generar data.js</p></div>';
