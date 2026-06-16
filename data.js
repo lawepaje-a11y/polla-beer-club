@@ -106,6 +106,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 18,
+      "pagina": 18,
+      "nombre": "Tatiana Camargo",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 10,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 10
+      }
+    },
+    {
       "id": 19,
       "pagina": 19,
       "nombre": "Diego Jose De Silvestri Leon",
@@ -157,18 +169,6 @@ window.POLLA_DATA = {
       "id": 23,
       "pagina": 23,
       "nombre": "René Giletto Aulo Sandín",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 9,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 9
-      }
-    },
-    {
-      "id": 18,
-      "pagina": 18,
-      "nombre": "Tatiana Camargo",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 9,
@@ -6924,7 +6924,7 @@ window.POLLA_DATA = {
           1
         ],
         "32": [
-          0,
+          1,
           0
         ],
         "33": [
