@@ -102,14 +102,6 @@
     <div class="auth-error" id="pin-error"></div>
   </div>
 
-  <div class="auth-card" id="token-card" style="display:none">
-    <h2>🔑 GitHub Token</h2>
-    <p>Ingresa tu Personal Access Token (PAT) con permiso <strong>repo</strong>. Se guarda localmente en este navegador.</p>
-    <input class="auth-input" type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off" />
-    <button class="auth-btn" onclick="saveToken()">Guardar y entrar</button>
-    <div class="auth-error" id="token-error"></div>
-    <p class="auth-link">Crear en: <a href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a> → scope: <code>repo</code></p>
-  </div>
 </div>
 
 <!-- ════ HEADER ════ -->
@@ -153,44 +145,52 @@
 /* ════════════════════════════════════════════════════════════════
    CONFIG
 ════════════════════════════════════════════════════════════════ */
-const REPO     = 'lawepaje-a11y/polla-beer-club';
-const API_BASE = 'https://api.github.com/repos/' + REPO + '/contents/';
-const GRUPOS   = ['A','B','C','D','E','F','G','H','I','J','K','L'];
-const PIN_ENC  = 'd2IyMDI2'; // atob → wb2026
+const REPO      = 'lawepaje-a11y/polla-beer-club';
+const API_BASE  = 'https://api.github.com/repos/' + REPO + '/contents/';
+const GRUPOS    = ['A','B','C','D','E','F','G','H','I','J','K','L'];
+// Token encriptado con AES-GCM / PBKDF2 usando el PIN como clave
+const TOKEN_BLOB = '6AvbHVwCz3gPT5XjPRXVu93eUnjA9sOKF1pEDpCECJuwFX+QDWYzfm494iFeZ1FzmeEh70w/eVR3WsniCld40Gs/igSYNDZoj3CP/K+Id3Lqnnu8';
 
 /* ════════════════════════════════════════════════════════════════
    STATE
 ════════════════════════════════════════════════════════════════ */
 let D, participants, currentPid, changes = {}, origPreds = {};
+let ghToken = null; // decrypted in memory after PIN entry
+
+/* ════════════════════════════════════════════════════════════════
+   CRYPTO — decrypt token with PIN (AES-GCM + PBKDF2)
+════════════════════════════════════════════════════════════════ */
+async function decryptToken(pin) {
+  const raw  = Uint8Array.from(atob(TOKEN_BLOB), c => c.charCodeAt(0));
+  const salt = raw.slice(0, 16);
+  const iv   = raw.slice(16, 28);
+  const ct   = raw.slice(28);
+  const km   = await crypto.subtle.importKey(
+    'raw', new TextEncoder().encode(pin), 'PBKDF2', false, ['deriveKey']
+  );
+  const key  = await crypto.subtle.deriveKey(
+    { name:'PBKDF2', salt, iterations:100000, hash:'SHA-256' },
+    km, { name:'AES-GCM', length:256 }, false, ['decrypt']
+  );
+  const dec  = await crypto.subtle.decrypt({ name:'AES-GCM', iv }, key, ct);
+  return new TextDecoder().decode(dec);
+}
 
 /* ════════════════════════════════════════════════════════════════
    AUTH
 ════════════════════════════════════════════════════════════════ */
-function checkPin() {
-  const val = document.getElementById('pin-input').value.trim();
-  if (val === atob(PIN_ENC)) {
-    sessionStorage.setItem('a_ok', '1');
-    const tok = localStorage.getItem('gh_tok');
-    if (tok) { hideAuth(); initApp(); }
-    else {
-      document.getElementById('pin-card').style.display = 'none';
-      document.getElementById('token-card').style.display = '';
-    }
-  } else {
+async function checkPin() {
+  const pin = document.getElementById('pin-input').value.trim();
+  document.getElementById('pin-error').textContent = '';
+  try {
+    ghToken = await decryptToken(pin);
+    sessionStorage.setItem('a_tok', btoa(ghToken));
+    hideAuth();
+    initApp();
+  } catch {
     document.getElementById('pin-error').textContent = 'PIN incorrecto';
     document.getElementById('pin-input').value = '';
   }
-}
-
-function saveToken() {
-  const tok = document.getElementById('token-input').value.trim();
-  if (!tok.startsWith('ghp_') && !tok.startsWith('github_pat_')) {
-    document.getElementById('token-error').textContent = 'Formato inválido. Debe empezar con ghp_ o github_pat_';
-    return;
-  }
-  localStorage.setItem('gh_tok', tok);
-  hideAuth();
-  initApp();
 }
 
 function hideAuth() {
@@ -200,20 +200,12 @@ function hideAuth() {
 }
 
 function logout() {
-  sessionStorage.removeItem('a_ok');
-  localStorage.removeItem('gh_tok');
+  sessionStorage.clear();
+  ghToken = null;
   location.reload();
 }
 
-// Keyboard shortcuts for auth
 document.getElementById('pin-input').addEventListener('keydown', e => { if (e.key === 'Enter') checkPin(); });
-document.getElementById('token-input').addEventListener('keydown', e => { if (e.key === 'Enter') saveToken(); });
-
-// Auto-restore session
-if (sessionStorage.getItem('a_ok') && localStorage.getItem('gh_tok')) {
-  hideAuth();
-  // initApp called after DOM ready
-}
 
 /* ════════════════════════════════════════════════════════════════
    INIT
@@ -379,7 +371,7 @@ async function saveChanges() {
   setStatus('Preparando…');
 
   try {
-    const token = localStorage.getItem('gh_tok');
+    const token = ghToken;
     const p     = participants.find(x => x.id == currentPid);
 
     // Apply changes to in-memory data
@@ -575,10 +567,11 @@ document.addEventListener('keydown', e => {
   if ((e.ctrlKey || e.metaKey) && e.key === 's') { e.preventDefault(); saveChanges(); }
 });
 
-// Restore session on page load
+// Auto-restore session within same browser tab/session
 window.addEventListener('load', () => {
-  if (sessionStorage.getItem('a_ok') && localStorage.getItem('gh_tok')) {
-    initApp();
+  const stored = sessionStorage.getItem('a_tok');
+  if (stored) {
+    try { ghToken = atob(stored); hideAuth(); initApp(); } catch {}
   }
 });
 </script>
