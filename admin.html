@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin · Polla Beer Club 2026</title>
+  <script src="data.js"></script>
+  <style>
+    :root {
+      --bg:#0f172a; --surface:#1e293b; --surface2:#334155; --border:#475569;
+      --text:#f1f5f9; --muted:#94a3b8; --accent:#3b82f6; --green:#22c55e;
+      --red:#ef4444; --yellow:#f59e0b; --blue-l:#1e3a5f;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font-family:system-ui,sans-serif;height:100vh;overflow:hidden}
+
+    /* ── Auth overlay ── */
+    #auth-overlay{position:fixed;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;z-index:999}
+    .auth-card{background:var(--surface);border:1px solid var(--border);border-radius:1rem;padding:2rem;width:380px}
+    .auth-card h2{margin-bottom:.4rem;font-size:1.1rem}
+    .auth-card p{font-size:.82rem;color:var(--muted);margin-bottom:1.25rem;line-height:1.5}
+    .auth-input{width:100%;padding:.7rem 1rem;background:var(--surface2);border:1px solid var(--border);border-radius:.5rem;color:var(--text);font-size:.95rem;margin-bottom:.75rem}
+    .auth-input:focus{outline:none;border-color:var(--accent)}
+    .auth-btn{width:100%;padding:.7rem;background:var(--accent);color:#fff;border:none;border-radius:.5rem;font-size:.95rem;cursor:pointer;font-weight:600}
+    .auth-btn:hover{filter:brightness(1.1)}
+    .auth-error{color:var(--red);font-size:.82rem;margin-top:.5rem;min-height:1.2em}
+    .auth-link{font-size:.75rem;color:var(--muted);margin-top:.75rem;text-align:center}
+    .auth-link a{color:var(--accent)}
+
+    /* ── Header ── */
+    #header{display:flex;align-items:center;gap:.6rem;padding:.5rem 1rem;background:var(--surface);border-bottom:1px solid var(--border);height:50px;flex-shrink:0}
+    #header h1{font-size:.82rem;font-weight:800;color:var(--muted);white-space:nowrap;letter-spacing:.05em}
+    .nav-btn{background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:.3rem .65rem;border-radius:.4rem;cursor:pointer;font-size:.85rem;line-height:1}
+    .nav-btn:hover{background:var(--border)}
+    #participant-sel{background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:.3rem .5rem;border-radius:.4rem;font-size:.82rem;cursor:pointer;max-width:220px}
+    #changes-badge{background:var(--yellow);color:#000;font-size:.7rem;padding:.15rem .5rem;border-radius:.3rem;font-weight:700;display:none;white-space:nowrap}
+    #status-msg{font-size:.75rem;color:var(--muted);white-space:nowrap;min-width:140px}
+    #save-btn{margin-left:auto;background:var(--green);color:#fff;border:none;padding:.38rem 1.1rem;border-radius:.5rem;font-size:.85rem;cursor:pointer;font-weight:700;white-space:nowrap;transition:background .15s}
+    #save-btn:disabled{background:var(--surface2);color:var(--muted);cursor:default}
+    #save-btn.saving{background:var(--yellow);color:#000}
+    #logout-btn{background:none;border:1px solid var(--border);color:var(--muted);padding:.25rem .6rem;border-radius:.4rem;cursor:pointer;font-size:.72rem}
+    #logout-btn:hover{color:var(--red);border-color:var(--red)}
+
+    /* ── Main layout ── */
+    #main{display:flex;height:calc(100vh - 50px)}
+
+    /* ── Image panel ── */
+    #img-panel{width:45%;border-right:1px solid var(--border);display:flex;flex-direction:column;flex-shrink:0}
+    #img-controls{display:flex;align-items:center;gap:.4rem;padding:.35rem .75rem;background:var(--surface2);border-bottom:1px solid var(--border);font-size:.75rem;color:var(--muted);flex-shrink:0}
+    #zoom-level{font-weight:700;color:var(--text);min-width:38px;text-align:center}
+    .zoom-btn{background:var(--surface);border:1px solid var(--border);color:var(--text);padding:.15rem .5rem;border-radius:.3rem;cursor:pointer;font-size:.8rem;line-height:1.4}
+    .zoom-btn:hover{background:var(--border)}
+    #img-viewport{flex:1;overflow:hidden;cursor:grab;position:relative;background:#080d18}
+    #img-viewport.dragging{cursor:grabbing}
+    #planilla-img{position:absolute;transform-origin:0 0;user-select:none;max-width:none;display:block}
+
+    /* ── Edit panel ── */
+    #edit-panel{flex:1;overflow-y:auto;padding:.6rem;background:var(--bg)}
+    #edit-panel::-webkit-scrollbar{width:5px}
+    #edit-panel::-webkit-scrollbar-track{background:var(--bg)}
+    #edit-panel::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+    #participant-info{background:var(--surface);border:1px solid var(--border);border-radius:.6rem;padding:.6rem .85rem;margin-bottom:.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+    #participant-info .pi-name{font-weight:700;font-size:.9rem}
+    #participant-info .pi-pts{font-size:.8rem;color:var(--muted)}
+    #participant-info .pi-pts span{color:var(--accent);font-weight:700}
+
+    /* ── Group blocks ── */
+    .grp-block{margin-bottom:.4rem;border:1px solid var(--border);border-radius:.5rem;overflow:hidden}
+    .grp-hd{display:flex;align-items:center;gap:.5rem;padding:.38rem .75rem;background:var(--surface2);cursor:pointer;user-select:none;transition:background .12s}
+    .grp-hd:hover{background:var(--border)}
+    .grp-tag{background:var(--accent);color:#fff;padding:.1rem .45rem;border-radius:.25rem;font-size:.68rem;font-weight:800;letter-spacing:.05em}
+    .grp-chev{margin-left:auto;font-size:.8rem;color:var(--muted);transition:transform .15s}
+    .grp-block.collapsed .grp-body{display:none}
+    .grp-block.collapsed .grp-chev{transform:rotate(-90deg)}
+    .grp-body table{width:100%;border-collapse:collapse;font-size:.77rem}
+    .grp-body thead th{background:var(--surface);color:var(--muted);font-size:.67rem;font-weight:600;padding:.25rem .45rem;text-align:left;border-bottom:1px solid var(--border)}
+    .grp-body td{padding:.28rem .45rem;border-bottom:1px solid rgba(71,85,105,.3);vertical-align:middle}
+    .grp-body tr:last-child td{border-bottom:none}
+    .grp-body tr:hover td{background:rgba(255,255,255,.02)}
+    .grp-body tr.played td{background:rgba(34,197,94,.04)}
+    .pnum{color:var(--muted);font-size:.68rem;width:26px;white-space:nowrap}
+    .team-cell{color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:110px}
+    .score-wrap{display:flex;align-items:center;gap:.25rem;justify-content:center}
+    .score-input{width:30px;text-align:center;background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:.3rem;padding:.18rem .1rem;font-size:.82rem;font-weight:700;-moz-appearance:textfield}
+    .score-input::-webkit-outer-spin-button,.score-input::-webkit-inner-spin-button{-webkit-appearance:none}
+    .score-input:focus{outline:none;border-color:var(--accent);background:var(--blue-l)}
+    .score-input.changed{border-color:var(--yellow)!important;background:rgba(245,158,11,.18)!important}
+    .score-dash{color:var(--muted);font-weight:700;font-size:.85rem}
+    .real-score{font-size:.72rem;color:var(--muted);text-align:center;white-space:nowrap}
+    .real-score.jugado{color:var(--green)}
+  </style>
+</head>
+<body>
+
+<!-- ════ AUTH OVERLAY ════ -->
+<div id="auth-overlay">
+  <div class="auth-card" id="pin-card">
+    <h2>🔧 Admin · Polla Beer Club</h2>
+    <p>Ingresa el PIN de acceso para continuar.</p>
+    <input class="auth-input" type="password" id="pin-input" placeholder="PIN" maxlength="16" autocomplete="off" />
+    <button class="auth-btn" onclick="checkPin()">Entrar</button>
+    <div class="auth-error" id="pin-error"></div>
+  </div>
+
+  <div class="auth-card" id="token-card" style="display:none">
+    <h2>🔑 GitHub Token</h2>
+    <p>Ingresa tu Personal Access Token (PAT) con permiso <strong>repo</strong>. Se guarda localmente en este navegador.</p>
+    <input class="auth-input" type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" autocomplete="off" />
+    <button class="auth-btn" onclick="saveToken()">Guardar y entrar</button>
+    <div class="auth-error" id="token-error"></div>
+    <p class="auth-link">Crear en: <a href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a> → scope: <code>repo</code></p>
+  </div>
+</div>
+
+<!-- ════ HEADER ════ -->
+<div id="header" style="display:none">
+  <h1>🔧 ADMIN</h1>
+  <button class="nav-btn" onclick="navigate(-1)" title="Anterior">◀</button>
+  <select id="participant-sel" onchange="loadParticipant(this.value)"></select>
+  <button class="nav-btn" onclick="navigate(1)" title="Siguiente">▶</button>
+  <span id="changes-badge">● 0 cambios</span>
+  <span id="status-msg"></span>
+  <button id="save-btn" onclick="saveChanges()" disabled>💾 Guardar</button>
+  <button id="logout-btn" onclick="logout()" title="Cerrar sesión">✕</button>
+</div>
+
+<!-- ════ MAIN ════ -->
+<div id="main" style="display:none">
+
+  <!-- Image panel -->
+  <div id="img-panel">
+    <div id="img-controls">
+      <button class="zoom-btn" onclick="zoom(-0.2)">−</button>
+      <span id="zoom-level">100%</span>
+      <button class="zoom-btn" onclick="zoom(0.2)">+</button>
+      <button class="zoom-btn" onclick="resetZoom()">↺</button>
+      <span style="margin-left:.5rem">Scroll=zoom · Drag=mover</span>
+    </div>
+    <div id="img-viewport">
+      <img id="planilla-img" draggable="false" alt="planilla" />
+    </div>
+  </div>
+
+  <!-- Edit panel -->
+  <div id="edit-panel">
+    <div id="participant-info"></div>
+    <div id="groups-container"></div>
+  </div>
+
+</div>
+
+<script>
+/* ════════════════════════════════════════════════════════════════
+   CONFIG
+════════════════════════════════════════════════════════════════ */
+const REPO     = 'lawepaje-a11y/polla-beer-club';
+const API_BASE = 'https://api.github.com/repos/' + REPO + '/contents/';
+const GRUPOS   = ['A','B','C','D','E','F','G','H','I','J','K','L'];
+const PIN_ENC  = 'd2IyMDI2'; // atob → wb2026
+
+/* ════════════════════════════════════════════════════════════════
+   STATE
+════════════════════════════════════════════════════════════════ */
+let D, participants, currentPid, changes = {}, origPreds = {};
+
+/* ════════════════════════════════════════════════════════════════
+   AUTH
+════════════════════════════════════════════════════════════════ */
+function checkPin() {
+  const val = document.getElementById('pin-input').value.trim();
+  if (val === atob(PIN_ENC)) {
+    sessionStorage.setItem('a_ok', '1');
+    const tok = localStorage.getItem('gh_tok');
+    if (tok) { hideAuth(); initApp(); }
+    else {
+      document.getElementById('pin-card').style.display = 'none';
+      document.getElementById('token-card').style.display = '';
+    }
+  } else {
+    document.getElementById('pin-error').textContent = 'PIN incorrecto';
+    document.getElementById('pin-input').value = '';
+  }
+}
+
+function saveToken() {
+  const tok = document.getElementById('token-input').value.trim();
+  if (!tok.startsWith('ghp_') && !tok.startsWith('github_pat_')) {
+    document.getElementById('token-error').textContent = 'Formato inválido. Debe empezar con ghp_ o github_pat_';
+    return;
+  }
+  localStorage.setItem('gh_tok', tok);
+  hideAuth();
+  initApp();
+}
+
+function hideAuth() {
+  document.getElementById('auth-overlay').style.display = 'none';
+  document.getElementById('header').style.display = '';
+  document.getElementById('main').style.display = '';
+}
+
+function logout() {
+  sessionStorage.removeItem('a_ok');
+  localStorage.removeItem('gh_tok');
+  location.reload();
+}
+
+// Keyboard shortcuts for auth
+document.getElementById('pin-input').addEventListener('keydown', e => { if (e.key === 'Enter') checkPin(); });
+document.getElementById('token-input').addEventListener('keydown', e => { if (e.key === 'Enter') saveToken(); });
+
+// Auto-restore session
+if (sessionStorage.getItem('a_ok') && localStorage.getItem('gh_tok')) {
+  hideAuth();
+  // initApp called after DOM ready
+}
+
+/* ════════════════════════════════════════════════════════════════
+   INIT
+════════════════════════════════════════════════════════════════ */
+function initApp() {
+  D = window.POLLA_DATA;
+  participants = D.participants.slice().sort((a, b) => a.pagina - b.pagina);
+
+  const sel = document.getElementById('participant-sel');
+  sel.innerHTML = '';
+  participants.forEach(p => {
+    const o = document.createElement('option');
+    o.value = p.id;
+    o.textContent = `${p.pagina}. ${p.nombre}`;
+    sel.appendChild(o);
+  });
+
+  initImageZoom();
+  loadParticipant(participants[0].id);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   PARTICIPANT
+════════════════════════════════════════════════════════════════ */
+function loadParticipant(pid) {
+  if (Object.keys(changes).length > 0) {
+    if (!confirm('Tienes cambios sin guardar. ¿Continuar de todas formas?')) {
+      document.getElementById('participant-sel').value = currentPid;
+      return;
+    }
+  }
+  currentPid = String(pid);
+  changes = {};
+  updateBadge();
+
+  document.getElementById('participant-sel').value = pid;
+  const p = participants.find(x => x.id == pid);
+  const padded = String(p.pagina).padStart(3, '0');
+  const img = document.getElementById('planilla-img');
+  img.src = `planillas/p${padded}.jpg`;
+  img.onload = () => fitImage();
+
+  renderParticipantInfo(p);
+  renderGroups(pid);
+}
+
+function navigate(dir) {
+  const idx = participants.findIndex(p => p.id == currentPid);
+  const next = participants[idx + dir];
+  if (next) loadParticipant(next.id);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   RENDER
+════════════════════════════════════════════════════════════════ */
+function renderParticipantInfo(p) {
+  document.getElementById('participant-info').innerHTML = `
+    <span class="pi-name">📋 ${p.pagina}. ${p.nombre}</span>
+    <span class="pi-pts">Grupos: <span>${p.pts.grupos}</span> pts</span>
+    <span class="pi-pts">Total: <span>${p.pts.total}</span> pts</span>
+    <span class="pi-pts" style="color:var(--muted)">Goleador: ${p.goleador || '—'}</span>`;
+}
+
+function renderGroups(pid) {
+  const preds = D.predictions.grupos[String(pid)] || {};
+  origPreds = {};
+  Object.entries(preds).forEach(([k, v]) => { origPreds[k] = Array.isArray(v) ? [...v] : v; });
+
+  const byGrp = {};
+  D.matches_grupos.forEach(m => { (byGrp[m.grupo] = byGrp[m.grupo] || []).push(m); });
+
+  let html = '';
+  GRUPOS.forEach(grp => {
+    const matches = byGrp[grp] || [];
+    if (!matches.length) return;
+    const played = matches.filter(m => m.jugado).length;
+    html += `
+    <div class="grp-block collapsed">
+      <div class="grp-hd" onclick="this.parentElement.classList.toggle('collapsed')">
+        <span class="grp-tag">GRUPO ${grp}</span>
+        <span style="font-size:.72rem;color:var(--muted);margin-left:.25rem">${played}/6 jugados</span>
+        <span class="grp-chev">▾</span>
+      </div>
+      <div class="grp-body"><table>
+        <thead><tr><th>#</th><th>Equipo 1</th><th style="text-align:center">Pred.</th><th>Equipo 2</th><th style="text-align:center">Real</th></tr></thead>
+        <tbody>`;
+    matches.forEach(m => {
+      const pred = preds[m.numero];
+      const g1 = pred != null && pred[0] != null ? pred[0] : '';
+      const g2 = pred != null && pred[1] != null ? pred[1] : '';
+      const realStr = m.jugado ? `${m.g1_real}-${m.g2_real}` : '—';
+      html += `
+        <tr class="${m.jugado ? 'played' : ''}">
+          <td class="pnum">P${m.numero}</td>
+          <td class="team-cell" title="${m.eq1}">${m.eq1}</td>
+          <td style="text-align:center">
+            <div class="score-wrap">
+              <input class="score-input" type="number" min="0" max="20"
+                value="${g1}" data-partido="${m.numero}" data-side="0"
+                oninput="onScoreChange(this)" />
+              <span class="score-dash">-</span>
+              <input class="score-input" type="number" min="0" max="20"
+                value="${g2}" data-partido="${m.numero}" data-side="1"
+                oninput="onScoreChange(this)" />
+            </div>
+          </td>
+          <td class="team-cell" title="${m.eq2}">${m.eq2}</td>
+          <td class="real-score ${m.jugado ? 'jugado' : ''}">${realStr}</td>
+        </tr>`;
+    });
+    html += `</tbody></table></div></div>`;
+  });
+
+  document.getElementById('groups-container').innerHTML = html;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   SCORE EDITING
+════════════════════════════════════════════════════════════════ */
+function onScoreChange(el) {
+  const partido = el.dataset.partido;
+  const side    = parseInt(el.dataset.side);
+  const val     = el.value === '' ? null : parseInt(el.value);
+
+  if (!changes[partido]) {
+    const orig = origPreds[partido];
+    changes[partido] = orig ? [...orig] : [null, null];
+  }
+  changes[partido][side] = val;
+
+  // Remove if back to original
+  const orig = origPreds[partido];
+  if (orig && changes[partido][0] === orig[0] && changes[partido][1] === orig[1]) {
+    delete changes[partido];
+  }
+
+  const isChanged = !!changes[partido];
+  document.querySelectorAll(`.score-input[data-partido="${partido}"]`)
+    .forEach(i => i.classList.toggle('changed', isChanged));
+
+  updateBadge();
+}
+
+function updateBadge() {
+  const n = Object.keys(changes).length;
+  const badge = document.getElementById('changes-badge');
+  badge.style.display = n > 0 ? '' : 'none';
+  badge.textContent = `● ${n} cambio${n !== 1 ? 's' : ''}`;
+  document.getElementById('save-btn').disabled = n === 0;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   SAVE TO GITHUB
+════════════════════════════════════════════════════════════════ */
+async function saveChanges() {
+  if (!Object.keys(changes).length) return;
+  const btn = document.getElementById('save-btn');
+  const msg = document.getElementById('status-msg');
+
+  btn.disabled = true;
+  btn.className = 'saving';
+  btn.textContent = '⏳ Guardando…';
+  setStatus('Preparando…');
+
+  try {
+    const token = localStorage.getItem('gh_tok');
+    const p     = participants.find(x => x.id == currentPid);
+
+    // Apply changes to in-memory data
+    const preds = D.predictions.grupos[currentPid] || {};
+    Object.entries(changes).forEach(([partido, scores]) => { preds[partido] = scores; });
+    D.predictions.grupos[currentPid] = preds;
+
+    // Recalculate group points for this participant
+    const resultMap = {};
+    D.matches_grupos.forEach(m => { resultMap[m.numero] = m; });
+    let pts = 0;
+    Object.entries(preds).forEach(([n, pred]) => {
+      const m = resultMap[parseInt(n)];
+      if (!m || !m.jugado || pred == null || pred[0] == null || pred[1] == null) return;
+      const [g1p, g2p] = pred;
+      if (g1p === m.g1_real && g2p === m.g2_real) { pts += 3; return; }
+      if ((g1p > g2p) === (m.g1_real > m.g2_real) && (g1p < g2p) === (m.g1_real < m.g2_real)) pts += 1;
+    });
+    const participant = D.participants.find(x => x.id == currentPid);
+    if (participant) {
+      participant.pts.grupos = pts;
+      participant.pts.total  = pts + (participant.pts.eliminatorias || 0) + (participant.pts.goleador || 0);
+    }
+    D.participants.sort((a, b) => b.pts.total - a.pts.total || a.nombre.localeCompare(b.nombre, 'es'));
+
+    // Serialize data.js
+    const content = '// Generado automáticamente por update_data.py — no editar manualmente\nwindow.POLLA_DATA = ' +
+      JSON.stringify(D, null, 2) + ';\n';
+    const b64 = btoa(unescape(encodeURIComponent(content)));
+
+    // Get current SHA
+    setStatus('Leyendo SHA…');
+    const getR = await fetch(API_BASE + 'data.js', {
+      headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+    });
+    if (!getR.ok) throw new Error(`No se pudo leer data.js (${getR.status})`);
+    const { sha } = await getR.json();
+
+    // Push data.js
+    setStatus('Publicando data.js…');
+    const n = Object.keys(changes).length;
+    const putR = await fetch(API_BASE + 'data.js', {
+      method: 'PUT',
+      headers: {
+        Authorization: 'token ' + token,
+        Accept: 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: `Admin: pág ${p.pagina} ${p.nombre} — ${n} corrección${n !== 1 ? 'es' : ''}`,
+        content: b64,
+        sha
+      })
+    });
+    if (!putR.ok) {
+      const err = await putR.json().catch(() => ({}));
+      throw new Error(err.message || `HTTP ${putR.status}`);
+    }
+
+    // Audit log
+    setStatus('Guardando log…');
+    await pushCorrectionsLog(token, p, changes);
+
+    // Commit state
+    Object.entries(changes).forEach(([k, v]) => { origPreds[k] = [...v]; });
+    changes = {};
+    updateBadge();
+    document.querySelectorAll('.score-input.changed').forEach(el => el.classList.remove('changed'));
+
+    btn.className = '';
+    btn.textContent = '💾 Guardar';
+    btn.disabled = true;
+    setStatus('✅ Guardado · live en ~2 min', 6000);
+
+  } catch (e) {
+    console.error(e);
+    btn.className = '';
+    btn.textContent = '💾 Guardar';
+    btn.disabled = false;
+    setStatus('❌ ' + e.message);
+  }
+}
+
+async function pushCorrectionsLog(token, participant, changesSnap) {
+  try {
+    let existing = {}, sha = null;
+    const getR = await fetch(API_BASE + 'corrections.json', {
+      headers: { Authorization: 'token ' + token }
+    });
+    if (getR.ok) {
+      const data = await getR.json();
+      sha = data.sha;
+      existing = JSON.parse(atob(data.content.replace(/\n/g, '')));
+    }
+    const pagKey = String(participant.pagina);
+    if (!existing[pagKey]) existing[pagKey] = {};
+    Object.entries(changesSnap).forEach(([partido, scores]) => {
+      existing[pagKey][partido] = scores;
+    });
+    const body = {
+      message: `Corrections: pág ${participant.pagina}`,
+      content: btoa(unescape(encodeURIComponent(JSON.stringify(existing, null, 2)))),
+    };
+    if (sha) body.sha = sha;
+    await fetch(API_BASE + 'corrections.json', {
+      method: 'PUT',
+      headers: { Authorization: 'token ' + token, 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+  } catch (e) {
+    console.warn('corrections.json:', e.message);
+  }
+}
+
+function setStatus(text, clearAfter = 0) {
+  document.getElementById('status-msg').textContent = text;
+  if (clearAfter) setTimeout(() => document.getElementById('status-msg').textContent = '', clearAfter);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   IMAGE ZOOM & PAN
+════════════════════════════════════════════════════════════════ */
+let scale = 1, tx = 0, ty = 0, dragging = false, startX, startY, startTx, startTy;
+
+function initImageZoom() {
+  const vp  = document.getElementById('img-viewport');
+  const img = document.getElementById('planilla-img');
+
+  vp.addEventListener('wheel', e => {
+    e.preventDefault();
+    const factor = e.deltaY > 0 ? -0.12 : 0.12;
+    const rect = vp.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    const ns = Math.max(0.25, Math.min(6, scale + factor));
+    tx = mx - (mx - tx) * (ns / scale);
+    ty = my - (my - ty) * (ns / scale);
+    scale = ns;
+    applyTransform();
+  }, { passive: false });
+
+  vp.addEventListener('mousedown', e => {
+    dragging = true; startX = e.clientX; startY = e.clientY; startTx = tx; startTy = ty;
+    vp.classList.add('dragging');
+  });
+  window.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    tx = startTx + (e.clientX - startX);
+    ty = startTy + (e.clientY - startY);
+    applyTransform();
+  });
+  window.addEventListener('mouseup', () => {
+    dragging = false;
+    document.getElementById('img-viewport').classList.remove('dragging');
+  });
+}
+
+function applyTransform() {
+  document.getElementById('planilla-img').style.transform = `translate(${tx}px,${ty}px) scale(${scale})`;
+  document.getElementById('zoom-level').textContent = Math.round(scale * 100) + '%';
+}
+
+function fitImage() {
+  const vp  = document.getElementById('img-viewport');
+  const img = document.getElementById('planilla-img');
+  if (!img.naturalWidth) return;
+  const sx = vp.clientWidth  / img.naturalWidth;
+  const sy = vp.clientHeight / img.naturalHeight;
+  scale = Math.min(sx, sy, 1);
+  tx = (vp.clientWidth  - img.naturalWidth  * scale) / 2;
+  ty = (vp.clientHeight - img.naturalHeight * scale) / 2;
+  applyTransform();
+}
+
+function zoom(delta) {
+  const vp = document.getElementById('img-viewport');
+  const cx = vp.clientWidth / 2, cy = vp.clientHeight / 2;
+  const ns = Math.max(0.25, Math.min(6, scale + delta));
+  tx = cx - (cx - tx) * (ns / scale);
+  ty = cy - (cy - ty) * (ns / scale);
+  scale = ns;
+  applyTransform();
+}
+
+function resetZoom() { fitImage(); }
+
+/* ── keyboard shortcuts ── */
+document.addEventListener('keydown', e => {
+  if (document.getElementById('auth-overlay').style.display === 'none') return; // auth still visible
+  if (!document.getElementById('header').style.display || document.getElementById('header').style.display === 'none') return;
+  if (e.key === 'ArrowLeft')  navigate(-1);
+  if (e.key === 'ArrowRight') navigate(1);
+  if ((e.ctrlKey || e.metaKey) && e.key === 's') { e.preventDefault(); saveChanges(); }
+});
+
+// Restore session on page load
+window.addEventListener('load', () => {
+  if (sessionStorage.getItem('a_ok') && localStorage.getItem('gh_tok')) {
+    initApp();
+  }
+});
+</script>
+</body>
+</html>
