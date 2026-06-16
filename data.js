@@ -1,4 +1,4 @@
-// Generado automáticamente por export_data.py — no editar manualmente
+// Generado automáticamente por update_data.py — no editar manualmente
 window.POLLA_DATA = {
   "meta": {
     "nombre_polla": "POLLA BEER CLUB",
@@ -262,9 +262,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 8,
@@ -274,9 +274,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 8,
@@ -514,9 +514,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 35,
-      "pagina": 35,
-      "nombre": "Julio Cardillo",
+      "id": 27,
+      "pagina": 27,
+      "nombre": "Julián Tibaduiza",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 6,
@@ -526,9 +526,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 27,
-      "pagina": 27,
-      "nombre": "Julián Tibaduiza",
+      "id": 35,
+      "pagina": 35,
+      "nombre": "Julio Cardillo",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 6,
@@ -590,6 +590,18 @@ window.POLLA_DATA = {
       "pagina": 59,
       "nombre": "Andrés Rivera",
       "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 5,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 5
+      }
+    },
+    {
+      "id": 1,
+      "pagina": 1,
+      "nombre": "Edson Medina",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 5,
         "eliminatorias": 0,
@@ -697,18 +709,6 @@ window.POLLA_DATA = {
       "id": 7,
       "pagina": 7,
       "nombre": "Carlos Diaz",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 4,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 4
-      }
-    },
-    {
-      "id": 1,
-      "pagina": 1,
-      "nombre": "Edson Medina",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 4,
@@ -1918,7 +1918,7 @@ window.POLLA_DATA = {
           0
         ],
         "13": [
-          1,
+          2,
           2
         ],
         "14": [
