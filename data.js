@@ -15,10 +15,10 @@ window.POLLA_DATA = {
       "nombre": "Cristian Rodriguez",
       "goleador": "Cristiano Ronaldo",
       "pts": {
-        "grupos": 14,
+        "grupos": 11,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 14
+        "total": 11
       }
     },
     {
@@ -8128,7 +8128,7 @@ window.POLLA_DATA = {
           0
         ],
         "43": [
-          0,
+          6,
           0
         ],
         "44": [
