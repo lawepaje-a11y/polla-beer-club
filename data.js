@@ -370,6 +370,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 43,
+      "pagina": 43,
+      "nombre": "Samuel Penuela",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 7,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 7
+      }
+    },
+    {
       "id": 28,
       "pagina": 28,
       "nombre": "Santos Camargo",
@@ -554,18 +566,6 @@ window.POLLA_DATA = {
       "pagina": 8,
       "nombre": "Omar Yesid Russi",
       "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 6,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 6
-      }
-    },
-    {
-      "id": 43,
-      "pagina": 43,
-      "nombre": "Samuel Penuela",
-      "goleador": "Harry Kane",
       "pts": {
         "grupos": 6,
         "eliminatorias": 0,
@@ -2038,8 +2038,8 @@ window.POLLA_DATA = {
           0
         ],
         "43": [
-          2,
-          5
+          5,
+          0
         ],
         "44": [
           1,
@@ -2066,8 +2066,8 @@ window.POLLA_DATA = {
           3
         ],
         "50": [
-          2,
-          5
+          0,
+          2
         ],
         "51": [
           2,
@@ -2090,8 +2090,8 @@ window.POLLA_DATA = {
           3
         ],
         "56": [
-          2,
-          5
+          1,
+          0
         ],
         "57": [
           2,
@@ -3038,7 +3038,7 @@ window.POLLA_DATA = {
           2
         ],
         "3": [
-          7,
+          2,
           0
         ],
         "4": [
@@ -3890,7 +3890,7 @@ window.POLLA_DATA = {
           3
         ],
         "71": [
-          0,
+          1,
           5
         ],
         "72": [
@@ -4830,7 +4830,7 @@ window.POLLA_DATA = {
           2
         ],
         "16": [
-          7,
+          2,
           0
         ],
         "17": [
@@ -5031,11 +5031,11 @@ window.POLLA_DATA = {
         ],
         "66": [
           1,
-          7
+          1
         ],
         "67": [
           2,
-          7
+          1
         ],
         "68": [
           1,
@@ -13340,7 +13340,7 @@ window.POLLA_DATA = {
           2
         ],
         "41": [
-          7,
+          1,
           3
         ],
         "42": [
@@ -13357,7 +13357,7 @@ window.POLLA_DATA = {
         ],
         "45": [
           3,
-          7
+          1
         ],
         "46": [
           3,
@@ -13880,8 +13880,8 @@ window.POLLA_DATA = {
           3
         ],
         "31": [
-          7,
-          1
+          2,
+          0
         ],
         "32": [
           1,
@@ -14147,7 +14147,7 @@ window.POLLA_DATA = {
         ],
         "25": [
           5,
-          6
+          0
         ],
         "26": [
           1,
@@ -15028,7 +15028,7 @@ window.POLLA_DATA = {
           0
         ],
         "28": [
-          7,
+          2,
           0
         ],
         "29": [
@@ -18992,7 +18992,7 @@ window.POLLA_DATA = {
           1
         ],
         "4": [
-          7,
+          2,
           1
         ],
         "5": [
@@ -19060,7 +19060,7 @@ window.POLLA_DATA = {
           1
         ],
         "21": [
-          7,
+          2,
           0
         ],
         "22": [
@@ -19568,7 +19568,7 @@ window.POLLA_DATA = {
           0
         ],
         "3": [
-          7,
+          1,
           1
         ],
         "4": [
@@ -19761,7 +19761,7 @@ window.POLLA_DATA = {
         ],
         "51": [
           2,
-          7
+          1
         ],
         "52": [
           2,
