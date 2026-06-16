@@ -2,10 +2,7 @@ name: Actualizar resultados Mundial 2026
 
 on:
   schedule:
-    - cron: '0 13 * * *'   # 08:00am Colombia (UTC-5) — tras partidos de mañana
-    - cron: '0 18 * * *'   # 01:00pm Colombia         — tras partidos de tarde
-    - cron: '0 23 * * *'   # 06:00pm Colombia         — tras partidos de noche
-    - cron: '0 5  * * *'   # 12:00am Colombia         — cierre del día
+    - cron: '*/5 * * * *'  # cada 5 minutos (mínimo permitido en GitHub Actions)
   workflow_dispatch:        # ejecución manual desde github.com/.../actions
 
 permissions:

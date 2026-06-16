@@ -183,6 +183,10 @@ tr:hover td{background:#fafafa}
 .mcard{background:var(--surface);border:1px solid var(--border);border-radius:.75rem;padding:.875rem;box-shadow:var(--shadow);overflow:hidden}
 .mcard-j{border-left:3px solid var(--green)}
 .mcard-p{border-left:3px solid var(--border)}
+.mcard-live{border-left:3px solid #ef4444;animation:pulse-border 1.4s ease-in-out infinite}
+@keyframes pulse-border{0%,100%{border-left-color:#ef4444}50%{border-left-color:#fca5a5}}
+.live-badge{background:#fef2f2;color:#ef4444;animation:pulse-badge 1.4s ease-in-out infinite}
+@keyframes pulse-badge{0%,100%{opacity:1}50%{opacity:.55}}
 .mcard-hd{display:flex;align-items:center;gap:.35rem;margin-bottom:.6rem;flex-wrap:wrap}
 .mcard-num{font-size:.65rem;color:var(--muted);font-weight:600;margin-left:auto}
 .mcard-badge{font-size:.65rem;font-weight:700;padding:.1rem .4rem;border-radius:.35rem}
@@ -669,17 +673,20 @@ function _renderGruposCards() {
 }
 
 function _matchCardG(m) {
-  const sc = m.jugado
-    ? `<span class="mscore">${m.g1_real} — ${m.g2_real}</span>`
+  const live  = !!m.en_vivo;
+  const sc = (m.jugado || live)
+    ? `<span class="mscore" style="${live?'color:#ef4444':''}">${m.g1_real} — ${m.g2_real}</span>`
     : `<span class="mscore pend">vs</span>`;
   const stats = m.jugado ? _matchStats(m) : null;
   const n = D.participants.length;
-  return `<div class="mcard ${m.jugado?'mcard-j':'mcard-p'}">
+  const cardCls = live ? 'mcard-live' : (m.jugado ? 'mcard-j' : 'mcard-p');
+  return `<div class="mcard ${cardCls}">
     <div class="mcard-hd">
       <span class="mcard-badge grp-badge">Grp ${m.grupo}</span>
       ${m.fecha?`<span class="mcard-badge" style="background:#f0fdf4;color:#15803d">${fmtDate(m.fecha)}</span>`:''}
-      ${!m.jugado&&m.hora?`<span class="mcard-badge" style="background:#eff6ff;color:#1d4ed8;font-weight:700">${m.hora}</span>`:''}
-      ${m.jugado?'<span class="mcard-badge done-badge">✅ Final</span>':'<span class="mcard-badge pend-badge">⏳</span>'}
+      ${!m.jugado&&!live&&m.hora?`<span class="mcard-badge" style="background:#eff6ff;color:#1d4ed8;font-weight:700">${m.hora}</span>`:''}
+      ${live?'<span class="mcard-badge live-badge">🔴 EN VIVO</span>'
+           :(m.jugado?'<span class="mcard-badge done-badge">✅ Final</span>':'<span class="mcard-badge pend-badge">⏳</span>')}
       <span class="mcard-num">P${m.numero}</span>
     </div>
     <div class="mcard-body">
@@ -1126,6 +1133,58 @@ function init() {
   renderRankingTable();
   renderChartRanking();
   populateSelect();
+  startAutoRefresh();
+}
+
+/* ────────────────────────────────────────────────────────
+   AUTO-REFRESH silencioso cada 60s
+   Detecta si hay partidos en vivo para acelerar a 20s
+──────────────────────────────────────────────────────── */
+let _refreshTimer = null;
+
+async function _doRefresh() {
+  try {
+    const r = await fetch('data.js?_=' + Date.now());
+    if (!r.ok) return;
+    const text = await r.text();
+    const match = text.match(/window\.POLLA_DATA\s*=\s*([\s\S]+?);\s*$/m);
+    if (!match) return;
+    const newD = JSON.parse(match[1]);
+
+    // Detectar si hubo cambios comparando meta y goles
+    const old = window.POLLA_DATA;
+    const hayPartidoVivo = newD.matches_grupos.some(m => m.en_vivo);
+    const cambio =
+      newD.meta.partidos_jugados_grupos !== old.meta.partidos_jugados_grupos ||
+      (newD.goleadores_reales || []).length !== (old.goleadores_reales || []).length ||
+      newD.matches_grupos.some((m, i) => {
+        const o = old.matches_grupos[i];
+        return !o || m.g1_real !== o.g1_real || m.g2_real !== o.g2_real
+               || m.jugado !== o.jugado || m.en_vivo !== o.en_vivo;
+      });
+
+    if (cambio) {
+      window.POLLA_DATA = newD;
+      // Re-render secciones dinámicas
+      renderHeader();
+      renderPodium();
+      renderRankingTable();
+      if (window._chartRankingDone) { window._chartRankingDone = false; renderChartRanking(); }
+      if (window._partInit) initPartidos();
+      if (window._golInit) { renderGoleadoresReales(); renderGoleadores(); }
+      console.info('[auto-refresh] datos actualizados');
+    }
+
+    // Ajustar frecuencia: 20s si hay partido en vivo, 60s si no
+    const nextMs = hayPartidoVivo ? 20_000 : 60_000;
+    _refreshTimer = setTimeout(_doRefresh, nextMs);
+  } catch (e) {
+    _refreshTimer = setTimeout(_doRefresh, 60_000);
+  }
+}
+
+function startAutoRefresh() {
+  _refreshTimer = setTimeout(_doRefresh, 60_000);
 }
 
 init();
