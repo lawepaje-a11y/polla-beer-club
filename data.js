@@ -118,6 +118,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 21,
+      "pagina": 21,
+      "nombre": "Tomás Forero",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 10,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 10
+      }
+    },
+    {
       "id": 19,
       "pagina": 19,
       "nombre": "Diego Jose De Silvestri Leon",
@@ -398,18 +410,6 @@ window.POLLA_DATA = {
       "pagina": 28,
       "nombre": "Santos Camargo",
       "goleador": "Cavani",
-      "pts": {
-        "grupos": 7,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 7
-      }
-    },
-    {
-      "id": 21,
-      "pagina": 21,
-      "nombre": "Tomás Forero",
-      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 7,
         "eliminatorias": 0,
@@ -7671,7 +7671,7 @@ window.POLLA_DATA = {
       "21": {
         "1": [
           2,
-          null
+          0
         ],
         "2": [
           1,
@@ -7710,7 +7710,7 @@ window.POLLA_DATA = {
           0
         ],
         "11": [
-          2,
+          1,
           0
         ],
         "12": [
@@ -7831,7 +7831,7 @@ window.POLLA_DATA = {
         ],
         "41": [
           0,
-          3
+          1
         ],
         "42": [
           2,
@@ -7915,7 +7915,7 @@ window.POLLA_DATA = {
         ],
         "62": [
           0,
-          4
+          3
         ],
         "63": [
           2,
