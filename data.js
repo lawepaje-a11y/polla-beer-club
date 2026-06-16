@@ -178,6 +178,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 12,
+      "pagina": 12,
+      "nombre": "Victor Alvarado",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 9,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 9
+      }
+    },
+    {
       "id": 24,
       "pagina": 24,
       "nombre": "Angela Milena",
@@ -409,18 +421,6 @@ window.POLLA_DATA = {
       "id": 57,
       "pagina": 57,
       "nombre": "Valeria Sanchez",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 7,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 7
-      }
-    },
-    {
-      "id": 12,
-      "pagina": 12,
-      "nombre": "Victor Alvarado",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 7,
@@ -5061,7 +5061,7 @@ window.POLLA_DATA = {
       "12": {
         "1": [
           2,
-          1
+          0
         ],
         "2": [
           1,
@@ -5140,7 +5140,7 @@ window.POLLA_DATA = {
           1
         ],
         "21": [
-          1,
+          2,
           0
         ],
         "22": [
@@ -5332,7 +5332,7 @@ window.POLLA_DATA = {
           1
         ],
         "69": [
-          2,
+          3,
           1
         ],
         "70": [
