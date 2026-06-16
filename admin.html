@@ -35,6 +35,15 @@
     #participant-sel{background:var(--surface2);border:1px solid var(--border);color:var(--text);padding:.3rem .5rem;border-radius:.4rem;font-size:.82rem;cursor:pointer;max-width:220px}
     #changes-badge{background:var(--yellow);color:#000;font-size:.7rem;padding:.15rem .5rem;border-radius:.3rem;font-weight:700;display:none;white-space:nowrap}
     #status-msg{font-size:.75rem;color:var(--muted);white-space:nowrap;min-width:140px}
+
+    /* ── Toast ── */
+    #toast{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);
+      background:#1e293b;border:1px solid var(--border);border-radius:.65rem;
+      padding:.75rem 1.4rem;font-size:.87rem;font-weight:600;
+      box-shadow:0 8px 30px rgba(0,0,0,.5);z-index:9999;
+      display:none;max-width:90vw;text-align:center;pointer-events:none}
+    #toast.ok{border-color:var(--green);color:var(--green)}
+    #toast.err{border-color:var(--red);color:var(--red);pointer-events:auto;cursor:pointer}
     #save-btn{margin-left:auto;background:var(--green);color:#fff;border:none;padding:.38rem 1.1rem;border-radius:.5rem;font-size:.85rem;cursor:pointer;font-weight:700;white-space:nowrap;transition:background .15s}
     #save-btn:disabled{background:var(--surface2);color:var(--muted);cursor:default}
     #save-btn.saving{background:var(--yellow);color:#000}
@@ -103,6 +112,9 @@
   </div>
 
 </div>
+
+<!-- ════ TOAST ════ -->
+<div id="toast"></div>
 
 <!-- ════ HEADER ════ -->
 <div id="header" style="display:none">
@@ -360,10 +372,48 @@ function updateBadge() {
 /* ════════════════════════════════════════════════════════════════
    SAVE TO GITHUB
 ════════════════════════════════════════════════════════════════ */
+function toBase64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = '';
+  bytes.forEach(b => bin += String.fromCharCode(b));
+  return btoa(bin);
+}
+
+function showToast(msg, type = 'ok', durationMs = 5000) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className   = type;
+  t.style.display = 'block';
+  clearTimeout(t._tid);
+  if (durationMs > 0) t._tid = setTimeout(() => { t.style.display = 'none'; }, durationMs);
+  if (type === 'err') t.onclick = () => { t.style.display = 'none'; };
+  else t.onclick = null;
+}
+
+async function fetchSha(token) {
+  const r = await fetch(API_BASE + 'data.js', {
+    headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+  });
+  if (!r.ok) throw new Error(`No se pudo leer data.js (${r.status})`);
+  const { sha } = await r.json();
+  return sha;
+}
+
+async function putDataJs(token, b64, sha, commitMsg) {
+  return fetch(API_BASE + 'data.js', {
+    method: 'PUT',
+    headers: {
+      Authorization: 'token ' + token,
+      Accept: 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ message: commitMsg, content: b64, sha })
+  });
+}
+
 async function saveChanges() {
   if (!Object.keys(changes).length) return;
   const btn = document.getElementById('save-btn');
-  const msg = document.getElementById('status-msg');
 
   btn.disabled = true;
   btn.className = 'saving';
@@ -397,46 +447,42 @@ async function saveChanges() {
     }
     D.participants.sort((a, b) => b.pts.total - a.pts.total || a.nombre.localeCompare(b.nombre, 'es'));
 
-    // Serialize data.js
+    // Serialize data.js with reliable UTF-8→base64
     const content = '// Generado automáticamente por update_data.py — no editar manualmente\nwindow.POLLA_DATA = ' +
       JSON.stringify(D, null, 2) + ';\n';
-    const b64 = btoa(unescape(encodeURIComponent(content)));
+    const b64 = toBase64(content);
 
-    // Get current SHA
+    const nChanges = Object.keys(changes).length;
+    const commitMsg = `Admin: pág ${p.pagina} ${p.nombre} — ${nChanges} corrección${nChanges !== 1 ? 'es' : ''}`;
+
+    // Get SHA (auto-retry once on 409 SHA conflict from concurrent GitHub Actions)
     setStatus('Leyendo SHA…');
-    const getR = await fetch(API_BASE + 'data.js', {
-      headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
-    });
-    if (!getR.ok) throw new Error(`No se pudo leer data.js (${getR.status})`);
-    const { sha } = await getR.json();
+    let sha = await fetchSha(token);
 
-    // Push data.js
     setStatus('Publicando data.js…');
-    const n = Object.keys(changes).length;
-    const putR = await fetch(API_BASE + 'data.js', {
-      method: 'PUT',
-      headers: {
-        Authorization: 'token ' + token,
-        Accept: 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        message: `Admin: pág ${p.pagina} ${p.nombre} — ${n} corrección${n !== 1 ? 'es' : ''}`,
-        content: b64,
-        sha
-      })
-    });
+    let putR = await putDataJs(token, b64, sha, commitMsg);
+
+    if (putR.status === 409) {
+      setStatus('SHA desactualizado, reintentando…');
+      sha = await fetchSha(token);
+      putR = await putDataJs(token, b64, sha, commitMsg);
+    }
+
     if (!putR.ok) {
       const err = await putR.json().catch(() => ({}));
-      throw new Error(err.message || `HTTP ${putR.status}`);
+      throw new Error((err.message || `HTTP ${putR.status}`) + ` — verifica que el token tenga scope "repo"`);
     }
+
+    const putData = await putR.json().catch(() => ({}));
+    const commitUrl = putData?.commit?.html_url || '';
+    if (commitUrl) console.info('Commit:', commitUrl);
 
     // Audit log
     setStatus('Guardando log…');
     await pushCorrectionsLog(token, p, changes);
 
     // Commit state
-    Object.entries(changes).forEach(([k, v]) => { origPreds[k] = [...v]; });
+    Object.entries(changes).forEach(([k, v]) => { origPreds[k] = Array.isArray(v) ? [...v] : v; });
     changes = {};
     updateBadge();
     document.querySelectorAll('.score-input.changed').forEach(el => el.classList.remove('changed'));
@@ -444,14 +490,16 @@ async function saveChanges() {
     btn.className = '';
     btn.textContent = '💾 Guardar';
     btn.disabled = true;
-    setStatus('✅ Guardado · live en ~2 min', 6000);
+    setStatus('✅ Guardado', 4000);
+    showToast('✅ Guardado · abre el dashboard en nueva pestaña y presiona Ctrl+Shift+R para ver el cambio', 'ok', 9000);
 
   } catch (e) {
-    console.error(e);
+    console.error('saveChanges error:', e);
     btn.className = '';
     btn.textContent = '💾 Guardar';
     btn.disabled = false;
-    setStatus('❌ ' + e.message);
+    setStatus('❌ Error');
+    showToast('❌ ' + e.message + ' · toca para cerrar', 'err', 0);
   }
 }
 
@@ -560,8 +608,7 @@ function resetZoom() { fitImage(); }
 
 /* ── keyboard shortcuts ── */
 document.addEventListener('keydown', e => {
-  if (document.getElementById('auth-overlay').style.display === 'none') return; // auth still visible
-  if (!document.getElementById('header').style.display || document.getElementById('header').style.display === 'none') return;
+  if (document.getElementById('auth-overlay').style.display !== 'none') return;
   if (e.key === 'ArrowLeft')  navigate(-1);
   if (e.key === 'ArrowRight') navigate(1);
   if ((e.ctrlKey || e.metaKey) && e.key === 's') { e.preventDefault(); saveChanges(); }
