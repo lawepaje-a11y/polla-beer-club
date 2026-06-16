@@ -34,6 +34,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 24,
+      "pagina": 24,
+      "nombre": "Angela Milena",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 10,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 10
+      }
+    },
+    {
       "id": 48,
       "pagina": 48,
       "nombre": "Fidel Rodriguez",
@@ -199,18 +211,6 @@ window.POLLA_DATA = {
         "eliminatorias": 0,
         "goleador": 0,
         "total": 9
-      }
-    },
-    {
-      "id": 24,
-      "pagina": 24,
-      "nombre": "Angela Milena",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 8,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 8
       }
     },
     {
@@ -8541,7 +8541,7 @@ window.POLLA_DATA = {
       "24": {
         "1": [
           2,
-          1
+          0
         ],
         "2": [
           1,
