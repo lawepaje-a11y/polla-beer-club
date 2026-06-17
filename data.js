@@ -22367,7 +22367,7 @@ window.POLLA_DATA = {
         ],
         "74": [
           "Alemania",
-          "República Checa"
+          "Chequia"
         ],
         "75": [
           "Países Bajos",
