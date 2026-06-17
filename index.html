@@ -1151,7 +1151,9 @@ let _refreshTimer = null;
 
 async function _doRefresh() {
   try {
-    const r = await fetch('data.js?_=' + Date.now());
+    // raw.githubusercontent.com bypasea el CDN de GitHub Pages (max-age=600)
+    const RAW = 'https://raw.githubusercontent.com/lawepaje-a11y/polla-beer-club/main/dashboard/data.js';
+    const r = await fetch(RAW + '?_=' + Date.now());
     if (!r.ok) return;
     const text = await r.text();
     const match = text.match(/window\.POLLA_DATA\s*=\s*([\s\S]+?);\s*$/m);
