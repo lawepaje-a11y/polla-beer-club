@@ -24187,7 +24187,7 @@ window.POLLA_DATA = {
         ],
         "74": [
           "Alemania",
-          "Bulgaria"
+          "Turquía"
         ],
         "75": [
           "Japón",
@@ -24215,7 +24215,7 @@ window.POLLA_DATA = {
         ],
         "81": [
           "Estados Unidos",
-          "Guatemala"
+          "Costa de Marfil"
         ],
         "82": [
           "Bélgica",
@@ -24239,7 +24239,7 @@ window.POLLA_DATA = {
         ],
         "87": [
           "Colombia",
-          "Jamaica"
+          "Croacia"
         ],
         "88": [
           "Paraguay",
