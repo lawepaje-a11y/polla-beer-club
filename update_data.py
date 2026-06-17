@@ -48,9 +48,23 @@ ESPN_A_ES = {
     "England":"Inglaterra","Croatia":"Croacia","Ghana":"Ghana","Panama":"Panamá",
 }
 
-FINISHED = {"Final","Full Time","FT","Completed","End Of Period"}
+# ESPN usa state='post' (terminado) y state='in' (en curso) — más robusto que description
+FINISHED = {"Final","Full Time","FT","Completed","End Of Period"}  # fallback
 LIVE     = {"In Progress","Halftime","Half Time","2nd Half","Extra Time",
-            "Overtime","Penalty","Shootout","1st Half","Break"}
+            "Overtime","Penalty","Shootout","1st Half","First Half",
+            "Second Half","2nd Half","Break"}  # fallback
+
+def _espn_status(ev):
+    """Retorna (is_fin, is_live) usando state de ESPN — fiable ante cambios de description."""
+    st = (ev.get("status") or {}).get("type", {})
+    state = st.get("state", "")
+    if state == "post":
+        return True, False
+    if state == "in":
+        return False, True
+    # fallback por description
+    desc = st.get("description", "")
+    return desc in FINISHED, desc in LIVE
 
 # Mapeo rondas ESPN → fases internas
 ESPN_ROUND_TO_FASE = {
@@ -119,9 +133,7 @@ def update_elim_results(data, events_cache):
     changed = False
 
     for ev in events_cache:
-        status = (ev.get("status") or {}).get("type", {}).get("description", "")
-        is_fin  = status in FINISHED
-        is_live = status in LIVE
+        is_fin, is_live = _espn_status(ev)
         if not is_fin and not is_live:
             continue
 
@@ -188,8 +200,8 @@ def update_elim_results(data, events_cache):
     # Limpiar en_vivo de partidos que ya no aparecen como LIVE en ESPN
     live_keys = set()
     for ev in events_cache:
-        status = (ev.get("status") or {}).get("type", {}).get("description", "")
-        if status not in LIVE:
+        _, is_live_chk = _espn_status(ev)
+        if not is_live_chk:
             continue
         comp  = (ev.get("competitions") or [{}])[0]
         comps = comp.get("competitors", [])
@@ -310,9 +322,7 @@ def main():
     results = {}
     n_fin = n_live = 0
     for ev in events_cache:
-        status = (ev.get("status") or {}).get("type", {}).get("description","")
-        is_fin  = status in FINISHED
-        is_live = status in LIVE
+        is_fin, is_live = _espn_status(ev)
         if not is_fin and not is_live:
             continue
         comps = (ev.get("competitions") or [{}])[0].get("competitors", [])
@@ -410,8 +420,8 @@ def main():
     # ── Goleadores reales (terminados + en vivo) ──────────────────────────────
     gols = defaultdict(lambda: {"goles": 0, "equipo": ""})
     for ev in events_cache:
-        status = (ev.get("status") or {}).get("type", {}).get("description","")
-        if status not in FINISHED and status not in LIVE:
+        is_fin_g, is_live_g = _espn_status(ev)
+        if not is_fin_g and not is_live_g:
             continue
         comp = (ev.get("competitions") or [{}])[0]
         team_map = {}
