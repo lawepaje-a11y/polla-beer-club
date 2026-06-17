@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: update-data
+  cancel-in-progress: true   # si llega un run nuevo, cancela el anterior en lugar de solapar
+
 jobs:
   update:
     runs-on: ubuntu-latest
