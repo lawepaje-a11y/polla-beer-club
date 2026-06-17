@@ -156,6 +156,27 @@ tr:hover td{background:#fafafa}
 /* ── Chart wrappers ─────────────────────────────────────── */
 .chart-box{position:relative;height:320px}
 .chart-box-sm{position:relative;height:200px}
+.chart-box-tall{position:relative;height:430px}
+
+/* ── Ranking two-col layout ──────────────────────────────── */
+.ranking-two-col{display:grid;grid-template-columns:45% 1fr;gap:.875rem;margin-bottom:.875rem;align-items:start}
+@media(max-width:860px){.ranking-two-col{grid-template-columns:1fr}}
+
+/* ── Aciertos panel ──────────────────────────────────────── */
+.aciertos-scroll{max-height:460px;overflow-y:auto;padding-right:.2rem}
+.aciertos-scroll::-webkit-scrollbar{width:4px}
+.aciertos-scroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+.aciertos-day{margin-bottom:.9rem}
+.aciertos-day-hd{font-size:.7rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;padding:.2rem 0 .3rem;border-bottom:1px solid var(--border);margin-bottom:.45rem}
+.aciertos-match{margin-bottom:.55rem}
+.aciertos-match-hd{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin-bottom:.22rem}
+.aciertos-teams{font-size:.79rem;color:var(--text);line-height:1.3}
+.aciertos-teams strong{color:var(--accent)}
+.aciertos-count-ok{font-size:.68rem;font-weight:700;color:var(--green);background:rgba(16,185,129,.12);padding:.1rem .4rem;border-radius:.25rem;white-space:nowrap;flex-shrink:0}
+.aciertos-count-zero{font-size:.68rem;font-weight:700;color:var(--muted);background:var(--surface);padding:.1rem .4rem;border-radius:.25rem;white-space:nowrap;flex-shrink:0}
+.aciertos-names{display:flex;flex-wrap:wrap;gap:.25rem;margin-top:.15rem}
+.aciertos-pill{background:var(--surface);border:1px solid var(--border);border-radius:1rem;padding:.12rem .45rem;font-size:.68rem;color:var(--text);white-space:nowrap}
+.aciertos-none{font-size:.71rem;color:var(--muted);font-style:italic}
 
 /* ── Tipo selector (Grupos / Eliminatorias) ──────────────── */
 .tipo-wrap{display:flex;gap:.5rem;margin-bottom:1rem}
@@ -273,10 +294,22 @@ tr:hover td{background:#fafafa}
 
   <div class="podium" id="podium"></div>
 
-  <div class="card">
-    <div class="card-title">📊 Top 15 — Puntos totales</div>
-    <div class="card-desc">Visualización comparativa de los 15 mejores participantes.</div>
-    <div class="chart-box"><canvas id="chart-ranking"></canvas></div>
+  <div class="ranking-two-col">
+    <!-- Izquierda: Top 15 -->
+    <div class="card">
+      <div class="card-title">📊 Top 15 — Puntos totales</div>
+      <div class="card-desc">Visualización comparativa de los 15 mejores participantes.</div>
+      <div class="chart-box-tall"><canvas id="chart-ranking"></canvas></div>
+    </div>
+
+    <!-- Derecha: Quién acertó el marcador -->
+    <div class="card">
+      <div class="card-title">🎯 ¿Quién acertó el marcador?</div>
+      <div class="card-desc">Marcador exacto por partido · agrupado por día · más reciente primero.</div>
+      <div class="aciertos-scroll" id="aciertos-container">
+        <div style="color:var(--muted);text-align:center;padding:2rem;font-size:.85rem">Cargando…</div>
+      </div>
+    </div>
   </div>
 
   <div class="card">
@@ -477,7 +510,7 @@ function showTab(name, btn) {
 
   if (name==='partidos' && !window._partInit) { initPartidos(); window._partInit=true; }
   if (name==='goleadores' && !window._golInit) { renderGoleadores(); window._golInit=true; }
-  if (name==='ranking' && !window._chartRankingDone) { renderChartRanking(); window._chartRankingDone=true; }
+  if (name==='ranking' && !window._chartRankingDone) { renderChartRanking(); window._chartRankingDone=true; renderAciertos(); }
 }
 
 /* ════════════════════════════════════════════════════════
@@ -501,6 +534,87 @@ function renderPodium() {
       <div class="podium-detail" style="margin-top:.2rem;font-style:italic">${p.goleador||'—'}</div>
     </div>`;
   }).join('');
+}
+
+/* ── Aciertos por jornada ────────────────────────────────────── */
+function _fechaLabel(fecha) {
+  if (!fecha) return 'Sin fecha';
+  try {
+    const [y, m, d] = fecha.split('-').map(Number);
+    const dias  = ['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
+    const meses = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+    const dt = new Date(y, m - 1, d);
+    return `${dias[dt.getDay()]} ${d} ${meses[m-1]} ${y}`;
+  } catch { return fecha; }
+}
+
+function renderAciertos() {
+  const el = document.getElementById('aciertos-container');
+  if (!el) return;
+  const predG = D.predictions.grupos || {};
+  const predE = D.predictions.eliminatorias || {};
+
+  // Todos los partidos jugados
+  const jugados = [
+    ...D.matches_grupos.filter(m => m.jugado).map(m => ({...m, _tipo:'grupo'})),
+    ...(D.matches_elim || []).filter(m => m.jugado).map(m => ({...m, _tipo:'elim'}))
+  ];
+
+  if (!jugados.length) {
+    el.innerHTML = '<div style="color:var(--muted);text-align:center;padding:2rem;font-size:.83rem">Aún no hay partidos jugados.</div>';
+    return;
+  }
+
+  // Agrupar por fecha, más reciente primero
+  const byDate = {};
+  jugados.forEach(m => {
+    const k = m.fecha || 'Sin fecha';
+    (byDate[k] = byDate[k] || []).push(m);
+  });
+  const sortedDates = Object.keys(byDate).sort().reverse();
+
+  let html = '';
+  sortedDates.forEach(fecha => {
+    html += `<div class="aciertos-day"><div class="aciertos-day-hd">${_fechaLabel(fecha)}</div>`;
+
+    byDate[fecha].forEach(m => {
+      let scoreLabel, aciertos = [];
+
+      if (m._tipo === 'grupo') {
+        scoreLabel = `${m.eq1} <strong>${m.g1_real}-${m.g2_real}</strong> ${m.eq2}`;
+        D.participants.forEach(p => {
+          const pr = (predG[String(p.id)] || {})[String(m.numero)];
+          if (pr && pr[0] === m.g1_real && pr[1] === m.g2_real) aciertos.push(p.nombre);
+        });
+      } else {
+        // Eliminatorias: quién acertó el equipo ganador
+        scoreLabel = `${m.eq1_real||'?'} <strong>🏆 ${m.eq_ganador||'?'}</strong> ${m.eq2_real||'?'}`;
+        if (m.eq_ganador) {
+          D.participants.forEach(p => {
+            const pr = (predE[String(p.id)] || {})[String(m.numero)];
+            if (pr && (pr[0] === m.eq_ganador || pr[1] === m.eq_ganador)) aciertos.push(p.nombre);
+          });
+        }
+      }
+
+      const badge = aciertos.length > 0
+        ? `<span class="aciertos-count-ok">${aciertos.length} ✓</span>`
+        : `<span class="aciertos-count-zero">0</span>`;
+
+      const names = aciertos.length > 0
+        ? `<div class="aciertos-names">${aciertos.map(n=>`<span class="aciertos-pill">${n.split(' ').slice(0,2).join(' ')}</span>`).join('')}</div>`
+        : `<div class="aciertos-none">Nadie acertó el marcador exacto</div>`;
+
+      html += `<div class="aciertos-match">
+        <div class="aciertos-match-hd"><span class="aciertos-teams">${scoreLabel}</span>${badge}</div>
+        ${names}
+      </div>`;
+    });
+
+    html += '</div>';
+  });
+
+  el.innerHTML = html;
 }
 
 function renderChartRanking() {
@@ -1139,6 +1253,7 @@ function init() {
   renderPodium();
   renderRankingTable();
   renderChartRanking();
+  renderAciertos();
   populateSelect();
   startAutoRefresh();
 }
@@ -1187,6 +1302,7 @@ async function _doRefresh() {
       renderPodium();
       renderRankingTable();
       if (window._chartRankingDone) { window._chartRankingDone = false; renderChartRanking(); }
+      renderAciertos();
       if (window._partInit) initPartidos();
       if (window._golInit) { renderGoleadoresReales(); renderGoleadores(); }
       console.info('[auto-refresh] datos actualizados');
