@@ -26429,7 +26429,7 @@ window.POLLA_DATA = {
         ],
         "82": [
           "Bélgica",
-          "Botsuana"
+          "Bosnia y Herz."
         ],
         "83": [
           "Portugal",
