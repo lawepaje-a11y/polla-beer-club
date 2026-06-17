@@ -1568,7 +1568,7 @@ window.POLLA_DATA = {
       "grupo": "L",
       "eq1": "Inglaterra",
       "eq2": "Croacia",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-17",
@@ -30129,6 +30129,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Harry Kane",
+      "equipo": "Inglaterra",
+      "goles": 2,
+      "votos_polla": 15
+    },
+    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 1,
@@ -30391,12 +30397,6 @@ window.POLLA_DATA = {
       "equipo": "Congo",
       "goles": 1,
       "votos_polla": 0
-    },
-    {
-      "nombre": "Harry Kane",
-      "equipo": "Inglaterra",
-      "goles": 1,
-      "votos_polla": 15
     },
     {
       "nombre": "Martin Baturina",
