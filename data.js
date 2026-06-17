@@ -15,10 +15,10 @@ window.POLLA_DATA = {
       "nombre": "Cristian Rodriguez",
       "goleador": "Cristiano Ronaldo",
       "pts": {
-        "grupos": 12,
+        "grupos": 14,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 12
+        "total": 14
       }
     },
     {
@@ -7977,14 +7977,14 @@ window.POLLA_DATA = {
       "22": {
         "1": [
           2,
-          1
+          0
         ],
         "2": [
           1,
           1
         ],
         "3": [
-          0,
+          1,
           0
         ],
         "4": [
@@ -8001,7 +8001,7 @@ window.POLLA_DATA = {
         ],
         "7": [
           2,
-          1
+          0
         ],
         "8": [
           1,
@@ -8056,7 +8056,7 @@ window.POLLA_DATA = {
           1
         ],
         "21": [
-          1,
+          2,
           1
         ],
         "22": [
@@ -8137,7 +8137,7 @@ window.POLLA_DATA = {
         ],
         "41": [
           0,
-          1
+          3
         ],
         "42": [
           1,
@@ -8152,19 +8152,19 @@ window.POLLA_DATA = {
           2
         ],
         "45": [
-          1,
-          2
+          2,
+          0
         ],
         "46": [
           3,
-          1
+          0
         ],
         "47": [
-          2,
+          0,
           2
         ],
         "48": [
-          2,
+          1,
           3
         ],
         "49": [
@@ -8237,7 +8237,7 @@ window.POLLA_DATA = {
         ],
         "66": [
           2,
-          1
+          3
         ],
         "67": [
           1,
