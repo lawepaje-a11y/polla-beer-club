@@ -885,11 +885,11 @@
         "Senegal"
       ],
       "92": [
-        "MÃÂ©xico",
+        "MÃÂÃÂ©xico",
         "Inglaterra"
       ],
       "99": [
-        "BÃÂ©lgica",
+        "BÃÂÃÂ©lgica",
         "Inglaterra"
       ]
     }
@@ -947,6 +947,15 @@
       ],
       "63": [
         2,
+        0
+      ]
+    },
+    "eliminatorias": {}
+  },
+  "45": {
+    "grupos": {
+      "43": [
+        5,
         0
       ]
     },
