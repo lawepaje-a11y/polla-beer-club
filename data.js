@@ -1569,7 +1569,7 @@ window.POLLA_DATA = {
       "eq1": "Inglaterra",
       "eq2": "Croacia",
       "g1_real": 2,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-17",
       "hora": "03:00 PM",
@@ -30400,6 +30400,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Martin Baturina",
+      "equipo": "Croacia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Petar Musa",
       "equipo": "Croacia",
       "goles": 1,
       "votos_polla": 0
