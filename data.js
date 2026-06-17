@@ -1433,7 +1433,7 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Argentina",
       "eq2": "Argelia",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-16",
@@ -30350,6 +30350,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Leo Østigard",
       "equipo": "Noruega",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Lionel Messi",
+      "equipo": "Argentina",
       "goles": 1,
       "votos_polla": 0
     }
