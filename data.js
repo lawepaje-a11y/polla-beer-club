@@ -1501,7 +1501,7 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Portugal",
       "eq2": "Congo",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-17",
@@ -30376,6 +30376,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Marko Arnautovic",
       "equipo": "Austria",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "João Neves",
+      "equipo": "Portugal",
       "goles": 1,
       "votos_polla": 0
     }
