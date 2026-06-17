@@ -24,16 +24,18 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Actualizar resultados desde ESPN
-        run: python3 update_data.py
-
-      - name: Publicar si hay cambios
+      - name: Sincronizar + Actualizar resultados desde ESPN
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # fetch + reset --soft para que el push nunca falle por conflicto
+          # 1. Sincronizar al estado MÁS RECIENTE antes de correr el script.
+          #    Esto evita que update_data.py cargue un data.js desactualizado
+          #    cuando hay dos runs concurrentes (cron-job.org cada 2 min).
           git fetch origin
-          git reset --soft origin/main
+          git reset --hard origin/main
+          # 2. Correr el script contra el data.js más nuevo
+          python3 update_data.py
+          # 3. Si hay cambios, publicar
           git add data.js
           if git diff --staged --quiet; then
             echo "Sin cambios — nada que publicar."
