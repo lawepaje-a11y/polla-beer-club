@@ -1502,7 +1502,7 @@ window.POLLA_DATA = {
       "eq1": "Portugal",
       "eq2": "Congo",
       "g1_real": 1,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-17",
       "hora": "12:00 PM",
@@ -30382,6 +30382,12 @@ window.POLLA_DATA = {
     {
       "nombre": "João Neves",
       "equipo": "Portugal",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Yoane Wissa",
+      "equipo": "Congo",
       "goles": 1,
       "votos_polla": 0
     }
