@@ -1568,7 +1568,7 @@ window.POLLA_DATA = {
       "grupo": "L",
       "eq1": "Inglaterra",
       "eq2": "Croacia",
-      "g1_real": 3,
+      "g1_real": 4,
       "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-17",
@@ -30412,6 +30412,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Marcus Rashford",
       "equipo": "Inglaterra",
       "goles": 1,
       "votos_polla": 0
