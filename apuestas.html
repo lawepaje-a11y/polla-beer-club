@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Apuestas · Polla Beer Club · Mundial 2026</title>
+<style>
+/* ── Design tokens ───────────────────────────────────────── */
+:root{
+  --bg:#f1f5f9;--surface:#fff;--surface2:#f8fafc;--border:#e2e8f0;
+  --shadow:0 1px 4px rgba(0,0,0,.08);--shadow-md:0 4px 16px rgba(0,0,0,.1);
+  --text:#1e293b;--muted:#64748b;--accent:#d97706;--accent-l:#fef3c7;
+  --green:#16a34a;--green-l:#dcfce7;--red:#dc2626;--red-l:#fee2e2;
+  --blue:#2563eb;--blue-l:#dbeafe;--gold:#f59e0b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh;font-size:15px}
+
+/* ── Header ─────────────────────────────────────────────── */
+.header{background:linear-gradient(135deg,#1e3a5f 0%,#1e293b 60%,#0f172a 100%);padding:1.25rem 1.5rem 1rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.header-top{display:flex;align-items:center;gap:.75rem}
+.header-brand{flex:1}
+.header h1{font-size:1.25rem;font-weight:800;color:#fff;letter-spacing:.03em;cursor:pointer;user-select:none}
+.header h1 em{color:var(--gold);font-style:normal}
+.header-sub{color:#94a3b8;font-size:.75rem;margin-top:.25rem}
+.header-link{color:#94a3b8;font-size:.75rem;text-decoration:none;white-space:nowrap;padding:.4rem .75rem;border:1px solid rgba(255,255,255,.15);border-radius:.5rem;transition:all .15s}
+.header-link:hover{color:#fff;border-color:rgba(255,255,255,.35)}
+.header-tabs{display:flex;gap:.25rem;margin-top:.875rem;overflow-x:auto;scrollbar-width:none}
+.header-tabs::-webkit-scrollbar{display:none}
+.tab-btn{padding:.45rem 1rem;border:none;border-radius:.5rem;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;background:rgba(255,255,255,.08);color:#cbd5e1;transition:all .18s}
+.tab-btn.active{background:var(--gold);color:#000}
+.tab-btn:hover:not(.active){background:rgba(255,255,255,.15);color:#fff}
+
+/* ── Layout ─────────────────────────────────────────────── */
+.content{padding:1.25rem 1.5rem;max-width:900px;margin:0 auto}
+.tab-panel{display:none;animation:fadeIn .2s ease}
+.tab-panel.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+/* ── Filter bar ─────────────────────────────────────────── */
+.filter-bar{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
+.filter-btn{padding:.35rem .9rem;border:1.5px solid var(--border);border-radius:999px;font-size:.78rem;font-weight:600;cursor:pointer;background:var(--surface);color:var(--muted);transition:all .15s}
+.filter-btn.active{background:var(--text);color:#fff;border-color:var(--text)}
+.filter-btn:hover:not(.active){border-color:var(--muted)}
+
+/* ── Match cards ─────────────────────────────────────────── */
+.match-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:.875rem}
+@media(max-width:480px){.match-grid{grid-template-columns:1fr;gap:.75rem}}
+
+.match-card{background:var(--surface);border:1.5px solid var(--border);border-radius:.875rem;padding:1rem;box-shadow:var(--shadow);transition:box-shadow .15s}
+.match-card:hover{box-shadow:var(--shadow-md)}
+.match-card.state-in{border-color:var(--red)}
+.match-card.state-open{border-color:var(--green)}
+.match-card.state-post{opacity:.72}
+
+.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem}
+.card-num{font-size:.68rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.card-badge{font-size:.65rem;font-weight:700;padding:.2rem .55rem;border-radius:999px;text-transform:uppercase;letter-spacing:.06em}
+.badge-pre{background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
+.badge-open{background:var(--green-l);color:var(--green);animation:pulse-g 1.5s infinite}
+.badge-in{background:var(--red-l);color:var(--red);animation:pulse-r 1.5s infinite}
+.badge-post{background:#1e293b;color:#94a3b8}
+.badge-tbd{background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
+@keyframes pulse-g{0%,100%{box-shadow:0 0 0 0 rgba(22,163,74,.3)}50%{box-shadow:0 0 0 5px rgba(22,163,74,0)}}
+@keyframes pulse-r{0%,100%{box-shadow:0 0 0 0 rgba(220,38,38,.3)}50%{box-shadow:0 0 0 5px rgba(220,38,38,0)}}
+
+.card-teams{text-align:center;margin:.5rem 0}
+.teams-row{font-size:.95rem;font-weight:700}
+.teams-row .vs{font-size:.72rem;color:var(--muted);margin:0 .4rem;font-weight:400}
+.card-score-real{font-size:1.35rem;font-weight:800;color:var(--accent);display:block;margin:.25rem 0}
+.card-meta{font-size:.7rem;color:var(--muted);margin-top:.35rem}
+
+.card-actions{margin-top:.75rem}
+.btn-bet{width:100%;padding:.6rem;border:none;border-radius:.6rem;font-size:.85rem;font-weight:700;cursor:pointer;background:var(--green);color:#fff;transition:background .15s}
+.btn-bet:hover{background:#15803d}
+.countdown{font-size:.75rem;font-weight:700;color:var(--green);text-align:center;margin-top:.4rem}
+.opens-in{font-size:.7rem;color:var(--muted);text-align:center;margin-top:.35rem}
+.bet-count{font-size:.7rem;color:var(--muted);text-align:center;margin-top:.45rem}
+
+/* ── Modal ───────────────────────────────────────────────── */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:200;display:none;align-items:center;justify-content:center;padding:1rem}
+.modal-overlay.open{display:flex}
+.modal{background:var(--surface);border-radius:1rem;padding:1.5rem;width:100%;max-width:420px;box-shadow:0 20px 60px rgba(0,0,0,.3);max-height:92vh;overflow-y:auto}
+.modal-match-title{font-size:.75rem;color:var(--muted);font-weight:700;margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.06em}
+.modal-step{display:none}
+.modal-step.active{display:block}
+.modal h2{font-size:1.05rem;font-weight:800;margin-bottom:.25rem}
+.modal-sub{font-size:.78rem;color:var(--muted);margin-bottom:1.25rem}
+.modal-back{background:none;border:none;color:var(--muted);font-size:.78rem;cursor:pointer;padding:.2rem 0;margin-bottom:.6rem;display:block}
+.modal-back:hover{color:var(--text)}
+
+.form-group{margin-bottom:.875rem}
+.form-label{font-size:.78rem;font-weight:600;color:var(--muted);display:block;margin-bottom:.3rem}
+.form-input{width:100%;padding:.65rem .875rem;border:1.5px solid var(--border);border-radius:.6rem;font-size:.95rem;transition:border-color .15s;background:var(--surface)}
+.form-input:focus{outline:none;border-color:var(--blue)}
+
+.score-row{display:flex;align-items:center;gap:.5rem;justify-content:center;margin:1rem 0}
+.score-inp{width:4rem;padding:.6rem;font-size:1.4rem;font-weight:800;text-align:center;border:2px solid var(--border);border-radius:.6rem;background:var(--surface);-moz-appearance:textfield}
+.score-inp::-webkit-outer-spin-button,.score-inp::-webkit-inner-spin-button{-webkit-appearance:none}
+.score-inp:focus{outline:none;border-color:var(--accent)}
+.score-team{font-size:.78rem;font-weight:700;flex:1;text-align:center;color:var(--text)}
+.score-vs{font-size:1rem;color:var(--muted);font-weight:700}
+
+.btn-primary{width:100%;padding:.75rem;border:none;border-radius:.7rem;font-size:.95rem;font-weight:700;cursor:pointer;background:var(--accent);color:#fff;transition:background .15s;margin-top:.5rem}
+.btn-primary:hover{background:#b45309}
+.btn-secondary{width:100%;padding:.65rem;border:1.5px solid var(--border);border-radius:.7rem;font-size:.88rem;font-weight:600;cursor:pointer;background:transparent;color:var(--text);margin-top:.5rem;transition:border-color .15s}
+.btn-secondary:hover{border-color:var(--muted)}
+
+.demo-code-box{background:var(--accent-l);border:1.5px solid var(--accent);border-radius:.75rem;padding:.75rem 1rem;text-align:center;margin:1rem 0}
+.demo-code-lbl{font-size:.7rem;color:#92400e;margin-bottom:.3rem;font-weight:600}
+.demo-code-val{font-size:2rem;font-weight:900;letter-spacing:.25em;color:#92400e}
+.code-input{font-size:1.4rem;letter-spacing:.2em;text-align:center;font-weight:800}
+
+.receipt-box{background:var(--surface2);border:1.5px solid var(--border);border-radius:.875rem;padding:1.25rem;margin:1rem 0}
+.receipt-code{font-size:2.1rem;font-weight:900;letter-spacing:.25em;color:var(--green);text-align:center;margin:.5rem 0}
+.receipt-row{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;padding:.35rem 0;border-bottom:1px solid var(--border)}
+.receipt-row:last-child{border-bottom:none}
+.receipt-row span:last-child{font-weight:700;text-align:right;max-width:60%}
+.bet-cost-note{background:var(--accent-l);border-radius:.6rem;padding:.65rem .875rem;font-size:.8rem;text-align:center;color:#92400e;margin:.75rem 0}
+
+.err{color:var(--red);font-size:.78rem;margin-top:.35rem;display:none}
+
+/* ── My Bets ─────────────────────────────────────────────── */
+.lookup-box{text-align:center;padding:2.5rem 1rem}
+.lookup-box .empty-icon{font-size:2.5rem;margin-bottom:.75rem}
+.lookup-box p{color:var(--muted);margin-bottom:1rem;font-size:.88rem}
+.lookup-box input{max-width:300px;margin:0 auto .75rem;display:block}
+.lookup-box .btn-primary{max-width:200px;margin:0 auto}
+
+.bet-item{background:var(--surface);border:1.5px solid var(--border);border-radius:.75rem;padding:1rem;margin-bottom:.75rem;display:grid;grid-template-columns:1fr auto;gap:.5rem;align-items:start}
+.bet-match{font-size:.8rem;font-weight:700;color:var(--text)}
+.bet-pred{font-size:1.05rem;font-weight:800;color:var(--accent);margin:.2rem 0}
+.bet-meta{font-size:.7rem;color:var(--muted)}
+.bet-status{font-size:.72rem;font-weight:700;padding:.25rem .65rem;border-radius:999px;white-space:nowrap}
+.bet-won{background:var(--green-l);color:var(--green)}
+.bet-lost{background:var(--red-l);color:var(--red)}
+.bet-pending{background:var(--surface2);color:var(--muted)}
+
+/* ── Results ─────────────────────────────────────────────── */
+.result-card{background:var(--surface);border:1.5px solid var(--border);border-radius:.875rem;padding:1rem;margin-bottom:.875rem}
+.result-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem;flex-wrap:wrap;gap:.5rem}
+.result-match{font-weight:800;font-size:.9rem}
+.result-score{font-size:1.25rem;font-weight:900;color:var(--accent)}
+.pool-bar{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:.75rem}
+.pool-stat{text-align:center;flex:1;min-width:70px}
+.pool-stat-val{font-size:1.05rem;font-weight:800}
+.pool-stat-lbl{font-size:.63rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:.15rem}
+.winner-list{display:flex;flex-wrap:wrap;gap:.4rem}
+.winner-pill{background:var(--green-l);color:var(--green);font-size:.78rem;font-weight:700;padding:.25rem .75rem;border-radius:999px}
+.no-winners{font-size:.82rem;color:var(--muted);font-style:italic}
+
+/* ── Admin ───────────────────────────────────────────────── */
+.admin-panel{background:var(--surface);border:2px solid var(--red);border-radius:1rem;padding:1.25rem;margin-bottom:1.5rem}
+.admin-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;flex-wrap:wrap;gap:.5rem}
+.admin-hd h2{font-size:.95rem;font-weight:800;color:var(--red)}
+.admin-hd-actions{display:flex;gap:.5rem;flex-wrap:wrap}
+.admin-summary{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:.75rem;margin-bottom:1.5rem}
+.admin-stat{background:var(--surface2);border:1px solid var(--border);border-radius:.75rem;padding:.75rem;text-align:center}
+.admin-stat-val{font-size:1.2rem;font-weight:800;color:var(--accent)}
+.admin-stat-lbl{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.admin-match-section{margin-bottom:1.5rem;border-bottom:1px solid var(--border);padding-bottom:1rem}
+.admin-match-title{font-weight:700;font-size:.85rem;margin-bottom:.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+.admin-table{width:100%;border-collapse:collapse;font-size:.76rem;margin-top:.5rem}
+.admin-table th{background:var(--surface2);padding:.4rem .6rem;text-align:left;font-size:.68rem;font-weight:700;color:var(--muted);text-transform:uppercase}
+.admin-table td{padding:.4rem .6rem;border-bottom:1px solid var(--border)}
+.btn-resolve{padding:.35rem .875rem;border:none;border-radius:.5rem;font-size:.75rem;font-weight:700;cursor:pointer;background:var(--green);color:#fff}
+.btn-resolve:disabled{background:var(--muted);cursor:not-allowed}
+.btn-csv{padding:.35rem .875rem;border:1.5px solid var(--border);border-radius:.5rem;font-size:.75rem;font-weight:600;cursor:pointer;background:transparent;color:var(--text)}
+.btn-danger{padding:.45rem 1rem;border:none;border-radius:.5rem;font-size:.78rem;font-weight:700;cursor:pointer;background:var(--red);color:#fff}
+
+/* ── Empty state ─────────────────────────────────────────── */
+.empty-state{text-align:center;padding:3rem 1rem;color:var(--muted)}
+.empty-icon{font-size:2.5rem;margin-bottom:.75rem}
+
+/* ── Toast ───────────────────────────────────────────────── */
+.toast{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);background:#1e293b;color:#fff;font-size:.83rem;font-weight:600;padding:.65rem 1.25rem;border-radius:.75rem;z-index:300;opacity:0;pointer-events:none;transition:opacity .25s;white-space:nowrap;max-width:90vw;text-align:center}
+.toast.show{opacity:1}
+
+/* ── Live dot ────────────────────────────────────────────── */
+.live-dot{width:7px;height:7px;background:var(--red);border-radius:50%;display:inline-block;margin-right:.3rem;animation:blink 1s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.15}}
+
+/* ── User bar ────────────────────────────────────────────── */
+.user-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;font-size:.82rem}
+.user-bar strong{color:var(--text)}
+.user-bar button{background:none;border:none;color:var(--muted);cursor:pointer;font-size:.78rem}
+.user-bar button:hover{color:var(--text)}
+
+@media(max-width:480px){
+  .content{padding:1rem}
+  .modal{padding:1.25rem;border-radius:.875rem}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-top">
+    <div class="header-brand">
+      <h1 id="logo">⚽ <em>Polla Beer Club</em> · Apuestas</h1>
+      <div class="header-sub">Mundial FIFA 2026 · $5,000 COP por apuesta · Modo Demo</div>
+    </div>
+    <a href="index.html" class="header-link">← Ranking</a>
+  </div>
+  <nav class="header-tabs">
+    <button class="tab-btn active" onclick="showTab('partidos',this)">🎮 Partidos</button>
+    <button class="tab-btn" onclick="showTab('misapuestas',this)">🎫 Mis Apuestas</button>
+    <button class="tab-btn" onclick="showTab('resultados',this)">🏆 Resultados</button>
+  </nav>
+</header>
+
+<div class="content">
+  <!-- Admin panel — visible if ?admin=true or triple-click logo -->
+  <div id="admin-panel" class="admin-panel" style="display:none">
+    <div class="admin-hd">
+      <h2>🔒 Panel Administrador</h2>
+      <div class="admin-hd-actions">
+        <button class="btn-csv" onclick="exportCSV()">⬇ CSV</button>
+        <button class="btn-danger" onclick="clearAllData()">🗑 Limpiar todo</button>
+      </div>
+    </div>
+    <div id="admin-summary" class="admin-summary"></div>
+    <div id="admin-bets"></div>
+  </div>
+
+  <!-- Tab: Partidos -->
+  <div id="tab-partidos" class="tab-panel active">
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="setFilter('todos',this)">Todos</button>
+      <button class="filter-btn" onclick="setFilter('hoy',this)">Hoy</button>
+      <button class="filter-btn" onclick="setFilter('open',this)">Abiertos</button>
+      <button class="filter-btn" onclick="setFilter('live',this)">En Vivo</button>
+    </div>
+    <div id="match-list" class="match-grid"></div>
+  </div>
+
+  <!-- Tab: Mis Apuestas -->
+  <div id="tab-misapuestas" class="tab-panel">
+    <div id="my-bets-container"></div>
+  </div>
+
+  <!-- Tab: Resultados -->
+  <div id="tab-resultados" class="tab-panel">
+    <div id="results-container"></div>
+  </div>
+</div>
+
+<!-- ── Betting Modal ──────────────────────────────────────── -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModalBackdrop(event)">
+  <div class="modal">
+    <div class="modal-match-title" id="modal-match-title"></div>
+
+    <!-- Step 1: Contact -->
+    <div class="modal-step active" id="step1">
+      <h2>Hacer Apuesta</h2>
+      <p class="modal-sub">Ingresa tus datos para registrar la apuesta.</p>
+      <div class="form-group">
+        <label class="form-label">Tu nombre</label>
+        <input type="text" class="form-input" id="inp-nombre" placeholder="Ej: Juan Pérez" autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label class="form-label">WhatsApp o Email</label>
+        <input type="text" class="form-input" id="inp-contacto" placeholder="+57 300 0000000" autocomplete="tel">
+      </div>
+      <div class="err" id="err1">Por favor completa todos los campos.</div>
+      <button class="btn-primary" onclick="step1Next()">Siguiente →</button>
+      <button class="btn-secondary" onclick="closeModal()">Cancelar</button>
+    </div>
+
+    <!-- Step 2: Verify code -->
+    <div class="modal-step" id="step2">
+      <button class="modal-back" onclick="goStep(1)">← Volver</button>
+      <h2>Verificar Identidad</h2>
+      <p class="modal-sub" id="step2-sub">Ingresa el código de verificación.</p>
+      <div class="demo-code-box" id="demo-code-box" style="display:none">
+        <div class="demo-code-lbl">MODO DEMO — Tu código es:</div>
+        <div class="demo-code-val" id="demo-code-val"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Código de 6 dígitos</label>
+        <input type="text" class="form-input code-input" id="inp-code" placeholder="000000" maxlength="6" inputmode="numeric">
+      </div>
+      <div class="err" id="err2">Código incorrecto. Inténtalo de nuevo.</div>
+      <button class="btn-primary" onclick="step2Next()">Verificar →</button>
+    </div>
+
+    <!-- Step 3: Score prediction -->
+    <div class="modal-step" id="step3">
+      <button class="modal-back" onclick="goStep(2)">← Volver</button>
+      <h2>Tu Predicción</h2>
+      <p class="modal-sub">¿Cuál será el marcador final?</p>
+      <div class="score-row">
+        <div class="score-team" id="modal-eq1">Equipo 1</div>
+        <input type="number" class="score-inp" id="inp-s1" min="0" max="20" value="1">
+        <span class="score-vs">—</span>
+        <input type="number" class="score-inp" id="inp-s2" min="0" max="20" value="0">
+        <div class="score-team" id="modal-eq2">Equipo 2</div>
+      </div>
+      <div class="bet-cost-note">💰 <strong>$5,000 COP</strong> se acreditan al pozo de este partido</div>
+      <div class="err" id="err3">Marcador inválido. Ingresa números ≥ 0.</div>
+      <button class="btn-primary" onclick="confirmBet()">✓ Confirmar Apuesta</button>
+    </div>
+
+    <!-- Step 4: Receipt -->
+    <div class="modal-step" id="step4">
+      <div style="text-align:center;font-size:2.25rem;margin-bottom:.5rem">🎉</div>
+      <h2 style="text-align:center">¡Apuesta Registrada!</h2>
+      <p class="modal-sub" style="text-align:center">Guarda tu código — es tu comprobante.</p>
+      <div class="receipt-box">
+        <div style="font-size:.7rem;color:var(--muted);text-align:center;margin-bottom:.25rem;text-transform:uppercase;letter-spacing:.08em">Código de Confirmación</div>
+        <div class="receipt-code" id="receipt-code">------</div>
+        <div id="receipt-details"></div>
+      </div>
+      <button class="btn-primary" onclick="closeModal()">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script src="data.js"></script>
+<script>
+/* ───────────────────────────────────────────────────────────────────
+   README — MODO DEMO: apuestas almacenadas en localStorage.
+   Para conectar backend real:
+     1. Verificación: reemplaza _sendVerifyCode() con Resend (email)
+        o Twilio (SMS). Endpoint: POST /api/verify { contacto, code }
+     2. Persistencia: reemplaza _loadDB()/_saveDB() con GitHub API
+        (mismo patrón de admin.html: GET sha + PUT base64) o Supabase.
+     3. Set DEMO_MODE = false y RAKE_ACCOUNT al contacto del admin.
+   ─────────────────────────────────────────────────────────────────── */
+
+const CONFIG = {
+  BET_AMOUNT:         5000,    // COP por apuesta
+  RAKE:               0.10,    // comisión del 10%
+  BET_WINDOW_MINUTES: 5,       // minutos antes del pitazo que abre la ventana
+  DEMO_MODE:          true,
+  NO_WINNER_POLICY:   'admin', // 'admin' = casa retiene el 90% si nadie acierta
+  DATA_URL:           'https://raw.githubusercontent.com/lawepaje-a11y/polla-beer-club/main/data.js',
+  POLL_MS:            30000,   // polling ESPN cada 30 s
+  LS_KEY:             'apuestas_beer_club_v1',
+};
+
+// ── localStorage DB ──────────────────────────────────────────────
+function _loadDB() {
+  try { return JSON.parse(localStorage.getItem(CONFIG.LS_KEY)) || _emptyDB() }
+  catch { return _emptyDB() }
+}
+function _saveDB(db) { localStorage.setItem(CONFIG.LS_KEY, JSON.stringify(db)) }
+function _emptyDB() { return { bets:[], resolutions:[], sessions:{} } }
+
+// ── Util ─────────────────────────────────────────────────────────
+function _genCode(len, alpha) {
+  const pool = alpha ? 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789' : '0123456789'
+  return Array.from({length:len}, () => pool[Math.floor(Math.random()*pool.length)]).join('')
+}
+function _cop(n) { return '$' + n.toLocaleString('es-CO') + ' COP' }
+function _toast(msg, ms) {
+  const t = document.getElementById('toast')
+  t.textContent = msg
+  t.classList.add('show')
+  clearTimeout(t._tid)
+  t._tid = setTimeout(() => t.classList.remove('show'), ms || 2500)
+}
+
+// Parse match.fecha ("2026-06-11") + match.hora ("02:00 PM") → UTC Date
+// Colombia = UTC-5, so UTC = local + 5h
+function _kickoffUTC(m) {
+  if (!m.fecha || !m.hora) return null
+  const r = m.hora.match(/(\d+):(\d+)\s*(AM|PM)/i)
+  if (!r) return null
+  let h = parseInt(r[1]), min = parseInt(r[2])
+  const ap = r[3].toUpperCase()
+  if (ap === 'PM' && h !== 12) h += 12
+  if (ap === 'AM' && h === 12) h = 0
+  const [yr, mo, dy] = m.fecha.split('-').map(Number)
+  return new Date(Date.UTC(yr, mo-1, dy, h+5, min))
+}
+
+function _minsUntil(m) {
+  const ko = _kickoffUTC(m)
+  if (!ko) return Infinity
+  return (ko.getTime() - Date.now()) / 60000
+}
+
+// "pre" | "open" | "in" | "post" | "tbd"
+function _state(m) {
+  if (m.jugado) return 'post'
+  if (m.en_vivo) return 'in'
+  if (!m.fecha) return 'tbd'       // elim: teams/dates not set yet
+  const mins = _minsUntil(m)
+  if (mins <= 0) return 'in'
+  if (mins <= CONFIG.BET_WINDOW_MINUTES) return 'open'
+  return 'pre'
+}
+
+function _eq1(m) { return m.eq1 || m.eq1_real || 'TBD' }
+function _eq2(m) { return m.eq2 || m.eq2_real || 'TBD' }
+function _phase(m) { return m.grupo ? 'Grupo ' + m.grupo : (m.fase || '') }
+function _matchTitle(m) { return `P${m.numero} · ${_eq1(m)} vs ${_eq2(m)}` }
+
+function _fmtDate(m) {
+  const ko = _kickoffUTC(m)
+  if (!ko) return 'Fecha por confirmar'
+  return ko.toLocaleString('es-CO', {
+    timeZone:'America/Bogota', weekday:'short',
+    month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'
+  })
+}
+
+function _betCount(matchId) {
+  return _loadDB().bets.filter(b => b.matchId === matchId).length
+}
+
+// ── All matches (grupos + elim) ──────────────────────────────────
+function _allMatches() {
+  const D = window.POLLA_DATA
+  if (!D) return []
+  return [...(D.matches_grupos||[]), ...(D.matches_elim||[])]
+}
+
+// ── Tab navigation ───────────────────────────────────────────────
+function showTab(name, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'))
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'))
+  document.getElementById('tab-' + name).classList.add('active')
+  btn.classList.add('active')
+  if (name === 'misapuestas') renderMyBets()
+  if (name === 'resultados')  renderResults()
+}
+
+function setFilter(f, btn) {
+  _currentFilter = f
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'))
+  btn.classList.add('active')
+  renderMatches()
+}
+let _currentFilter = 'todos'
+
+// ── Match cards ──────────────────────────────────────────────────
+function renderMatches() {
+  const today = new Date().toLocaleDateString('sv-SE', {timeZone:'America/Bogota'})
+  let matches = _allMatches().filter(m => {
+    if (_currentFilter === 'hoy')  return m.fecha === today
+    if (_currentFilter === 'open') return _state(m) === 'open'
+    if (_currentFilter === 'live') return _state(m) === 'in'
+    return true
+  })
+
+  const el = document.getElementById('match-list')
+  if (!matches.length) {
+    el.innerHTML = '<div class="empty-state"><div class="empty-icon">⚽</div><p>No hay partidos para este filtro.</p></div>'
+    return
+  }
+  el.innerHTML = matches.map(_cardHTML).join('')
+  matches.filter(m => _state(m) === 'open').forEach(_startCountdown)
+}
+
+function _cardHTML(m) {
+  const st = _state(m)
+  const cnt = _betCount(m.numero)
+  const pool = cnt * CONFIG.BET_AMOUNT
+  const eq1 = _eq1(m), eq2 = _eq2(m)
+  const phase = _phase(m)
+
+  const badges = {
+    pre:  `<span class="card-badge badge-pre">Próximo</span>`,
+    open: `<span class="card-badge badge-open">🟢 Apostar</span>`,
+    in:   `<span class="card-badge badge-in"><span class="live-dot"></span>En Vivo</span>`,
+    post: `<span class="card-badge badge-post">Finalizado</span>`,
+    tbd:  `<span class="card-badge badge-tbd">Por confirmar</span>`,
+  }
+
+  let scoreHtml = ''
+  if (st === 'post' && m.g1_real != null) {
+    scoreHtml = `<span class="card-score-real">${m.g1_real} — ${m.g2_real}</span>`
+  }
+
+  let action = ''
+  if (st === 'open') {
+    action = `<div class="card-actions">
+      <button class="btn-bet" onclick="openModal(${m.numero})">⚡ Apostar $5,000</button>
+      <div class="countdown" id="cd-${m.numero}"></div>
+    </div>`
+  } else if (st === 'pre') {
+    const mins = Math.floor(_minsUntil(m))
+    const label = mins > 90 ? `${Math.floor(mins/60)}h ${mins%60}m` : `${mins} min`
+    action = `<div class="opens-in">Abre en ${label}</div>`
+  } else if (st === 'in') {
+    action = `<div class="opens-in" style="color:var(--red)">⛔ Apuestas cerradas</div>`
+  } else if (st === 'post') {
+    action = `<div class="opens-in">Cerrado</div>`
+  } else {
+    action = `<div class="opens-in">Equipos por confirmar</div>`
+  }
+
+  return `<div class="match-card state-${st}" id="card-${m.numero}">
+    <div class="card-top">
+      <span class="card-num">P${m.numero} · ${phase}</span>
+      ${badges[st]}
+    </div>
+    <div class="card-teams">
+      <div class="teams-row">${eq1}<span class="vs">vs</span>${eq2}</div>
+      ${scoreHtml}
+      <div class="card-meta">${_fmtDate(m)}</div>
+    </div>
+    ${action}
+    ${cnt > 0 ? `<div class="bet-count">🎫 ${cnt} apuesta${cnt!==1?'s':''} · Pozo ${_cop(pool)}</div>` : ''}
+  </div>`
+}
+
+function _startCountdown(m) {
+  const el = document.getElementById('cd-' + m.numero)
+  if (!el) return
+  const ko = _kickoffUTC(m)
+  function tick() {
+    const secs = Math.round((ko.getTime() - Date.now()) / 1000)
+    if (secs <= 0) { el.textContent = '⏰ ¡Cierra ahora!'; return }
+    el.textContent = `⏳ Cierra en ${Math.floor(secs/60)}:${(secs%60).toString().padStart(2,'0')}`
+    setTimeout(tick, 1000)
+  }
+  tick()
+}
+
+// ── Modal ────────────────────────────────────────────────────────
+let _bet = null   // { match, nombre, contacto }
+let _verifyCode = null
+
+function openModal(matchId) {
+  const m = _allMatches().find(x => x.numero === matchId)
+  if (!m || _state(m) !== 'open') { _toast('La ventana de apuestas está cerrada.'); return }
+  _bet = { match: m }
+  document.getElementById('modal-match-title').textContent = _matchTitle(m)
+  document.getElementById('modal-eq1').textContent = _eq1(m)
+  document.getElementById('modal-eq2').textContent = _eq2(m)
+  const last = _getLastUser()
+  if (last) {
+    document.getElementById('inp-nombre').value = last.nombre || ''
+    document.getElementById('inp-contacto').value = last.contacto || ''
+  }
+  document.querySelectorAll('.err').forEach(e => e.style.display = 'none')
+  goStep(1)
+  document.getElementById('modal-overlay').classList.add('open')
+}
+
+function closeModal() {
+  document.getElementById('modal-overlay').classList.remove('open')
+  _bet = null; _verifyCode = null
+}
+
+function closeModalBackdrop(e) {
+  if (e.target.id === 'modal-overlay') closeModal()
+}
+
+function goStep(n) {
+  document.querySelectorAll('.modal-step').forEach(s => s.classList.remove('active'))
+  document.getElementById('step' + n).classList.add('active')
+}
+
+function step1Next() {
+  const nombre = document.getElementById('inp-nombre').value.trim()
+  const contacto = document.getElementById('inp-contacto').value.trim()
+  document.getElementById('err1').style.display = 'none'
+  if (!nombre || !contacto) { document.getElementById('err1').style.display = 'block'; return }
+
+  // Duplicate check
+  const existing = _loadDB().bets.find(b =>
+    b.matchId === _bet.match.numero && b.contacto === contacto
+  )
+  if (existing) {
+    _toast('Ya apostaste en este partido. Código: ' + existing.code, 4000)
+    closeModal(); return
+  }
+
+  _bet.nombre = nombre
+  _bet.contacto = contacto
+  _verifyCode = _genCode(6, false)
+  document.getElementById('inp-code').value = ''
+  document.getElementById('err2').style.display = 'none'
+
+  if (CONFIG.DEMO_MODE) {
+    document.getElementById('demo-code-box').style.display = 'block'
+    document.getElementById('demo-code-val').textContent = _verifyCode
+    document.getElementById('step2-sub').textContent = 'DEMO MODE — el código se muestra abajo.'
+  } else {
+    document.getElementById('demo-code-box').style.display = 'none'
+    document.getElementById('step2-sub').textContent = `Enviamos un código a ${contacto}`
+    // TODO: _sendVerifyCode(contacto, _verifyCode)
+  }
+  goStep(2)
+}
+
+function step2Next() {
+  const entered = document.getElementById('inp-code').value.trim()
+  document.getElementById('err2').style.display = 'none'
+  if (entered !== _verifyCode) { document.getElementById('err2').style.display = 'block'; return }
+  goStep(3)
+}
+
+function confirmBet() {
+  const s1 = parseInt(document.getElementById('inp-s1').value)
+  const s2 = parseInt(document.getElementById('inp-s2').value)
+  document.getElementById('err3').style.display = 'none'
+  if (isNaN(s1) || isNaN(s2) || s1 < 0 || s2 < 0) {
+    document.getElementById('err3').style.display = 'block'; return
+  }
+
+  const code = _genCode(6, true)
+  const m = _bet.match
+  const db = _loadDB()
+  db.bets.push({
+    id:       _genCode(12, true),
+    matchId:  m.numero,
+    nombre:   _bet.nombre,
+    contacto: _bet.contacto,
+    score1:   s1,
+    score2:   s2,
+    code,
+    ts:       Date.now(),
+    resolved: false, won: false, prize: 0,
+  })
+  _saveDB(db)
+  _saveLastUser({ nombre: _bet.nombre, contacto: _bet.contacto })
+
+  document.getElementById('receipt-code').textContent = code
+  document.getElementById('receipt-details').innerHTML =
+    `<div class="receipt-row"><span>Partido</span><span>${_matchTitle(m)}</span></div>
+     <div class="receipt-row"><span>Predicción</span><span>${_eq1(m)} ${s1}–${s2} ${_eq2(m)}</span></div>
+     <div class="receipt-row"><span>Apostador</span><span>${_bet.nombre}</span></div>
+     <div class="receipt-row"><span>Costo</span><span>${_cop(CONFIG.BET_AMOUNT)}</span></div>`
+
+  goStep(4)
+  renderMatches()
+  _toast('¡Apuesta registrada! Código: ' + code, 4000)
+}
+
+// ── Last user ────────────────────────────────────────────────────
+function _getLastUser() {
+  try { return JSON.parse(localStorage.getItem('apuestas_last_user')) } catch { return null }
+}
+function _saveLastUser(u) { localStorage.setItem('apuestas_last_user', JSON.stringify(u)) }
+
+// ── My Bets ──────────────────────────────────────────────────────
+function renderMyBets() {
+  const cont = document.getElementById('my-bets-container')
+  const last = _getLastUser()
+  if (!last) {
+    cont.innerHTML = `<div class="lookup-box">
+      <div class="empty-icon">🎫</div>
+      <p>Ingresa tu contacto para ver tus apuestas:</p>
+      <input type="text" class="form-input" id="lookup-inp" placeholder="+57 300...">
+      <button class="btn-primary" onclick="lookupBets()">Ver mis apuestas</button>
+    </div>`
+    return
+  }
+  _renderBetsFor(last.contacto, cont)
+}
+
+function lookupBets() {
+  const v = document.getElementById('lookup-inp').value.trim()
+  if (!v) return
+  _saveLastUser({ contacto: v, nombre: '' })
+  _renderBetsFor(v, document.getElementById('my-bets-container'))
+}
+
+function _renderBetsFor(contacto, cont) {
+  const db = _loadDB()
+  const bets = db.bets.filter(b => b.contacto === contacto).sort((a,b) => b.ts - a.ts)
+
+  let html = `<div class="user-bar">
+    <span>Apuestas de <strong>${contacto}</strong> · ${bets.length} en total</span>
+    <button onclick="clearLastUser()">Cambiar →</button>
+  </div>`
+
+  if (!bets.length) {
+    html += '<div class="empty-state"><div class="empty-icon">🎫</div><p>No hay apuestas para este contacto.</p></div>'
+  } else {
+    const allM = _allMatches()
+    bets.forEach(b => {
+      const m = allM.find(x => x.numero === b.matchId)
+      const statusClass = b.resolved ? (b.won ? 'bet-won' : 'bet-lost') : 'bet-pending'
+      const statusLabel = b.resolved
+        ? (b.won ? `✓ Ganaste ${_cop(b.prize)}` : '✗ No acertaste')
+        : '⏳ Pendiente'
+      const dateStr = new Date(b.ts).toLocaleString('es-CO', {timeZone:'America/Bogota'})
+      html += `<div class="bet-item">
+        <div>
+          <div class="bet-match">${m ? _matchTitle(m) : 'P' + b.matchId}</div>
+          <div class="bet-pred">${b.score1} – ${b.score2}</div>
+          <div class="bet-meta">${dateStr} · Código: <strong>${b.code}</strong></div>
+        </div>
+        <span class="bet-status ${statusClass}">${statusLabel}</span>
+      </div>`
+    })
+  }
+  cont.innerHTML = html
+}
+
+function clearLastUser() {
+  localStorage.removeItem('apuestas_last_user')
+  renderMyBets()
+}
+
+// ── Results ──────────────────────────────────────────────────────
+function renderResults() {
+  const cont = document.getElementById('results-container')
+  const db = _loadDB()
+  const allM = _allMatches()
+  const resolved = [...db.resolutions].sort((a,b) => b.resolvedTs - a.resolvedTs)
+
+  if (!resolved.length) {
+    cont.innerHTML = '<div class="empty-state"><div class="empty-icon">🏆</div><p>Aún no hay partidos resueltos.</p></div>'
+    return
+  }
+  cont.innerHTML = resolved.map(r => {
+    const m = allM.find(x => x.numero === r.matchId)
+    const winners = db.bets.filter(b => b.matchId === r.matchId && b.won)
+    return `<div class="result-card">
+      <div class="result-hd">
+        <span class="result-match">${m ? _matchTitle(m) : 'P' + r.matchId}</span>
+        <span class="result-score">${r.finalScore1} — ${r.finalScore2}</span>
+      </div>
+      <div class="pool-bar">
+        <div class="pool-stat"><div class="pool-stat-val">${r.totalBets}</div><div class="pool-stat-lbl">Apuestas</div></div>
+        <div class="pool-stat"><div class="pool-stat-val">${_cop(r.totalPool)}</div><div class="pool-stat-lbl">Pozo total</div></div>
+        <div class="pool-stat"><div class="pool-stat-val">${_cop(r.netPool)}</div><div class="pool-stat-lbl">Pozo neto</div></div>
+        <div class="pool-stat"><div class="pool-stat-val">${winners.length}</div><div class="pool-stat-lbl">Ganadores</div></div>
+      </div>
+      ${winners.length
+        ? `<div class="winner-list">${winners.map(w => `<span class="winner-pill">🏆 ${w.nombre} · ${_cop(w.prize)}</span>`).join('')}</div>`
+        : `<div class="no-winners">Sin ganadores — ${CONFIG.NO_WINNER_POLICY === 'admin' ? 'pozo a admin (90%)' : 'pozo acumulado'}</div>`}
+    </div>`
+  }).join('')
+}
+
+// ── Admin panel ──────────────────────────────────────────────────
+function renderAdmin() {
+  const db = _loadDB()
+  const allM = _allMatches()
+  const totalBets = db.bets.length
+  const totalPool = totalBets * CONFIG.BET_AMOUNT
+  const totalRake = Math.round(totalPool * CONFIG.RAKE)
+
+  document.getElementById('admin-summary').innerHTML = `
+    <div class="admin-stat"><div class="admin-stat-val">${totalBets}</div><div class="admin-stat-lbl">Apuestas</div></div>
+    <div class="admin-stat"><div class="admin-stat-val">${_cop(totalPool)}</div><div class="admin-stat-lbl">Pozo Total</div></div>
+    <div class="admin-stat"><div class="admin-stat-val">${_cop(totalRake)}</div><div class="admin-stat-lbl">Rake (10%)</div></div>
+    <div class="admin-stat"><div class="admin-stat-val">${db.resolutions.length}</div><div class="admin-stat-lbl">Resueltos</div></div>`
+
+  const matchIds = [...new Set(db.bets.map(b => b.matchId))]
+  if (!matchIds.length) {
+    document.getElementById('admin-bets').innerHTML = '<p style="color:var(--muted);font-size:.85rem;margin-top:.5rem">No hay apuestas aún.</p>'
+    return
+  }
+
+  document.getElementById('admin-bets').innerHTML = matchIds.map(mid => {
+    const m = allM.find(x => x.numero === mid)
+    const betsM = db.bets.filter(b => b.matchId === mid)
+    const pool = betsM.length * CONFIG.BET_AMOUNT
+    const net = Math.round(pool * (1 - CONFIG.RAKE))
+    const st = m ? _state(m) : 'post'
+    const already = db.resolutions.find(r => r.matchId === mid)
+    const canResolve = (st === 'post' || st === 'in') && !already
+    const score = m && m.jugado && m.g1_real != null ? `${m.g1_real}–${m.g2_real}` : (st === 'in' ? '🔴 vivo' : '–')
+
+    return `<div class="admin-match-section">
+      <div class="admin-match-title">
+        <span>${m ? _matchTitle(m) : 'P' + mid} · ${score} · ${_cop(pool)} (neto ${_cop(net)})</span>
+        <div style="display:flex;gap:.5rem;align-items:center">
+          ${canResolve ? `<button class="btn-resolve" onclick="adminResolve(${mid})">⚡ Resolver</button>` : ''}
+          ${already ? `<span style="font-size:.72rem;color:var(--green)">✓ Resuelto</span>` : ''}
+        </div>
+      </div>
+      <table class="admin-table">
+        <tr><th>Nombre</th><th>Contacto</th><th>Predicción</th><th>Código</th><th>Estado</th></tr>
+        ${betsM.map(b => `<tr>
+          <td>${b.nombre}</td><td>${b.contacto}</td>
+          <td style="font-weight:700">${b.score1}–${b.score2}</td>
+          <td style="font-family:monospace;letter-spacing:.05em">${b.code}</td>
+          <td>${b.resolved ? (b.won ? '✅ Ganó' : '❌ Perdió') : '⏳'}</td>
+        </tr>`).join('')}
+      </table>
+    </div>`
+  }).join('')
+}
+
+function adminResolve(matchId) {
+  const m = _allMatches().find(x => x.numero === matchId)
+  let s1 = m ? m.g1_real : null
+  let s2 = m ? m.g2_real : null
+
+  if (s1 == null || s2 == null) {
+    const inp = prompt(`Marcador final para P${matchId} (ej: "2-1"):`)
+    if (!inp) return
+    const parts = inp.split(/\s*[-–]\s*/)
+    if (parts.length !== 2) { _toast('Formato inválido. Usa "2-1"'); return }
+    s1 = parseInt(parts[0]); s2 = parseInt(parts[1])
+    if (isNaN(s1) || isNaN(s2)) { _toast('Marcador inválido.'); return }
+  }
+
+  const db = _loadDB()
+  const betsM = db.bets.filter(b => b.matchId === matchId)
+  const totalPool = betsM.length * CONFIG.BET_AMOUNT
+  const netPool = Math.round(totalPool * (1 - CONFIG.RAKE))
+  const winners = betsM.filter(b => b.score1 === s1 && b.score2 === s2)
+  const prize = winners.length > 0 ? Math.floor(netPool / winners.length) : 0
+
+  db.bets = db.bets.map(b => {
+    if (b.matchId !== matchId) return b
+    const won = b.score1 === s1 && b.score2 === s2
+    return {...b, resolved:true, won, prize: won ? prize : 0}
+  })
+  db.resolutions.push({
+    matchId, resolvedTs: Date.now(),
+    finalScore1: s1, finalScore2: s2,
+    totalBets: betsM.length, totalPool, netPool,
+    winnerCount: winners.length, prizePerWinner: prize,
+  })
+  _saveDB(db)
+  _toast(`P${matchId} resuelto — ${winners.length} ganador(es) · ${_cop(prize)} c/u`, 4000)
+  renderAdmin()
+  renderResults()
+}
+
+function exportCSV() {
+  const db = _loadDB()
+  const allM = _allMatches()
+  const rows = [['Partido','Eq1','Eq2','Nombre','Contacto','Pred1','Pred2','Código','Timestamp','Resuelto','Ganó','Premio']]
+  db.bets.forEach(b => {
+    const m = allM.find(x => x.numero === b.matchId)
+    rows.push([`P${b.matchId}`, m ? _eq1(m) : '', m ? _eq2(m) : '',
+      b.nombre, b.contacto, b.score1, b.score2, b.code,
+      new Date(b.ts).toISOString(), b.resolved, b.won, b.prize])
+  })
+  const csv = rows.map(r => r.map(v => `"${v}"`).join(',')).join('\n')
+  const a = document.createElement('a')
+  a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv)
+  a.download = 'apuestas_beer_club.csv'
+  a.click()
+}
+
+function clearAllData() {
+  if (!confirm('¿Eliminar TODOS los datos de apuestas? Esto no se puede deshacer.')) return
+  localStorage.removeItem(CONFIG.LS_KEY)
+  _toast('Datos eliminados.', 2000)
+  renderAdmin()
+  renderMatches()
+}
+
+// ── Auto-resolve ─────────────────────────────────────────────────
+function autoResolve() {
+  const db = _loadDB()
+  let changed = false
+  _allMatches().forEach(m => {
+    if (!m.jugado || m.g1_real == null) return
+    if (db.resolutions.find(r => r.matchId === m.numero)) return
+    const betsM = db.bets.filter(b => b.matchId === m.numero)
+    if (!betsM.length) return
+
+    const s1 = m.g1_real, s2 = m.g2_real
+    const totalPool = betsM.length * CONFIG.BET_AMOUNT
+    const netPool = Math.round(totalPool * (1 - CONFIG.RAKE))
+    const winners = betsM.filter(b => b.score1 === s1 && b.score2 === s2)
+    const prize = winners.length > 0 ? Math.floor(netPool / winners.length) : 0
+
+    db.bets = db.bets.map(b => {
+      if (b.matchId !== m.numero) return b
+      const won = b.score1 === s1 && b.score2 === s2
+      return {...b, resolved:true, won, prize: won ? prize : 0}
+    })
+    db.resolutions.push({
+      matchId: m.numero, resolvedTs: Date.now(),
+      finalScore1: s1, finalScore2: s2,
+      totalBets: betsM.length, totalPool, netPool,
+      winnerCount: winners.length, prizePerWinner: prize,
+    })
+    changed = true
+    if (winners.length) _toast(`🏆 P${m.numero} resuelto — ${winners.length} ganador(es)!`, 4000)
+  })
+  if (changed) _saveDB(db)
+}
+
+// ── Live data polling ─────────────────────────────────────────────
+async function _pollData() {
+  try {
+    const r = await fetch(CONFIG.DATA_URL + '?t=' + Date.now())
+    if (!r.ok) return
+    new Function(await r.text())()   // updates window.POLLA_DATA
+    renderMatches()
+    autoResolve()
+    if (_adminMode) renderAdmin()
+  } catch { /* silent */ }
+}
+
+// ── Admin via ?admin=true or triple-click logo ────────────────────
+let _adminMode = new URLSearchParams(location.search).has('admin')
+let _logoClicks = 0, _logoTimer = null
+
+function _logoClick() {
+  _logoClicks++
+  clearTimeout(_logoTimer)
+  _logoTimer = setTimeout(() => { _logoClicks = 0 }, 1500)
+  if (_logoClicks >= 3) {
+    _logoClicks = 0
+    _adminMode = true
+    history.replaceState(null, '', '?admin=true')
+    document.getElementById('admin-panel').style.display = 'block'
+    renderAdmin()
+    _toast('Modo admin activado.', 2000)
+  }
+}
+
+// ── Init ──────────────────────────────────────────────────────────
+function init() {
+  renderMatches()
+  autoResolve()
+  if (_adminMode) {
+    document.getElementById('admin-panel').style.display = 'block'
+    renderAdmin()
+  }
+  document.getElementById('logo').addEventListener('click', _logoClick)
+  setInterval(_pollData, CONFIG.POLL_MS)
+}
+
+init()
+</script>
+</body>
+</html>
