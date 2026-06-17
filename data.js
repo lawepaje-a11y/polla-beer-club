@@ -1568,7 +1568,7 @@ window.POLLA_DATA = {
       "grupo": "L",
       "eq1": "Inglaterra",
       "eq2": "Croacia",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-17",
@@ -30391,6 +30391,12 @@ window.POLLA_DATA = {
       "equipo": "Congo",
       "goles": 1,
       "votos_polla": 0
+    },
+    {
+      "nombre": "Harry Kane",
+      "equipo": "Inglaterra",
+      "goles": 1,
+      "votos_polla": 15
     }
   ]
 };
