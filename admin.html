@@ -9,7 +9,7 @@
     :root {
       --bg:#0f172a; --surface:#1e293b; --surface2:#334155; --border:#475569;
       --text:#f1f5f9; --muted:#94a3b8; --accent:#3b82f6; --green:#22c55e;
-      --red:#ef4444; --yellow:#f59e0b; --blue-l:#1e3a5f;
+      --red:#ef4444; --yellow:#f59e0b; --blue-l:#1e3a5f; --purple:#7c3aed;
     }
     *{box-sizing:border-box;margin:0;padding:0}
     body{background:var(--bg);color:var(--text);font-family:system-ui,sans-serif;height:100vh;overflow:hidden}
@@ -64,14 +64,18 @@
     #planilla-img{position:absolute;transform-origin:0 0;user-select:none;max-width:none;display:block}
 
     /* ── Edit panel ── */
-    #edit-panel{flex:1;overflow-y:auto;padding:.6rem;background:var(--bg)}
-    #edit-panel::-webkit-scrollbar{width:5px}
-    #edit-panel::-webkit-scrollbar-track{background:var(--bg)}
-    #edit-panel::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
-    #participant-info{background:var(--surface);border:1px solid var(--border);border-radius:.6rem;padding:.6rem .85rem;margin-bottom:.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+    #edit-panel{flex:1;display:flex;flex-direction:column;background:var(--bg);overflow:hidden}
+    #edit-scroll{padding:.5rem .6rem 0;flex-shrink:0}
+    #participant-info{background:var(--surface);border:1px solid var(--border);border-radius:.6rem;padding:.6rem .85rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
     #participant-info .pi-name{font-weight:700;font-size:.9rem}
     #participant-info .pi-pts{font-size:.8rem;color:var(--muted)}
     #participant-info .pi-pts span{color:var(--accent);font-weight:700}
+
+    /* ── Panel tabs ── */
+    .panel-tabs{display:flex;gap:.35rem;padding:.4rem .6rem;background:var(--surface);border-bottom:1px solid var(--border);flex-shrink:0}
+    .ptab{background:var(--surface2);border:1px solid var(--border);color:var(--muted);padding:.28rem .75rem;border-radius:.4rem;cursor:pointer;font-size:.8rem;font-weight:600;transition:all .12s}
+    .ptab.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .ptab:hover:not(.active){background:var(--border);color:var(--text)}
 
     /* ── Group blocks ── */
     .grp-block{margin-bottom:.4rem;border:1px solid var(--border);border-radius:.5rem;overflow:hidden}
@@ -97,6 +101,26 @@
     .score-dash{color:var(--muted);font-weight:700;font-size:.85rem}
     .real-score{font-size:.72rem;color:var(--muted);text-align:center;white-space:nowrap}
     .real-score.jugado{color:var(--green)}
+
+    /* ── Elim blocks ── */
+    .elim-block{margin-bottom:.4rem;border:1px solid var(--border);border-radius:.5rem;overflow:hidden}
+    .elim-hd{display:flex;align-items:center;gap:.5rem;padding:.38rem .75rem;background:var(--surface2);cursor:pointer;user-select:none;transition:background .12s}
+    .elim-hd:hover{background:var(--border)}
+    .elim-tag{background:var(--purple);color:#fff;padding:.1rem .45rem;border-radius:.25rem;font-size:.68rem;font-weight:800;letter-spacing:.05em;white-space:nowrap}
+    .elim-chev{margin-left:auto;font-size:.8rem;color:var(--muted);transition:transform .15s}
+    .elim-block.collapsed .elim-body{display:none}
+    .elim-block.collapsed .elim-chev{transform:rotate(-90deg)}
+    .elim-body table{width:100%;border-collapse:collapse;font-size:.77rem}
+    .elim-body thead th{background:var(--surface);color:var(--muted);font-size:.67rem;font-weight:600;padding:.25rem .45rem;text-align:left;border-bottom:1px solid var(--border)}
+    .elim-body td{padding:.28rem .45rem;border-bottom:1px solid rgba(71,85,105,.3);vertical-align:middle}
+    .elim-body tr:last-child td{border-bottom:none}
+    .elim-body tr:hover td{background:rgba(255,255,255,.02)}
+    .elim-body tr.played td{background:rgba(34,197,94,.04)}
+    .team-input{width:100%;background:var(--surface2);border:1px solid var(--border);color:var(--text);border-radius:.3rem;padding:.2rem .4rem;font-size:.78rem;min-width:0}
+    .team-input:focus{outline:none;border-color:var(--accent);background:var(--blue-l)}
+    .team-input.changed{border-color:var(--yellow)!important;background:rgba(245,158,11,.18)!important}
+    .vs-sep{color:var(--muted);font-weight:700;padding:0 .3rem;white-space:nowrap;font-size:.8rem}
+    .warn-team{border-color:var(--red)!important;background:rgba(239,68,68,.12)!important}
   </style>
 </head>
 <body>
@@ -110,7 +134,6 @@
     <button class="auth-btn" onclick="checkPin()">Entrar</button>
     <div class="auth-error" id="pin-error"></div>
   </div>
-
 </div>
 
 <!-- ════ TOAST ════ -->
@@ -147,11 +170,75 @@
 
   <!-- Edit panel -->
   <div id="edit-panel">
-    <div id="participant-info"></div>
-    <div id="groups-container"></div>
+    <div id="edit-scroll">
+      <div id="participant-info"></div>
+    </div>
+
+    <!-- Tab toggle -->
+    <div class="panel-tabs">
+      <button class="ptab active" data-tab="grupos"       onclick="showPanelTab('grupos')">⚽ Grupos (72)</button>
+      <button class="ptab"        data-tab="eliminatorias" onclick="showPanelTab('eliminatorias')">🏆 Eliminatorias (32)</button>
+    </div>
+
+    <div id="edit-scroll-main" style="flex:1;overflow-y:auto;padding:.5rem .6rem .6rem">
+      <div id="groups-container"></div>
+      <div id="elim-container" style="display:none"></div>
+    </div>
   </div>
 
 </div>
+
+<!-- ════ DATALIST — 48 equipos del Mundial 2026 ════ -->
+<datalist id="teams-list">
+  <option value="Alemania">
+  <option value="Arabia Saudita">
+  <option value="Argelia">
+  <option value="Argentina">
+  <option value="Australia">
+  <option value="Austria">
+  <option value="Bosnia y Herz.">
+  <option value="Brasil">
+  <option value="Bélgica">
+  <option value="Cabo Verde">
+  <option value="Canadá">
+  <option value="Catar">
+  <option value="Chequia">
+  <option value="Colombia">
+  <option value="Congo">
+  <option value="Corea del Sur">
+  <option value="Costa de Marfil">
+  <option value="Croacia">
+  <option value="Curazao">
+  <option value="Ecuador">
+  <option value="Egipto">
+  <option value="Escocia">
+  <option value="España">
+  <option value="Estados Unidos">
+  <option value="Francia">
+  <option value="Ghana">
+  <option value="Haití">
+  <option value="Inglaterra">
+  <option value="Irak">
+  <option value="Irán">
+  <option value="Japón">
+  <option value="Jordania">
+  <option value="Marruecos">
+  <option value="México">
+  <option value="Noruega">
+  <option value="Nueva Zelanda">
+  <option value="Países Bajos">
+  <option value="Panamá">
+  <option value="Paraguay">
+  <option value="Portugal">
+  <option value="Senegal">
+  <option value="Sudáfrica">
+  <option value="Suecia">
+  <option value="Suiza">
+  <option value="Túnez">
+  <option value="Turquía">
+  <option value="Uruguay">
+  <option value="Uzbekistán">
+</datalist>
 
 <script>
 /* ════════════════════════════════════════════════════════════════
@@ -160,17 +247,44 @@
 const REPO      = 'lawepaje-a11y/polla-beer-club';
 const API_BASE  = 'https://api.github.com/repos/' + REPO + '/contents/';
 const GRUPOS    = ['A','B','C','D','E','F','G','H','I','J','K','L'];
-// Token encriptado con AES-GCM / PBKDF2 usando el PIN como clave
 const TOKEN_BLOB = '6AvbHVwCz3gPT5XjPRXVu93eUnjA9sOKF1pEDpCECJuwFX+QDWYzfm494iFeZ1FzmeEh70w/eVR3WsniCld40Gs/igSYNDZoj3CP/K+Id3Lqnnu8';
+
+const FASE_ORDER = ['DIECISEISAVOS','OCTAVOS','CUARTOS','SEMIFINAL','TERCER_PUESTO','FINAL'];
+const FASE_LABEL_ADMIN = {
+  DIECISEISAVOS:'Dieciseisavos de Final',
+  OCTAVOS:'Octavos de Final',
+  CUARTOS:'Cuartos de Final',
+  SEMIFINAL:'Semifinal',
+  TERCER_PUESTO:'Tercer Puesto',
+  FINAL:'Final 🏆'
+};
+const FASE_PTS = {DIECISEISAVOS:3,OCTAVOS:5,CUARTOS:10,SEMIFINAL:20,TERCER_PUESTO:20,FINAL:50};
+
+// Equipos válidos para validación (resaltar en rojo los que no están)
+const VALID_TEAMS = new Set([
+  'Alemania','Arabia Saudita','Argelia','Argentina','Australia','Austria',
+  'Bosnia y Herz.','Brasil','Bélgica','Cabo Verde','Canadá','Catar',
+  'Chequia','Colombia','Congo','Corea del Sur','Costa de Marfil','Croacia',
+  'Curazao','Ecuador','Egipto','Escocia','España','Estados Unidos',
+  'Francia','Ghana','Haití','Inglaterra','Irak','Irán','Japón','Jordania',
+  'Marruecos','México','Noruega','Nueva Zelanda','Países Bajos','Panamá',
+  'Paraguay','Portugal','Senegal','Sudáfrica','Suecia','Suiza','Túnez',
+  'Turquía','Uruguay','Uzbekistán'
+]);
 
 /* ════════════════════════════════════════════════════════════════
    STATE
 ════════════════════════════════════════════════════════════════ */
-let D, participants, currentPid, changes = {}, origPreds = {};
-let ghToken = null; // decrypted in memory after PIN entry
+let D, participants, currentPid;
+let changes     = {};   // grupos: partido → [g1, g2]
+let origPreds   = {};
+let elimChanges = {};   // elim: partido → [eq1, eq2]
+let origElimPreds = {};
+let ghToken = null;
+let _activeTab  = 'grupos';
 
 /* ════════════════════════════════════════════════════════════════
-   CRYPTO — decrypt token with PIN (AES-GCM + PBKDF2)
+   CRYPTO
 ════════════════════════════════════════════════════════════════ */
 async function decryptToken(pin) {
   const raw  = Uint8Array.from(atob(TOKEN_BLOB), c => c.charCodeAt(0));
@@ -240,17 +354,31 @@ function initApp() {
 }
 
 /* ════════════════════════════════════════════════════════════════
+   TAB TOGGLE
+════════════════════════════════════════════════════════════════ */
+function showPanelTab(tab) {
+  _activeTab = tab;
+  document.getElementById('groups-container').style.display = tab === 'grupos' ? '' : 'none';
+  document.getElementById('elim-container').style.display   = tab === 'eliminatorias' ? '' : 'none';
+  document.querySelectorAll('.ptab').forEach(b =>
+    b.classList.toggle('active', b.dataset.tab === tab)
+  );
+}
+
+/* ════════════════════════════════════════════════════════════════
    PARTICIPANT
 ════════════════════════════════════════════════════════════════ */
 function loadParticipant(pid) {
-  if (Object.keys(changes).length > 0) {
+  const totalPending = Object.keys(changes).length + Object.keys(elimChanges).length;
+  if (totalPending > 0) {
     if (!confirm('Tienes cambios sin guardar. ¿Continuar de todas formas?')) {
       document.getElementById('participant-sel').value = currentPid;
       return;
     }
   }
   currentPid = String(pid);
-  changes = {};
+  changes     = {};
+  elimChanges = {};
   updateBadge();
 
   document.getElementById('participant-sel').value = pid;
@@ -262,6 +390,7 @@ function loadParticipant(pid) {
 
   renderParticipantInfo(p);
   renderGroups(pid);
+  renderElim(pid);
 }
 
 function navigate(dir) {
@@ -271,16 +400,20 @@ function navigate(dir) {
 }
 
 /* ════════════════════════════════════════════════════════════════
-   RENDER
+   RENDER — participante info
 ════════════════════════════════════════════════════════════════ */
 function renderParticipantInfo(p) {
   document.getElementById('participant-info').innerHTML = `
     <span class="pi-name">📋 ${p.pagina}. ${p.nombre}</span>
     <span class="pi-pts">Grupos: <span>${p.pts.grupos}</span> pts</span>
+    <span class="pi-pts">Elim: <span>${p.pts.eliminatorias}</span> pts</span>
     <span class="pi-pts">Total: <span>${p.pts.total}</span> pts</span>
     <span class="pi-pts" style="color:var(--muted)">Goleador: ${p.goleador || '—'}</span>`;
 }
 
+/* ════════════════════════════════════════════════════════════════
+   RENDER — grupos
+════════════════════════════════════════════════════════════════ */
 function renderGroups(pid) {
   const preds = D.predictions.grupos[String(pid)] || {};
   origPreds = {};
@@ -335,7 +468,120 @@ function renderGroups(pid) {
 }
 
 /* ════════════════════════════════════════════════════════════════
-   SCORE EDITING
+   RENDER — eliminatorias
+════════════════════════════════════════════════════════════════ */
+function renderElim(pid) {
+  const preds = D.predictions.eliminatorias[String(pid)] || {};
+  origElimPreds = {};
+  Object.entries(preds).forEach(([k, v]) => { origElimPreds[k] = Array.isArray(v) ? [...v] : v; });
+
+  // Índice por número de partido
+  const matchByNum = {};
+  D.matches_elim.forEach(m => { matchByNum[m.numero] = m; });
+
+  // Agrupar por fase en orden
+  const byFase = {};
+  FASE_ORDER.forEach(f => { byFase[f] = []; });
+  D.matches_elim.forEach(m => { if (byFase[m.fase]) byFase[m.fase].push(m); });
+
+  // Contar equipos inválidos en este participante
+  let warnCount = 0;
+
+  let html = '';
+  FASE_ORDER.forEach(fase => {
+    const matches = byFase[fase];
+    if (!matches.length) return;
+    const played = matches.filter(m => m.jugado).length;
+
+    // Detectar errores en esta fase
+    let faseWarns = 0;
+    matches.forEach(m => {
+      const pred = preds[m.numero] || [];
+      if (pred[0] && !VALID_TEAMS.has(pred[0])) faseWarns++;
+      if (pred[1] && !VALID_TEAMS.has(pred[1])) faseWarns++;
+    });
+    warnCount += faseWarns;
+
+    html += `
+    <div class="elim-block">
+      <div class="elim-hd" onclick="this.parentElement.classList.toggle('collapsed')">
+        <span class="elim-tag">${FASE_LABEL_ADMIN[fase]}</span>
+        <span style="font-size:.72rem;color:var(--muted);margin-left:.25rem">${played}/${matches.length} jugados</span>
+        ${faseWarns > 0 ? `<span style="font-size:.68rem;color:var(--red);font-weight:700;margin-left:.3rem">⚠ ${faseWarns} error${faseWarns>1?'es':''}</span>` : ''}
+        <span class="elim-chev">▾</span>
+      </div>
+      <div class="elim-body"><table>
+        <thead><tr>
+          <th style="width:30px">#</th>
+          <th>Equipo 1 predicho</th>
+          <th style="width:20px"></th>
+          <th>Equipo 2 predicho</th>
+          <th style="width:120px;text-align:center">Resultado real</th>
+        </tr></thead>
+        <tbody>`;
+
+    matches.forEach(m => {
+      const pred = preds[m.numero] || [null, null];
+      const eq1  = pred[0] || '';
+      const eq2  = pred[1] || '';
+      const warn1 = eq1 && !VALID_TEAMS.has(eq1);
+      const warn2 = eq2 && !VALID_TEAMS.has(eq2);
+
+      let realStr = '—';
+      if (m.jugado) {
+        realStr = `<span style="color:var(--green);font-size:.72rem">${m.eq1_real||'?'} / ${m.eq2_real||'?'}`;
+        if (m.eq_ganador) realStr += ` · <strong>🏆${m.eq_ganador}</strong>`;
+        realStr += '</span>';
+      } else if (m.eq1_real) {
+        realStr = `<span style="color:var(--yellow);font-size:.72rem">🔴 ${m.eq1_real} / ${m.eq2_real}</span>`;
+      }
+
+      html += `
+        <tr class="${m.jugado ? 'played' : ''}">
+          <td class="pnum">P${m.numero}</td>
+          <td>
+            <input class="team-input${warn1 ? ' warn-team' : ''}" list="teams-list"
+              value="${escHtml(eq1)}"
+              data-partido="${m.numero}" data-side="0"
+              oninput="onElimChange(this)"
+              placeholder="Equipo 1…"
+              title="${warn1 ? '⚠ Equipo no reconocido — posible error OCR' : ''}" />
+          </td>
+          <td class="vs-sep">vs</td>
+          <td>
+            <input class="team-input${warn2 ? ' warn-team' : ''}" list="teams-list"
+              value="${escHtml(eq2)}"
+              data-partido="${m.numero}" data-side="1"
+              oninput="onElimChange(this)"
+              placeholder="Equipo 2…"
+              title="${warn2 ? '⚠ Equipo no reconocido — posible error OCR' : ''}" />
+          </td>
+          <td style="text-align:center">${realStr}</td>
+        </tr>`;
+    });
+    html += `</tbody></table></div></div>`;
+  });
+
+  // Resumen de errores arriba
+  if (warnCount > 0) {
+    html = `<div style="background:rgba(239,68,68,.1);border:1px solid var(--red);border-radius:.5rem;padding:.5rem .75rem;margin-bottom:.5rem;font-size:.78rem;color:var(--red)">
+      ⚠ <strong>${warnCount} equipo${warnCount>1?'s':''} no reconocido${warnCount>1?'s':''}</strong> — resaltados en rojo. Corrígelos usando el datalist.
+    </div>` + html;
+  } else {
+    html = `<div style="background:rgba(34,197,94,.08);border:1px solid var(--green);border-radius:.5rem;padding:.5rem .75rem;margin-bottom:.5rem;font-size:.78rem;color:var(--green)">
+      ✅ Todos los equipos son válidos para este participante.
+    </div>` + html;
+  }
+
+  document.getElementById('elim-container').innerHTML = html;
+}
+
+function escHtml(str) {
+  return (str || '').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+/* ════════════════════════════════════════════════════════════════
+   SCORE & TEAM EDITING
 ════════════════════════════════════════════════════════════════ */
 function onScoreChange(el) {
   const partido = el.dataset.partido;
@@ -348,7 +594,6 @@ function onScoreChange(el) {
   }
   changes[partido][side] = val;
 
-  // Remove if back to original
   const orig = origPreds[partido];
   if (orig && changes[partido][0] === orig[0] && changes[partido][1] === orig[1]) {
     delete changes[partido];
@@ -361,12 +606,65 @@ function onScoreChange(el) {
   updateBadge();
 }
 
+function onElimChange(el) {
+  const partido = el.dataset.partido;
+  const side    = parseInt(el.dataset.side);
+  const val     = el.value.trim() || null;
+
+  if (!elimChanges[partido]) {
+    const orig = origElimPreds[partido];
+    elimChanges[partido] = orig ? [...orig] : [null, null];
+  }
+  elimChanges[partido][side] = val;
+
+  const orig = origElimPreds[partido];
+  if (orig && elimChanges[partido][0] === orig[0] && elimChanges[partido][1] === orig[1]) {
+    delete elimChanges[partido];
+  }
+
+  const isChanged = !!elimChanges[partido];
+  document.querySelectorAll(`.team-input[data-partido="${partido}"]`)
+    .forEach(i => i.classList.toggle('changed', isChanged));
+
+  // Validar si el equipo es válido
+  if (val && !VALID_TEAMS.has(val)) {
+    el.classList.add('warn-team');
+  } else {
+    el.classList.remove('warn-team');
+  }
+
+  updateBadge();
+}
+
 function updateBadge() {
-  const n = Object.keys(changes).length;
+  const n = Object.keys(changes).length + Object.keys(elimChanges).length;
   const badge = document.getElementById('changes-badge');
   badge.style.display = n > 0 ? '' : 'none';
-  badge.textContent = `● ${n} cambio${n !== 1 ? 's' : ''}`;
+  const gn = Object.keys(changes).length;
+  const en = Object.keys(elimChanges).length;
+  badge.textContent = `● ${gn>0?gn+' grp':''}${gn>0&&en>0?' · ':''}${en>0?en+' elim':''}`;
   document.getElementById('save-btn').disabled = n === 0;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   PUNTOS ELIMINATORIAS (espejo de index.html / v_puntos_eliminatorias)
+════════════════════════════════════════════════════════════════ */
+function elimPts(pred, match) {
+  if (!match.jugado || !pred) return 0;
+  const eq1p = pred[0], eq2p = pred[1];
+  let pts = 0;
+  const base = FASE_PTS[match.fase] || 0;
+  if (match.fase === 'FINAL') {
+    if (eq1p === match.eq_ganador) pts += 50; else if (eq1p === match.eq1_real || eq1p === match.eq2_real) pts += 30;
+    if (eq2p && eq2p !== eq1p) { if (eq2p === match.eq_ganador) pts += 50; else if (eq2p === match.eq1_real || eq2p === match.eq2_real) pts += 30; }
+  } else if (match.fase === 'TERCER_PUESTO') {
+    if (eq1p === match.eq_ganador) pts += 20; else if (eq1p === match.eq1_real || eq1p === match.eq2_real) pts += 10;
+    if (eq2p && eq2p !== eq1p) { if (eq2p === match.eq_ganador) pts += 20; else if (eq2p === match.eq1_real || eq2p === match.eq2_real) pts += 10; }
+  } else {
+    if (eq1p && (eq1p === match.eq1_real || eq1p === match.eq2_real)) pts += base;
+    if (eq2p && eq2p !== eq1p && (eq2p === match.eq1_real || eq2p === match.eq2_real)) pts += base;
+  }
+  return pts;
 }
 
 /* ════════════════════════════════════════════════════════════════
@@ -412,7 +710,8 @@ async function putDataJs(token, b64, sha, commitMsg) {
 }
 
 async function saveChanges() {
-  if (!Object.keys(changes).length) return;
+  const totalChanges = Object.keys(changes).length + Object.keys(elimChanges).length;
+  if (!totalChanges) return;
   const btn = document.getElementById('save-btn');
 
   btn.disabled = true;
@@ -424,38 +723,59 @@ async function saveChanges() {
     const token = ghToken;
     const p     = participants.find(x => x.id == currentPid);
 
-    // Apply changes to in-memory data
-    const preds = D.predictions.grupos[currentPid] || {};
-    Object.entries(changes).forEach(([partido, scores]) => { preds[partido] = scores; });
-    D.predictions.grupos[currentPid] = preds;
+    // ── Aplicar cambios de grupos ─────────────────────────────
+    const gPreds = D.predictions.grupos[currentPid] || {};
+    Object.entries(changes).forEach(([partido, scores]) => { gPreds[partido] = scores; });
+    D.predictions.grupos[currentPid] = gPreds;
 
-    // Recalculate group points for this participant
+    // Recalcular pts grupos
     const resultMap = {};
     D.matches_grupos.forEach(m => { resultMap[m.numero] = m; });
-    let pts = 0;
-    Object.entries(preds).forEach(([n, pred]) => {
+    let gPts = 0;
+    Object.entries(gPreds).forEach(([n, pred]) => {
       const m = resultMap[parseInt(n)];
       if (!m || !m.jugado || pred == null || pred[0] == null || pred[1] == null) return;
       const [g1p, g2p] = pred;
-      if (g1p === m.g1_real && g2p === m.g2_real) { pts += 3; return; }
-      if ((g1p > g2p) === (m.g1_real > m.g2_real) && (g1p < g2p) === (m.g1_real < m.g2_real)) pts += 1;
+      if (g1p === m.g1_real && g2p === m.g2_real) { gPts += 3; return; }
+      if ((g1p > g2p) === (m.g1_real > m.g2_real) && (g1p < g2p) === (m.g1_real < m.g2_real)) gPts += 1;
     });
+
+    // ── Aplicar cambios de eliminatorias ──────────────────────
+    const ePreds = D.predictions.eliminatorias[currentPid] || {};
+    Object.entries(elimChanges).forEach(([partido, teams]) => { ePreds[partido] = teams; });
+    D.predictions.eliminatorias[currentPid] = ePreds;
+
+    // Recalcular pts eliminatorias
+    const matchByNum = {};
+    D.matches_elim.forEach(m => { matchByNum[m.numero] = m; });
+    let ePts = 0;
+    Object.entries(ePreds).forEach(([n, pred]) => {
+      const m = matchByNum[parseInt(n)];
+      if (!m || !m.jugado || !pred) return;
+      ePts += elimPts(pred, m);
+    });
+
+    // ── Actualizar participante ───────────────────────────────
     const participant = D.participants.find(x => x.id == currentPid);
     if (participant) {
-      participant.pts.grupos = pts;
-      participant.pts.total  = pts + (participant.pts.eliminatorias || 0) + (participant.pts.goleador || 0);
+      participant.pts.grupos        = gPts;
+      participant.pts.eliminatorias = ePts;
+      participant.pts.total         = gPts + ePts + (participant.pts.goleador || 0);
     }
     D.participants.sort((a, b) => b.pts.total - a.pts.total || a.nombre.localeCompare(b.nombre, 'es'));
 
-    // Serialize data.js with reliable UTF-8→base64
+    // ── Serializar y publicar ─────────────────────────────────
     const content = '// Generado automáticamente por update_data.py — no editar manualmente\nwindow.POLLA_DATA = ' +
       JSON.stringify(D, null, 2) + ';\n';
     const b64 = toBase64(content);
 
-    const nChanges = Object.keys(changes).length;
-    const commitMsg = `Admin: pág ${p.pagina} ${p.nombre} — ${nChanges} corrección${nChanges !== 1 ? 'es' : ''}`;
+    const nG = Object.keys(changes).length;
+    const nE = Object.keys(elimChanges).length;
+    const parts = [];
+    if (nG) parts.push(`${nG} grupo`);
+    if (nE) parts.push(`${nE} elim`);
+    const commitMsg = `Admin: pág ${p.pagina} ${p.nombre} — ${parts.join(', ')}`;
 
-    // Get SHA (auto-retry once on 409 SHA conflict from concurrent GitHub Actions)
     setStatus('Leyendo SHA…');
     let sha = await fetchSha(token);
 
@@ -473,19 +793,21 @@ async function saveChanges() {
       throw new Error((err.message || `HTTP ${putR.status}`) + ` — verifica que el token tenga scope "repo"`);
     }
 
-    const putData = await putR.json().catch(() => ({}));
-    const commitUrl = putData?.commit?.html_url || '';
-    if (commitUrl) console.info('Commit:', commitUrl);
-
     // Audit log
     setStatus('Guardando log…');
-    await pushCorrectionsLog(token, p, changes);
+    await pushCorrectionsLog(token, p, changes, elimChanges);
 
     // Commit state
     Object.entries(changes).forEach(([k, v]) => { origPreds[k] = Array.isArray(v) ? [...v] : v; });
-    changes = {};
+    Object.entries(elimChanges).forEach(([k, v]) => { origElimPreds[k] = Array.isArray(v) ? [...v] : v; });
+    changes     = {};
+    elimChanges = {};
     updateBadge();
     document.querySelectorAll('.score-input.changed').forEach(el => el.classList.remove('changed'));
+    document.querySelectorAll('.team-input.changed').forEach(el => el.classList.remove('changed'));
+
+    // Actualizar info del participante
+    renderParticipantInfo(participants.find(x => x.id == currentPid));
 
     btn.className = '';
     btn.textContent = '💾 Guardar';
@@ -503,7 +825,7 @@ async function saveChanges() {
   }
 }
 
-async function pushCorrectionsLog(token, participant, changesSnap) {
+async function pushCorrectionsLog(token, participant, grupoSnap, elimSnap) {
   try {
     let existing = {}, sha = null;
     const getR = await fetch(API_BASE + 'corrections.json', {
@@ -516,9 +838,10 @@ async function pushCorrectionsLog(token, participant, changesSnap) {
     }
     const pagKey = String(participant.pagina);
     if (!existing[pagKey]) existing[pagKey] = {};
-    Object.entries(changesSnap).forEach(([partido, scores]) => {
-      existing[pagKey][partido] = scores;
-    });
+    if (!existing[pagKey].grupos) existing[pagKey].grupos = {};
+    if (!existing[pagKey].eliminatorias) existing[pagKey].eliminatorias = {};
+    Object.entries(grupoSnap).forEach(([p, s]) => { existing[pagKey].grupos[p] = s; });
+    Object.entries(elimSnap).forEach(([p, s]) => { existing[pagKey].eliminatorias[p] = s; });
     const body = {
       message: `Corrections: pág ${participant.pagina}`,
       content: btoa(unescape(encodeURIComponent(JSON.stringify(existing, null, 2)))),
@@ -546,7 +869,6 @@ let scale = 1, tx = 0, ty = 0, dragging = false, startX, startY, startTx, startT
 
 function initImageZoom() {
   const vp  = document.getElementById('img-viewport');
-  const img = document.getElementById('planilla-img');
 
   vp.addEventListener('wheel', e => {
     e.preventDefault();
@@ -614,7 +936,7 @@ document.addEventListener('keydown', e => {
   if ((e.ctrlKey || e.metaKey) && e.key === 's') { e.preventDefault(); saveChanges(); }
 });
 
-// Auto-restore session within same browser tab/session
+// Auto-restore session
 window.addEventListener('load', () => {
   const stored = sessionStorage.getItem('a_tok');
   if (stored) {
