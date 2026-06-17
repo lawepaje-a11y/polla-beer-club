@@ -1501,11 +1501,12 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Portugal",
       "eq2": "Congo",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-17",
-      "hora": "12:00 PM"
+      "hora": "12:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 62,
