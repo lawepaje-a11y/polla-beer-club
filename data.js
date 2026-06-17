@@ -4,7 +4,7 @@ window.POLLA_DATA = {
     "nombre_polla": "POLLA BEER CLUB",
     "torneo": "MUNDIAL FIFA 2026",
     "total_participantes": 67,
-    "partidos_jugados_grupos": 20,
+    "partidos_jugados_grupos": 21,
     "partidos_totales_grupos": 72,
     "goleador_real": null,
     "partidos_jugados_elim": 0
@@ -51,6 +51,18 @@ window.POLLA_DATA = {
       "pagina": 36,
       "nombre": "JEISON ESTIBEN AVILA SIERRA",
       "goleador": "Ousmane Dembélé",
+      "pts": {
+        "grupos": 16,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 16
+      }
+    },
+    {
+      "id": 44,
+      "pagina": 44,
+      "nombre": "Marlon Ceron",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 16,
         "eliminatorias": 0,
@@ -315,18 +327,6 @@ window.POLLA_DATA = {
       "pagina": 46,
       "nombre": "Manuel Fino",
       "goleador": "Lamine Yamal",
-      "pts": {
-        "grupos": 13,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 13
-      }
-    },
-    {
-      "id": 44,
-      "pagina": 44,
-      "nombre": "Marlon Ceron",
-      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 13,
         "eliminatorias": 0,
@@ -808,10 +808,10 @@ window.POLLA_DATA = {
       "nombre": "Edson Medina",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 6,
+        "grupos": 7,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 6
+        "total": 7
       }
     }
   ],
@@ -1503,10 +1503,10 @@ window.POLLA_DATA = {
       "eq2": "Congo",
       "g1_real": 1,
       "g2_real": 1,
-      "jugado": false,
+      "jugado": true,
       "fecha": "2026-06-17",
       "hora": "12:00 PM",
-      "en_vivo": true
+      "en_vivo": false
     },
     {
       "numero": 62,
