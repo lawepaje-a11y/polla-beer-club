@@ -1445,7 +1445,7 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Austria",
       "eq2": "Jordania",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-16",
@@ -30357,6 +30357,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Leo Østigard",
       "equipo": "Noruega",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Romano Schmid",
+      "equipo": "Austria",
       "goles": 1,
       "votos_polla": 0
     }
