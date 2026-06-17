@@ -24475,7 +24475,7 @@ window.POLLA_DATA = {
         ],
         "81": [
           "Estados Unidos",
-          "Botsuana"
+          "Bosnia y Herz."
         ],
         "82": [
           "Bélgica",
@@ -24499,7 +24499,7 @@ window.POLLA_DATA = {
         ],
         "87": [
           "Portugal",
-          "Gana"
+          "Ghana"
         ],
         "88": [
           "Paraguay",
