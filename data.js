@@ -143,10 +143,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 37,
-      "pagina": 37,
-      "nombre": "FELIPE SÁNCHEZ Y LA IA",
-      "goleador": "Julián Álvarez",
+      "id": 14,
+      "pagina": 14,
+      "nombre": "Felipe Sanchez",
+      "goleador": "Harry Kane",
       "pts": {
         "grupos": 15,
         "eliminatorias": 0,
@@ -155,10 +155,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 14,
-      "pagina": 14,
-      "nombre": "Felipe Sanchez",
-      "goleador": "Harry Kane",
+      "id": 37,
+      "pagina": 37,
+      "nombre": "FELIPE SÁNCHEZ Y LA IA",
+      "goleador": "Julián Álvarez",
       "pts": {
         "grupos": 15,
         "eliminatorias": 0,
@@ -287,10 +287,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 39,
-      "pagina": 39,
-      "nombre": "LEONARDO RIVERA - CARLOS LAITON",
-      "goleador": "Michael Olise",
+      "id": 4,
+      "pagina": 4,
+      "nombre": "Leandro Murcia",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 14,
         "eliminatorias": 0,
@@ -299,10 +299,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 4,
-      "pagina": 4,
-      "nombre": "Leandro Murcia",
-      "goleador": "Kylian Mbappé",
+      "id": 39,
+      "pagina": 39,
+      "nombre": "LEONARDO RIVERA - CARLOS LAITON",
+      "goleador": "Michael Olise",
       "pts": {
         "grupos": 14,
         "eliminatorias": 0,
@@ -431,9 +431,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 13,
@@ -443,9 +443,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 13,
@@ -503,9 +503,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 13,
-      "pagina": 13,
-      "nombre": "SANTIAGO MEDINA",
+      "id": 43,
+      "pagina": 43,
+      "nombre": "Samuel Penuela",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 12,
@@ -515,9 +515,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 43,
-      "pagina": 43,
-      "nombre": "Samuel Penuela",
+      "id": 13,
+      "pagina": 13,
+      "nombre": "SANTIAGO MEDINA",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 12,
@@ -19631,7 +19631,7 @@ window.POLLA_DATA = {
           1
         ],
         "13": [
-          2,
+          3,
           1
         ],
         "14": [
@@ -19679,7 +19679,7 @@ window.POLLA_DATA = {
           0
         ],
         "25": [
-          2,
+          3,
           0
         ],
         "26": [
@@ -19687,8 +19687,8 @@ window.POLLA_DATA = {
           2
         ],
         "27": [
-          1,
-          2
+          2,
+          1
         ],
         "28": [
           2,
@@ -19700,7 +19700,7 @@ window.POLLA_DATA = {
         ],
         "30": [
           1,
-          1
+          3
         ],
         "31": [
           1,
@@ -19815,7 +19815,7 @@ window.POLLA_DATA = {
           1
         ],
         "59": [
-          2,
+          3,
           0
         ],
         "60": [
@@ -19824,7 +19824,7 @@ window.POLLA_DATA = {
         ],
         "61": [
           2,
-          1
+          0
         ],
         "62": [
           2,
@@ -19836,7 +19836,7 @@ window.POLLA_DATA = {
         ],
         "64": [
           1,
-          1
+          0
         ],
         "65": [
           1,
@@ -29263,47 +29263,47 @@ window.POLLA_DATA = {
           "Australia"
         ],
         "75": [
-          "Suiza",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "España"
+          "Japón"
         ],
         "77": [
           "Noruega",
-          "Austria"
+          "Suecia"
         ],
         "78": [
-          "Cecilia",
-          "Panamá"
+          "Ecuador",
+          "Francia"
         ],
         "79": [
           "México",
-          "Cecilia"
+          "Escocia"
         ],
         "80": [
           "Croacia",
-          "Croacia"
+          "Colombia"
         ],
         "81": [
-          "Irak",
-          "Escocia"
+          "Turquía",
+          "Senegal"
         ],
         "82": [
           "Bélgica",
-          "Congo"
+          "Corea del Sur"
         ],
         "83": [
-          "Noruega",
-          "Bulgaria"
+          "Uzbekistán",
+          "Inglaterra"
         ],
         "84": [
-          "Suiza",
-          "Malta"
+          "España",
+          "Argelia"
         ],
         "85": [
-          "Suecia",
+          "Suiza",
           "Austria"
         ],
         "86": [
@@ -29315,7 +29315,7 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "Uruguay",
+          "Paraguay",
           "Egipto"
         ],
         "89": [
@@ -29323,8 +29323,8 @@ window.POLLA_DATA = {
           "Suecia"
         ],
         "90": [
-          "Córdoba",
-          "Brasil"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -29339,20 +29339,20 @@ window.POLLA_DATA = {
           "España"
         ],
         "94": [
-          "Paraguay",
+          "Turquía",
           "Bélgica"
         ],
         "95": [
           "Argentina",
-          "Portugal"
+          "Paraguay"
         ],
         "96": [
-          "Curazao",
-          "Pakistán"
+          "Suiza",
+          "Portugal"
         ],
         "97": [
           "Alemania",
-          "Brasil"
+          "Países Bajos"
         ],
         "98": [
           "España",
