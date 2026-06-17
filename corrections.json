@@ -817,5 +817,107 @@
       ]
     },
     "eliminatorias": {}
+  },
+  "62": {
+    "grupos": {
+      "13": [
+        3,
+        1
+      ],
+      "25": [
+        3,
+        0
+      ],
+      "27": [
+        2,
+        1
+      ],
+      "30": [
+        1,
+        3
+      ],
+      "59": [
+        3,
+        0
+      ],
+      "61": [
+        2,
+        0
+      ],
+      "64": [
+        1,
+        0
+      ]
+    },
+    "eliminatorias": {
+      "75": [
+        "Países Bajos",
+        "Marruecos"
+      ],
+      "76": [
+        "Brasil",
+        "Japón"
+      ],
+      "77": [
+        "Noruega",
+        "Suecia"
+      ],
+      "78": [
+        "Ecuador",
+        "Francia"
+      ],
+      "79": [
+        "México",
+        "Escocia"
+      ],
+      "80": [
+        "Croacia",
+        "Colombia"
+      ],
+      "81": [
+        "Turquía",
+        "Senegal"
+      ],
+      "82": [
+        "Bélgica",
+        "Corea del Sur"
+      ],
+      "83": [
+        "Uzbekistán",
+        "Inglaterra"
+      ],
+      "84": [
+        "España",
+        "Argelia"
+      ],
+      "85": [
+        "Suiza",
+        "Austria"
+      ],
+      "88": [
+        "Paraguay",
+        "Egipto"
+      ],
+      "90": [
+        "Canadá",
+        "Países Bajos"
+      ],
+      "94": [
+        "Turquía",
+        "Bélgica"
+      ],
+      "95": [
+        "Argentina",
+        "Paraguay"
+      ],
+      "96": [
+        "Suiza",
+        "Portugal"
+      ],
+      "97": [
+        "Alemania",
+        "Países Bajos"
+      ]
+    }
   }
 }
