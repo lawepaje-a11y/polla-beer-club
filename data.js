@@ -1445,7 +1445,7 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Austria",
       "eq2": "Jordania",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-16",
@@ -30369,6 +30369,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Ali Olwan",
       "equipo": "Jordania",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Marko Arnautovic",
+      "equipo": "Austria",
       "goles": 1,
       "votos_polla": 0
     }
