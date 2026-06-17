@@ -58,6 +58,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 21,
+      "pagina": 21,
+      "nombre": "Tomás Forero",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 11,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 11
+      }
+    },
+    {
       "id": 48,
       "pagina": 48,
       "nombre": "Fidel Rodriguez",
@@ -361,18 +373,6 @@ window.POLLA_DATA = {
       "id": 63,
       "pagina": 63,
       "nombre": "Sergio Andres Russi",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 8,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 8
-      }
-    },
-    {
-      "id": 21,
-      "pagina": 21,
-      "nombre": "Tomás Forero",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 8,
@@ -7687,7 +7687,7 @@ window.POLLA_DATA = {
       "21": {
         "1": [
           2,
-          null
+          0
         ],
         "2": [
           1,
@@ -7726,7 +7726,7 @@ window.POLLA_DATA = {
           0
         ],
         "11": [
-          2,
+          1,
           0
         ],
         "12": [
@@ -7931,7 +7931,7 @@ window.POLLA_DATA = {
         ],
         "62": [
           0,
-          4
+          2
         ],
         "63": [
           2,
