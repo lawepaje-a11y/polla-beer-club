@@ -143,10 +143,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 14,
-      "pagina": 14,
-      "nombre": "Felipe Sanchez",
-      "goleador": "Harry Kane",
+      "id": 37,
+      "pagina": 37,
+      "nombre": "FELIPE SÁNCHEZ Y LA IA",
+      "goleador": "Julián Álvarez",
       "pts": {
         "grupos": 15,
         "eliminatorias": 0,
@@ -155,10 +155,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 37,
-      "pagina": 37,
-      "nombre": "FELIPE SÁNCHEZ Y LA IA",
-      "goleador": "Julián Álvarez",
+      "id": 14,
+      "pagina": 14,
+      "nombre": "Felipe Sanchez",
+      "goleador": "Harry Kane",
       "pts": {
         "grupos": 15,
         "eliminatorias": 0,
@@ -287,10 +287,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 4,
-      "pagina": 4,
-      "nombre": "Leandro Murcia",
-      "goleador": "Kylian Mbappé",
+      "id": 39,
+      "pagina": 39,
+      "nombre": "LEONARDO RIVERA - CARLOS LAITON",
+      "goleador": "Michael Olise",
       "pts": {
         "grupos": 14,
         "eliminatorias": 0,
@@ -299,10 +299,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 39,
-      "pagina": 39,
-      "nombre": "LEONARDO RIVERA - CARLOS LAITON",
-      "goleador": "Michael Olise",
+      "id": 4,
+      "pagina": 4,
+      "nombre": "Leandro Murcia",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 14,
         "eliminatorias": 0,
@@ -431,9 +431,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 13,
@@ -443,9 +443,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 13,
@@ -503,9 +503,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 43,
-      "pagina": 43,
-      "nombre": "Samuel Penuela",
+      "id": 13,
+      "pagina": 13,
+      "nombre": "SANTIAGO MEDINA",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 12,
@@ -515,9 +515,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 13,
-      "pagina": 13,
-      "nombre": "SANTIAGO MEDINA",
+      "id": 43,
+      "pagina": 43,
+      "nombre": "Samuel Penuela",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 12,
@@ -1580,11 +1580,12 @@ window.POLLA_DATA = {
       "grupo": "L",
       "eq1": "Ghana",
       "eq2": "Panamá",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-17",
-      "hora": "06:00 PM"
+      "hora": "06:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 69,
