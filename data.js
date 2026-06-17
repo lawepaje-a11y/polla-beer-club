@@ -323,10 +323,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 61,
-      "pagina": 61,
-      "nombre": "JHONYER LAITÓN",
-      "goleador": "Ferran Torres",
+      "id": 51,
+      "pagina": 51,
+      "nombre": "Jairo Enrique Galvis",
+      "goleador": "Harry Kane",
       "pts": {
         "grupos": 10,
         "eliminatorias": 0,
@@ -335,10 +335,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 51,
-      "pagina": 51,
-      "nombre": "Jairo Enrique Galvis",
-      "goleador": "Harry Kane",
+      "id": 61,
+      "pagina": 61,
+      "nombre": "JHONYER LAITÓN",
+      "goleador": "Ferran Torres",
       "pts": {
         "grupos": 10,
         "eliminatorias": 0,
@@ -395,9 +395,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 10,
@@ -407,9 +407,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 10,
@@ -479,9 +479,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 13,
-      "pagina": 13,
-      "nombre": "SANTIAGO MEDINA",
+      "id": 43,
+      "pagina": 43,
+      "nombre": "Samuel Penuela",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 9,
@@ -491,9 +491,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 43,
-      "pagina": 43,
-      "nombre": "Samuel Penuela",
+      "id": 13,
+      "pagina": 13,
+      "nombre": "SANTIAGO MEDINA",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 9,
@@ -11552,7 +11552,7 @@ window.POLLA_DATA = {
           0
         ],
         "24": [
-          0,
+          2,
           0
         ],
         "25": [
