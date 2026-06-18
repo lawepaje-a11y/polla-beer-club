@@ -334,11 +334,12 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 const CONFIG = {
   BET_AMOUNT:         5000,    // COP por apuesta
   RAKE:               0.10,    // comisión del 10%
-  BET_WINDOW_MINUTES: 5,       // minutos antes del pitazo que abre la ventana
-  DEMO_MODE:          true,
-  NO_WINNER_POLICY:   'admin', // 'admin' = casa retiene el 90% si nadie acierta
+  BET_WINDOW_MINUTES: 5,       // minutos antes del pitazo que cierra la ventana
+  DEMO_MODE:          false,   // true = muestra código en pantalla; false = SMS real via Onurix
+  PROXY_URL:          '',      // URL del proxy Railway — llenar después del deploy
+  NO_WINNER_POLICY:   'admin',
   DATA_URL:           'https://raw.githubusercontent.com/lawepaje-a11y/polla-beer-club/main/data.js',
-  POLL_MS:            30000,   // polling ESPN cada 30 s
+  POLL_MS:            30000,
   LS_KEY:             'apuestas_beer_club_v1',
 };
 
@@ -562,8 +563,8 @@ function goStep(n) {
   document.getElementById('step' + n).classList.add('active')
 }
 
-function step1Next() {
-  const nombre = document.getElementById('inp-nombre').value.trim()
+async function step1Next() {
+  const nombre   = document.getElementById('inp-nombre').value.trim()
   const contacto = document.getElementById('inp-contacto').value.trim()
   document.getElementById('err1').style.display = 'none'
   if (!nombre || !contacto) { document.getElementById('err1').style.display = 'block'; return }
@@ -577,29 +578,77 @@ function step1Next() {
     closeModal(); return
   }
 
-  _bet.nombre = nombre
+  _bet.nombre   = nombre
   _bet.contacto = contacto
-  _verifyCode = _genCode(6, false)
   document.getElementById('inp-code').value = ''
   document.getElementById('err2').style.display = 'none'
 
-  if (CONFIG.DEMO_MODE) {
+  if (CONFIG.DEMO_MODE || !CONFIG.PROXY_URL) {
+    // Demo: generar código localmente y mostrarlo en pantalla
+    _verifyCode = _genCode(6, false)
     document.getElementById('demo-code-box').style.display = 'block'
     document.getElementById('demo-code-val').textContent = _verifyCode
     document.getElementById('step2-sub').textContent = 'DEMO MODE — el código se muestra abajo.'
-  } else {
-    document.getElementById('demo-code-box').style.display = 'none'
-    document.getElementById('step2-sub').textContent = `Enviamos un código a ${contacto}`
-    // TODO: _sendVerifyCode(contacto, _verifyCode)
+    goStep(2)
+    return
   }
-  goStep(2)
+
+  // SMS real via Onurix
+  const btn = document.querySelector('#step1 .btn-primary')
+  btn.disabled = true
+  btn.textContent = 'Enviando SMS...'
+  try {
+    const r = await fetch(CONFIG.PROXY_URL + '/send-code', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ phone: contacto, nombre }),
+    })
+    const data = await r.json()
+    if (!data.ok) throw new Error(data.error || 'Error al enviar SMS')
+    _verifyCode = null  // Onurix valida el código — no lo almacenamos localmente
+    document.getElementById('demo-code-box').style.display = 'none'
+    document.getElementById('step2-sub').textContent = `Enviamos un código SMS a ${contacto}`
+    goStep(2)
+  } catch (e) {
+    document.getElementById('err1').textContent = 'Error al enviar SMS: ' + e.message
+    document.getElementById('err1').style.display = 'block'
+  } finally {
+    btn.disabled = false
+    btn.textContent = 'Siguiente →'
+  }
 }
 
-function step2Next() {
+async function step2Next() {
   const entered = document.getElementById('inp-code').value.trim()
   document.getElementById('err2').style.display = 'none'
-  if (entered !== _verifyCode) { document.getElementById('err2').style.display = 'block'; return }
-  goStep(3)
+
+  if (CONFIG.DEMO_MODE || !CONFIG.PROXY_URL) {
+    // Demo: comparar localmente
+    if (entered !== _verifyCode) { document.getElementById('err2').style.display = 'block'; return }
+    goStep(3)
+    return
+  }
+
+  // Verificación real via Onurix
+  const btn = document.querySelector('#step2 .btn-primary')
+  btn.disabled = true
+  btn.textContent = 'Verificando...'
+  try {
+    const r = await fetch(CONFIG.PROXY_URL + '/verify-code', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ phone: _bet.contacto, code: entered }),
+    })
+    const data = await r.json()
+    if (!data.ok) { document.getElementById('err2').style.display = 'block'; return }
+    goStep(3)
+  } catch (e) {
+    document.getElementById('err2').textContent = 'Error de conexión. Intenta de nuevo.'
+    document.getElementById('err2').style.display = 'block'
+  } finally {
+    btn.disabled = false
+    btn.textContent = 'Verificar →'
+  }
 }
 
 function confirmBet() {
