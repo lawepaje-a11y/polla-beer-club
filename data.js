@@ -1514,7 +1514,7 @@ window.POLLA_DATA = {
       "eq1": "Uzbekistán",
       "eq2": "Colombia",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-17",
       "hora": "09:00 PM",
@@ -30427,6 +30427,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Caleb Yirenkyi",
       "equipo": "Ghana",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Daniel Muñoz",
+      "equipo": "Colombia",
       "goles": 1,
       "votos_polla": 0
     }
