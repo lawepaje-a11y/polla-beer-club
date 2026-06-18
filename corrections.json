@@ -851,12 +851,12 @@
     },
     "eliminatorias": {
       "75": [
-        "Países Bajos",
+        "PaÃ­ses Bajos",
         "Marruecos"
       ],
       "76": [
         "Brasil",
-        "Japón"
+        "JapÃ³n"
       ],
       "77": [
         "Noruega",
@@ -867,7 +867,7 @@
         "Francia"
       ],
       "79": [
-        "México",
+        "MÃ©xico",
         "Escocia"
       ],
       "80": [
@@ -875,19 +875,19 @@
         "Colombia"
       ],
       "81": [
-        "Turquía",
+        "TurquÃ­a",
         "Senegal"
       ],
       "82": [
-        "Bélgica",
+        "BÃ©lgica",
         "Corea del Sur"
       ],
       "83": [
-        "Uzbekistán",
+        "UzbekistÃ¡n",
         "Inglaterra"
       ],
       "84": [
-        "España",
+        "EspaÃ±a",
         "Argelia"
       ],
       "85": [
@@ -899,12 +899,12 @@
         "Egipto"
       ],
       "90": [
-        "Canadá",
-        "Países Bajos"
+        "CanadÃ¡",
+        "PaÃ­ses Bajos"
       ],
       "94": [
-        "Turquía",
-        "Bélgica"
+        "TurquÃ­a",
+        "BÃ©lgica"
       ],
       "95": [
         "Argentina",
@@ -916,7 +916,11 @@
       ],
       "97": [
         "Alemania",
-        "Países Bajos"
+        "PaÃ­ses Bajos"
+      ],
+      "103": [
+        null,
+        null
       ]
     }
   }
