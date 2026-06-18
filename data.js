@@ -1514,7 +1514,7 @@ window.POLLA_DATA = {
       "eq1": "Uzbekistán",
       "eq2": "Colombia",
       "g1_real": 1,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-17",
       "hora": "09:00 PM",
@@ -30441,6 +30441,12 @@ window.POLLA_DATA = {
       "equipo": "Uzbekistán",
       "goles": 1,
       "votos_polla": 0
+    },
+    {
+      "nombre": "Luis Díaz",
+      "equipo": "Colombia",
+      "goles": 1,
+      "votos_polla": 1
     }
   ]
 };
