@@ -926,7 +926,7 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Canadá",
       "eq2": "Catar",
-      "g1_real": 4,
+      "g1_real": 5,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-18",
