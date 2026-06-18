@@ -14,7 +14,7 @@ window.POLLA_DATA = {
       "id": 18,
       "pagina": 18,
       "nombre": "Tatiana Camargo",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 25,
         "eliminatorias": 0,
@@ -26,7 +26,7 @@ window.POLLA_DATA = {
       "id": 44,
       "pagina": 44,
       "nombre": "Marlon Ceron",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 23,
         "eliminatorias": 0,
@@ -38,7 +38,7 @@ window.POLLA_DATA = {
       "id": 36,
       "pagina": 36,
       "nombre": "JEISON ESTIBEN AVILA SIERRA",
-      "goleador": "Ousmane DembÃÂÃÂ©lÃÂÃÂ©",
+      "goleador": "Ousmane Dembélé",
       "pts": {
         "grupos": 22,
         "eliminatorias": 0,
@@ -74,7 +74,7 @@ window.POLLA_DATA = {
       "id": 25,
       "pagina": 25,
       "nombre": "Miguel Rodriguez",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 21,
         "eliminatorias": 0,
@@ -85,7 +85,7 @@ window.POLLA_DATA = {
     {
       "id": 56,
       "pagina": 56,
-      "nombre": "Nelson MontaÃÂÃÂ±a",
+      "nombre": "Nelson Montaña",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 21,
@@ -109,8 +109,8 @@ window.POLLA_DATA = {
     {
       "id": 21,
       "pagina": 21,
-      "nombre": "TomÃÂÃÂ¡s Forero",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "nombre": "Tomás Forero",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 21,
         "eliminatorias": 0,
@@ -122,7 +122,7 @@ window.POLLA_DATA = {
       "id": 24,
       "pagina": 24,
       "nombre": "Angela Milena",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 20,
         "eliminatorias": 0,
@@ -134,7 +134,7 @@ window.POLLA_DATA = {
       "id": 60,
       "pagina": 60,
       "nombre": "Miguel Arturo Rodriguez",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 20,
         "eliminatorias": 0,
@@ -146,7 +146,7 @@ window.POLLA_DATA = {
       "id": 47,
       "pagina": 47,
       "nombre": "PAULA MORENO Y MIGUEL TRIZY",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 20,
         "eliminatorias": 0,
@@ -158,7 +158,7 @@ window.POLLA_DATA = {
       "id": 30,
       "pagina": 30,
       "nombre": "Ricardo Sanchez",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 20,
         "eliminatorias": 0,
@@ -170,7 +170,7 @@ window.POLLA_DATA = {
       "id": 19,
       "pagina": 19,
       "nombre": "Diego Jose De Silvestri Leon",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 19,
         "eliminatorias": 0,
@@ -182,7 +182,7 @@ window.POLLA_DATA = {
       "id": 48,
       "pagina": 48,
       "nombre": "Fidel Rodriguez",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 19,
         "eliminatorias": 0,
@@ -230,7 +230,7 @@ window.POLLA_DATA = {
       "id": 67,
       "pagina": 67,
       "nombre": "Sebastian Flaco",
-      "goleador": "Luis DÃÂÃÂ­az",
+      "goleador": "Luis Díaz",
       "pts": {
         "grupos": 19,
         "eliminatorias": 0,
@@ -242,7 +242,7 @@ window.POLLA_DATA = {
       "id": 64,
       "pagina": 64,
       "nombre": "Franco N. Vargas",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 18,
         "eliminatorias": 0,
@@ -254,7 +254,7 @@ window.POLLA_DATA = {
       "id": 2,
       "pagina": 2,
       "nombre": "Juan David Nandar",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 18,
         "eliminatorias": 0,
@@ -278,7 +278,7 @@ window.POLLA_DATA = {
       "id": 55,
       "pagina": 55,
       "nombre": "Miguel Laiton",
-      "goleador": "Ousmane DembÃÂÃÂ©lÃÂÃÂ©",
+      "goleador": "Ousmane Dembélé",
       "pts": {
         "grupos": 18,
         "eliminatorias": 0,
@@ -289,7 +289,7 @@ window.POLLA_DATA = {
     {
       "id": 59,
       "pagina": 59,
-      "nombre": "AndrÃÂÃÂ©s Rivera",
+      "nombre": "Andrés Rivera",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 17,
@@ -302,7 +302,7 @@ window.POLLA_DATA = {
       "id": 52,
       "pagina": 52,
       "nombre": "Carlos Andres Paez Medina",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 17,
         "eliminatorias": 0,
@@ -314,7 +314,7 @@ window.POLLA_DATA = {
       "id": 49,
       "pagina": 49,
       "nombre": "Gabriel Monjura",
-      "goleador": "JuliÃÂÃÂ¡n ÃÂÃÂlvarez",
+      "goleador": "Julián Álvarez",
       "pts": {
         "grupos": 17,
         "eliminatorias": 0,
@@ -337,8 +337,8 @@ window.POLLA_DATA = {
     {
       "id": 23,
       "pagina": 23,
-      "nombre": "RenÃÂÃÂ© Giletto Aulo SandÃÂÃÂ­n",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "nombre": "René Giletto Aulo Sandín",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 17,
         "eliminatorias": 0,
@@ -350,7 +350,7 @@ window.POLLA_DATA = {
       "id": 1,
       "pagina": 1,
       "nombre": "Edson Medina",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 16,
         "eliminatorias": 0,
@@ -361,20 +361,8 @@ window.POLLA_DATA = {
     {
       "id": 37,
       "pagina": 37,
-      "nombre": "FELIPE SÃÂÃÂNCHEZ Y LA IA",
-      "goleador": "JuliÃÂÃÂ¡n ÃÂÃÂlvarez",
-      "pts": {
-        "grupos": 16,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 16
-      }
-    },
-    {
-      "id": 34,
-      "pagina": 34,
-      "nombre": "Jahir PeÃÂÃÂ±uela D.",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "nombre": "FELIPE SÁNCHEZ Y LA IA",
+      "goleador": "Julián Álvarez",
       "pts": {
         "grupos": 16,
         "eliminatorias": 0,
@@ -385,8 +373,20 @@ window.POLLA_DATA = {
     {
       "id": 61,
       "pagina": 61,
-      "nombre": "JHONYER LAITÃÂÃÂN",
+      "nombre": "JHONYER LAITÓN",
       "goleador": "Ferran Torres",
+      "pts": {
+        "grupos": 16,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 16
+      }
+    },
+    {
+      "id": 34,
+      "pagina": 34,
+      "nombre": "Jahir Peñuela D.",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 16,
         "eliminatorias": 0,
@@ -410,7 +410,7 @@ window.POLLA_DATA = {
       "id": 4,
       "pagina": 4,
       "nombre": "Leandro Murcia",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 16,
         "eliminatorias": 0,
@@ -421,8 +421,8 @@ window.POLLA_DATA = {
     {
       "id": 29,
       "pagina": 29,
-      "nombre": "NicolÃÂÃÂ¡s AndrÃÂÃÂ©s",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "nombre": "Nicolás Andrés",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 16,
         "eliminatorias": 0,
@@ -443,10 +443,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "SebastiÃÂÃÂ¡n Perez",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 16,
         "eliminatorias": 0,
@@ -455,10 +455,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 16,
         "eliminatorias": 0,
@@ -470,7 +470,7 @@ window.POLLA_DATA = {
       "id": 12,
       "pagina": 12,
       "nombre": "Victor Alvarado",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 16,
         "eliminatorias": 0,
@@ -506,7 +506,7 @@ window.POLLA_DATA = {
       "id": 11,
       "pagina": 11,
       "nombre": "Juan Pablo Alvarado",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 15,
         "eliminatorias": 0,
@@ -517,7 +517,7 @@ window.POLLA_DATA = {
     {
       "id": 27,
       "pagina": 27,
-      "nombre": "JuliÃÂÃÂ¡n Tibaduiza",
+      "nombre": "Julián Tibaduiza",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 15,
@@ -554,7 +554,7 @@ window.POLLA_DATA = {
       "id": 66,
       "pagina": 66,
       "nombre": "Sebastian Flaco",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 15,
         "eliminatorias": 0,
@@ -590,7 +590,7 @@ window.POLLA_DATA = {
       "id": 54,
       "pagina": 54,
       "nombre": "Oscar Pinilla",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 14,
         "eliminatorias": 0,
@@ -614,7 +614,7 @@ window.POLLA_DATA = {
       "id": 57,
       "pagina": 57,
       "nombre": "Valeria Sanchez",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 14,
         "eliminatorias": 0,
@@ -637,7 +637,7 @@ window.POLLA_DATA = {
     {
       "id": 58,
       "pagina": 58,
-      "nombre": "FabiÃÂÃÂ¡n MontaÃÂÃÂ±a",
+      "nombre": "Fabián Montaña",
       "goleador": "Vinicius Jr.",
       "pts": {
         "grupos": 13,
@@ -662,7 +662,7 @@ window.POLLA_DATA = {
       "id": 42,
       "pagina": 42,
       "nombre": "Mamito",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 13,
         "eliminatorias": 0,
@@ -674,7 +674,7 @@ window.POLLA_DATA = {
       "id": 53,
       "pagina": 53,
       "nombre": "Oscar Lagos",
-      "goleador": "Ousmane DembÃÂÃÂ©lÃÂÃÂ©",
+      "goleador": "Ousmane Dembélé",
       "pts": {
         "grupos": 13,
         "eliminatorias": 0,
@@ -686,7 +686,7 @@ window.POLLA_DATA = {
       "id": 63,
       "pagina": 63,
       "nombre": "Sergio Andres Russi",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 13,
         "eliminatorias": 0,
@@ -698,7 +698,7 @@ window.POLLA_DATA = {
       "id": 62,
       "pagina": 62,
       "nombre": "Wilson Rodriguez Saavedra",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 13,
         "eliminatorias": 0,
@@ -745,7 +745,7 @@ window.POLLA_DATA = {
     {
       "id": 15,
       "pagina": 15,
-      "nombre": "Antonio RodrÃÂÃÂ­guez",
+      "nombre": "Antonio Rodríguez",
       "goleador": "Raphinha",
       "pts": {
         "grupos": 11,
@@ -758,7 +758,7 @@ window.POLLA_DATA = {
       "id": 16,
       "pagina": 16,
       "nombre": "Isabella Rodriguez",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 11,
         "eliminatorias": 0,
@@ -770,7 +770,7 @@ window.POLLA_DATA = {
       "id": 65,
       "pagina": 65,
       "nombre": "Karen Avila",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 11,
         "eliminatorias": 0,
@@ -781,7 +781,7 @@ window.POLLA_DATA = {
     {
       "id": 17,
       "pagina": 17,
-      "nombre": "Miguel AndrÃÂÃÂ©s",
+      "nombre": "Miguel Andrés",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 11,
@@ -794,7 +794,7 @@ window.POLLA_DATA = {
       "id": 8,
       "pagina": 8,
       "nombre": "Omar Yesid Russi",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 11,
         "eliminatorias": 0,
@@ -806,7 +806,7 @@ window.POLLA_DATA = {
       "id": 7,
       "pagina": 7,
       "nombre": "Carlos Diaz",
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 9,
         "eliminatorias": 0,
@@ -819,8 +819,8 @@ window.POLLA_DATA = {
     {
       "numero": 1,
       "grupo": "A",
-      "eq1": "MÃÂÃÂ©xico",
-      "eq2": "SudÃÂÃÂ¡frica",
+      "eq1": "México",
+      "eq2": "Sudáfrica",
       "g1_real": 2,
       "g2_real": 0,
       "jugado": true,
@@ -844,7 +844,7 @@ window.POLLA_DATA = {
       "numero": 3,
       "grupo": "A",
       "eq1": "Chequia",
-      "eq2": "SudÃÂÃÂ¡frica",
+      "eq2": "Sudáfrica",
       "g1_real": 1,
       "g2_real": 1,
       "jugado": true,
@@ -855,7 +855,7 @@ window.POLLA_DATA = {
     {
       "numero": 4,
       "grupo": "A",
-      "eq1": "MÃÂÃÂ©xico",
+      "eq1": "México",
       "eq2": "Corea del Sur",
       "g1_real": null,
       "g2_real": null,
@@ -866,7 +866,7 @@ window.POLLA_DATA = {
     {
       "numero": 5,
       "grupo": "A",
-      "eq1": "SudÃÂÃÂ¡frica",
+      "eq1": "Sudáfrica",
       "eq2": "Corea del Sur",
       "g1_real": null,
       "g2_real": null,
@@ -878,7 +878,7 @@ window.POLLA_DATA = {
       "numero": 6,
       "grupo": "A",
       "eq1": "Chequia",
-      "eq2": "MÃÂÃÂ©xico",
+      "eq2": "México",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -888,7 +888,7 @@ window.POLLA_DATA = {
     {
       "numero": 7,
       "grupo": "B",
-      "eq1": "CanadÃÂÃÂ¡",
+      "eq1": "Canadá",
       "eq2": "Bosnia y Herz.",
       "g1_real": 1,
       "g2_real": 1,
@@ -924,7 +924,7 @@ window.POLLA_DATA = {
     {
       "numero": 10,
       "grupo": "B",
-      "eq1": "CanadÃÂÃÂ¡",
+      "eq1": "Canadá",
       "eq2": "Catar",
       "g1_real": null,
       "g2_real": null,
@@ -936,7 +936,7 @@ window.POLLA_DATA = {
       "numero": 11,
       "grupo": "B",
       "eq1": "Suiza",
-      "eq2": "CanadÃÂÃÂ¡",
+      "eq2": "Canadá",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -969,7 +969,7 @@ window.POLLA_DATA = {
     {
       "numero": 14,
       "grupo": "C",
-      "eq1": "HaitÃÂÃÂ­",
+      "eq1": "Haití",
       "eq2": "Escocia",
       "g1_real": 0,
       "g2_real": 1,
@@ -993,7 +993,7 @@ window.POLLA_DATA = {
       "numero": 16,
       "grupo": "C",
       "eq1": "Brasil",
-      "eq2": "HaitÃÂÃÂ­",
+      "eq2": "Haití",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -1004,7 +1004,7 @@ window.POLLA_DATA = {
       "numero": 17,
       "grupo": "C",
       "eq1": "Marruecos",
-      "eq2": "HaitÃÂÃÂ­",
+      "eq2": "Haití",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -1038,7 +1038,7 @@ window.POLLA_DATA = {
       "numero": 20,
       "grupo": "D",
       "eq1": "Australia",
-      "eq2": "TurquÃÂÃÂ­a",
+      "eq2": "Turquía",
       "g1_real": 2,
       "g2_real": 0,
       "jugado": true,
@@ -1060,7 +1060,7 @@ window.POLLA_DATA = {
     {
       "numero": 22,
       "grupo": "D",
-      "eq1": "TurquÃÂÃÂ­a",
+      "eq1": "Turquía",
       "eq2": "Paraguay",
       "g1_real": null,
       "g2_real": null,
@@ -1071,7 +1071,7 @@ window.POLLA_DATA = {
     {
       "numero": 23,
       "grupo": "D",
-      "eq1": "TurquÃÂÃÂ­a",
+      "eq1": "Turquía",
       "eq2": "Estados Unidos",
       "g1_real": null,
       "g2_real": null,
@@ -1161,8 +1161,8 @@ window.POLLA_DATA = {
     {
       "numero": 31,
       "grupo": "F",
-      "eq1": "PaÃÂÃÂ­ses Bajos",
-      "eq2": "JapÃÂÃÂ³n",
+      "eq1": "Países Bajos",
+      "eq2": "Japón",
       "g1_real": 2,
       "g2_real": 2,
       "jugado": true,
@@ -1174,7 +1174,7 @@ window.POLLA_DATA = {
       "numero": 32,
       "grupo": "F",
       "eq1": "Suecia",
-      "eq2": "TÃÂÃÂºnez",
+      "eq2": "Túnez",
       "g1_real": 5,
       "g2_real": 1,
       "jugado": true,
@@ -1185,7 +1185,7 @@ window.POLLA_DATA = {
     {
       "numero": 33,
       "grupo": "F",
-      "eq1": "PaÃÂÃÂ­ses Bajos",
+      "eq1": "Países Bajos",
       "eq2": "Suecia",
       "g1_real": null,
       "g2_real": null,
@@ -1196,8 +1196,8 @@ window.POLLA_DATA = {
     {
       "numero": 34,
       "grupo": "F",
-      "eq1": "TÃÂÃÂºnez",
-      "eq2": "JapÃÂÃÂ³n",
+      "eq1": "Túnez",
+      "eq2": "Japón",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -1207,8 +1207,8 @@ window.POLLA_DATA = {
     {
       "numero": 35,
       "grupo": "F",
-      "eq1": "TÃÂÃÂºnez",
-      "eq2": "PaÃÂÃÂ­ses Bajos",
+      "eq1": "Túnez",
+      "eq2": "Países Bajos",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -1218,7 +1218,7 @@ window.POLLA_DATA = {
     {
       "numero": 36,
       "grupo": "F",
-      "eq1": "JapÃÂÃÂ³n",
+      "eq1": "Japón",
       "eq2": "Suecia",
       "g1_real": null,
       "g2_real": null,
@@ -1229,7 +1229,7 @@ window.POLLA_DATA = {
     {
       "numero": 37,
       "grupo": "G",
-      "eq1": "BÃÂÃÂ©lgica",
+      "eq1": "Bélgica",
       "eq2": "Egipto",
       "g1_real": 1,
       "g2_real": 1,
@@ -1241,7 +1241,7 @@ window.POLLA_DATA = {
     {
       "numero": 38,
       "grupo": "G",
-      "eq1": "IrÃÂÃÂ¡n",
+      "eq1": "Irán",
       "eq2": "Nueva Zelanda",
       "g1_real": 2,
       "g2_real": 2,
@@ -1253,8 +1253,8 @@ window.POLLA_DATA = {
     {
       "numero": 39,
       "grupo": "G",
-      "eq1": "BÃÂÃÂ©lgica",
-      "eq2": "IrÃÂÃÂ¡n",
+      "eq1": "Bélgica",
+      "eq2": "Irán",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -1276,7 +1276,7 @@ window.POLLA_DATA = {
       "numero": 41,
       "grupo": "G",
       "eq1": "Nueva Zelanda",
-      "eq2": "BÃÂÃÂ©lgica",
+      "eq2": "Bélgica",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -1287,7 +1287,7 @@ window.POLLA_DATA = {
       "numero": 42,
       "grupo": "G",
       "eq1": "Egipto",
-      "eq2": "IrÃÂÃÂ¡n",
+      "eq2": "Irán",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -1297,7 +1297,7 @@ window.POLLA_DATA = {
     {
       "numero": 43,
       "grupo": "H",
-      "eq1": "EspaÃÂÃÂ±a",
+      "eq1": "España",
       "eq2": "Cabo Verde",
       "g1_real": 0,
       "g2_real": 0,
@@ -1321,7 +1321,7 @@ window.POLLA_DATA = {
     {
       "numero": 45,
       "grupo": "H",
-      "eq1": "EspaÃÂÃÂ±a",
+      "eq1": "España",
       "eq2": "Arabia Saudita",
       "g1_real": null,
       "g2_real": null,
@@ -1355,7 +1355,7 @@ window.POLLA_DATA = {
       "numero": 48,
       "grupo": "H",
       "eq1": "Uruguay",
-      "eq2": "EspaÃÂÃÂ±a",
+      "eq2": "España",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -1513,7 +1513,7 @@ window.POLLA_DATA = {
     {
       "numero": 62,
       "grupo": "K",
-      "eq1": "UzbekistÃÂÃÂ¡n",
+      "eq1": "Uzbekistán",
       "eq2": "Colombia",
       "g1_real": 1,
       "g2_real": 3,
@@ -1526,7 +1526,7 @@ window.POLLA_DATA = {
       "numero": 63,
       "grupo": "K",
       "eq1": "Portugal",
-      "eq2": "UzbekistÃÂÃÂ¡n",
+      "eq2": "Uzbekistán",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -1559,7 +1559,7 @@ window.POLLA_DATA = {
       "numero": 66,
       "grupo": "K",
       "eq1": "Congo",
-      "eq2": "UzbekistÃÂÃÂ¡n",
+      "eq2": "Uzbekistán",
       "g1_real": null,
       "g2_real": null,
       "jugado": false,
@@ -1582,7 +1582,7 @@ window.POLLA_DATA = {
       "numero": 68,
       "grupo": "L",
       "eq1": "Ghana",
-      "eq2": "PanamÃÂÃÂ¡",
+      "eq2": "Panamá",
       "g1_real": 1,
       "g2_real": 0,
       "jugado": true,
@@ -1604,7 +1604,7 @@ window.POLLA_DATA = {
     {
       "numero": 70,
       "grupo": "L",
-      "eq1": "PanamÃÂÃÂ¡",
+      "eq1": "Panamá",
       "eq2": "Croacia",
       "g1_real": null,
       "g2_real": null,
@@ -1615,7 +1615,7 @@ window.POLLA_DATA = {
     {
       "numero": 71,
       "grupo": "L",
-      "eq1": "PanamÃÂÃÂ¡",
+      "eq1": "Panamá",
       "eq2": "Inglaterra",
       "g1_real": null,
       "g2_real": null,
@@ -21329,7 +21329,7 @@ window.POLLA_DATA = {
     "eliminatorias": {
       "1": {
         "73": [
-          "SudÃÂÃÂ¡frica",
+          "Sudáfrica",
           "Bosnia y Herz."
         ],
         "74": [
@@ -21337,12 +21337,12 @@ window.POLLA_DATA = {
           "Suecia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -21353,7 +21353,7 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
@@ -21361,11 +21361,11 @@ window.POLLA_DATA = {
           "Costa de Marfil"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Noruega"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -21373,7 +21373,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -21398,23 +21398,23 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Bosnia y Herz.",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Noruega",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -21426,11 +21426,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -21442,7 +21442,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -21450,7 +21450,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Argentina",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Francia",
@@ -21460,19 +21460,19 @@ window.POLLA_DATA = {
       "2": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
-          "MÃÂÃÂ©xico"
+          "México"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -21491,11 +21491,11 @@ window.POLLA_DATA = {
           "Austria"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Ecuador"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Arabia Saudita"
         ],
         "83": [
@@ -21503,12 +21503,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
           "Suiza",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "86": [
           "Argentina",
@@ -21540,11 +21540,11 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Croacia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -21559,8 +21559,8 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Senegal",
@@ -21572,7 +21572,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -21580,7 +21580,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Portugal",
@@ -21589,24 +21589,24 @@ window.POLLA_DATA = {
       },
       "3": {
         "73": [
-          "MÃÂÃÂ©xico",
-          "CanadÃÂÃÂ¡"
+          "México",
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Corea del Sur"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "78": [
           "Ecuador",
@@ -21621,11 +21621,11 @@ window.POLLA_DATA = {
           "Argentina"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Senegal"
         ],
         "83": [
@@ -21633,7 +21633,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -21657,8 +21657,8 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -21670,11 +21670,11 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Croacia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -21686,11 +21686,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Alemania",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -21702,7 +21702,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Alemania",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -21714,25 +21714,25 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "4": {
         "73": [
           "Chequia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "77": [
           "Francia",
@@ -21743,7 +21743,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Senegal"
         ],
         "80": [
@@ -21752,10 +21752,10 @@ window.POLLA_DATA = {
         ],
         "81": [
           "Egipto",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Corea del Sur"
         ],
         "83": [
@@ -21763,7 +21763,7 @@ window.POLLA_DATA = {
           "Escocia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -21776,11 +21776,11 @@ window.POLLA_DATA = {
         ],
         "87": [
           "Portugal",
-          "PanamÃÂÃÂ¡"
+          "Panamá"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "89": [
           "Alemania",
@@ -21788,23 +21788,23 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Chequia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Egipto",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -21816,11 +21816,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -21832,7 +21832,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -21840,7 +21840,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Portugal",
@@ -21850,19 +21850,19 @@ window.POLLA_DATA = {
       "5": {
         "73": [
           "Chequia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Escocia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Escocia",
@@ -21873,7 +21873,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Senegal"
         ],
         "80": [
@@ -21885,7 +21885,7 @@ window.POLLA_DATA = {
           "Catar"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Corea del Sur"
         ],
         "83": [
@@ -21893,7 +21893,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -21906,11 +21906,11 @@ window.POLLA_DATA = {
         ],
         "87": [
           "Portugal",
-          "PanamÃÂÃÂ¡"
+          "Panamá"
         ],
         "88": [
           "Estados Unidos",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "89": [
           "Alemania",
@@ -21918,7 +21918,7 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Chequia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -21930,11 +21930,11 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -21946,11 +21946,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -21962,7 +21962,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -21974,12 +21974,12 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "6": {
         "73": [
-          "SudÃÂÃÂ¡frica",
+          "Sudáfrica",
           "Corea del Sur"
         ],
         "74": [
@@ -21987,12 +21987,12 @@ window.POLLA_DATA = {
           "Costa de Marfil"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -22003,7 +22003,7 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Suecia"
         ],
         "80": [
@@ -22015,7 +22015,7 @@ window.POLLA_DATA = {
           "Catar"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Congo"
         ],
         "83": [
@@ -22023,12 +22023,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argentina"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
-          "IrÃÂÃÂ¡n"
+          "Canadá",
+          "Irán"
         ],
         "86": [
           "Argentina",
@@ -22047,40 +22047,40 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "SudÃÂÃÂ¡frica",
-          "PaÃÂÃÂ­ses Bajos"
+          "Sudáfrica",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Senegal"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Australia",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Uruguay",
           "Egipto"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Portugal"
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -22092,7 +22092,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -22100,7 +22100,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Inglaterra",
@@ -22109,20 +22109,20 @@ window.POLLA_DATA = {
       },
       "7": {
         "73": [
-          "SudÃÂÃÂ¡frica",
+          "Sudáfrica",
           "Suiza"
         ],
         "74": [
           "Alemania",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -22141,19 +22141,19 @@ window.POLLA_DATA = {
           "Colombia"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Costa de Marfil"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
-          "MÃÂÃÂ©xico"
+          "Bélgica",
+          "México"
         ],
         "83": [
           "Congo",
           "Inglaterra"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -22177,8 +22177,8 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "SudÃÂÃÂ¡frica",
-          "PaÃÂÃÂ­ses Bajos"
+          "Sudáfrica",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -22190,11 +22190,11 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -22206,11 +22206,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -22222,14 +22222,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
           "Argentina"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Brasil"
         ],
         "104": [
@@ -22240,42 +22240,42 @@ window.POLLA_DATA = {
       "8": {
         "73": [
           "Chequia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Paraguay"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "78": [
           "Ecuador",
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
           "Inglaterra",
-          "UzbekistÃÂÃÂ¡n"
+          "Uzbekistán"
         ],
         "81": [
           "Estados Unidos",
           "Costa de Marfil"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Corea del Sur"
         ],
         "83": [
@@ -22283,12 +22283,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
           "Suiza",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "86": [
           "Argentina",
@@ -22299,7 +22299,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Egipto"
         ],
         "89": [
@@ -22307,28 +22307,28 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Senegal"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -22336,11 +22336,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -22352,7 +22352,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -22364,48 +22364,48 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "9": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
-          "RepÃÂÃÂºblica Checa"
+          "República Checa"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "78": [
           "Ecuador",
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Suecia"
         ],
         "80": [
           "Inglaterra",
-          "UzbekistÃÂÃÂ¡n"
+          "Uzbekistán"
         ],
         "81": [
           "Paraguay",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Arabia Saudita"
         ],
         "83": [
@@ -22413,7 +22413,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -22437,24 +22437,24 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -22466,11 +22466,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -22482,7 +22482,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -22494,36 +22494,36 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "10": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Suecia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
@@ -22535,15 +22535,15 @@ window.POLLA_DATA = {
           "Catar"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
-          "RepÃÂÃÂºblica Checa"
+          "Bélgica",
+          "República Checa"
         ],
         "83": [
           "Colombia",
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argentina"
         ],
         "85": [
@@ -22575,16 +22575,16 @@ window.POLLA_DATA = {
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -22599,7 +22599,7 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
+          "España",
           null
         ],
         "99": [
@@ -22612,7 +22612,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Alemania",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -22624,29 +22624,29 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "11": {
         "73": [
-          "MÃÂÃÂ©xico",
-          "CanadÃÂÃÂ¡"
+          "México",
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Australia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Brasil"
         ],
         "76": [
           "Marruecos",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "78": [
           "Cabo Verde",
@@ -22657,15 +22657,15 @@ window.POLLA_DATA = {
           "Escocia"
         ],
         "80": [
-          "UzbekistÃÂÃÂ¡n",
+          "Uzbekistán",
           "Senegal"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -22673,7 +22673,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -22697,7 +22697,7 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Brasil"
         ],
         "91": [
@@ -22710,11 +22710,11 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -22729,8 +22729,8 @@ window.POLLA_DATA = {
           "Brasil"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Noruega",
@@ -22742,15 +22742,15 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Portugal"
         ],
         "103": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Portugal",
@@ -22760,14 +22760,14 @@ window.POLLA_DATA = {
       "12": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Escocia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -22776,14 +22776,14 @@ window.POLLA_DATA = {
         ],
         "77": [
           "Francia",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "78": [
           "Ecuador",
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Costa de Marfil"
         ],
         "80": [
@@ -22795,7 +22795,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -22803,7 +22803,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -22819,8 +22819,8 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "89": [
           "Alemania",
@@ -22828,27 +22828,27 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Senegal"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -22856,11 +22856,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
           "Colombia",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -22890,30 +22890,30 @@ window.POLLA_DATA = {
       "13": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
-          "SudÃÂÃÂ¡frica"
+          "Sudáfrica"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Costa de Marfil"
         ],
         "80": [
@@ -22925,7 +22925,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Arabia Saudita"
         ],
         "83": [
@@ -22933,7 +22933,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -22958,23 +22958,23 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -22986,11 +22986,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Alemania",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -23001,25 +23001,25 @@ window.POLLA_DATA = {
           "Colombia"
         ],
         "101": [
-          "PaÃÂÃÂ­ses Bajos",
-          "EspaÃÂÃÂ±a"
+          "Países Bajos",
+          "España"
         ],
         "102": [
           "Inglaterra",
           "Argentina"
         ],
         "103": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Argentina"
         ],
         "104": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "14": {
         "73": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Bosnia y Herz."
         ],
         "74": [
@@ -23027,16 +23027,16 @@ window.POLLA_DATA = {
           "Paraguay"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "77": [
           "Francia",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "78": [
           "Ecuador",
@@ -23055,7 +23055,7 @@ window.POLLA_DATA = {
           "Australia"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Cabo Verde"
         ],
         "83": [
@@ -23063,12 +23063,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argentina"
         ],
         "85": [
           "Suiza",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "86": [
           "Argentina",
@@ -23079,7 +23079,7 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Egipto"
         ],
         "89": [
@@ -23088,7 +23088,7 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Bosnia y Herz.",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -23100,15 +23100,15 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Croacia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -23116,11 +23116,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Alemania",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -23132,14 +23132,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Alemania",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
           "Argentina"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argentina"
         ],
         "104": [
@@ -23150,14 +23150,14 @@ window.POLLA_DATA = {
       "15": {
         "73": [
           "Chequia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Escocia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -23166,15 +23166,15 @@ window.POLLA_DATA = {
         ],
         "77": [
           "Francia",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
-          "JapÃÂÃÂ³n"
+          "México",
+          "Japón"
         ],
         "80": [
           "Croacia",
@@ -23185,7 +23185,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Corea del Sur"
         ],
         "83": [
@@ -23193,7 +23193,7 @@ window.POLLA_DATA = {
           "Inglaterra"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
@@ -23217,7 +23217,7 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Marruecos"
         ],
         "91": [
@@ -23225,16 +23225,16 @@ window.POLLA_DATA = {
           "Ecuador"
         ],
         "92": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Senegal"
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -23249,12 +23249,12 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Paraguay"
         ],
         "99": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "100": [
           "Argentina",
@@ -23262,7 +23262,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -23274,20 +23274,20 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "16": {
         "73": [
           "Chequia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Escocia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -23296,15 +23296,15 @@ window.POLLA_DATA = {
         ],
         "77": [
           "Francia",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
-          "JapÃÂÃÂ³n"
+          "México",
+          "Japón"
         ],
         "80": [
           "Croacia",
@@ -23315,7 +23315,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Corea del Sur"
         ],
         "83": [
@@ -23323,7 +23323,7 @@ window.POLLA_DATA = {
           "Inglaterra"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
@@ -23347,24 +23347,24 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Croacia"
         ],
         "93": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -23376,15 +23376,15 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "100": [
           "Argentina",
@@ -23392,7 +23392,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -23403,21 +23403,21 @@ window.POLLA_DATA = {
           "Brasil"
         ],
         "104": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Portugal"
         ]
       },
       "17": {
         "73": [
           "Chequia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Escocia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -23426,15 +23426,15 @@ window.POLLA_DATA = {
         ],
         "77": [
           "Francia",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
-          "JapÃÂÃÂ³n"
+          "México",
+          "Japón"
         ],
         "80": [
           "Inglaterra",
@@ -23445,7 +23445,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Corea del Sur"
         ],
         "83": [
@@ -23453,7 +23453,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
@@ -23477,7 +23477,7 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Marruecos"
         ],
         "91": [
@@ -23485,16 +23485,16 @@ window.POLLA_DATA = {
           "Ecuador"
         ],
         "92": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -23540,19 +23540,19 @@ window.POLLA_DATA = {
       "18": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Paraguay"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -23563,7 +23563,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
@@ -23575,7 +23575,7 @@ window.POLLA_DATA = {
           "Catar"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Costa de Marfil"
         ],
         "83": [
@@ -23583,12 +23583,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
           "Suiza",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "86": [
           "Argentina",
@@ -23599,7 +23599,7 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Egipto"
         ],
         "89": [
@@ -23607,28 +23607,28 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -23636,11 +23636,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -23652,7 +23652,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -23660,7 +23660,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Portugal",
@@ -23677,12 +23677,12 @@ window.POLLA_DATA = {
           "Escocia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -23693,7 +23693,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Arabia Saudita"
         ],
         "80": [
@@ -23705,7 +23705,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -23713,11 +23713,11 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Costa de Marfil"
         ],
         "86": [
@@ -23729,8 +23729,8 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "89": [
           "Alemania",
@@ -23738,39 +23738,39 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Suiza",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Portugal"
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -23782,7 +23782,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -23790,7 +23790,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Argentina",
@@ -23799,15 +23799,15 @@ window.POLLA_DATA = {
       },
       "20": {
         "73": [
-          "MÃÂÃÂ©xico",
-          "CanadÃÂÃÂ¡"
+          "México",
+          "Canadá"
         ],
         "74": [
           "Alemania",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -23831,11 +23831,11 @@ window.POLLA_DATA = {
           "Costa de Marfil"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Catar"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Costa del Sur"
         ],
         "83": [
@@ -23843,7 +23843,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -23860,15 +23860,15 @@ window.POLLA_DATA = {
         ],
         "88": [
           "Egipto",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "89": [
           "Alemania",
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -23880,11 +23880,11 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Croacia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -23896,11 +23896,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -23912,7 +23912,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -23920,7 +23920,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Portugal",
@@ -23930,19 +23930,19 @@ window.POLLA_DATA = {
       "21": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Chequia"
         ],
         "75": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "77": [
           "Francia",
@@ -23953,7 +23953,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Senegal"
         ],
         "80": [
@@ -23965,7 +23965,7 @@ window.POLLA_DATA = {
           "Cabo Verde"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Ghana"
         ],
         "83": [
@@ -23973,7 +23973,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -23989,7 +23989,7 @@ window.POLLA_DATA = {
           "Paraguay"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Egipto"
         ],
         "89": [
@@ -24005,20 +24005,20 @@ window.POLLA_DATA = {
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -24029,8 +24029,8 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -24042,7 +24042,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -24050,7 +24050,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Inglaterra",
@@ -24060,19 +24060,19 @@ window.POLLA_DATA = {
       "22": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Catar"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -24083,7 +24083,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Costa de Marfil"
         ],
         "80": [
@@ -24095,7 +24095,7 @@ window.POLLA_DATA = {
           "Arabia Saudita"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Senegal"
         ],
         "83": [
@@ -24103,7 +24103,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
@@ -24127,20 +24127,20 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
@@ -24156,10 +24156,10 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Ecuador"
         ],
         "99": [
@@ -24172,14 +24172,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
           "Portugal"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Brasil"
         ],
         "104": [
@@ -24190,19 +24190,19 @@ window.POLLA_DATA = {
       "23": {
         "73": [
           "Corea del Sur",
-          "SudÃÂÃÂ¡frica"
+          "Sudáfrica"
         ],
         "74": [
           "Alemania",
           "Bulgaria"
         ],
         "75": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Brasil"
         ],
         "76": [
-          "PaÃÂÃÂ­ses Bajos",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos",
+          "Países Bajos"
         ],
         "77": [
           "Francia",
@@ -24213,32 +24213,32 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Egipto"
         ],
         "80": [
           "Inglaterra",
-          "UzbekistÃÂÃÂ¡n"
+          "Uzbekistán"
         ],
         "81": [
           "Estados Unidos",
           "Guatemala"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Senegal"
         ],
         "83": [
           "Portugal",
-          "PanamÃÂÃÂ¡"
+          "Panamá"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
-          "IrÃÂÃÂ¡n"
+          "Canadá",
+          "Irán"
         ],
         "86": [
           "Argentina",
@@ -24265,23 +24265,23 @@ window.POLLA_DATA = {
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
           "Paraguay"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Colombia"
         ],
         "97": [
@@ -24320,19 +24320,19 @@ window.POLLA_DATA = {
       "24": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Curazao"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -24343,7 +24343,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
@@ -24355,7 +24355,7 @@ window.POLLA_DATA = {
           "Suecia"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Argentina"
         ],
         "83": [
@@ -24363,7 +24363,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -24379,7 +24379,7 @@ window.POLLA_DATA = {
           "Paraguay"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Irak"
         ],
         "89": [
@@ -24387,28 +24387,28 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Croacia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -24416,11 +24416,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -24432,7 +24432,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -24444,7 +24444,7 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Argentina",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "25": {
@@ -24454,15 +24454,15 @@ window.POLLA_DATA = {
         ],
         "74": [
           "Alemania",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -24473,7 +24473,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Costa de Marfil"
         ],
         "80": [
@@ -24485,7 +24485,7 @@ window.POLLA_DATA = {
           "Botsuana"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Argentina"
         ],
         "83": [
@@ -24493,12 +24493,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
-          "IrÃÂÃÂ¡n"
+          "Canadá",
+          "Irán"
         ],
         "86": [
           "Argentina",
@@ -24518,39 +24518,39 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Catar",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
           "Egipto"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Portugal"
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -24562,14 +24562,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
           "Portugal"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Portugal"
         ],
         "104": [
@@ -24587,12 +24587,12 @@ window.POLLA_DATA = {
           "Suecia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -24603,19 +24603,19 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
-          "HaitÃÂÃÂ­"
+          "México",
+          "Haití"
         ],
         "80": [
           "Inglaterra",
-          "UzbekistÃÂÃÂ¡n"
+          "Uzbekistán"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -24623,11 +24623,11 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Senegal"
         ],
         "86": [
@@ -24640,7 +24640,7 @@ window.POLLA_DATA = {
         ],
         "88": [
           "Estados Unidos",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "89": [
           "Alemania",
@@ -24648,39 +24648,39 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Portugal"
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -24692,7 +24692,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -24703,37 +24703,37 @@ window.POLLA_DATA = {
           "Brasil"
         ],
         "104": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Portugal"
         ]
       },
       "27": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Costa de Marfil"
         ],
         "80": [
@@ -24745,15 +24745,15 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
-          "ChequÃÂÃÂ­a"
+          "Bélgica",
+          "Chequía"
         ],
         "83": [
           "Colombia",
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -24769,7 +24769,7 @@ window.POLLA_DATA = {
           "Paraguay"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Egipto"
         ],
         "89": [
@@ -24778,27 +24778,27 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "96": [
           "Suiza",
@@ -24806,11 +24806,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Alemania",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
           "Colombia",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -24840,26 +24840,26 @@ window.POLLA_DATA = {
       "28": {
         "73": [
           "Egipto",
-          "MÃÂÃÂ©xico"
+          "México"
         ],
         "74": [
           "Nueva Zelanda",
           "Alemania"
         ],
         "75": [
-          "IrÃÂÃÂ¡n",
-          "PaÃÂÃÂ­ses Bajos"
+          "Irán",
+          "Países Bajos"
         ],
         "76": [
           "Egipto",
           "Brasil"
         ],
         "77": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Francia"
         ],
         "78": [
-          "IrÃÂÃÂ¡n",
+          "Irán",
           "Costa de Marfil"
         ],
         "79": [
@@ -24872,19 +24872,19 @@ window.POLLA_DATA = {
         ],
         "81": [
           "Arabia Saudita",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "82": [
           "Cabo Verde",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "83": [
           "Arabia Saudita",
           "Colombia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
-          "EspaÃÂÃÂ±a"
+          "España",
+          "España"
         ],
         "85": [
           "Senegal",
@@ -24908,7 +24908,7 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Argelia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "91": [
           "Jordania",
@@ -24935,23 +24935,23 @@ window.POLLA_DATA = {
           "Suiza"
         ],
         "97": [
-          "UzbekistÃÂÃÂ¡n",
+          "Uzbekistán",
           "Francia"
         ],
         "98": [
           "Congo",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "99": [
           "Portugal",
           "Brasil"
         ],
         "100": [
-          "UzbekistÃÂÃÂ¡n",
+          "Uzbekistán",
           "Argentina"
         ],
         "101": [
-          "PanamÃÂÃÂ¡",
+          "Panamá",
           "Francia"
         ],
         "102": [
@@ -24970,14 +24970,14 @@ window.POLLA_DATA = {
       "29": {
         "73": [
           "Egipto",
-          "MÃÂÃÂ©xico"
+          "México"
         ],
         "74": [
           "Nueva Zelanda",
           "Alemania"
         ],
         "75": [
-          "IrÃÂÃÂ¡n",
+          "Irán",
           "Suecia"
         ],
         "76": [
@@ -24985,11 +24985,11 @@ window.POLLA_DATA = {
           "Brasil"
         ],
         "77": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Francia"
         ],
         "78": [
-          "IrÃÂÃÂ¡n",
+          "Irán",
           "Costa de Marfil"
         ],
         "79": [
@@ -25002,19 +25002,19 @@ window.POLLA_DATA = {
         ],
         "81": [
           "Arabia Saudita",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "82": [
           "Cabo Verde",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "83": [
           "Arabia Saudita",
           "Colombia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
-          "EspaÃÂÃÂ±a"
+          "España",
+          "España"
         ],
         "85": [
           "Senegal",
@@ -25038,7 +25038,7 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Argelia",
-          "MÃÂÃÂ©xico"
+          "México"
         ],
         "91": [
           "Jordania",
@@ -25054,7 +25054,7 @@ window.POLLA_DATA = {
         ],
         "94": [
           "Austria",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "95": [
           "Argentina",
@@ -25069,8 +25069,8 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "98": [
-          "UzbekistÃÂÃÂ¡n",
-          "EspaÃÂÃÂ±a"
+          "Uzbekistán",
+          "España"
         ],
         "99": [
           "Congo",
@@ -25078,10 +25078,10 @@ window.POLLA_DATA = {
         ],
         "100": [
           "Portugal",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "101": [
-          "PanamÃÂÃÂ¡",
+          "Panamá",
           "Francia"
         ],
         "102": [
@@ -25100,19 +25100,19 @@ window.POLLA_DATA = {
       "30": {
         "73": [
           "Brasil",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Chequia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -25123,7 +25123,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
@@ -25135,7 +25135,7 @@ window.POLLA_DATA = {
           "Suecia"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Argelia"
         ],
         "83": [
@@ -25143,7 +25143,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -25159,36 +25159,36 @@ window.POLLA_DATA = {
           "Paraguay"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "89": [
           "Alemania",
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Croacia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -25196,11 +25196,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -25212,7 +25212,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -25220,7 +25220,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Argentina",
@@ -25230,19 +25230,19 @@ window.POLLA_DATA = {
       "31": {
         "73": [
           "Corea del Sur",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "74": [
           "Ecuador",
           "Corea del Sur"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Brasil"
         ],
         "76": [
           "Marruecos",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -25253,7 +25253,7 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Nueva Zelanda"
         ],
         "80": [
@@ -25262,10 +25262,10 @@ window.POLLA_DATA = {
         ],
         "81": [
           "Paraguay",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -25273,7 +25273,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argentina"
         ],
         "85": [
@@ -25286,7 +25286,7 @@ window.POLLA_DATA = {
         ],
         "87": [
           "Portugal",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "88": [
           "Egipto",
@@ -25298,23 +25298,23 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Alemania"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -25326,11 +25326,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Alemania",
@@ -25341,38 +25341,38 @@ window.POLLA_DATA = {
           "Portugal"
         ],
         "101": [
-          "PaÃÂÃÂ­ses Bajos",
-          "EspaÃÂÃÂ±a"
+          "Países Bajos",
+          "España"
         ],
         "102": [
           "Inglaterra",
           "Portugal"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Portugal"
         ],
         "104": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Inglaterra"
         ]
       },
       "32": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Chequia"
         ],
         "75": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "77": [
           "Francia",
@@ -25383,7 +25383,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Senegal"
         ],
         "80": [
@@ -25395,7 +25395,7 @@ window.POLLA_DATA = {
           "Costa de Marfil"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Suecia"
         ],
         "83": [
@@ -25403,7 +25403,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -25419,8 +25419,8 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "89": [
           "Alemania",
@@ -25435,20 +25435,20 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -25459,8 +25459,8 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -25472,7 +25472,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -25480,7 +25480,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Inglaterra",
@@ -25490,19 +25490,19 @@ window.POLLA_DATA = {
       "33": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Chequia"
         ],
         "75": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "77": [
           "Francia",
@@ -25513,7 +25513,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Senegal"
         ],
         "80": [
@@ -25525,7 +25525,7 @@ window.POLLA_DATA = {
           "Costa de Marfil"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Suecia"
         ],
         "83": [
@@ -25533,7 +25533,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -25549,8 +25549,8 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "89": [
           "Alemania",
@@ -25565,20 +25565,20 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -25589,8 +25589,8 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -25602,7 +25602,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -25614,25 +25614,25 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "34": {
         "73": [
-          "MÃÂÃÂ©xico",
-          "CanadÃÂÃÂ¡"
+          "México",
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Estados Unidos"
         ],
         "75": [
-          "JapÃÂÃÂ³n",
-          "HaitÃÂÃÂ­"
+          "Japón",
+          "Haití"
         ],
         "76": [
           "Brasil",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "77": [
           "Francia",
@@ -25651,11 +25651,11 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -25663,12 +25663,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
           "Suiza",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "86": [
           "Argentina",
@@ -25687,8 +25687,8 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "MÃÂÃÂ©xico",
-          "HaitÃÂÃÂ­"
+          "México",
+          "Haití"
         ],
         "91": [
           "Brasil",
@@ -25700,11 +25700,11 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -25716,11 +25716,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "HaitÃÂÃÂ­"
+          "Haití"
         ],
         "98": [
           "Portugal",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -25749,23 +25749,23 @@ window.POLLA_DATA = {
       },
       "35": {
         "73": [
-          "MÃÂÃÂ©xico",
-          "SudÃÂÃÂ¡frica"
+          "México",
+          "Sudáfrica"
         ],
         "74": [
           "Alemania",
           "Corea del Sur"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Paraguay"
         ],
         "78": [
@@ -25785,7 +25785,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Arabia Saudita"
         ],
         "83": [
@@ -25793,11 +25793,11 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Senegal"
         ],
         "86": [
@@ -25809,7 +25809,7 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Egipto"
         ],
         "89": [
@@ -25817,8 +25817,8 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "SudÃÂÃÂ¡frica",
-          "PaÃÂÃÂ­ses Bajos"
+          "Sudáfrica",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -25830,27 +25830,27 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Colombia"
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -25862,14 +25862,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
           "Colombia"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Brasil"
         ],
         "104": [
@@ -25880,19 +25880,19 @@ window.POLLA_DATA = {
       "36": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Ecuador",
           "Chequia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -25903,7 +25903,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Costa de Marfil"
         ],
         "80": [
@@ -25911,11 +25911,11 @@ window.POLLA_DATA = {
           "Congo"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Senegal"
         ],
         "83": [
@@ -25923,7 +25923,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
@@ -25955,16 +25955,16 @@ window.POLLA_DATA = {
           "Alemania"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -25979,8 +25979,8 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -25992,14 +25992,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
           "Argentina"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Brasil"
         ],
         "104": [
@@ -26010,14 +26010,14 @@ window.POLLA_DATA = {
       "37": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -26033,7 +26033,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Senegal"
         ],
         "80": [
@@ -26045,7 +26045,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -26053,7 +26053,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -26069,15 +26069,15 @@ window.POLLA_DATA = {
           "Argelia"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "89": [
           "Alemania",
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Marruecos"
         ],
         "91": [
@@ -26085,20 +26085,20 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Egipto",
@@ -26109,8 +26109,8 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -26122,7 +26122,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Alemania",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -26133,26 +26133,26 @@ window.POLLA_DATA = {
           "Alemania"
         ],
         "104": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Brasil"
         ]
       },
       "38": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Estados Unidos"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -26163,7 +26163,7 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Arabia Saudita"
         ],
         "80": [
@@ -26175,7 +26175,7 @@ window.POLLA_DATA = {
           "Costa de Marfil"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -26183,7 +26183,7 @@ window.POLLA_DATA = {
           "Inglaterra"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
@@ -26199,7 +26199,7 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Egipto"
         ],
         "89": [
@@ -26208,27 +26208,27 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Croacia"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Uruguay",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -26236,11 +26236,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
           "Colombia",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -26251,33 +26251,33 @@ window.POLLA_DATA = {
           "Portugal"
         ],
         "101": [
-          "PaÃÂÃÂ­ses Bajos",
-          "BÃÂÃÂ©lgica"
+          "Países Bajos",
+          "Bélgica"
         ],
         "102": [
           "Brasil",
           "Portugal"
         ],
         "103": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Brasil"
         ],
         "104": [
           "Portugal",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ]
       },
       "39": {
         "73": [
           "Chequia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Paraguay"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -26286,14 +26286,14 @@ window.POLLA_DATA = {
         ],
         "77": [
           "Francia",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
@@ -26301,11 +26301,11 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Corea del Sur"
         ],
         "83": [
@@ -26313,7 +26313,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
@@ -26337,23 +26337,23 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "92": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "93": [
           "Brasil",
           "Ecuador"
         ],
         "94": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "95": [
@@ -26366,7 +26366,7 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
           "Brasil",
@@ -26374,7 +26374,7 @@ window.POLLA_DATA = {
         ],
         "99": [
           "Portugal",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "100": [
           "Argentina",
@@ -26400,14 +26400,14 @@ window.POLLA_DATA = {
       "40": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Chequia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -26423,7 +26423,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Cabo Verde"
         ],
         "80": [
@@ -26432,10 +26432,10 @@ window.POLLA_DATA = {
         ],
         "81": [
           "Paraguay",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Botsuana"
         ],
         "83": [
@@ -26443,7 +26443,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -26467,7 +26467,7 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Marruecos"
         ],
         "91": [
@@ -26475,16 +26475,16 @@ window.POLLA_DATA = {
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -26499,8 +26499,8 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -26512,7 +26512,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -26524,25 +26524,25 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "41": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Escocia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -26553,7 +26553,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Suecia"
         ],
         "80": [
@@ -26561,11 +26561,11 @@ window.POLLA_DATA = {
           "Argelia"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -26573,7 +26573,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -26590,14 +26590,14 @@ window.POLLA_DATA = {
         ],
         "88": [
           "Estados Unidos",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "89": [
           "Alemania",
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Marruecos"
         ],
         "91": [
@@ -26605,16 +26605,16 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -26629,8 +26629,8 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -26642,14 +26642,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
           "Portugal"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Brasil"
         ],
         "104": [
@@ -26664,38 +26664,38 @@ window.POLLA_DATA = {
         ],
         "74": [
           "Alemania",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Suecia"
         ],
         "77": [
           "Francia",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "78": [
           "Ecuador",
           "Nueva Zelanda"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Colombia"
         ],
         "80": [
-          "IguazÃÂÃÂº",
+          "Iguazú",
           "Senegal"
         ],
         "81": [
-          "TÃÂÃÂºnez",
+          "Túnez",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -26703,7 +26703,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -26731,20 +26731,20 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "91": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Nueva Zelanda"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
-          "IguazÃÂÃÂº"
+          "México",
+          "Iguazú"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TÃÂÃÂºnez",
-          "BÃÂÃÂ©lgica"
+          "Túnez",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -26759,12 +26759,12 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
-          "BÃÂÃÂ©lgica",
-          "IguazÃÂÃÂº"
+          "Bélgica",
+          "Iguazú"
         ],
         "100": [
           "Argentina",
@@ -26772,15 +26772,15 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Portugal"
         ],
         "103": [
-          "BÃÂÃÂ©lgica",
-          "EspaÃÂÃÂ±a"
+          "Bélgica",
+          "España"
         ],
         "104": [
           "Francia",
@@ -26790,19 +26790,19 @@ window.POLLA_DATA = {
       "43": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Estados Unidos"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -26813,19 +26813,19 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Senegal"
         ],
         "80": [
           "Inglaterra",
-          "UzbekistÃÂÃÂ¡n"
+          "Uzbekistán"
         ],
         "81": [
           "Paraguay",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Argentina"
         ],
         "83": [
@@ -26833,7 +26833,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -26849,8 +26849,8 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "89": [
           "Alemania",
@@ -26858,7 +26858,7 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -26870,15 +26870,15 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -26886,11 +26886,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -26902,7 +26902,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -26910,7 +26910,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Francia",
@@ -26920,14 +26920,14 @@ window.POLLA_DATA = {
       "44": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Chequia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -26943,7 +26943,7 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Ecuador"
         ],
         "80": [
@@ -26951,7 +26951,7 @@ window.POLLA_DATA = {
           "Argentina"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Escocia"
         ],
         "82": [
@@ -26963,7 +26963,7 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argentina"
         ],
         "85": [
@@ -26980,7 +26980,7 @@ window.POLLA_DATA = {
         ],
         "88": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "89": [
           "Alemania",
@@ -26988,22 +26988,22 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Francia"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Egipto"
         ],
         "95": [
@@ -27016,11 +27016,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Alemania",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "TurquÃÂÃÂ­a"
+          "España",
+          "Turquía"
         ],
         "99": [
           "Francia",
@@ -27032,7 +27032,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Francia",
@@ -27040,7 +27040,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Francia",
@@ -27057,12 +27057,12 @@ window.POLLA_DATA = {
           "Escocia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -27073,7 +27073,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Ecuador"
         ],
         "80": [
@@ -27081,11 +27081,11 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Australia"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Arabia Saudita"
         ],
         "83": [
@@ -27093,11 +27093,11 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Egipto"
         ],
         "86": [
@@ -27118,7 +27118,7 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Suiza",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -27130,11 +27130,11 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -27146,11 +27146,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "TurquÃÂÃÂ­a"
+          "España",
+          "Turquía"
         ],
         "99": [
           "Brasil",
@@ -27162,7 +27162,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -27170,7 +27170,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Francia",
@@ -27180,30 +27180,30 @@ window.POLLA_DATA = {
       "46": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Bosnia y Herz."
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Suecia"
         ],
         "80": [
@@ -27215,7 +27215,7 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Ghana"
         ],
         "83": [
@@ -27223,7 +27223,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -27236,7 +27236,7 @@ window.POLLA_DATA = {
         ],
         "87": [
           "Portugal",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "88": [
           "Estados Unidos",
@@ -27247,24 +27247,24 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Senegal",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -27276,11 +27276,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -27292,7 +27292,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -27304,36 +27304,36 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "47": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Suecia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
@@ -27345,7 +27345,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -27353,7 +27353,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -27369,7 +27369,7 @@ window.POLLA_DATA = {
           "Paraguay"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Egipto"
         ],
         "89": [
@@ -27378,27 +27378,27 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -27406,11 +27406,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -27422,14 +27422,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
           "Portugal"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Portugal"
         ],
         "104": [
@@ -27440,14 +27440,14 @@ window.POLLA_DATA = {
       "48": {
         "73": [
           "Chequia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Corea del Sur"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -27463,7 +27463,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Costa de Marfil"
         ],
         "80": [
@@ -27471,11 +27471,11 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Paraguay"
         ],
         "83": [
@@ -27483,12 +27483,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
           "Suiza",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "86": [
           "Argentina",
@@ -27496,7 +27496,7 @@ window.POLLA_DATA = {
         ],
         "87": [
           "Colombia",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "88": [
           "Estados Unidos",
@@ -27507,24 +27507,24 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -27536,11 +27536,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -27552,7 +27552,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -27560,7 +27560,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Argentina",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Inglaterra",
@@ -27570,42 +27570,42 @@ window.POLLA_DATA = {
       "49": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Catar"
         ],
         "75": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "77": [
           "Francia",
-          "PanamÃÂÃÂ¡"
+          "Panamá"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
           "Inglaterra",
-          "SudÃÂÃÂ¡frica"
+          "Sudáfrica"
         ],
         "81": [
           "Paraguay",
           "Suecia"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Senegal"
         ],
         "83": [
@@ -27613,12 +27613,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
           "Suiza",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "86": [
           "Argentina",
@@ -27637,24 +27637,24 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "JapÃÂÃÂ³n"
+          "Canadá",
+          "Japón"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -27666,7 +27666,7 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Alemania",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "98": [
           "Colombia",
@@ -27700,11 +27700,11 @@ window.POLLA_DATA = {
       "50": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "75": [
           "Suecia",
@@ -27712,18 +27712,18 @@ window.POLLA_DATA = {
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "UzbekistÃÂÃÂ¡n"
+          "Uzbekistán"
         ],
         "78": [
           "Costa de Marfil",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Arabia Saudita"
         ],
         "80": [
@@ -27736,19 +27736,19 @@ window.POLLA_DATA = {
         ],
         "82": [
           "Nueva Zelanda",
-          "SudÃÂÃÂ¡frica"
+          "Sudáfrica"
         ],
         "83": [
           "Portugal",
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Australia"
         ],
         "85": [
           "Suiza",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "86": [
           "Argentina",
@@ -27756,11 +27756,11 @@ window.POLLA_DATA = {
         ],
         "87": [
           "Colombia",
-          "PanamÃÂÃÂ¡"
+          "Panamá"
         ],
         "88": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "89": [
           "Alemania",
@@ -27775,12 +27775,12 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
@@ -27799,12 +27799,12 @@ window.POLLA_DATA = {
           "Corea del Sur"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Estados Unidos"
         ],
         "99": [
           "Brasil",
-          "MÃÂÃÂ©xico"
+          "México"
         ],
         "100": [
           "Argentina",
@@ -27812,7 +27812,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -27824,25 +27824,25 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "51": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Paraguay"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -27865,15 +27865,15 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
-          "MÃÂÃÂ©xico"
+          "Bélgica",
+          "México"
         ],
         "83": [
           "Colombia",
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -27889,16 +27889,16 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "89": [
           "Alemania",
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -27910,15 +27910,15 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -27926,11 +27926,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Alemania",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -27942,14 +27942,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Alemania",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "102": [
           "Inglaterra",
           "Portugal"
         ],
         "103": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Portugal"
         ],
         "104": [
@@ -27960,7 +27960,7 @@ window.POLLA_DATA = {
       "52": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
@@ -27972,18 +27972,18 @@ window.POLLA_DATA = {
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Suecia"
         ],
         "80": [
@@ -27991,11 +27991,11 @@ window.POLLA_DATA = {
           "Costa de Marfil"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Senegal"
         ],
         "83": [
@@ -28003,7 +28003,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -28028,7 +28028,7 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -28040,11 +28040,11 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -28056,11 +28056,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -28072,7 +28072,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -28080,7 +28080,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Brasil",
@@ -28090,19 +28090,19 @@ window.POLLA_DATA = {
       "53": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Suecia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -28113,7 +28113,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Suecia"
         ],
         "80": [
@@ -28125,7 +28125,7 @@ window.POLLA_DATA = {
           "Argelia"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -28133,11 +28133,11 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Senegal"
         ],
         "86": [
@@ -28149,7 +28149,7 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Egipto"
         ],
         "89": [
@@ -28170,18 +28170,18 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Portugal"
         ],
         "97": [
@@ -28190,7 +28190,7 @@ window.POLLA_DATA = {
         ],
         "98": [
           "Colombia",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -28220,19 +28220,19 @@ window.POLLA_DATA = {
       "54": {
         "73": [
           "Costa de Marfil",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Paraguay"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -28243,7 +28243,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "ChequÃÂÃÂ­a",
+          "Chequía",
           "Costa de Marfil"
         ],
         "80": [
@@ -28252,18 +28252,18 @@ window.POLLA_DATA = {
         ],
         "81": [
           "Estados Unidos",
-          "UzbekistÃÂÃÂ¡n"
+          "Uzbekistán"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
-          "MÃÂÃÂ©xico"
+          "Bélgica",
+          "México"
         ],
         "83": [
           "Colombia",
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -28279,15 +28279,15 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
-          "IrÃÂÃÂ¡n"
+          "Turquía",
+          "Irán"
         ],
         "89": [
           "Alemania",
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Arabia Saudita"
         ],
         "91": [
@@ -28300,15 +28300,15 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -28316,11 +28316,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Alemania",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -28332,14 +28332,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Alemania",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "102": [
           "Inglaterra",
           "Portugal"
         ],
         "103": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Portugal"
         ],
         "104": [
@@ -28350,42 +28350,42 @@ window.POLLA_DATA = {
       "55": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Escocia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "77": [
           "Francia",
-          "HaitÃÂÃÂ­"
+          "Haití"
         ],
         "78": [
           "Ecuador",
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Costa de Marfil"
         ],
         "80": [
           "Inglaterra",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "81": [
           "Estados Unidos",
           "Cabo Verde"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -28393,12 +28393,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argentina"
         ],
         "85": [
           "Suiza",
-          "UzbekistÃÂÃÂ¡n"
+          "Uzbekistán"
         ],
         "86": [
           "Argentina",
@@ -28425,16 +28425,16 @@ window.POLLA_DATA = {
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -28446,11 +28446,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
           "Portugal",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -28479,20 +28479,20 @@ window.POLLA_DATA = {
       },
       "56": {
         "73": [
-          "MÃÂÃÂ©xico",
-          "CanadÃÂÃÂ¡"
+          "México",
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Argelia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Senegal",
@@ -28511,11 +28511,11 @@ window.POLLA_DATA = {
           "Arabia Saudita"
         ],
         "81": [
-          "TÃÂÃÂºnez",
+          "Túnez",
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Noruega"
         ],
         "83": [
@@ -28523,7 +28523,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
@@ -28547,8 +28547,8 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "MÃÂÃÂ©xico",
-          "PaÃÂÃÂ­ses Bajos"
+          "México",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -28560,10 +28560,10 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Noruega"
         ],
         "95": [
@@ -28576,10 +28576,10 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Noruega"
         ],
         "99": [
@@ -28592,7 +28592,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -28600,7 +28600,7 @@ window.POLLA_DATA = {
         ],
         "103": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "104": [
           "Portugal",
@@ -28610,14 +28610,14 @@ window.POLLA_DATA = {
       "57": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -28626,34 +28626,34 @@ window.POLLA_DATA = {
         ],
         "77": [
           "Francia",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "78": [
           "Ecuador",
           "Horvega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Marruecos"
         ],
         "80": [
           "Inglaterra",
-          "UzbekistÃÂÃÂ¡n"
+          "Uzbekistán"
         ],
         "81": [
           "Estados Unidos",
           "Senegal"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
-          "RepÃÂÃÂºblica Checa"
+          "Bélgica",
+          "República Checa"
         ],
         "83": [
           "Colombia",
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -28677,24 +28677,24 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Croacia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -28706,11 +28706,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -28722,7 +28722,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -28734,36 +28734,36 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Argentina",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "58": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Australia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "78": [
           "Ecuador",
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Noruega"
         ],
         "80": [
@@ -28775,7 +28775,7 @@ window.POLLA_DATA = {
           "Costa de Marfil"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Irak"
         ],
         "83": [
@@ -28783,12 +28783,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
           "Suiza",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "86": [
           "Argentina",
@@ -28808,7 +28808,7 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
@@ -28820,11 +28820,11 @@ window.POLLA_DATA = {
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Costa de Marfil",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -28836,11 +28836,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -28852,7 +28852,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -28863,26 +28863,26 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "104": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Brasil"
         ]
       },
       "59": {
         "73": [
-          "SudÃÂÃÂ¡frica",
-          "SudÃÂÃÂ¡frica"
+          "Sudáfrica",
+          "Sudáfrica"
         ],
         "74": [
           "Alemania",
-          "SudÃÂÃÂ¡frica"
+          "Sudáfrica"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -28893,7 +28893,7 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Egipto"
         ],
         "80": [
@@ -28901,11 +28901,11 @@ window.POLLA_DATA = {
           "Australia"
         ],
         "81": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Costa de Marfil"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Senegal"
         ],
         "83": [
@@ -28913,12 +28913,12 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
-          "IrÃÂÃÂ¡n"
+          "Canadá",
+          "Irán"
         ],
         "86": [
           "Argentina",
@@ -28937,7 +28937,7 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "SudÃÂÃÂ¡frica",
+          "Sudáfrica",
           "Campos no claros"
         ],
         "91": [
@@ -28945,32 +28945,32 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Costa de Marfil",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Portugal"
         ],
         "97": [
           "Francia",
-          "SudÃÂÃÂ¡frica"
+          "Sudáfrica"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Noruega",
@@ -28982,7 +28982,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Inglaterra",
@@ -28994,25 +28994,25 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "60": {
         "73": [
           "Costa de Marfil",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "75": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Escocia"
         ],
         "76": [
           "Brasil",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "77": [
           "Francia",
@@ -29023,7 +29023,7 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Marruecos"
         ],
         "80": [
@@ -29035,7 +29035,7 @@ window.POLLA_DATA = {
           "Suecia"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -29043,7 +29043,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Jordania"
         ],
         "85": [
@@ -29068,23 +29068,23 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -29096,7 +29096,7 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "98": [
           "Colombia",
@@ -29130,14 +29130,14 @@ window.POLLA_DATA = {
       "61": {
         "73": [
           "Chequia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Paraguay"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
@@ -29146,14 +29146,14 @@ window.POLLA_DATA = {
         ],
         "77": [
           "Francia",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
@@ -29165,7 +29165,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Arabia Saudita"
         ],
         "83": [
@@ -29173,7 +29173,7 @@ window.POLLA_DATA = {
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -29189,7 +29189,7 @@ window.POLLA_DATA = {
           "Costa de Marfil"
         ],
         "88": [
-          "TÃÂÃÂºnez",
+          "Túnez",
           "Egipto"
         ],
         "89": [
@@ -29197,28 +29197,28 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Nueva Zelanda"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Colombia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
-          "TurquÃÂÃÂ­a"
+          "Turquía"
         ],
         "96": [
           "Suiza",
@@ -29226,11 +29226,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -29242,7 +29242,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -29254,25 +29254,25 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "62": {
         "73": [
-          "SudÃÂÃÂ¡frica",
-          "CanadÃÂÃÂ¡"
+          "Sudáfrica",
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Australia"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Noruega",
@@ -29283,7 +29283,7 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
@@ -29291,19 +29291,19 @@ window.POLLA_DATA = {
           "Colombia"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Senegal"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Corea del Sur"
         ],
         "83": [
-          "UzbekistÃÂÃÂ¡n",
+          "Uzbekistán",
           "Inglaterra"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argelia"
         ],
         "85": [
@@ -29327,24 +29327,24 @@ window.POLLA_DATA = {
           "Suecia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
-          "PaÃÂÃÂ­ses Bajos"
+          "Canadá",
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Francia"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Colombia"
         ],
         "93": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -29356,11 +29356,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Alemania",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Francia",
@@ -29372,7 +29372,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Alemania",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Francia",
@@ -29394,26 +29394,26 @@ window.POLLA_DATA = {
         ],
         "74": [
           "Alemania",
-          "PanamÃÂÃÂ¡"
+          "Panamá"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "IrÃÂÃÂ¡n"
+          "Irán"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Escocia"
         ],
         "80": [
@@ -29426,18 +29426,18 @@ window.POLLA_DATA = {
         ],
         "82": [
           "Nueva Zelanda",
-          "SudÃÂÃÂ¡frica"
+          "Sudáfrica"
         ],
         "83": [
           "Portugal",
           "Congo"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Jordania"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Chequia"
         ],
         "86": [
@@ -29450,7 +29450,7 @@ window.POLLA_DATA = {
         ],
         "88": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "89": [
           "Alemania",
@@ -29458,19 +29458,19 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Corea del Sur",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
@@ -29481,15 +29481,15 @@ window.POLLA_DATA = {
           "Estados Unidos"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Colombia"
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Paraguay"
         ],
         "99": [
@@ -29502,14 +29502,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
           "Colombia"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Colombia"
         ],
         "104": [
@@ -29520,19 +29520,19 @@ window.POLLA_DATA = {
       "64": {
         "73": [
           "Corea del Sur",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
           "Paraguay"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Escocia"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
@@ -29543,7 +29543,7 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Marruecos"
         ],
         "80": [
@@ -29551,11 +29551,11 @@ window.POLLA_DATA = {
           "Noruega"
         ],
         "81": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Catar"
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Chequia"
         ],
         "83": [
@@ -29563,7 +29563,7 @@ window.POLLA_DATA = {
           "Inglaterra"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
@@ -29595,16 +29595,16 @@ window.POLLA_DATA = {
           "Ecuador"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Croacia"
         ],
         "93": [
           "Inglaterra",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
-          "TurquÃÂÃÂ­a",
-          "BÃÂÃÂ©lgica"
+          "Turquía",
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -29616,11 +29616,11 @@ window.POLLA_DATA = {
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "TurquÃÂÃÂ­a"
+          "España",
+          "Turquía"
         ],
         "99": [
           "Brasil",
@@ -29632,14 +29632,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
           "Argentina"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argentina"
         ],
         "104": [
@@ -29650,7 +29650,7 @@ window.POLLA_DATA = {
       "65": {
         "73": [
           "Chequia",
-          "CanadÃÂÃÂ¡"
+          "Canadá"
         ],
         "74": [
           "Alemania",
@@ -29666,15 +29666,15 @@ window.POLLA_DATA = {
         ],
         "77": [
           "Francia",
-          "PanamÃÂÃÂ¡"
+          "Panamá"
         ],
         "78": [
           "Ecuador",
           "Nueva Zelanda"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
-          "JapÃÂÃÂ³n"
+          "México",
+          "Japón"
         ],
         "80": [
           "Croacia",
@@ -29685,7 +29685,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Corea del Sur"
         ],
         "83": [
@@ -29693,7 +29693,7 @@ window.POLLA_DATA = {
           "Nueva Zelanda"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Arabia Saudita"
         ],
         "85": [
@@ -29717,7 +29717,7 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Brasil"
         ],
         "91": [
@@ -29725,16 +29725,16 @@ window.POLLA_DATA = {
           "Ecuador"
         ],
         "92": [
-          "JapÃÂÃÂ³n",
+          "Japón",
           "Croacia"
         ],
         "93": [
           "Nueva Zelanda",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Paraguay",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
@@ -29749,12 +29749,12 @@ window.POLLA_DATA = {
           "Brasil"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "100": [
           "Argentina",
@@ -29762,14 +29762,14 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
           "Argentina"
         ],
         "103": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Argentina"
         ],
         "104": [
@@ -29787,23 +29787,23 @@ window.POLLA_DATA = {
           "Paraguay"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Escocia"
         ],
         "76": [
           "Brasil",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "77": [
           "Francia",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "78": [
           "Ecuador",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Marruecos"
         ],
         "80": [
@@ -29815,7 +29815,7 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
+          "Bélgica",
           "Senegal"
         ],
         "83": [
@@ -29827,19 +29827,19 @@ window.POLLA_DATA = {
           "Austria"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Egipto"
         ],
         "86": [
           "Argentina",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "87": [
           "Portugal",
-          "PanamÃÂÃÂ¡"
+          "Panamá"
         ],
         "88": [
-          "TurquÃÂÃÂ­a",
+          "Turquía",
           "Nueva Zelanda"
         ],
         "89": [
@@ -29848,14 +29848,14 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Suiza",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
@@ -29867,11 +29867,11 @@ window.POLLA_DATA = {
           "Senegal"
         ],
         "95": [
-          "EspaÃÂÃÂ±a",
-          "TurquÃÂÃÂ­a"
+          "España",
+          "Turquía"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Portugal"
         ],
         "97": [
@@ -29887,7 +29887,7 @@ window.POLLA_DATA = {
           "Inglaterra"
         ],
         "100": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Portugal"
         ],
         "101": [
@@ -29896,7 +29896,7 @@ window.POLLA_DATA = {
         ],
         "102": [
           "Brasil",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "103": [
           "Colombia",
@@ -29904,12 +29904,12 @@ window.POLLA_DATA = {
         ],
         "104": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ]
       },
       "67": {
         "73": [
-          "RepÃÂÃÂºblica Checa",
+          "República Checa",
           "Suiza"
         ],
         "74": [
@@ -29917,23 +29917,23 @@ window.POLLA_DATA = {
           "Marruecos"
         ],
         "75": [
-          "PaÃÂÃÂ­ses Bajos",
+          "Países Bajos",
           "Escocia"
         ],
         "76": [
           "Brasil",
-          "TÃÂÃÂºnez"
+          "Túnez"
         ],
         "77": [
           "Francia",
-          "JapÃÂÃÂ³n"
+          "Japón"
         ],
         "78": [
           "Curazao",
           "Noruega"
         ],
         "79": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Arabia Saudita"
         ],
         "80": [
@@ -29945,19 +29945,19 @@ window.POLLA_DATA = {
           "Bosnia y Herz."
         ],
         "82": [
-          "BÃÂÃÂ©lgica",
-          "SudÃÂÃÂ¡frica"
+          "Bélgica",
+          "Sudáfrica"
         ],
         "83": [
           "Portugal",
           "Croacia"
         ],
         "84": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Austria"
         ],
         "85": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Argentina"
         ],
         "86": [
@@ -29978,39 +29978,39 @@ window.POLLA_DATA = {
         ],
         "90": [
           "Suiza",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "91": [
           "Brasil",
           "Noruega"
         ],
         "92": [
-          "MÃÂÃÂ©xico",
+          "México",
           "Inglaterra"
         ],
         "93": [
           "Portugal",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "94": [
           "Estados Unidos",
-          "BÃÂÃÂ©lgica"
+          "Bélgica"
         ],
         "95": [
           "Argentina",
           "Paraguay"
         ],
         "96": [
-          "CanadÃÂÃÂ¡",
+          "Canadá",
           "Colombia"
         ],
         "97": [
           "Francia",
-          "PaÃÂÃÂ­ses Bajos"
+          "Países Bajos"
         ],
         "98": [
-          "EspaÃÂÃÂ±a",
-          "BÃÂÃÂ©lgica"
+          "España",
+          "Bélgica"
         ],
         "99": [
           "Brasil",
@@ -30022,7 +30022,7 @@ window.POLLA_DATA = {
         ],
         "101": [
           "Francia",
-          "EspaÃÂÃÂ±a"
+          "España"
         ],
         "102": [
           "Brasil",
@@ -30033,7 +30033,7 @@ window.POLLA_DATA = {
           "Brasil"
         ],
         "104": [
-          "EspaÃÂÃÂ±a",
+          "España",
           "Colombia"
         ]
       }
@@ -30041,7 +30041,7 @@ window.POLLA_DATA = {
   },
   "goleadores_ranking": [
     {
-      "goleador": "Kylian MbappÃÂÃÂ©",
+      "goleador": "Kylian Mbappé",
       "votos": 32
     },
     {
@@ -30053,7 +30053,7 @@ window.POLLA_DATA = {
       "votos": 4
     },
     {
-      "goleador": "Ousmane DembÃÂÃÂ©lÃÂÃÂ©",
+      "goleador": "Ousmane Dembélé",
       "votos": 3
     },
     {
@@ -30065,7 +30065,7 @@ window.POLLA_DATA = {
       "votos": 2
     },
     {
-      "goleador": "JuliÃÂÃÂ¡n ÃÂÃÂlvarez",
+      "goleador": "Julián Álvarez",
       "votos": 2
     },
     {
@@ -30077,7 +30077,7 @@ window.POLLA_DATA = {
       "votos": 1
     },
     {
-      "goleador": "Luis DÃÂÃÂ­az",
+      "goleador": "Luis Díaz",
       "votos": 1
     },
     {
@@ -30121,7 +30121,7 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Kylian MbappÃÂÃÂ©",
+      "nombre": "Kylian Mbappé",
       "equipo": "Francia",
       "goles": 2,
       "votos_polla": 32
@@ -30145,19 +30145,19 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "JuliÃÂÃÂ¡n QuiÃÂÃÂ±ones",
-      "equipo": "MÃÂÃÂ©xico",
+      "nombre": "Julián Quiñones",
+      "equipo": "México",
       "goles": 1,
       "votos_polla": 0
     },
     {
-      "nombre": "RaÃÂÃÂºl JimÃÂÃÂ©nez",
-      "equipo": "MÃÂÃÂ©xico",
+      "nombre": "Raúl Jiménez",
+      "equipo": "México",
       "goles": 1,
       "votos_polla": 0
     },
     {
-      "nombre": "Ladislav KrejcÃÂÃÂ­",
+      "nombre": "Ladislav Krejcí",
       "equipo": "Chequia",
       "goles": 1,
       "votos_polla": 0
@@ -30182,12 +30182,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Cyle Larin",
-      "equipo": "CanadÃÂÃÂ¡",
+      "equipo": "Canadá",
       "goles": 1,
       "votos_polla": 0
     },
     {
-      "nombre": "MaurÃÂÃÂ­cio",
+      "nombre": "Maurício",
       "equipo": "Paraguay",
       "goles": 1,
       "votos_polla": 0
@@ -30211,7 +30211,7 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "VinÃÂÃÂ­cius JÃÂÃÂºnior",
+      "nombre": "Vinícius Júnior",
       "equipo": "Brasil",
       "goles": 1,
       "votos_polla": 0
@@ -30272,25 +30272,25 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Virgil van Dijk",
-      "equipo": "PaÃÂÃÂ­ses Bajos",
+      "equipo": "Países Bajos",
       "goles": 1,
       "votos_polla": 0
     },
     {
       "nombre": "Keito Nakamura",
-      "equipo": "JapÃÂÃÂ³n",
+      "equipo": "Japón",
       "goles": 1,
       "votos_polla": 0
     },
     {
       "nombre": "Crysencio Summerville",
-      "equipo": "PaÃÂÃÂ­ses Bajos",
+      "equipo": "Países Bajos",
       "goles": 1,
       "votos_polla": 0
     },
     {
       "nombre": "Daichi Kamada",
-      "equipo": "JapÃÂÃÂ³n",
+      "equipo": "Japón",
       "goles": 1,
       "votos_polla": 0
     },
@@ -30308,12 +30308,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Omar Rekik",
-      "equipo": "TÃÂÃÂºnez",
+      "equipo": "Túnez",
       "goles": 1,
       "votos_polla": 0
     },
     {
-      "nombre": "Viktor GyÃÂÃÂ¶keres",
+      "nombre": "Viktor Gyökeres",
       "equipo": "Suecia",
       "goles": 1,
       "votos_polla": 0
@@ -30337,20 +30337,20 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Maxi AraÃÂÃÂºjo",
+      "nombre": "Maxi Araújo",
       "equipo": "Uruguay",
       "goles": 1,
       "votos_polla": 0
     },
     {
       "nombre": "Ramin Rezaeian",
-      "equipo": "IrÃÂÃÂ¡n",
+      "equipo": "Irán",
       "goles": 1,
       "votos_polla": 0
     },
     {
       "nombre": "Mohammad Mohebbi",
-      "equipo": "IrÃÂÃÂ¡n",
+      "equipo": "Irán",
       "goles": 1,
       "votos_polla": 0
     },
@@ -30373,7 +30373,7 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Leo ÃÂÃÂstigard",
+      "nombre": "Leo Østigard",
       "equipo": "Noruega",
       "goles": 1,
       "votos_polla": 0
@@ -30397,7 +30397,7 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "JoÃÂÃÂ£o Neves",
+      "nombre": "João Neves",
       "equipo": "Portugal",
       "goles": 1,
       "votos_polla": 0
@@ -30439,43 +30439,43 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Daniel MuÃÂÃÂ±oz",
+      "nombre": "Daniel Muñoz",
       "equipo": "Colombia",
       "goles": 1,
       "votos_polla": 0
     },
     {
       "nombre": "Abbosbek Fayzullaev",
-      "equipo": "UzbekistÃÂÃÂ¡n",
+      "equipo": "Uzbekistán",
       "goles": 1,
       "votos_polla": 0
     },
     {
-      "nombre": "Luis DÃÂÃÂ­az",
+      "nombre": "Luis Díaz",
       "equipo": "Colombia",
       "goles": 1,
       "votos_polla": 1
     },
     {
-      "nombre": "JÃÂÃÂ¡minton Campaz",
+      "nombre": "Jáminton Campaz",
       "equipo": "Colombia",
       "goles": 1,
       "votos_polla": 0
     },
     {
-      "nombre": "Michal SadÃÂÃÂ­lek",
+      "nombre": "Michal Sadílek",
       "equipo": "Chequia",
       "goles": 1,
       "votos_polla": 0
     },
     {
       "nombre": "Teboho Mokoena",
-      "equipo": "SudÃÂÃÂ¡frica",
+      "equipo": "Sudáfrica",
       "goles": 1,
       "votos_polla": 0
     },
     {
-      "nombre": "RubÃÂÃÂ©n Vargas",
+      "nombre": "Rubén Vargas",
       "equipo": "Suiza",
       "goles": 1,
       "votos_polla": 0
