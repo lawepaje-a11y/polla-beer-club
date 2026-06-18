@@ -149,6 +149,19 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .winner-pill{background:var(--green-l);color:var(--green);font-size:.78rem;font-weight:700;padding:.25rem .75rem;border-radius:999px}
 .no-winners{font-size:.82rem;color:var(--muted);font-style:italic}
 
+/* Live bets panel */
+.live-bets{margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--border)}
+.live-bets-title{font-size:.7rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.4rem}
+.live-bet-row{display:flex;align-items:center;gap:.4rem;padding:.3rem 0;border-bottom:1px solid var(--border);font-size:.78rem}
+.live-bet-row:last-child{border-bottom:none}
+.lbr-name{flex:1;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lbr-phone{color:var(--muted);font-size:.7rem;flex-shrink:0}
+.lbr-score{font-weight:700;color:var(--accent);margin:0 .2rem;flex-shrink:0}
+.lbr-win{color:var(--green);font-weight:700;font-size:.7rem;flex-shrink:0}
+.lbr-out{color:var(--muted);font-size:.7rem;flex-shrink:0}
+/* Payment note */
+.pay-note{background:#fefce8;border:1.5px solid #fde047;border-radius:.6rem;padding:.65rem .875rem;margin:.75rem 0;font-size:.79rem;color:#713f12;line-height:1.45}
+
 /* ── Admin ───────────────────────────────────────────────── */
 .admin-panel{background:var(--surface);border:2px solid var(--red);border-radius:1rem;padding:1.25rem;margin-bottom:1.5rem}
 .admin-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;flex-wrap:wrap;gap:.5rem}
@@ -163,8 +176,32 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .admin-table{width:100%;border-collapse:collapse;font-size:.76rem;margin-top:.5rem}
 .admin-table th{background:var(--surface2);padding:.4rem .6rem;text-align:left;font-size:.68rem;font-weight:700;color:var(--muted);text-transform:uppercase}
 .admin-table td{padding:.4rem .6rem;border-bottom:1px solid var(--border)}
+/* Payment management */
+.pay-mgmt{border:1.5px solid var(--border);border-radius:.75rem;padding:1rem;margin-bottom:1.25rem;background:var(--surface2)}
+.pay-mgmt-hd{font-size:.9rem;font-weight:800;margin-bottom:.875rem}
+.pay-entry{display:flex;gap:.5rem}
+.pay-entry input{flex:1;padding:.55rem .875rem;border:1.5px solid var(--border);border-radius:.5rem;font-size:.9rem;font-family:monospace;letter-spacing:.08em;text-transform:uppercase;background:var(--surface)}
+.pay-entry input:focus{outline:none;border-color:var(--green)}
+.btn-pay{padding:.55rem 1rem;border:none;border-radius:.5rem;font-size:.82rem;font-weight:700;cursor:pointer;background:var(--green);color:#fff;white-space:nowrap;flex-shrink:0}
+.pay-entry-msg{font-size:.78rem;min-height:1.3em;margin:.3rem 0}
+.pay-stats{display:flex;gap:.75rem;flex-wrap:wrap;margin:.75rem 0}
+.pay-stat{flex:1;min-width:110px;background:var(--surface);border:1px solid var(--border);border-radius:.65rem;padding:.6rem;text-align:center}
+.pay-stat-val{font-size:1.05rem;font-weight:800}
+.pay-stat-lbl{font-size:.62rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-top:.15rem}
+.pay-stat.s-paid .pay-stat-val{color:var(--green)}
+.pay-stat.s-pending .pay-stat-val{color:var(--red)}
+.pay-list-title{font-size:.68rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:.875rem 0 .35rem}
+.pay-row{display:flex;align-items:center;gap:.45rem;padding:.32rem 0;border-bottom:1px solid var(--border);font-size:.78rem;flex-wrap:wrap}
+.pay-row:last-child{border-bottom:none}
+.prw-name{font-weight:600;flex:1;min-width:80px}
+.prw-phone{color:var(--muted);font-size:.7rem;flex-shrink:0}
+.prw-match{color:var(--muted);font-size:.7rem;flex-shrink:0}
+.prw-code{font-family:monospace;font-size:.75rem;color:var(--accent);letter-spacing:.05em;flex-shrink:0}
+.prw-ts{color:var(--muted);font-size:.68rem;flex-shrink:0}
 .btn-resolve{padding:.35rem .875rem;border:none;border-radius:.5rem;font-size:.75rem;font-weight:700;cursor:pointer;background:var(--green);color:#fff}
 .btn-resolve:disabled{background:var(--muted);cursor:not-allowed}
+.btn-del-bet{background:none;border:none;cursor:pointer;font-size:.9rem;padding:.1rem .3rem;border-radius:.3rem;opacity:.5;transition:opacity .15s}
+.btn-del-bet:hover{opacity:1;background:var(--red-l)}
 .btn-csv{padding:.35rem .875rem;border:1.5px solid var(--border);border-radius:.5rem;font-size:.75rem;font-weight:600;cursor:pointer;background:transparent;color:var(--text)}
 .btn-danger{padding:.45rem 1rem;border:none;border-radius:.5rem;font-size:.78rem;font-weight:700;cursor:pointer;background:var(--red);color:#fff}
 
@@ -220,6 +257,20 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       </div>
     </div>
     <div id="admin-summary" class="admin-summary"></div>
+
+    <!-- Gestión de cobros -->
+    <div class="pay-mgmt">
+      <div class="pay-mgmt-hd">💵 Gestión de Cobros</div>
+      <div class="pay-entry">
+        <input type="text" id="pay-code-inp" placeholder="Código del apostador (ej: A3X7BQ)"
+               maxlength="8" oninput="this.value=this.value.toUpperCase()"
+               onkeydown="if(event.key==='Enter')markPaid()">
+        <button class="btn-pay" onclick="markPaid()">✓ Marcar Pagado</button>
+      </div>
+      <div id="pay-entry-msg" class="pay-entry-msg"></div>
+      <div id="pay-container"></div>
+    </div>
+
     <div id="admin-bets"></div>
   </div>
 
@@ -278,7 +329,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
       </div>
       <div class="form-group">
         <label class="form-label">Código de 6 dígitos</label>
-        <input type="text" class="form-input code-input" id="inp-code" placeholder="000000" maxlength="6" inputmode="numeric">
+        <input type="text" class="form-input code-input" id="inp-code" placeholder="ej: 0758" maxlength="8" inputmode="numeric">
       </div>
       <div class="err" id="err2">Código incorrecto. Inténtalo de nuevo.</div>
       <button class="btn-primary" onclick="step2Next()">Verificar →</button>
@@ -297,6 +348,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
         <div class="score-team" id="modal-eq2">Equipo 2</div>
       </div>
       <div class="bet-cost-note">💰 <strong>$5,000 COP</strong> se acreditan al pozo de este partido</div>
+      <div class="pay-note">💵 <strong>Lleva $5,000 COP en efectivo</strong> al Beer Club y págate al organizador. Guarda tu código de confirmación para validar la apuesta.</div>
       <div class="err" id="err3">Marcador inválido. Ingresa números ≥ 0.</div>
       <button class="btn-primary" onclick="confirmBet()">✓ Confirmar Apuesta</button>
     </div>
@@ -311,8 +363,24 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
         <div class="receipt-code" id="receipt-code">------</div>
         <div id="receipt-details"></div>
       </div>
+      <div class="pay-note">💵 Paga <strong>$5,000 COP en efectivo</strong> al organizador cuando llegues al Beer Club. Muestra el código de arriba para validar tu apuesta.</div>
       <button class="btn-primary" onclick="closeModal()">Cerrar</button>
     </div>
+  </div>
+</div>
+
+<!-- Admin login modal -->
+<div class="modal-overlay" id="admin-login-overlay" onclick="closeAdminLogin(event)" style="display:none">
+  <div class="modal" style="max-width:340px">
+    <h2>🔒 Acceso Administrador</h2>
+    <p class="modal-sub">Ingresa la clave para continuar.</p>
+    <div class="form-group" style="margin-top:.75rem">
+      <input type="password" class="form-input" id="admin-pin-inp"
+             placeholder="Clave" onkeydown="if(event.key==='Enter')adminLogin()">
+    </div>
+    <div class="err" id="admin-pin-err">Clave incorrecta.</div>
+    <button class="btn-primary" onclick="adminLogin()">Entrar →</button>
+    <button class="btn-secondary" onclick="closeAdminLogin()">Cancelar</button>
   </div>
 </div>
 
@@ -335,6 +403,7 @@ const CONFIG = {
   BET_AMOUNT:         5000,    // COP por apuesta
   RAKE:               0.10,    // comisión del 10%
   BET_WINDOW_MINUTES: 5,       // minutos antes del pitazo que cierra la ventana
+  ADMIN_PIN:          'Beer#2026P3d40',
   DEMO_MODE:          false,   // true = muestra código en pantalla; false = SMS real via Onurix
   PROXY_URL:          'https://polla.informateya.co',
   NO_WINNER_POLICY:   'admin',
@@ -413,7 +482,7 @@ function _fmtDate(m) {
 }
 
 function _betCount(matchId) {
-  return _loadDB().bets.filter(b => b.matchId === matchId).length
+  return _cloudBets.filter(b => b.matchId === matchId).length
 }
 
 // ── All matches (grupos + elim) ──────────────────────────────────
@@ -492,7 +561,7 @@ function _cardHTML(m) {
     const mins = Math.ceil(minsLeft)
     action = `<div class="opens-in" style="color:#b45309">🔒 Apuestas cerradas — pitazo en ${mins} min</div>`
   } else if (st === 'in') {
-    action = `<div class="opens-in" style="color:var(--red)">⛔ Partido en curso</div>`
+    action = `<div class="opens-in" style="color:var(--red)">⛔ Partido en curso</div>${_liveBetsHTML(m)}`
   } else if (st === 'post') {
     action = `<div class="opens-in">Cerrado</div>`
   } else {
@@ -528,9 +597,33 @@ function _startCountdown(m) {
   tick()
 }
 
+function _liveBetsHTML(m) {
+  const bets = _cloudBets.filter(b => b.matchId === m.numero)
+  if (!bets.length) return ''
+  const liveS1 = m.g1_real, liveS2 = m.g2_real
+  const hasLive = liveS1 != null && liveS2 != null
+  const rows = bets.map(b => {
+    const winning = hasLive && b.score1 === liveS1 && b.score2 === liveS2
+    return `<div class="live-bet-row">
+      <span class="lbr-name">${b.nombre}</span>
+      <span class="lbr-phone">···${String(b.contacto).slice(-4)}</span>
+      <span class="lbr-score">${b.score1}–${b.score2}</span>
+      ${winning ? '<span class="lbr-win">🏆 Ganando</span>' : (hasLive ? '<span class="lbr-out">Aguantando</span>' : '')}
+    </div>`
+  }).join('')
+  return `<div class="live-bets">
+    <div class="live-bets-title">🎯 ${bets.length} apuesta${bets.length !== 1 ? 's' : ''} en este partido</div>
+    ${rows}
+  </div>`
+}
+
 // ── Modal ────────────────────────────────────────────────────────
-let _bet = null   // { match, nombre, contacto }
+let _bet = null   // { match, nombre, contacto, dispatchId }
 let _verifyCode = null
+
+// ── Cloud state ───────────────────────────────────────────────────
+let _cloudBets = []
+let _cloudResolutions = []
 
 function openModal(matchId) {
   const m = _allMatches().find(x => x.numero === matchId)
@@ -569,13 +662,14 @@ async function step1Next() {
   document.getElementById('err1').style.display = 'none'
   if (!nombre || !contacto) { document.getElementById('err1').style.display = 'block'; return }
 
-  // Duplicate check
-  const existing = _loadDB().bets.find(b =>
-    b.matchId === _bet.match.numero && b.contacto === contacto
-  )
+  // Duplicate check (cloud + local cache)
+  const existing = _cloudBets.find(b => b.matchId === _bet.match.numero && b.contacto === contacto)
+    || _loadDB().bets.find(b => b.matchId === _bet.match.numero && b.contacto === contacto)
   if (existing) {
-    _toast('Ya apostaste en este partido. Código: ' + existing.code, 4000)
-    closeModal(); return
+    const err = document.getElementById('err1')
+    err.textContent = `Ya apostaste en este partido con este número. Tu código: ${existing.code}`
+    err.style.display = 'block'
+    return
   }
 
   _bet.nombre   = nombre
@@ -605,7 +699,8 @@ async function step1Next() {
     })
     const data = await r.json()
     if (!data.ok) throw new Error(data.error || 'Error al enviar SMS')
-    _verifyCode = null  // Onurix valida el código — no lo almacenamos localmente
+    _verifyCode = null
+    _bet.dispatchId = data.dispatchId || null  // guardar para la verificación
     document.getElementById('demo-code-box').style.display = 'none'
     document.getElementById('step2-sub').textContent = `Enviamos un código SMS a ${contacto}`
     goStep(2)
@@ -637,7 +732,7 @@ async function step2Next() {
     const r = await fetch(CONFIG.PROXY_URL + '/verify-code', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ phone: _bet.contacto, code: entered }),
+      body: JSON.stringify({ phone: _bet.contacto, code: entered, dispatchId: _bet.dispatchId || undefined }),
     })
     const data = await r.json()
     if (!data.ok) { document.getElementById('err2').style.display = 'block'; return }
@@ -651,7 +746,7 @@ async function step2Next() {
   }
 }
 
-function confirmBet() {
+async function confirmBet() {
   const s1 = parseInt(document.getElementById('inp-s1').value)
   const s2 = parseInt(document.getElementById('inp-s2').value)
   document.getElementById('err3').style.display = 'none'
@@ -660,21 +755,40 @@ function confirmBet() {
   }
 
   const code = _genCode(6, true)
-  const m = _bet.match
-  const db = _loadDB()
-  db.bets.push({
-    id:       _genCode(12, true),
-    matchId:  m.numero,
-    nombre:   _bet.nombre,
-    contacto: _bet.contacto,
-    score1:   s1,
-    score2:   s2,
-    code,
-    ts:       Date.now(),
-    resolved: false, won: false, prize: 0,
-  })
-  _saveDB(db)
+  const m    = _bet.match
+  const bet  = {
+    id: _genCode(12, true), matchId: m.numero,
+    nombre: _bet.nombre, contacto: _bet.contacto,
+    score1: s1, score2: s2, code,
+    ts: Date.now(), resolved: false, won: false, prize: 0,
+  }
+
+  const btn = document.querySelector('#step3 .btn-primary')
+  btn.disabled = true; btn.textContent = 'Guardando...'
+
+  try {
+    if (CONFIG.PROXY_URL) {
+      const r = await fetch(CONFIG.PROXY_URL + '/api/bets', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(bet),
+      })
+      const d = await r.json()
+      if (!d.ok) throw new Error(d.error || 'Error al guardar')
+    }
+  } catch (e) {
+    const err3 = document.getElementById('err3')
+    err3.textContent = 'Error al guardar: ' + e.message
+    err3.style.display = 'block'
+    btn.disabled = false; btn.textContent = '✓ Confirmar Apuesta'
+    return
+  }
+
+  _cloudBets.push(bet)
+  const db = _loadDB(); db.bets.push(bet); _saveDB(db)
   _saveLastUser({ nombre: _bet.nombre, contacto: _bet.contacto })
+
+  btn.disabled = false; btn.textContent = '✓ Confirmar Apuesta'
 
   document.getElementById('receipt-code').textContent = code
   document.getElementById('receipt-details').innerHTML =
@@ -686,6 +800,23 @@ function confirmBet() {
   goStep(4)
   renderMatches()
   _toast('¡Apuesta registrada! Código: ' + code, 4000)
+}
+
+// ── Cloud sync ───────────────────────────────────────────────────
+async function _syncBets() {
+  if (!CONFIG.PROXY_URL) return
+  try {
+    const r = await fetch(CONFIG.PROXY_URL + '/api/bets?t=' + Date.now())
+    if (!r.ok) return
+    const d = await r.json()
+    if (!d.ok) return
+    _cloudBets       = d.bets        || []
+    _cloudResolutions = d.resolutions || []
+    renderMatches()
+    renderMyBets()
+    renderResults()
+    if (_adminMode) renderAdmin()
+  } catch { /* silent */ }
 }
 
 // ── Last user ────────────────────────────────────────────────────
@@ -718,8 +849,7 @@ function lookupBets() {
 }
 
 function _renderBetsFor(contacto, cont) {
-  const db = _loadDB()
-  const bets = db.bets.filter(b => b.contacto === contacto).sort((a,b) => b.ts - a.ts)
+  const bets = _cloudBets.filter(b => b.contacto === contacto).sort((a,b) => b.ts - a.ts)
 
   let html = `<div class="user-bar">
     <span>Apuestas de <strong>${contacto}</strong> · ${bets.length} en total</span>
@@ -758,9 +888,8 @@ function clearLastUser() {
 // ── Results ──────────────────────────────────────────────────────
 function renderResults() {
   const cont = document.getElementById('results-container')
-  const db = _loadDB()
   const allM = _allMatches()
-  const resolved = [...db.resolutions].sort((a,b) => b.resolvedTs - a.resolvedTs)
+  const resolved = [..._cloudResolutions].sort((a,b) => b.resolvedTs - a.resolvedTs)
 
   if (!resolved.length) {
     cont.innerHTML = '<div class="empty-state"><div class="empty-icon">🏆</div><p>Aún no hay partidos resueltos.</p></div>'
@@ -768,7 +897,7 @@ function renderResults() {
   }
   cont.innerHTML = resolved.map(r => {
     const m = allM.find(x => x.numero === r.matchId)
-    const winners = db.bets.filter(b => b.matchId === r.matchId && b.won)
+    const winners = _cloudBets.filter(b => b.matchId === r.matchId && b.won)
     return `<div class="result-card">
       <div class="result-hd">
         <span class="result-match">${m ? _matchTitle(m) : 'P' + r.matchId}</span>
@@ -789,9 +918,8 @@ function renderResults() {
 
 // ── Admin panel ──────────────────────────────────────────────────
 function renderAdmin() {
-  const db = _loadDB()
   const allM = _allMatches()
-  const totalBets = db.bets.length
+  const totalBets = _cloudBets.length
   const totalPool = totalBets * CONFIG.BET_AMOUNT
   const totalRake = Math.round(totalPool * CONFIG.RAKE)
 
@@ -799,21 +927,23 @@ function renderAdmin() {
     <div class="admin-stat"><div class="admin-stat-val">${totalBets}</div><div class="admin-stat-lbl">Apuestas</div></div>
     <div class="admin-stat"><div class="admin-stat-val">${_cop(totalPool)}</div><div class="admin-stat-lbl">Pozo Total</div></div>
     <div class="admin-stat"><div class="admin-stat-val">${_cop(totalRake)}</div><div class="admin-stat-lbl">Rake (10%)</div></div>
-    <div class="admin-stat"><div class="admin-stat-val">${db.resolutions.length}</div><div class="admin-stat-lbl">Resueltos</div></div>`
+    <div class="admin-stat"><div class="admin-stat-val">${_cloudResolutions.length}</div><div class="admin-stat-lbl">Resueltos</div></div>`
 
-  const matchIds = [...new Set(db.bets.map(b => b.matchId))]
+  const matchIds = [...new Set(_cloudBets.map(b => b.matchId))]
+  renderPayments()
   if (!matchIds.length) {
     document.getElementById('admin-bets').innerHTML = '<p style="color:var(--muted);font-size:.85rem;margin-top:.5rem">No hay apuestas aún.</p>'
     return
   }
 
+  renderPayments()
   document.getElementById('admin-bets').innerHTML = matchIds.map(mid => {
     const m = allM.find(x => x.numero === mid)
-    const betsM = db.bets.filter(b => b.matchId === mid)
+    const betsM = _cloudBets.filter(b => b.matchId === mid)
     const pool = betsM.length * CONFIG.BET_AMOUNT
     const net = Math.round(pool * (1 - CONFIG.RAKE))
     const st = m ? _state(m) : 'post'
-    const already = db.resolutions.find(r => r.matchId === mid)
+    const already = _cloudResolutions.find(r => r.matchId === mid)
     const canResolve = (st === 'post' || st === 'in') && !already
     const score = m && m.jugado && m.g1_real != null ? `${m.g1_real}–${m.g2_real}` : (st === 'in' ? '🔴 vivo' : '–')
 
@@ -826,19 +956,20 @@ function renderAdmin() {
         </div>
       </div>
       <table class="admin-table">
-        <tr><th>Nombre</th><th>Contacto</th><th>Predicción</th><th>Código</th><th>Estado</th></tr>
+        <tr><th>Nombre</th><th>Contacto</th><th>Predicción</th><th>Código</th><th>Estado</th><th></th></tr>
         ${betsM.map(b => `<tr>
           <td>${b.nombre}</td><td>${b.contacto}</td>
           <td style="font-weight:700">${b.score1}–${b.score2}</td>
           <td style="font-family:monospace;letter-spacing:.05em">${b.code}</td>
-          <td>${b.resolved ? (b.won ? '✅ Ganó' : '❌ Perdió') : '⏳'}</td>
+          <td>${b.resolved ? (b.won ? '✅ Ganó' : '❌ Perdió') : (b.paid ? '💵 Pagó' : '⏳')}</td>
+          <td><button class="btn-del-bet" onclick="deleteBet('${b.code}','${b.nombre.replace(/'/g,'&#39;')}')">🗑</button></td>
         </tr>`).join('')}
       </table>
     </div>`
   }).join('')
 }
 
-function adminResolve(matchId) {
+async function adminResolve(matchId) {
   const m = _allMatches().find(x => x.numero === matchId)
   let s1 = m ? m.g1_real : null
   let s2 = m ? m.g2_real : null
@@ -852,35 +983,122 @@ function adminResolve(matchId) {
     if (isNaN(s1) || isNaN(s2)) { _toast('Marcador inválido.'); return }
   }
 
-  const db = _loadDB()
-  const betsM = db.bets.filter(b => b.matchId === matchId)
+  const betsM = _cloudBets.filter(b => b.matchId === matchId)
   const totalPool = betsM.length * CONFIG.BET_AMOUNT
   const netPool = Math.round(totalPool * (1 - CONFIG.RAKE))
   const winners = betsM.filter(b => b.score1 === s1 && b.score2 === s2)
   const prize = winners.length > 0 ? Math.floor(netPool / winners.length) : 0
 
-  db.bets = db.bets.map(b => {
-    if (b.matchId !== matchId) return b
+  const updates = betsM.map(b => {
     const won = b.score1 === s1 && b.score2 === s2
-    return {...b, resolved:true, won, prize: won ? prize : 0}
+    return { code: b.code, resolved: true, won, prize: won ? prize : 0 }
   })
-  db.resolutions.push({
-    matchId, resolvedTs: Date.now(),
-    finalScore1: s1, finalScore2: s2,
-    totalBets: betsM.length, totalPool, netPool,
-    winnerCount: winners.length, prizePerWinner: prize,
-  })
-  _saveDB(db)
+
+  try {
+    await fetch(CONFIG.PROXY_URL + '/api/bets/resolve', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        matchId, finalScore1: s1, finalScore2: s2, resolvedTs: Date.now(),
+        totalBets: betsM.length, totalPool, netPool,
+        winnerCount: winners.length, prizePerWinner: prize, updates,
+      }),
+    })
+  } catch (e) { _toast('Error al guardar resolución: ' + e.message, 3000); return }
+
+  await _syncBets()
   _toast(`P${matchId} resuelto — ${winners.length} ganador(es) · ${_cop(prize)} c/u`, 4000)
-  renderAdmin()
-  renderResults()
+}
+
+// ── Cobros ────────────────────────────────────────────────────────
+async function markPaid() {
+  const inp = document.getElementById('pay-code-inp')
+  const msg = document.getElementById('pay-entry-msg')
+  const code = inp.value.trim().toUpperCase()
+  msg.style.color = ''; msg.textContent = ''
+  if (!code) { msg.textContent = 'Ingresa un código.'; msg.style.color = 'var(--red)'; return }
+
+  const btn = document.querySelector('.btn-pay')
+  btn.disabled = true; btn.textContent = '...'
+  try {
+    const r = await fetch(CONFIG.PROXY_URL + '/api/bets/pay', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ code }),
+    })
+    const d = await r.json()
+    if (!d.ok) {
+      msg.textContent = d.error || 'Código no encontrado.'
+      msg.style.color = 'var(--red)'; return
+    }
+    if (d.alreadyPaid) {
+      msg.textContent = `${d.bet.nombre} ya había pagado antes.`
+      msg.style.color = 'var(--accent)'; return
+    }
+    inp.value = ''
+    msg.textContent = `✅ ${d.bet.nombre} marcado como pagado.`
+    msg.style.color = 'var(--green)'
+    await _syncBets()
+  } catch (e) {
+    msg.textContent = 'Error: ' + e.message; msg.style.color = 'var(--red)'
+  } finally {
+    btn.disabled = false; btn.textContent = '✓ Marcar Pagado'
+  }
+}
+
+function renderPayments() {
+  const cont = document.getElementById('pay-container')
+  if (!cont) return
+  const allM = _allMatches()
+  const paid    = _cloudBets.filter(b => b.paid)
+  const pending = _cloudBets.filter(b => !b.paid)
+  const paidAmt    = paid.length * CONFIG.BET_AMOUNT
+  const pendingAmt = pending.length * CONFIG.BET_AMOUNT
+
+  const pendingRows = pending.map(b => {
+    const m = allM.find(x => x.numero === b.matchId)
+    return `<div class="pay-row">
+      <span class="prw-name">${b.nombre}</span>
+      <span class="prw-phone">···${String(b.contacto).slice(-4)}</span>
+      <span class="prw-match">${m ? 'P'+m.numero+' '+_eq1(m)+' vs '+_eq2(m) : 'P'+b.matchId}</span>
+      <span class="prw-code">${b.code}</span>
+    </div>`
+  }).join('')
+
+  const paidRows = paid.sort((a,b) => (b.paidTs||0) - (a.paidTs||0)).map(b => {
+    const m = allM.find(x => x.numero === b.matchId)
+    const ts = b.paidTs ? new Date(b.paidTs).toLocaleString('es-CO',
+      {timeZone:'America/Bogota',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}) : ''
+    return `<div class="pay-row">
+      <span class="prw-name">${b.nombre}</span>
+      <span class="prw-phone">···${String(b.contacto).slice(-4)}</span>
+      <span class="prw-match">${m ? 'P'+m.numero : ''}</span>
+      <span class="prw-code">${b.code}</span>
+      <span class="prw-ts">${ts}</span>
+    </div>`
+  }).join('')
+
+  cont.innerHTML = `
+    <div class="pay-stats">
+      <div class="pay-stat s-paid">
+        <div class="pay-stat-val">${_cop(paidAmt)}</div>
+        <div class="pay-stat-lbl">✅ Recibido · ${paid.length} pago${paid.length!==1?'s':''}</div>
+      </div>
+      <div class="pay-stat s-pending">
+        <div class="pay-stat-val">${_cop(pendingAmt)}</div>
+        <div class="pay-stat-lbl">⏳ Pendiente · ${pending.length} deudor${pending.length!==1?'es':''}</div>
+      </div>
+    </div>
+    ${pending.length
+      ? `<div class="pay-list-title">Deudores (${pending.length})</div><div>${pendingRows}</div>`
+      : _cloudBets.length ? '<p style="font-size:.8rem;color:var(--green);margin:.5rem 0">✅ Todos han pagado.</p>' : ''}
+    ${paid.length ? `<div class="pay-list-title">Pagados (${paid.length})</div><div>${paidRows}</div>` : ''}`
 }
 
 function exportCSV() {
-  const db = _loadDB()
   const allM = _allMatches()
   const rows = [['Partido','Eq1','Eq2','Nombre','Contacto','Pred1','Pred2','Código','Timestamp','Resuelto','Ganó','Premio']]
-  db.bets.forEach(b => {
+  _cloudBets.forEach(b => {
     const m = allM.find(x => x.numero === b.matchId)
     rows.push([`P${b.matchId}`, m ? _eq1(m) : '', m ? _eq2(m) : '',
       b.nombre, b.contacto, b.score1, b.score2, b.code,
@@ -893,45 +1111,63 @@ function exportCSV() {
   a.click()
 }
 
-function clearAllData() {
-  if (!confirm('¿Eliminar TODOS los datos de apuestas? Esto no se puede deshacer.')) return
-  localStorage.removeItem(CONFIG.LS_KEY)
-  _toast('Datos eliminados.', 2000)
-  renderAdmin()
-  renderMatches()
+async function deleteBet(code, nombre) {
+  if (!confirm(`¿Eliminar la apuesta de ${nombre}?\nEsta acción no se puede deshacer.`)) return
+  try {
+    const r = await fetch(CONFIG.PROXY_URL + '/api/bets/one', {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ code }),
+    })
+    const d = await r.json()
+    if (!d.ok) { _toast('Error: ' + (d.error || 'No encontrado'), 3000); return }
+    _toast(`Apuesta de ${nombre} eliminada.`, 3000)
+    await _syncBets()
+  } catch (e) { _toast('Error: ' + e.message, 3000) }
 }
 
-// ── Auto-resolve ─────────────────────────────────────────────────
-function autoResolve() {
-  const db = _loadDB()
-  let changed = false
-  _allMatches().forEach(m => {
-    if (!m.jugado || m.g1_real == null) return
-    if (db.resolutions.find(r => r.matchId === m.numero)) return
-    const betsM = db.bets.filter(b => b.matchId === m.numero)
-    if (!betsM.length) return
+async function clearAllData() {
+  if (!confirm('¿Eliminar TODOS los datos de apuestas? Esto no se puede deshacer.')) return
+  try {
+    if (CONFIG.PROXY_URL) await fetch(CONFIG.PROXY_URL + '/api/bets', { method: 'DELETE' })
+  } catch {}
+  localStorage.removeItem(CONFIG.LS_KEY)
+  _cloudBets = []; _cloudResolutions = []
+  _toast('Datos eliminados.', 2000)
+  renderAdmin(); renderMatches()
+}
+
+// ── Auto-resolve (solo admin) ─────────────────────────────────────
+async function autoResolve() {
+  if (!_adminMode) return
+  for (const m of _allMatches()) {
+    if (!m.jugado || m.g1_real == null) continue
+    if (_cloudResolutions.find(r => r.matchId === m.numero)) continue
+    const betsM = _cloudBets.filter(b => b.matchId === m.numero)
+    if (!betsM.length) continue
 
     const s1 = m.g1_real, s2 = m.g2_real
     const totalPool = betsM.length * CONFIG.BET_AMOUNT
     const netPool = Math.round(totalPool * (1 - CONFIG.RAKE))
     const winners = betsM.filter(b => b.score1 === s1 && b.score2 === s2)
     const prize = winners.length > 0 ? Math.floor(netPool / winners.length) : 0
-
-    db.bets = db.bets.map(b => {
-      if (b.matchId !== m.numero) return b
+    const updates = betsM.map(b => {
       const won = b.score1 === s1 && b.score2 === s2
-      return {...b, resolved:true, won, prize: won ? prize : 0}
+      return { code: b.code, resolved: true, won, prize: won ? prize : 0 }
     })
-    db.resolutions.push({
-      matchId: m.numero, resolvedTs: Date.now(),
-      finalScore1: s1, finalScore2: s2,
-      totalBets: betsM.length, totalPool, netPool,
-      winnerCount: winners.length, prizePerWinner: prize,
-    })
-    changed = true
-    if (winners.length) _toast(`🏆 P${m.numero} resuelto — ${winners.length} ganador(es)!`, 4000)
-  })
-  if (changed) _saveDB(db)
+    try {
+      await fetch(CONFIG.PROXY_URL + '/api/bets/resolve', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          matchId: m.numero, finalScore1: s1, finalScore2: s2, resolvedTs: Date.now(),
+          totalBets: betsM.length, totalPool, netPool,
+          winnerCount: winners.length, prizePerWinner: prize, updates,
+        }),
+      })
+      if (winners.length) _toast(`🏆 P${m.numero} resuelto — ${winners.length} ganador(es)!`, 4000)
+    } catch { /* silent */ }
+  }
 }
 
 // ── Live data polling ─────────────────────────────────────────────
@@ -940,38 +1176,56 @@ async function _pollData() {
     const r = await fetch(CONFIG.DATA_URL + '?t=' + Date.now())
     if (!r.ok) return
     new Function(await r.text())()   // updates window.POLLA_DATA
-    renderMatches()
-    autoResolve()
-    if (_adminMode) renderAdmin()
+    await _syncBets()                // sync cloud bets + re-render
+    await autoResolve()
   } catch { /* silent */ }
 }
 
-// ── Admin via ?admin=true or triple-click logo ────────────────────
-let _adminMode = new URLSearchParams(location.search).has('admin')
+// ── Admin login ───────────────────────────────────────────────────
+let _adminMode = false
 let _logoClicks = 0, _logoTimer = null
+
+function _showAdminLogin() {
+  document.getElementById('admin-pin-inp').value = ''
+  document.getElementById('admin-pin-err').style.display = 'none'
+  const ov = document.getElementById('admin-login-overlay')
+  ov.style.display = 'flex'
+  setTimeout(() => document.getElementById('admin-pin-inp').focus(), 50)
+}
+
+function closeAdminLogin(e) {
+  if (e && e.target !== document.getElementById('admin-login-overlay')) return
+  document.getElementById('admin-login-overlay').style.display = 'none'
+}
+
+function adminLogin() {
+  const val = document.getElementById('admin-pin-inp').value
+  if (val !== CONFIG.ADMIN_PIN) {
+    document.getElementById('admin-pin-err').style.display = 'block'
+    document.getElementById('admin-pin-inp').value = ''
+    document.getElementById('admin-pin-inp').focus()
+    return
+  }
+  document.getElementById('admin-login-overlay').style.display = 'none'
+  _adminMode = true
+  history.replaceState(null, '', '?admin=true')
+  document.getElementById('admin-panel').style.display = 'block'
+  renderAdmin()
+  _toast('Modo admin activado.', 2000)
+}
 
 function _logoClick() {
   _logoClicks++
   clearTimeout(_logoTimer)
   _logoTimer = setTimeout(() => { _logoClicks = 0 }, 1500)
-  if (_logoClicks >= 3) {
-    _logoClicks = 0
-    _adminMode = true
-    history.replaceState(null, '', '?admin=true')
-    document.getElementById('admin-panel').style.display = 'block'
-    renderAdmin()
-    _toast('Modo admin activado.', 2000)
-  }
+  if (_logoClicks >= 3) { _logoClicks = 0; _showAdminLogin() }
 }
 
 // ── Init ──────────────────────────────────────────────────────────
-function init() {
+async function init() {
   renderMatches()
-  autoResolve()
-  if (_adminMode) {
-    document.getElementById('admin-panel').style.display = 'block'
-    renderAdmin()
-  }
+  await _syncBets()
+  if (new URLSearchParams(location.search).has('admin')) _showAdminLogin()
   document.getElementById('logo').addEventListener('click', _logoClick)
   setInterval(_pollData, CONFIG.POLL_MS)
 }
