@@ -50,14 +50,14 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .match-card{background:var(--surface);border:1.5px solid var(--border);border-radius:.875rem;padding:1rem;box-shadow:var(--shadow);transition:box-shadow .15s}
 .match-card:hover{box-shadow:var(--shadow-md)}
 .match-card.state-in{border-color:var(--red)}
-.match-card.state-open{border-color:var(--green)}
+.match-card.state-locked{border-color:#fcd34d}
 .match-card.state-post{opacity:.72}
 
 .card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem}
 .card-num{font-size:.68rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
 .card-badge{font-size:.65rem;font-weight:700;padding:.2rem .55rem;border-radius:999px;text-transform:uppercase;letter-spacing:.06em}
-.badge-pre{background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
-.badge-open{background:var(--green-l);color:var(--green);animation:pulse-g 1.5s infinite}
+.badge-open{background:var(--green-l);color:var(--green);border:1px solid var(--green)}
+.badge-locked{background:#fef3c7;color:#92400e;border:1px solid #fcd34d}
 .badge-in{background:var(--red-l);color:var(--red);animation:pulse-r 1.5s infinite}
 .badge-post{background:#1e293b;color:#94a3b8}
 .badge-tbd{background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
@@ -384,15 +384,17 @@ function _minsUntil(m) {
   return (ko.getTime() - Date.now()) / 60000
 }
 
-// "pre" | "open" | "in" | "post" | "tbd"
+// "open" | "locked" | "in" | "post" | "tbd"
+// Betting is open any time BEFORE the BET_WINDOW_MINUTES cutoff.
+// Inside the cutoff (<5 min to kickoff) or after: closed.
 function _state(m) {
   if (m.jugado) return 'post'
   if (m.en_vivo) return 'in'
-  if (!m.fecha) return 'tbd'       // elim: teams/dates not set yet
+  if (!m.fecha) return 'tbd'
   const mins = _minsUntil(m)
   if (mins <= 0) return 'in'
-  if (mins <= CONFIG.BET_WINDOW_MINUTES) return 'open'
-  return 'pre'
+  if (mins <= CONFIG.BET_WINDOW_MINUTES) return 'locked'
+  return 'open'
 }
 
 function _eq1(m) { return m.eq1 || m.eq1_real || 'TBD' }
@@ -454,7 +456,7 @@ function renderMatches() {
     return
   }
   el.innerHTML = matches.map(_cardHTML).join('')
-  matches.filter(m => _state(m) === 'open').forEach(_startCountdown)
+  matches.filter(m => _state(m) === 'open' && _minsUntil(m) <= 60).forEach(_startCountdown)
 }
 
 function _cardHTML(m) {
@@ -465,11 +467,11 @@ function _cardHTML(m) {
   const phase = _phase(m)
 
   const badges = {
-    pre:  `<span class="card-badge badge-pre">Próximo</span>`,
-    open: `<span class="card-badge badge-open">🟢 Apostar</span>`,
-    in:   `<span class="card-badge badge-in"><span class="live-dot"></span>En Vivo</span>`,
-    post: `<span class="card-badge badge-post">Finalizado</span>`,
-    tbd:  `<span class="card-badge badge-tbd">Por confirmar</span>`,
+    open:   `<span class="card-badge badge-open">🟢 Apostar</span>`,
+    locked: `<span class="card-badge badge-locked">🔒 Cierra pronto</span>`,
+    in:     `<span class="card-badge badge-in"><span class="live-dot"></span>En Vivo</span>`,
+    post:   `<span class="card-badge badge-post">Finalizado</span>`,
+    tbd:    `<span class="card-badge badge-tbd">Por confirmar</span>`,
   }
 
   let scoreHtml = ''
@@ -477,18 +479,19 @@ function _cardHTML(m) {
     scoreHtml = `<span class="card-score-real">${m.g1_real} — ${m.g2_real}</span>`
   }
 
+  const minsLeft = _minsUntil(m)
   let action = ''
   if (st === 'open') {
+    const showCd = minsLeft <= 60  // muestra countdown en la última hora
     action = `<div class="card-actions">
       <button class="btn-bet" onclick="openModal(${m.numero})">⚡ Apostar $5,000</button>
-      <div class="countdown" id="cd-${m.numero}"></div>
+      ${showCd ? `<div class="countdown" id="cd-${m.numero}"></div>` : ''}
     </div>`
-  } else if (st === 'pre') {
-    const mins = Math.floor(_minsUntil(m))
-    const label = mins > 90 ? `${Math.floor(mins/60)}h ${mins%60}m` : `${mins} min`
-    action = `<div class="opens-in">Abre en ${label}</div>`
+  } else if (st === 'locked') {
+    const mins = Math.ceil(minsLeft)
+    action = `<div class="opens-in" style="color:#b45309">🔒 Apuestas cerradas — pitazo en ${mins} min</div>`
   } else if (st === 'in') {
-    action = `<div class="opens-in" style="color:var(--red)">⛔ Apuestas cerradas</div>`
+    action = `<div class="opens-in" style="color:var(--red)">⛔ Partido en curso</div>`
   } else if (st === 'post') {
     action = `<div class="opens-in">Cerrado</div>`
   } else {
@@ -514,10 +517,11 @@ function _startCountdown(m) {
   const el = document.getElementById('cd-' + m.numero)
   if (!el) return
   const ko = _kickoffUTC(m)
+  const cutoff = ko.getTime() - CONFIG.BET_WINDOW_MINUTES * 60000  // cierra 5 min antes
   function tick() {
-    const secs = Math.round((ko.getTime() - Date.now()) / 1000)
-    if (secs <= 0) { el.textContent = '⏰ ¡Cierra ahora!'; return }
-    el.textContent = `⏳ Cierra en ${Math.floor(secs/60)}:${(secs%60).toString().padStart(2,'0')}`
+    const secs = Math.round((cutoff - Date.now()) / 1000)
+    if (secs <= 0) { renderMatches(); return }  // re-render: estado pasa a locked
+    el.textContent = `⏳ Apuestas cierran en ${Math.floor(secs/60)}:${(secs%60).toString().padStart(2,'0')}`
     setTimeout(tick, 1000)
   }
   tick()
