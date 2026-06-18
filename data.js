@@ -1513,7 +1513,7 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Uzbekistán",
       "eq2": "Colombia",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-17",
@@ -30433,6 +30433,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Daniel Muñoz",
       "equipo": "Colombia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Abbosbek Fayzullaev",
+      "equipo": "Uzbekistán",
       "goles": 1,
       "votos_polla": 0
     }
