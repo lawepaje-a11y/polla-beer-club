@@ -915,7 +915,7 @@ window.POLLA_DATA = {
       "eq1": "Suiza",
       "eq2": "Bosnia y Herz.",
       "g1_real": 3,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-18",
       "hora": "02:00 PM",
@@ -30477,6 +30477,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Rubén Vargas",
       "equipo": "Suiza",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Ermin Mahmic",
+      "equipo": "Bosnia y Herz.",
       "goles": 1,
       "votos_polla": 0
     }
