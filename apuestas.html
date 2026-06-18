@@ -690,7 +690,6 @@ async function step1Next() {
   }
 
   // SMS real via Onurix
-  const btn = document.querySelector('#step1 .btn-primary')
   btn.disabled = true
   btn.textContent = 'Enviando SMS...'
   try {
@@ -769,7 +768,6 @@ async function confirmBet() {
     ts: Date.now(), resolved: false, won: false, prize: 0,
   }
 
-  const btn = document.querySelector('#step3 .btn-primary')
   btn.disabled = true; btn.textContent = 'Guardando...'
 
   try {
@@ -1025,7 +1023,6 @@ async function markPaid() {
   msg.style.color = ''; msg.textContent = ''
   if (!code) { msg.textContent = 'Ingresa un código.'; msg.style.color = 'var(--red)'; return }
 
-  const btn = document.querySelector('.btn-pay')
   btn.disabled = true; btn.textContent = '...'
   try {
     const r = await fetch(CONFIG.PROXY_URL + '/api/bets/pay', {
