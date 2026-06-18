@@ -914,7 +914,7 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Suiza",
       "eq2": "Bosnia y Herz.",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-18",
@@ -30139,6 +30139,12 @@ window.POLLA_DATA = {
       "votos_polla": 15
     },
     {
+      "nombre": "Johan Manzambi",
+      "equipo": "Suiza",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 1,
@@ -30465,12 +30471,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Teboho Mokoena",
       "equipo": "Sudáfrica",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Johan Manzambi",
-      "equipo": "Suiza",
       "goles": 1,
       "votos_polla": 0
     },
