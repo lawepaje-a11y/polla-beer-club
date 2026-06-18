@@ -1580,7 +1580,7 @@ window.POLLA_DATA = {
       "grupo": "L",
       "eq1": "Ghana",
       "eq2": "Panamá",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-17",
@@ -30420,6 +30420,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Marcus Rashford",
       "equipo": "Inglaterra",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Caleb Yirenkyi",
+      "equipo": "Ghana",
       "goles": 1,
       "votos_polla": 0
     }
