@@ -926,7 +926,7 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Canadá",
       "eq2": "Catar",
-      "g1_real": 5,
+      "g1_real": 6,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-18",
@@ -30098,6 +30098,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Jonathan David",
+      "equipo": "Canadá",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Cyle Larin",
       "equipo": "Canadá",
       "goles": 2,
@@ -30148,12 +30154,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Johan Manzambi",
       "equipo": "Suiza",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Jonathan David",
-      "equipo": "Canadá",
       "goles": 2,
       "votos_polla": 0
     },
