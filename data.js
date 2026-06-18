@@ -926,11 +926,12 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Canadá",
       "eq2": "Catar",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 1,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-18",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 11,
@@ -30097,6 +30098,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Cyle Larin",
+      "equipo": "Canadá",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Folarin Balogun",
       "equipo": "Estados Unidos",
       "goles": 2,
@@ -30177,12 +30184,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Jovo Lukic",
       "equipo": "Bosnia y Herz.",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Cyle Larin",
-      "equipo": "Canadá",
       "goles": 1,
       "votos_polla": 0
     },
