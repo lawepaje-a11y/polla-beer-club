@@ -846,7 +846,7 @@ window.POLLA_DATA = {
       "eq1": "Chequia",
       "eq2": "Sudáfrica",
       "g1_real": 1,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-18",
       "hora": "11:00 AM",
@@ -30458,6 +30458,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Michal Sadílek",
       "equipo": "Chequia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Teboho Mokoena",
+      "equipo": "Sudáfrica",
       "goles": 1,
       "votos_polla": 0
     }
