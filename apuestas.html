@@ -628,7 +628,7 @@ let _cloudResolutions = []
 function openModal(matchId) {
   const m = _allMatches().find(x => x.numero === matchId)
   if (!m || _state(m) !== 'open') { _toast('La ventana de apuestas está cerrada.'); return }
-  _bet = { match: m }
+  _bet = { match: m, dispatchId: null }
   document.getElementById('modal-match-title').textContent = _matchTitle(m)
   document.getElementById('modal-eq1').textContent = _eq1(m)
   document.getElementById('modal-eq2').textContent = _eq2(m)
@@ -657,6 +657,8 @@ function goStep(n) {
 }
 
 async function step1Next() {
+  const btn = document.querySelector('#step1 .btn-primary')
+  if (btn?.disabled) return
   const nombre   = document.getElementById('inp-nombre').value.trim()
   const contacto = document.getElementById('inp-contacto').value.trim()
   document.getElementById('err1').style.display = 'none'
@@ -714,6 +716,8 @@ async function step1Next() {
 }
 
 async function step2Next() {
+  const btn2 = document.querySelector('#step2 .btn-primary')
+  if (btn2?.disabled) return
   const entered = document.getElementById('inp-code').value.trim()
   document.getElementById('err2').style.display = 'none'
 
@@ -747,6 +751,8 @@ async function step2Next() {
 }
 
 async function confirmBet() {
+  const btn = document.querySelector('#step3 .btn-primary')
+  if (btn?.disabled) return
   const s1 = parseInt(document.getElementById('inp-s1').value)
   const s2 = parseInt(document.getElementById('inp-s2').value)
   document.getElementById('err3').style.display = 'none'
@@ -784,7 +790,7 @@ async function confirmBet() {
     return
   }
 
-  _cloudBets.push(bet)
+  if (!_cloudBets.find(b => b.code === bet.code)) _cloudBets.push(bet)
   const db = _loadDB(); db.bets.push(bet); _saveDB(db)
   _saveLastUser({ nombre: _bet.nombre, contacto: _bet.contacto })
 
@@ -936,7 +942,6 @@ function renderAdmin() {
     return
   }
 
-  renderPayments()
   document.getElementById('admin-bets').innerHTML = matchIds.map(mid => {
     const m = allM.find(x => x.numero === mid)
     const betsM = _cloudBets.filter(b => b.matchId === mid)
@@ -1012,6 +1017,8 @@ async function adminResolve(matchId) {
 
 // ── Cobros ────────────────────────────────────────────────────────
 async function markPaid() {
+  const btn = document.querySelector('.btn-pay')
+  if (btn?.disabled) return
   const inp = document.getElementById('pay-code-inp')
   const msg = document.getElementById('pay-entry-msg')
   const code = inp.value.trim().toUpperCase()
