@@ -926,7 +926,7 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Canadá",
       "eq2": "Catar",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-18",
@@ -30152,6 +30152,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Jonathan David",
+      "equipo": "Canadá",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 1,
@@ -30490,12 +30496,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Granit Xhaka",
       "equipo": "Suiza",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Jonathan David",
-      "equipo": "Canadá",
       "goles": 1,
       "votos_polla": 0
     }
