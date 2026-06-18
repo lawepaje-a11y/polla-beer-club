@@ -1268,11 +1268,11 @@ async function _doRefresh() {
   try {
     // raw.githubusercontent.com bypasea el CDN de GitHub Pages (max-age=600)
     const RAW = 'https://raw.githubusercontent.com/lawepaje-a11y/polla-beer-club/main/dashboard/data.js';
-    const r = await fetch(RAW + '?_=' + Date.now());
-    if (!r.ok) return;
+    const r = await fetch(RAW + '?_=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) { _refreshTimer = setTimeout(_doRefresh, 60_000); return; }
     const text = await r.text();
     const match = text.match(/window\.POLLA_DATA\s*=\s*([\s\S]+?);\s*$/m);
-    if (!match) return;
+    if (!match) { _refreshTimer = setTimeout(_doRefresh, 60_000); return; }
     const newD = JSON.parse(match[1]);
 
     // Detectar si hubo cambios comparando meta, grupos y eliminatorias
@@ -1318,6 +1318,15 @@ async function _doRefresh() {
 
 function startAutoRefresh() {
   _refreshTimer = setTimeout(_doRefresh, 60_000);
+  // Cuando el usuario vuelve a la tab, el timer puede estar congelado por el
+  // browser (background throttling). Cancelamos el timer pendiente y disparamos
+  // inmediatamente para que los datos estén frescos al instante.
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      clearTimeout(_refreshTimer);
+      _doRefresh();
+    }
+  });
 }
 
 init();

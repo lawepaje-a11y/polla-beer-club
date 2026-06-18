@@ -697,6 +697,21 @@ async function fetchSha(token) {
   return sha;
 }
 
+// Fetch SHA + contenido actual de data.js desde GitHub.
+// Evita la race condition con GHA: el save siempre parte del estado
+// más reciente del repo, no del estado en memoria al abrir la página.
+async function _fetchCurrentData(token) {
+  const r = await fetch(API_BASE + 'data.js', {
+    headers: { Authorization: 'token ' + token, Accept: 'application/vnd.github.v3+json' }
+  });
+  if (!r.ok) throw new Error(`No se pudo leer data.js (${r.status})`);
+  const file  = await r.json();
+  const text  = atob(file.content.replace(/\n/g, ''));
+  const match = text.match(/window\.POLLA_DATA\s*=\s*([\s\S]+?);\s*$/m);
+  if (!match) throw new Error('Formato de data.js inválido al leer desde GitHub');
+  return { sha: file.sha, freshD: JSON.parse(match[1]) };
+}
+
 async function putDataJs(token, b64, sha, commitMsg) {
   return fetch(API_BASE + 'data.js', {
     method: 'PUT',
@@ -723,14 +738,20 @@ async function saveChanges() {
     const token = ghToken;
     const p     = participants.find(x => x.id == currentPid);
 
-    // ── Aplicar cambios de grupos ─────────────────────────────
-    const gPreds = D.predictions.grupos[currentPid] || {};
+    // ── Fetch datos ACTUALES de GitHub ────────────────────────
+    // Partir siempre del estado real del repo evita sobreescribir
+    // actualizaciones de GHA que ocurrieron desde que se abrió la página.
+    setStatus('Leyendo datos actuales…');
+    let { sha, freshD } = await _fetchCurrentData(token);
+
+    // ── Aplicar cambios de grupos sobre datos frescos ─────────
+    const gPreds = freshD.predictions.grupos[currentPid] || {};
     Object.entries(changes).forEach(([partido, scores]) => { gPreds[partido] = scores; });
-    D.predictions.grupos[currentPid] = gPreds;
+    freshD.predictions.grupos[currentPid] = gPreds;
 
     // Recalcular pts grupos
     const resultMap = {};
-    D.matches_grupos.forEach(m => { resultMap[m.numero] = m; });
+    freshD.matches_grupos.forEach(m => { resultMap[m.numero] = m; });
     let gPts = 0;
     Object.entries(gPreds).forEach(([n, pred]) => {
       const m = resultMap[parseInt(n)];
@@ -740,14 +761,14 @@ async function saveChanges() {
       if ((g1p > g2p) === (m.g1_real > m.g2_real) && (g1p < g2p) === (m.g1_real < m.g2_real)) gPts += 1;
     });
 
-    // ── Aplicar cambios de eliminatorias ──────────────────────
-    const ePreds = D.predictions.eliminatorias[currentPid] || {};
+    // ── Aplicar cambios de eliminatorias sobre datos frescos ──
+    const ePreds = freshD.predictions.eliminatorias[currentPid] || {};
     Object.entries(elimChanges).forEach(([partido, teams]) => { ePreds[partido] = teams; });
-    D.predictions.eliminatorias[currentPid] = ePreds;
+    freshD.predictions.eliminatorias[currentPid] = ePreds;
 
     // Recalcular pts eliminatorias
     const matchByNum = {};
-    D.matches_elim.forEach(m => { matchByNum[m.numero] = m; });
+    freshD.matches_elim.forEach(m => { matchByNum[m.numero] = m; });
     let ePts = 0;
     Object.entries(ePreds).forEach(([n, pred]) => {
       const m = matchByNum[parseInt(n)];
@@ -755,19 +776,18 @@ async function saveChanges() {
       ePts += elimPts(pred, m);
     });
 
-    // ── Actualizar participante ───────────────────────────────
-    const participant = D.participants.find(x => x.id == currentPid);
+    // ── Actualizar participante en datos frescos ──────────────
+    const participant = freshD.participants.find(x => x.id == currentPid);
     if (participant) {
       participant.pts.grupos        = gPts;
       participant.pts.eliminatorias = ePts;
       participant.pts.total         = gPts + ePts + (participant.pts.goleador || 0);
     }
-    D.participants.sort((a, b) => b.pts.total - a.pts.total || a.nombre.localeCompare(b.nombre, 'es'));
+    freshD.participants.sort((a, b) => b.pts.total - a.pts.total || a.nombre.localeCompare(b.nombre, 'es'));
 
-    // ── Serializar y publicar ─────────────────────────────────
-    const content = '// Generado automáticamente por update_data.py — no editar manualmente\nwindow.POLLA_DATA = ' +
-      JSON.stringify(D, null, 2) + ';\n';
-    const b64 = toBase64(content);
+    // ── Serializar freshD ─────────────────────────────────────
+    const _serialize = d => '// Generado automáticamente por update_data.py — no editar manualmente\nwindow.POLLA_DATA = ' +
+      JSON.stringify(d, null, 2) + ';\n';
 
     const nG = Object.keys(changes).length;
     const nE = Object.keys(elimChanges).length;
@@ -776,16 +796,20 @@ async function saveChanges() {
     if (nE) parts.push(`${nE} elim`);
     const commitMsg = `Admin: pág ${p.pagina} ${p.nombre} — ${parts.join(', ')}`;
 
-    setStatus('Leyendo SHA…');
-    let sha = await fetchSha(token);
-
     setStatus('Publicando data.js…');
-    let putR = await putDataJs(token, b64, sha, commitMsg);
+    let putR = await putDataJs(token, toBase64(_serialize(freshD)), sha, commitMsg);
 
     if (putR.status === 409) {
+      // GHA commitó justo entre nuestro fetch y nuestro put: re-fetch y
+      // re-aplicar los cambios del admin sobre el estado más reciente.
       setStatus('SHA desactualizado, reintentando…');
-      sha = await fetchSha(token);
-      putR = await putDataJs(token, b64, sha, commitMsg);
+      ({ sha, freshD } = await _fetchCurrentData(token));
+      freshD.predictions.grupos[currentPid]        = gPreds;
+      freshD.predictions.eliminatorias[currentPid] = ePreds;
+      const rp = freshD.participants.find(x => x.id == currentPid);
+      if (rp) { rp.pts.grupos = gPts; rp.pts.eliminatorias = ePts; rp.pts.total = gPts + ePts + (rp.pts.goleador || 0); }
+      freshD.participants.sort((a, b) => b.pts.total - a.pts.total || a.nombre.localeCompare(b.nombre, 'es'));
+      putR = await putDataJs(token, toBase64(_serialize(freshD)), sha, commitMsg);
     }
 
     if (!putR.ok) {
@@ -796,6 +820,9 @@ async function saveChanges() {
     // Audit log
     setStatus('Guardando log…');
     await pushCorrectionsLog(token, p, changes, elimChanges);
+
+    // Sincronizar estado local con lo que se publicó en GitHub
+    D = freshD;
 
     // Commit state
     Object.entries(changes).forEach(([k, v]) => { origPreds[k] = Array.isArray(v) ? [...v] : v; });
