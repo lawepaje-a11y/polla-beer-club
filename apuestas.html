@@ -664,7 +664,13 @@ async function step1Next() {
   document.getElementById('err1').style.display = 'none'
   if (!nombre || !contacto) { document.getElementById('err1').style.display = 'block'; return }
 
-  // Duplicate check (cloud + local cache)
+  // Duplicate check — fetch fresh from server so stale cache never allows a second SMS
+  if (CONFIG.PROXY_URL) {
+    try {
+      const fresh = await fetch(CONFIG.PROXY_URL + '/api/bets').then(r => r.json())
+      if (fresh.ok) { _cloudBets = fresh.bets || []; _cloudResolutions = fresh.resolutions || [] }
+    } catch {}
+  }
   const existing = _cloudBets.find(b => b.matchId === _bet.match.numero && b.contacto === contacto)
     || _loadDB().bets.find(b => b.matchId === _bet.match.numero && b.contacto === contacto)
   if (existing) {
