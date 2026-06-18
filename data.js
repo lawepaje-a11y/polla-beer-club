@@ -845,7 +845,7 @@ window.POLLA_DATA = {
       "grupo": "A",
       "eq1": "Chequia",
       "eq2": "Sudáfrica",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-18",
@@ -30452,6 +30452,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Jáminton Campaz",
       "equipo": "Colombia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Michal Sadílek",
+      "equipo": "Chequia",
       "goles": 1,
       "votos_polla": 0
     }
