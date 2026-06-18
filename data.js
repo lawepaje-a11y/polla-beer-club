@@ -926,7 +926,7 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Canadá",
       "eq2": "Catar",
-      "g1_real": 3,
+      "g1_real": 4,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-18",
@@ -30496,6 +30496,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Granit Xhaka",
       "equipo": "Suiza",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Nathan Saliba",
+      "equipo": "Canadá",
       "goles": 1,
       "votos_polla": 0
     }
