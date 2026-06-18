@@ -1514,7 +1514,7 @@ window.POLLA_DATA = {
       "eq1": "Uzbekistán",
       "eq2": "Colombia",
       "g1_real": 1,
-      "g2_real": 2,
+      "g2_real": 3,
       "jugado": false,
       "fecha": "2026-06-17",
       "hora": "09:00 PM",
@@ -30447,6 +30447,12 @@ window.POLLA_DATA = {
       "equipo": "Colombia",
       "goles": 1,
       "votos_polla": 1
+    },
+    {
+      "nombre": "Jáminton Campaz",
+      "equipo": "Colombia",
+      "goles": 1,
+      "votos_polla": 0
     }
   ]
 };
