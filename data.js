@@ -1053,11 +1053,12 @@ window.POLLA_DATA = {
       "grupo": "D",
       "eq1": "Estados Unidos",
       "eq2": "Australia",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-19",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 22,
