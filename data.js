@@ -857,11 +857,12 @@ window.POLLA_DATA = {
       "grupo": "A",
       "eq1": "México",
       "eq2": "Corea del Sur",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-18",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 5,
