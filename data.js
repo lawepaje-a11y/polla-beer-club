@@ -857,7 +857,7 @@ window.POLLA_DATA = {
       "grupo": "A",
       "eq1": "México",
       "eq2": "Corea del Sur",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-18",
@@ -30503,6 +30503,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Nathan Saliba",
       "equipo": "Canadá",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Luis Romo",
+      "equipo": "México",
       "goles": 1,
       "votos_polla": 0
     }
