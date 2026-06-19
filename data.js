@@ -985,11 +985,12 @@ window.POLLA_DATA = {
       "grupo": "C",
       "eq1": "Escocia",
       "eq2": "Marruecos",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-19",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 16,
@@ -30118,6 +30119,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Ismael Saibari",
+      "equipo": "Marruecos",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Kai Havertz",
       "equipo": "Alemania",
       "goles": 2,
@@ -30210,12 +30217,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Breel Embolo",
       "equipo": "Suiza",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Ismael Saibari",
-      "equipo": "Marruecos",
       "goles": 1,
       "votos_polla": 0
     },
