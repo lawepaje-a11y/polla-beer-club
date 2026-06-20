@@ -1193,7 +1193,7 @@ window.POLLA_DATA = {
       "grupo": "F",
       "eq1": "Países Bajos",
       "eq2": "Suecia",
-      "g1_real": 3,
+      "g1_real": 4,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-20",
@@ -30188,6 +30188,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Cody Gakpo",
+      "equipo": "Países Bajos",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 1,
@@ -30542,8 +30548,8 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Cody Gakpo",
-      "equipo": "Países Bajos",
+      "nombre": "Anthony Elanga",
+      "equipo": "Suecia",
       "goles": 1,
       "votos_polla": 0
     }
