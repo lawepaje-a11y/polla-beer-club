@@ -1072,7 +1072,7 @@ window.POLLA_DATA = {
       "jugado": false,
       "fecha": "2026-06-19",
       "hora": "10:00 PM",
-      "en_vivo": false
+      "en_vivo": true
     },
     {
       "numero": 23,
@@ -30525,6 +30525,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Alex Freeman",
       "equipo": "Estados Unidos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Matías Galarza",
+      "equipo": "Paraguay",
       "goles": 1,
       "votos_polla": 0
     }
