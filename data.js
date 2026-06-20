@@ -997,7 +997,7 @@ window.POLLA_DATA = {
       "grupo": "C",
       "eq1": "Brasil",
       "eq2": "Haití",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-19",
@@ -30168,6 +30168,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Matheus Cunha",
+      "equipo": "Brasil",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 1,
@@ -30518,12 +30524,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Alex Freeman",
       "equipo": "Estados Unidos",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Matheus Cunha",
-      "equipo": "Brasil",
       "goles": 1,
       "votos_polla": 0
     }
