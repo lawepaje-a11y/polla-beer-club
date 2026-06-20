@@ -1194,7 +1194,7 @@ window.POLLA_DATA = {
       "eq1": "Países Bajos",
       "eq2": "Suecia",
       "g1_real": 4,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-20",
       "hora": "12:00 PM",
