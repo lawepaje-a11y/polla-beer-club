@@ -1126,7 +1126,7 @@ window.POLLA_DATA = {
       "eq1": "Alemania",
       "eq2": "Costa de Marfil",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-20",
       "hora": "03:00 PM",
@@ -30551,6 +30551,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Anthony Elanga",
       "equipo": "Suecia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Franck Kessié",
+      "equipo": "Costa de Marfil",
       "goles": 1,
       "votos_polla": 0
     }
