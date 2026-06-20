@@ -335,9 +335,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 26,
@@ -347,9 +347,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 26,
@@ -371,10 +371,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 39,
-      "pagina": 39,
-      "nombre": "LEONARDO RIVERA - CARLOS LAITON",
-      "goleador": "Michael Olise",
+      "id": 5,
+      "pagina": 5,
+      "nombre": "Leandro Murcia #2",
+      "goleador": "Lamine Yamal",
       "pts": {
         "grupos": 25,
         "eliminatorias": 0,
@@ -383,10 +383,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 5,
-      "pagina": 5,
-      "nombre": "Leandro Murcia #2",
-      "goleador": "Lamine Yamal",
+      "id": 39,
+      "pagina": 39,
+      "nombre": "LEONARDO RIVERA - CARLOS LAITON",
+      "goleador": "Michael Olise",
       "pts": {
         "grupos": 25,
         "eliminatorias": 0,
@@ -25238,11 +25238,11 @@ window.POLLA_DATA = {
       "31": {
         "73": [
           "Corea del Sur",
-          "Bélgica"
+          "Bosnia y Herz."
         ],
         "74": [
           "Ecuador",
-          "Corea del Sur"
+          "Escocia"
         ],
         "75": [
           "Países Bajos",
@@ -25262,7 +25262,7 @@ window.POLLA_DATA = {
         ],
         "79": [
           "México",
-          "Nueva Zelanda"
+          "Noruega"
         ],
         "80": [
           "Inglaterra",
@@ -25286,22 +25286,22 @@ window.POLLA_DATA = {
         ],
         "85": [
           "Suiza",
-          "Catar"
+          "Costa de Marfil"
         ],
         "86": [
-          "Arabia Saudita",
+          "Argelia",
           "Uruguay"
         ],
         "87": [
           "Portugal",
-          "Irán"
+          "Turquía"
         ],
         "88": [
-          "Egipto",
+          "Estados Unidos",
           "Egipto"
         ],
         "89": [
-          "Corea del Sur",
+          "Ecuador",
           "Francia"
         ],
         "90": [
@@ -25325,11 +25325,11 @@ window.POLLA_DATA = {
           "Bélgica"
         ],
         "95": [
-          "Argentina",
-          "Chequia"
+          "Argelia",
+          "Estados Unidos"
         ],
         "96": [
-          "Corea del Sur",
+          "Costa de Marfil",
           "Portugal"
         ],
         "97": [
@@ -25345,7 +25345,7 @@ window.POLLA_DATA = {
           "Inglaterra"
         ],
         "100": [
-          "Argentina",
+          "Argelia",
           "Portugal"
         ],
         "101": [
