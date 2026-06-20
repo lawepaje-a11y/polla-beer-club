@@ -1067,11 +1067,12 @@ window.POLLA_DATA = {
       "grupo": "D",
       "eq1": "Turquía",
       "eq2": "Paraguay",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-19",
-      "hora": "10:00 PM"
+      "hora": "10:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 23,
@@ -30524,6 +30525,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Alex Freeman",
       "equipo": "Estados Unidos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Matías Galarza",
+      "equipo": "Paraguay",
       "goles": 1,
       "votos_polla": 0
     }
