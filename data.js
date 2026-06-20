@@ -1193,7 +1193,7 @@ window.POLLA_DATA = {
       "grupo": "F",
       "eq1": "Países Bajos",
       "eq2": "Suecia",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-20",
@@ -30538,6 +30538,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Matías Galarza",
       "equipo": "Paraguay",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Cody Gakpo",
+      "equipo": "Países Bajos",
       "goles": 1,
       "votos_polla": 0
     }
