@@ -1125,11 +1125,12 @@ window.POLLA_DATA = {
       "grupo": "E",
       "eq1": "Alemania",
       "eq2": "Costa de Marfil",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-20",
-      "hora": "03:00 PM"
+      "hora": "03:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 28,
