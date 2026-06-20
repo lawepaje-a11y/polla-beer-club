@@ -997,7 +997,7 @@ window.POLLA_DATA = {
       "grupo": "C",
       "eq1": "Brasil",
       "eq2": "Haití",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-19",
@@ -30126,6 +30126,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Vinícius Júnior",
+      "equipo": "Brasil",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Kai Havertz",
       "equipo": "Alemania",
       "goles": 2,
@@ -30224,12 +30230,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Breel Embolo",
       "equipo": "Suiza",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Vinícius Júnior",
-      "equipo": "Brasil",
       "goles": 1,
       "votos_polla": 0
     },
