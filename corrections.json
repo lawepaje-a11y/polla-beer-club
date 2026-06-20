@@ -753,7 +753,54 @@
     "44": [
       0,
       3
-    ]
+    ],
+    "grupos": {},
+    "eliminatorias": {
+      "73": [
+        "Corea del Sur",
+        "Bosnia y Herz."
+      ],
+      "74": [
+        "Ecuador",
+        "Escocia"
+      ],
+      "79": [
+        "México",
+        "Noruega"
+      ],
+      "85": [
+        "Suiza",
+        "Costa de Marfil"
+      ],
+      "86": [
+        "Argelia",
+        "Uruguay"
+      ],
+      "87": [
+        "Portugal",
+        "Turquía"
+      ],
+      "88": [
+        "Estados Unidos",
+        "Egipto"
+      ],
+      "89": [
+        "Ecuador",
+        "Francia"
+      ],
+      "95": [
+        "Argelia",
+        "Estados Unidos"
+      ],
+      "96": [
+        "Costa de Marfil",
+        "Portugal"
+      ],
+      "100": [
+        "Argelia",
+        "Portugal"
+      ]
+    }
   },
   "33": {
     "2": [
@@ -851,12 +898,12 @@
     },
     "eliminatorias": {
       "75": [
-        "Países Bajos",
+        "PaÃ­ses Bajos",
         "Marruecos"
       ],
       "76": [
         "Brasil",
-        "Japón"
+        "JapÃ³n"
       ],
       "77": [
         "Noruega",
@@ -867,7 +914,7 @@
         "Francia"
       ],
       "79": [
-        "México",
+        "MÃ©xico",
         "Escocia"
       ],
       "80": [
@@ -875,19 +922,19 @@
         "Colombia"
       ],
       "81": [
-        "Turquía",
+        "TurquÃ­a",
         "Senegal"
       ],
       "82": [
-        "Bélgica",
+        "BÃ©lgica",
         "Corea del Sur"
       ],
       "83": [
-        "Uzbekistán",
+        "UzbekistÃ¡n",
         "Inglaterra"
       ],
       "84": [
-        "España",
+        "EspaÃ±a",
         "Argelia"
       ],
       "85": [
@@ -899,12 +946,12 @@
         "Egipto"
       ],
       "90": [
-        "Canadá",
-        "Países Bajos"
+        "CanadÃ¡",
+        "PaÃ­ses Bajos"
       ],
       "94": [
-        "Turquía",
-        "Bélgica"
+        "TurquÃ­a",
+        "BÃ©lgica"
       ],
       "95": [
         "Argentina",
@@ -916,14 +963,14 @@
       ],
       "97": [
         "Alemania",
-        "Países Bajos"
+        "PaÃ­ses Bajos"
       ],
       "103": [
         null,
         null
       ],
       "104": [
-        "España",
+        "EspaÃ±a",
         "Francia"
       ]
     }
