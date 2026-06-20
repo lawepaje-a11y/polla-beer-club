@@ -1125,7 +1125,7 @@ window.POLLA_DATA = {
       "grupo": "E",
       "eq1": "Alemania",
       "eq2": "Costa de Marfil",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-20",
@@ -30099,6 +30099,12 @@ window.POLLA_DATA = {
   ],
   "goleadores_reales": [
     {
+      "nombre": "Deniz Undav",
+      "equipo": "Alemania",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Lionel Messi",
       "equipo": "Argentina",
       "goles": 3,
@@ -30136,12 +30142,6 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Kai Havertz",
-      "equipo": "Alemania",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Deniz Undav",
       "equipo": "Alemania",
       "goles": 2,
       "votos_polla": 0
