@@ -1125,7 +1125,7 @@ window.POLLA_DATA = {
       "grupo": "E",
       "eq1": "Alemania",
       "eq2": "Costa de Marfil",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-20",
@@ -30141,6 +30141,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Deniz Undav",
+      "equipo": "Alemania",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Crysencio Summerville",
       "equipo": "Países Bajos",
       "goles": 2,
@@ -30298,12 +30304,6 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Nathaniel Brown",
-      "equipo": "Alemania",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Deniz Undav",
       "equipo": "Alemania",
       "goles": 1,
       "votos_polla": 0
