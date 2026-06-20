@@ -997,11 +997,12 @@ window.POLLA_DATA = {
       "grupo": "C",
       "eq1": "Brasil",
       "eq2": "Haití",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-19",
-      "hora": "07:30 PM"
+      "hora": "07:30 PM",
+      "en_vivo": true
     },
     {
       "numero": 17,
