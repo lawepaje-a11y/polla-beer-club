@@ -4,7 +4,7 @@ window.POLLA_DATA = {
     "nombre_polla": "POLLA BEER CLUB",
     "torneo": "MUNDIAL FIFA 2026",
     "total_participantes": 67,
-    "partidos_jugados_grupos": 38,
+    "partidos_jugados_grupos": 37,
     "partidos_totales_grupos": 72,
     "goleador_real": null,
     "partidos_jugados_elim": 0
@@ -203,18 +203,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 24,
-      "pagina": 24,
-      "nombre": "Angela Milena",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 29,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 29
-      }
-    },
-    {
       "id": 48,
       "pagina": 48,
       "nombre": "Fidel Rodriguez",
@@ -275,22 +263,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 30,
-      "pagina": 30,
-      "nombre": "Ricardo Sanchez",
+      "id": 24,
+      "pagina": 24,
+      "nombre": "Angela Milena",
       "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 29,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 29
-      }
-    },
-    {
-      "id": 37,
-      "pagina": 37,
-      "nombre": "FELIPE SÁNCHEZ Y LA IA",
-      "goleador": "Julián Álvarez",
       "pts": {
         "grupos": 28,
         "eliminatorias": 0,
@@ -335,6 +311,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 30,
+      "pagina": 30,
+      "nombre": "Ricardo Sanchez",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 28,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 28
+      }
+    },
+    {
       "id": 32,
       "pagina": 32,
       "nombre": "Sebastiao Perez",
@@ -359,22 +347,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 12,
-      "pagina": 12,
-      "nombre": "Victor Alvarado",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 28,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 28
-      }
-    },
-    {
-      "id": 14,
-      "pagina": 14,
-      "nombre": "Felipe Sanchez",
-      "goleador": "Harry Kane",
+      "id": 37,
+      "pagina": 37,
+      "nombre": "FELIPE SÁNCHEZ Y LA IA",
+      "goleador": "Julián Álvarez",
       "pts": {
         "grupos": 27,
         "eliminatorias": 0,
@@ -383,10 +359,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 34,
-      "pagina": 34,
-      "nombre": "Jahir Peñuela D.",
-      "goleador": "Kylian Mbappé",
+      "id": 14,
+      "pagina": 14,
+      "nombre": "Felipe Sanchez",
+      "goleador": "Harry Kane",
       "pts": {
         "grupos": 27,
         "eliminatorias": 0,
@@ -455,6 +431,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 12,
+      "pagina": 12,
+      "nombre": "Victor Alvarado",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 27,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 27
+      }
+    },
+    {
       "id": 26,
       "pagina": 26,
       "nombre": "Ximena Fino y Will Amaya",
@@ -464,6 +452,18 @@ window.POLLA_DATA = {
         "eliminatorias": 0,
         "goleador": 0,
         "total": 27
+      }
+    },
+    {
+      "id": 34,
+      "pagina": 34,
+      "nombre": "Jahir Peñuela D.",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 26,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 26
       }
     },
     {
@@ -1267,10 +1267,10 @@ window.POLLA_DATA = {
       "eq2": "Irán",
       "g1_real": 0,
       "g2_real": 0,
-      "jugado": true,
+      "jugado": false,
       "fecha": "2026-06-21",
       "hora": "02:00 PM",
-      "en_vivo": false
+      "en_vivo": true
     },
     {
       "numero": 40,
