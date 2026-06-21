@@ -1208,7 +1208,7 @@ window.POLLA_DATA = {
       "eq1": "Túnez",
       "eq2": "Japón",
       "g1_real": 0,
-      "g2_real": 3,
+      "g2_real": 4,
       "jugado": false,
       "fecha": "2026-06-20",
       "hora": "11:00 PM",
@@ -30215,6 +30215,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Ayase Ueda",
+      "equipo": "Japón",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 1,
@@ -30559,12 +30565,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Franck Kessié",
       "equipo": "Costa de Marfil",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Ayase Ueda",
-      "equipo": "Japón",
       "goles": 1,
       "votos_polla": 0
     },
