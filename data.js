@@ -1266,7 +1266,7 @@ window.POLLA_DATA = {
       "eq1": "Bélgica",
       "eq2": "Irán",
       "g1_real": 0,
-      "g2_real": 1,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-21",
       "hora": "02:00 PM",
@@ -30587,12 +30587,6 @@ window.POLLA_DATA = {
       "equipo": "España",
       "goles": 1,
       "votos_polla": 4
-    },
-    {
-      "nombre": "Mehdi Taremi",
-      "equipo": "Irán",
-      "goles": 1,
-      "votos_polla": 0
     }
   ]
 };
