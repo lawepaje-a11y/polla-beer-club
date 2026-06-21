@@ -4,7 +4,7 @@ window.POLLA_DATA = {
     "nombre_polla": "POLLA BEER CLUB",
     "torneo": "MUNDIAL FIFA 2026",
     "total_participantes": 67,
-    "partidos_jugados_grupos": 34,
+    "partidos_jugados_grupos": 35,
     "partidos_totales_grupos": 72,
     "goleador_real": null,
     "partidos_jugados_elim": 0
@@ -515,6 +515,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 50,
+      "pagina": 50,
+      "nombre": "GEOUANNI ROSSI",
+      "goleador": "Lamine Yamal",
+      "pts": {
+        "grupos": 23,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 23
+      }
+    },
+    {
       "id": 16,
       "pagina": 16,
       "nombre": "Isabella Rodriguez",
@@ -723,18 +735,6 @@ window.POLLA_DATA = {
       "pagina": 58,
       "nombre": "Fabián Montaña",
       "goleador": "Vinicius Jr.",
-      "pts": {
-        "grupos": 20,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 20
-      }
-    },
-    {
-      "id": 50,
-      "pagina": 50,
-      "nombre": "GEOUANNI ROSSI",
-      "goleador": "Lamine Yamal",
       "pts": {
         "grupos": 20,
         "eliminatorias": 0,
@@ -1139,10 +1139,10 @@ window.POLLA_DATA = {
       "eq2": "Curazao",
       "g1_real": 0,
       "g2_real": 0,
-      "jugado": false,
+      "jugado": true,
       "fecha": "2026-06-20",
       "hora": "07:00 PM",
-      "en_vivo": true
+      "en_vivo": false
     },
     {
       "numero": 29,
