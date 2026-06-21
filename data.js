@@ -1333,7 +1333,7 @@ window.POLLA_DATA = {
       "grupo": "H",
       "eq1": "España",
       "eq2": "Arabia Saudita",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-21",
@@ -30222,6 +30222,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Mikel Oyarzabal",
+      "equipo": "España",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 1,
@@ -30580,12 +30586,6 @@ window.POLLA_DATA = {
       "equipo": "España",
       "goles": 1,
       "votos_polla": 4
-    },
-    {
-      "nombre": "Mikel Oyarzabal",
-      "equipo": "España",
-      "goles": 1,
-      "votos_polla": 0
     }
   ]
 };
