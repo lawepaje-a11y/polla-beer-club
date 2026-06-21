@@ -1333,7 +1333,7 @@ window.POLLA_DATA = {
       "grupo": "H",
       "eq1": "España",
       "eq2": "Arabia Saudita",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-21",
@@ -30574,6 +30574,12 @@ window.POLLA_DATA = {
       "equipo": "Japón",
       "goles": 1,
       "votos_polla": 0
+    },
+    {
+      "nombre": "Lamine Yamal",
+      "equipo": "España",
+      "goles": 1,
+      "votos_polla": 4
     }
   ]
 };
