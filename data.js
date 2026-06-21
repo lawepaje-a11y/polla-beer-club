@@ -1346,7 +1346,7 @@ window.POLLA_DATA = {
       "grupo": "H",
       "eq1": "Uruguay",
       "eq2": "Cabo Verde",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-21",
@@ -30170,6 +30170,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Maxi Araújo",
+      "equipo": "Uruguay",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Elijah Just",
       "equipo": "Nueva Zelanda",
       "goles": 2,
@@ -30382,12 +30388,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Abdulelah Al-Amri",
       "equipo": "Arabia Saudita",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Maxi Araújo",
-      "equipo": "Uruguay",
       "goles": 1,
       "votos_polla": 0
     },
