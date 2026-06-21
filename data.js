@@ -1347,7 +1347,7 @@ window.POLLA_DATA = {
       "eq1": "Uruguay",
       "eq2": "Cabo Verde",
       "g1_real": 2,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-21",
       "hora": "05:00 PM",
@@ -30598,6 +30598,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Agustín Cano",
       "equipo": "Uruguay",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Hélio Varela",
+      "equipo": "Cabo Verde",
       "goles": 1,
       "votos_polla": 0
     }
