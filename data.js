@@ -1333,11 +1333,12 @@ window.POLLA_DATA = {
       "grupo": "H",
       "eq1": "España",
       "eq2": "Arabia Saudita",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-21",
-      "hora": "11:00 AM"
+      "hora": "11:00 AM",
+      "en_vivo": true
     },
     {
       "numero": 46,
