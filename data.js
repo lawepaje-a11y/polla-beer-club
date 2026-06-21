@@ -1333,7 +1333,7 @@ window.POLLA_DATA = {
       "grupo": "H",
       "eq1": "España",
       "eq2": "Arabia Saudita",
-      "g1_real": 4,
+      "g1_real": 3,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-21",
