@@ -1208,7 +1208,7 @@ window.POLLA_DATA = {
       "eq1": "Túnez",
       "eq2": "Japón",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-20",
       "hora": "11:00 PM",
@@ -30155,6 +30155,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Daichi Kamada",
+      "equipo": "Japón",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Yasin Ayari",
       "equipo": "Suecia",
       "goles": 2,
@@ -30318,12 +30324,6 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Keito Nakamura",
-      "equipo": "Japón",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Daichi Kamada",
       "equipo": "Japón",
       "goles": 1,
       "votos_polla": 0
