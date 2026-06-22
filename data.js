@@ -1278,7 +1278,7 @@ window.POLLA_DATA = {
       "eq1": "Nueva Zelanda",
       "eq2": "Egipto",
       "g1_real": 1,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-21",
       "hora": "08:00 PM",
@@ -30616,6 +30616,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Mostafa Zico",
+      "equipo": "Egipto",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Mohamed Salah",
       "equipo": "Egipto",
       "goles": 1,
       "votos_polla": 0
