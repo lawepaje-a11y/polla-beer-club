@@ -407,9 +407,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 28,
@@ -419,9 +419,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 28,
@@ -1473,11 +1473,12 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Argentina",
       "eq2": "Austria",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-22",
-      "hora": "12:00 PM"
+      "hora": "12:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 58,
