@@ -4,7 +4,7 @@ window.POLLA_DATA = {
     "nombre_polla": "POLLA BEER CLUB",
     "torneo": "MUNDIAL FIFA 2026",
     "total_participantes": 67,
-    "partidos_jugados_grupos": 39,
+    "partidos_jugados_grupos": 38,
     "partidos_totales_grupos": 72,
     "goleador_real": null,
     "partidos_jugados_elim": 0
@@ -95,18 +95,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 67,
-      "pagina": 67,
-      "nombre": "Sebastian Flaco",
-      "goleador": "Luis Díaz",
-      "pts": {
-        "grupos": 32,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 32
-      }
-    },
-    {
       "id": 49,
       "pagina": 49,
       "nombre": "Gabriel Monjura",
@@ -147,6 +135,18 @@ window.POLLA_DATA = {
       "pagina": 25,
       "nombre": "Miguel Rodriguez",
       "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 31,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 31
+      }
+    },
+    {
+      "id": 67,
+      "pagina": 67,
+      "nombre": "Sebastian Flaco",
+      "goleador": "Luis Díaz",
       "pts": {
         "grupos": 31,
         "eliminatorias": 0,
@@ -1348,10 +1348,10 @@ window.POLLA_DATA = {
       "eq2": "Cabo Verde",
       "g1_real": 2,
       "g2_real": 2,
-      "jugado": true,
+      "jugado": false,
       "fecha": "2026-06-21",
       "hora": "05:00 PM",
-      "en_vivo": false
+      "en_vivo": true
     },
     {
       "numero": 47,
