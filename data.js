@@ -323,6 +323,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 46,
+      "pagina": 46,
+      "nombre": "Manuel Fino",
+      "goleador": "Lamine Yamal",
+      "pts": {
+        "grupos": 29,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 29
+      }
+    },
+    {
       "id": 23,
       "pagina": 23,
       "nombre": "René Giletto Aulo Sandín",
@@ -383,18 +395,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 46,
-      "pagina": 46,
-      "nombre": "Manuel Fino",
-      "goleador": "Lamine Yamal",
-      "pts": {
-        "grupos": 28,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 28
-      }
-    },
-    {
       "id": 9,
       "pagina": 9,
       "nombre": "Rome",
@@ -407,9 +407,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 28,
@@ -419,9 +419,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 28,
@@ -15049,7 +15049,7 @@ window.POLLA_DATA = {
           2
         ],
         "23": [
-          4,
+          1,
           2
         ],
         "24": [
@@ -15098,7 +15098,7 @@ window.POLLA_DATA = {
         ],
         "35": [
           0,
-          2
+          3
         ],
         "36": [
           2,
@@ -15113,7 +15113,7 @@ window.POLLA_DATA = {
           1
         ],
         "39": [
-          1,
+          2,
           0
         ],
         "40": [
@@ -15122,35 +15122,35 @@ window.POLLA_DATA = {
         ],
         "41": [
           1,
-          1
+          3
         ],
         "42": [
           1,
-          3
+          0
         ],
         "43": [
-          1,
+          3,
           0
         ],
         "44": [
           0,
-          0
+          2
         ],
         "45": [
           4,
-          1
+          0
         ],
         "46": [
           3,
           0
         ],
         "47": [
-          1,
+          0,
           1
         ],
         "48": [
-          2,
-          0
+          1,
+          2
         ],
         "49": [
           3,
@@ -15158,10 +15158,10 @@ window.POLLA_DATA = {
         ],
         "50": [
           1,
-          2
+          3
         ],
         "51": [
-          2,
+          3,
           1
         ],
         "52": [
@@ -15201,7 +15201,7 @@ window.POLLA_DATA = {
           3
         ],
         "61": [
-          2,
+          3,
           0
         ],
         "62": [
@@ -15209,7 +15209,7 @@ window.POLLA_DATA = {
           2
         ],
         "63": [
-          2,
+          3,
           0
         ],
         "64": [
@@ -27210,7 +27210,7 @@ window.POLLA_DATA = {
         ],
         "77": [
           "Francia",
-          "Túnez"
+          "Escocia"
         ],
         "78": [
           "Ecuador",
@@ -27222,7 +27222,7 @@ window.POLLA_DATA = {
         ],
         "80": [
           "Inglaterra",
-          "Curazao"
+          "Costa de Marfil"
         ],
         "81": [
           "Paraguay",
@@ -27230,7 +27230,7 @@ window.POLLA_DATA = {
         ],
         "82": [
           "Bélgica",
-          "Ghana"
+          "Chequia"
         ],
         "83": [
           "Colombia",
@@ -27242,7 +27242,7 @@ window.POLLA_DATA = {
         ],
         "85": [
           "Suiza",
-          "Argentina"
+          "Argelia"
         ],
         "86": [
           "Argentina",
