@@ -1405,11 +1405,12 @@ window.POLLA_DATA = {
       "grupo": "I",
       "eq1": "Francia",
       "eq2": "Irak",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-22",
-      "hora": "04:00 PM"
+      "hora": "04:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 52,
