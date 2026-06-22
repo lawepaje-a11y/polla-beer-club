@@ -1277,11 +1277,12 @@ window.POLLA_DATA = {
       "grupo": "G",
       "eq1": "Nueva Zelanda",
       "eq2": "Egipto",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-21",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 41,
@@ -30596,7 +30597,7 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Agustín Cano",
+      "nombre": "Agustín Canobbio",
       "equipo": "Uruguay",
       "goles": 1,
       "votos_polla": 0
