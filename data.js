@@ -1473,7 +1473,7 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Argentina",
       "eq2": "Austria",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-22",
@@ -30106,14 +30106,14 @@ window.POLLA_DATA = {
   ],
   "goleadores_reales": [
     {
-      "nombre": "Deniz Undav",
-      "equipo": "Alemania",
-      "goles": 3,
+      "nombre": "Lionel Messi",
+      "equipo": "Argentina",
+      "goles": 4,
       "votos_polla": 0
     },
     {
-      "nombre": "Lionel Messi",
-      "equipo": "Argentina",
+      "nombre": "Deniz Undav",
+      "equipo": "Alemania",
       "goles": 3,
       "votos_polla": 0
     },
