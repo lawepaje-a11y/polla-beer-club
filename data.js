@@ -1405,7 +1405,7 @@ window.POLLA_DATA = {
       "grupo": "I",
       "eq1": "Francia",
       "eq2": "Irak",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-22",
@@ -30119,6 +30119,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Kylian Mbappé",
+      "equipo": "Francia",
+      "goles": 3,
+      "votos_polla": 32
+    },
+    {
       "nombre": "Jonathan David",
       "equipo": "Canadá",
       "goles": 3,
@@ -30183,12 +30189,6 @@ window.POLLA_DATA = {
       "equipo": "Nueva Zelanda",
       "goles": 2,
       "votos_polla": 0
-    },
-    {
-      "nombre": "Kylian Mbappé",
-      "equipo": "Francia",
-      "goles": 2,
-      "votos_polla": 32
     },
     {
       "nombre": "Erling Haaland",
