@@ -1277,7 +1277,7 @@ window.POLLA_DATA = {
       "grupo": "G",
       "eq1": "Nueva Zelanda",
       "eq2": "Egipto",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-21",
@@ -30605,6 +30605,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Hélio Varela",
       "equipo": "Cabo Verde",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Finn Surman",
+      "equipo": "Nueva Zelanda",
       "goles": 1,
       "votos_polla": 0
     }
