@@ -734,7 +734,7 @@ window.POLLA_DATA = {
       "id": 28,
       "pagina": 28,
       "nombre": "Santos Camargo",
-      "goleador": "Cavani",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 26,
         "eliminatorias": 0,
