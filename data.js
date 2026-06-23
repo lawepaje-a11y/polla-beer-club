@@ -1488,7 +1488,7 @@ window.POLLA_DATA = {
       "eq1": "Jordania",
       "eq2": "Argelia",
       "g1_real": 1,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-22",
       "hora": "10:00 PM",
@@ -30662,6 +30662,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Nadhir Benbouali",
+      "equipo": "Argelia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Amine Gouiri",
       "equipo": "Argelia",
       "goles": 1,
       "votos_polla": 0
