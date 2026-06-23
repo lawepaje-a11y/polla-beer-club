@@ -1418,7 +1418,7 @@ window.POLLA_DATA = {
       "eq1": "Noruega",
       "eq2": "Senegal",
       "g1_real": 2,
-      "g2_real": 1,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-22",
       "hora": "07:00 PM",
@@ -30644,12 +30644,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Marcus Holmgren Pedersen",
       "equipo": "Noruega",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Ismaïla Sarr",
-      "equipo": "Senegal",
       "goles": 1,
       "votos_polla": 0
     }
