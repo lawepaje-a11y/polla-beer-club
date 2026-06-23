@@ -202,6 +202,20 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .btn-resolve:disabled{background:var(--muted);cursor:not-allowed}
 .btn-del-bet{background:none;border:none;cursor:pointer;font-size:.9rem;padding:.1rem .3rem;border-radius:.3rem;opacity:.5;transition:opacity .15s}
 .btn-del-bet:hover{opacity:1;background:var(--red-l)}
+/* ── Resolution summary (admin) ──────────────────────────── */
+.resolution-box{background:var(--surface2);border:1px solid var(--green);border-radius:.65rem;padding:.75rem 1rem;margin-top:.75rem}
+.resolution-header{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;margin-bottom:.5rem}
+.resolution-score{font-size:1.1rem;font-weight:900;color:var(--accent)}
+.resolution-winners-count{font-size:.82rem;font-weight:700;color:var(--green)}
+.distrib-row{display:flex;align-items:center;gap:.35rem;font-size:.75rem;color:var(--muted);flex-wrap:wrap;margin-bottom:.5rem}
+.distrib-arrow{color:var(--border)}
+.distrib-hi{color:var(--text);font-weight:700}
+.resolution-winner-list{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
+.resolution-winner-pill{background:var(--green-l);color:var(--green);font-size:.76rem;font-weight:700;padding:.22rem .7rem;border-radius:999px}
+.resolution-no-winner{font-size:.78rem;color:var(--muted);font-style:italic}
+/* ── Winner count badge on match cards ───────────────────── */
+.card-winner-count{font-size:.72rem;font-weight:700;color:var(--green);margin-left:.5rem}
+.card-winner-count.zero{color:var(--muted)}
 .btn-csv{padding:.35rem .875rem;border:1.5px solid var(--border);border-radius:.5rem;font-size:.75rem;font-weight:600;cursor:pointer;background:transparent;color:var(--text)}
 .btn-danger{padding:.45rem 1rem;border:none;border-radius:.5rem;font-size:.78rem;font-weight:700;cursor:pointer;background:var(--red);color:#fff}
 
@@ -579,7 +593,7 @@ function _cardHTML(m) {
       <div class="card-meta">${_fmtDate(m)}</div>
     </div>
     ${action}
-    ${cnt > 0 ? `<div class="bet-count">🎫 ${cnt} apuesta${cnt!==1?'s':''} · Pozo ${_cop(pool)}</div>` : ''}
+    ${cnt > 0 ? `<div class="bet-count">🎫 ${cnt} apuesta${cnt!==1?'s':''} · Pozo ${_cop(pool)}${(() => { const r = _cloudResolutions.find(x => x.matchId === m.numero); if (!r) return ''; return r.winnerCount > 0 ? ` <span class="card-winner-count">· 🏆 ${r.winnerCount} ganador${r.winnerCount!==1?'es':''}</span>` : ` <span class="card-winner-count zero">· Sin ganadores</span>`; })()}</div>` : ''}
   </div>`
 }
 
@@ -974,6 +988,27 @@ function renderAdmin() {
           <td><button class="btn-del-bet" onclick="deleteBet('${b.code}','${b.nombre.replace(/'/g,'&#39;')}')">🗑</button></td>
         </tr>`).join('')}
       </table>
+      ${already ? (() => {
+        const winners = betsM.filter(b => b.won)
+        const rake = already.totalPool - already.netPool
+        const perWinner = already.prizePerWinner || 0
+        const predGanadora = winners.length > 0 ? `${winners[0].score1}–${winners[0].score2}` : '—'
+        return `<div class="resolution-box">
+          <div class="resolution-header">
+            <span class="resolution-score">⚽ ${already.finalScore1}–${already.finalScore2}</span>
+            <span class="resolution-winners-count">${winners.length > 0 ? `🏆 ${winners.length} ganador${winners.length!==1?'es':''} · predicción correcta: ${predGanadora}` : '🔴 Sin ganadores'}</span>
+          </div>
+          <div class="distrib-row">
+            <span>Pozo total: <span class="distrib-hi">${_cop(already.totalPool)}</span></span>
+            <span class="distrib-arrow">→</span>
+            <span>Rake 10%: <span class="distrib-hi">−${_cop(rake)}</span></span>
+            <span class="distrib-arrow">→</span>
+            <span>Neto: <span class="distrib-hi">${_cop(already.netPool)}</span></span>
+            ${winners.length > 1 ? `<span class="distrib-arrow">→</span><span>÷ ${winners.length} ganadores: <span class="distrib-hi">${_cop(perWinner)} c/u</span></span>` : winners.length === 1 ? `<span class="distrib-arrow">→</span><span>Premio completo: <span class="distrib-hi">${_cop(perWinner)}</span></span>` : `<span class="distrib-arrow">→</span><span class="distrib-hi" style="color:var(--muted)">A admin (sin ganadores)</span>`}
+          </div>
+          ${winners.length > 0 ? `<div class="resolution-winner-list">${winners.map(w => `<span class="resolution-winner-pill">🏆 ${w.nombre} · ${w.score1}–${w.score2} · ${_cop(w.prize)}</span>`).join('')}</div>` : `<div class="resolution-no-winner">Ningún apostador acertó el marcador ${already.finalScore1}–${already.finalScore2}</div>`}
+        </div>`
+      })() : ''}
     </div>`
   }).join('')
 }

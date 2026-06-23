@@ -511,6 +511,8 @@ function showTab(name, btn) {
   if (name==='partidos' && !window._partInit) { initPartidos(); window._partInit=true; }
   if (name==='goleadores' && !window._golInit) { renderGoleadores(); window._golInit=true; }
   if (name==='ranking' && !window._chartRankingDone) { renderChartRanking(); window._chartRankingDone=true; renderAciertos(); }
+
+  location.hash = name;
 }
 
 /* ════════════════════════════════════════════════════════
@@ -1330,6 +1332,16 @@ function startAutoRefresh() {
 }
 
 init();
+
+// Hash routing: activa la pestaña indicada en la URL al cargar
+window.addEventListener('load', () => {
+  const tab = location.hash.slice(1);
+  const VALID = ['ranking', 'partidos', 'planilla', 'goleadores'];
+  if (VALID.includes(tab)) {
+    const btn = document.querySelector(`.tab-btn[onclick*="'${tab}'"]`);
+    showTab(tab, btn);
+  }
+});
 </script>
 </body>
 </html>
