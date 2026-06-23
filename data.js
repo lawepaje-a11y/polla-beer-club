@@ -4,7 +4,7 @@ window.POLLA_DATA = {
     "nombre_polla": "POLLA BEER CLUB",
     "torneo": "MUNDIAL FIFA 2026",
     "total_participantes": 67,
-    "partidos_jugados_grupos": 46,
+    "partidos_jugados_grupos": 45,
     "partidos_totales_grupos": 72,
     "goleador_real": null,
     "partidos_jugados_elim": 0
@@ -251,18 +251,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 37,
-      "pagina": 37,
-      "nombre": "FELIPE SÁNCHEZ Y LA IA",
-      "goleador": "Julián Álvarez",
-      "pts": {
-        "grupos": 36,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 36
-      }
-    },
-    {
       "id": 48,
       "pagina": 48,
       "nombre": "Fidel Rodriguez",
@@ -363,6 +351,18 @@ window.POLLA_DATA = {
       "pagina": 15,
       "nombre": "Antonio Rodríguez",
       "goleador": "Raphinha",
+      "pts": {
+        "grupos": 35,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 35
+      }
+    },
+    {
+      "id": 37,
+      "pagina": 37,
+      "nombre": "FELIPE SÁNCHEZ Y LA IA",
+      "goleador": "Julián Álvarez",
       "pts": {
         "grupos": 35,
         "eliminatorias": 0,
@@ -611,18 +611,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 29,
-      "pagina": 29,
-      "nombre": "Nicolás Andrés",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 30,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 30
-      }
-    },
-    {
       "id": 66,
       "pagina": 66,
       "nombre": "Sebastian Flaco",
@@ -686,6 +674,18 @@ window.POLLA_DATA = {
       "id": 11,
       "pagina": 11,
       "nombre": "Juan Pablo Alvarado",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 29,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 29
+      }
+    },
+    {
+      "id": 29,
+      "pagina": 29,
+      "nombre": "Nicolás Andrés",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 29,
@@ -1616,10 +1616,10 @@ window.POLLA_DATA = {
       "eq2": "Ghana",
       "g1_real": 0,
       "g2_real": 0,
-      "jugado": true,
+      "jugado": false,
       "fecha": "2026-06-23",
       "hora": "03:00 PM",
-      "en_vivo": false
+      "en_vivo": true
     },
     {
       "numero": 70,
