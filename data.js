@@ -1405,7 +1405,7 @@ window.POLLA_DATA = {
       "grupo": "I",
       "eq1": "Francia",
       "eq2": "Irak",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-22",
@@ -30634,6 +30634,12 @@ window.POLLA_DATA = {
       "equipo": "Egipto",
       "goles": 1,
       "votos_polla": 0
+    },
+    {
+      "nombre": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "goles": 1,
+      "votos_polla": 3
     }
   ]
 };
