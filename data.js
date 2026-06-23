@@ -1631,7 +1631,7 @@ window.POLLA_DATA = {
       "jugado": false,
       "fecha": "2026-06-23",
       "hora": "06:00 PM",
-      "en_vivo": true
+      "en_vivo": false
     },
     {
       "numero": 71,
