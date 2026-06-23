@@ -1545,7 +1545,7 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Portugal",
       "eq2": "Uzbekistán",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-23",
@@ -30678,6 +30678,12 @@ window.POLLA_DATA = {
       "equipo": "Portugal",
       "goles": 1,
       "votos_polla": 1
+    },
+    {
+      "nombre": "Nuno Mendes",
+      "equipo": "Portugal",
+      "goles": 1,
+      "votos_polla": 0
     }
   ]
 };
