@@ -359,9 +359,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 32,
@@ -371,9 +371,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 32,
@@ -24467,7 +24467,7 @@ window.POLLA_DATA = {
       "25": {
         "73": [
           "Chequia",
-          "Catar"
+          "Suiza"
         ],
         "74": [
           "Alemania",
@@ -24499,11 +24499,11 @@ window.POLLA_DATA = {
         ],
         "81": [
           "Estados Unidos",
-          "Botsuana"
+          "Bosnia y Herz."
         ],
         "82": [
           "Bélgica",
-          "Argentina"
+          "Argelia"
         ],
         "83": [
           "Colombia",
@@ -24523,7 +24523,7 @@ window.POLLA_DATA = {
         ],
         "87": [
           "Portugal",
-          "Gana"
+          "Ghana"
         ],
         "88": [
           "Paraguay",
@@ -24534,7 +24534,7 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "Catar",
+          "Suiza",
           "Países Bajos"
         ],
         "91": [
