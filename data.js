@@ -455,9 +455,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 29,
@@ -467,9 +467,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 29,
@@ -1417,7 +1417,7 @@ window.POLLA_DATA = {
       "grupo": "I",
       "eq1": "Noruega",
       "eq2": "Senegal",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-22",
@@ -30640,6 +30640,12 @@ window.POLLA_DATA = {
       "equipo": "Francia",
       "goles": 1,
       "votos_polla": 3
+    },
+    {
+      "nombre": "Marcus Holmgren Pedersen",
+      "equipo": "Noruega",
+      "goles": 1,
+      "votos_polla": 0
     }
   ]
 };
