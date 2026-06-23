@@ -1487,7 +1487,7 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Jordania",
       "eq2": "Argelia",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-22",
@@ -30651,6 +30651,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Marcus Holmgren Pedersen",
       "equipo": "Noruega",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Nizar Al-Rashdan",
+      "equipo": "Jordania",
       "goles": 1,
       "votos_polla": 0
     }
