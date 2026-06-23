@@ -1626,11 +1626,12 @@ window.POLLA_DATA = {
       "grupo": "L",
       "eq1": "Panamá",
       "eq2": "Croacia",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-23",
-      "hora": "06:00 PM"
+      "hora": "06:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 71,
