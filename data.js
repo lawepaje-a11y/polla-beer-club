@@ -1417,7 +1417,7 @@ window.POLLA_DATA = {
       "grupo": "I",
       "eq1": "Noruega",
       "eq2": "Senegal",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-22",
@@ -30120,14 +30120,14 @@ window.POLLA_DATA = {
       "votos_polla": 33
     },
     {
-      "nombre": "Deniz Undav",
-      "equipo": "Alemania",
-      "goles": 3,
+      "nombre": "Erling Haaland",
+      "equipo": "Noruega",
+      "goles": 4,
       "votos_polla": 0
     },
     {
-      "nombre": "Erling Haaland",
-      "equipo": "Noruega",
+      "nombre": "Deniz Undav",
+      "equipo": "Alemania",
       "goles": 3,
       "votos_polla": 0
     },
