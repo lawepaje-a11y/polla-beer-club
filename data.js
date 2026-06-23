@@ -1546,7 +1546,7 @@ window.POLLA_DATA = {
       "eq1": "Portugal",
       "eq2": "Uzbekistán",
       "g1_real": 2,
-      "g2_real": 1,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-23",
       "hora": "12:00 PM",
@@ -30682,12 +30682,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Nuno Mendes",
       "equipo": "Portugal",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Azizjon Ganiev",
-      "equipo": "Uzbekistán",
       "goles": 1,
       "votos_polla": 0
     }
