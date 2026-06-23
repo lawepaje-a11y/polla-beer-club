@@ -1487,11 +1487,12 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Jordania",
       "eq2": "Argelia",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-22",
-      "hora": "10:00 PM"
+      "hora": "10:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 59,
