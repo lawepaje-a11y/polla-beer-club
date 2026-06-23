@@ -359,9 +359,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 32,
@@ -371,9 +371,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 32,
@@ -1417,7 +1417,7 @@ window.POLLA_DATA = {
       "grupo": "I",
       "eq1": "Noruega",
       "eq2": "Senegal",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-22",
@@ -30126,6 +30126,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Erling Haaland",
+      "equipo": "Noruega",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Jonathan David",
       "equipo": "Canadá",
       "goles": 3,
@@ -30188,12 +30194,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Elijah Just",
       "equipo": "Nueva Zelanda",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Erling Haaland",
-      "equipo": "Noruega",
       "goles": 2,
       "votos_polla": 0
     },
