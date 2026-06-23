@@ -687,7 +687,30 @@
     "61": [
       4,
       0
-    ]
+    ],
+    "grupos": {},
+    "eliminatorias": {
+      "73": [
+        "Chequia",
+        "Suiza"
+      ],
+      "81": [
+        "Estados Unidos",
+        "Bosnia y Herz."
+      ],
+      "82": [
+        "Bélgica",
+        "Argelia"
+      ],
+      "87": [
+        "Portugal",
+        "Ghana"
+      ],
+      "90": [
+        "Suiza",
+        "Países Bajos"
+      ]
+    }
   },
   "27": {
     "2": [
@@ -765,7 +788,7 @@
         "Escocia"
       ],
       "79": [
-        "MÃÂ©xico",
+        "MÃÂÃÂ©xico",
         "Noruega"
       ],
       "80": [
@@ -782,7 +805,7 @@
       ],
       "87": [
         "Portugal",
-        "TurquÃÂ­a"
+        "TurquÃÂÃÂ­a"
       ],
       "88": [
         "Estados Unidos",
@@ -929,7 +952,7 @@
         "Costa de Marfil"
       ],
       "82": [
-        "BÃ©lgica",
+        "BÃÂ©lgica",
         "Chequia"
       ],
       "85": [
@@ -980,12 +1003,12 @@
     },
     "eliminatorias": {
       "75": [
-        "PaÃÂÃÂ­ses Bajos",
+        "PaÃÂÃÂÃÂÃÂ­ses Bajos",
         "Marruecos"
       ],
       "76": [
         "Brasil",
-        "JapÃÂÃÂ³n"
+        "JapÃÂÃÂÃÂÃÂ³n"
       ],
       "77": [
         "Noruega",
@@ -996,7 +1019,7 @@
         "Francia"
       ],
       "79": [
-        "MÃÂÃÂ©xico",
+        "MÃÂÃÂÃÂÃÂ©xico",
         "Escocia"
       ],
       "80": [
@@ -1004,19 +1027,19 @@
         "Colombia"
       ],
       "81": [
-        "TurquÃÂÃÂ­a",
+        "TurquÃÂÃÂÃÂÃÂ­a",
         "Senegal"
       ],
       "82": [
-        "BÃÂÃÂ©lgica",
+        "BÃÂÃÂÃÂÃÂ©lgica",
         "Corea del Sur"
       ],
       "83": [
-        "UzbekistÃÂÃÂ¡n",
+        "UzbekistÃÂÃÂÃÂÃÂ¡n",
         "Inglaterra"
       ],
       "84": [
-        "EspaÃÂÃÂ±a",
+        "EspaÃÂÃÂÃÂÃÂ±a",
         "Argelia"
       ],
       "85": [
@@ -1028,12 +1051,12 @@
         "Egipto"
       ],
       "90": [
-        "CanadÃÂÃÂ¡",
-        "PaÃÂÃÂ­ses Bajos"
+        "CanadÃÂÃÂÃÂÃÂ¡",
+        "PaÃÂÃÂÃÂÃÂ­ses Bajos"
       ],
       "94": [
-        "TurquÃÂÃÂ­a",
-        "BÃÂÃÂ©lgica"
+        "TurquÃÂÃÂÃÂÃÂ­a",
+        "BÃÂÃÂÃÂÃÂ©lgica"
       ],
       "95": [
         "Argentina",
@@ -1045,14 +1068,14 @@
       ],
       "97": [
         "Alemania",
-        "PaÃÂÃÂ­ses Bajos"
+        "PaÃÂÃÂÃÂÃÂ­ses Bajos"
       ],
       "103": [
         null,
         null
       ],
       "104": [
-        "EspaÃÂÃÂ±a",
+        "EspaÃÂÃÂÃÂÃÂ±a",
         "Francia"
       ]
     }
