@@ -1545,7 +1545,7 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Portugal",
       "eq2": "Uzbekistán",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-23",
@@ -30248,6 +30248,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Cristiano Ronaldo",
+      "equipo": "Portugal",
+      "goles": 2,
+      "votos_polla": 1
+    },
+    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 1,
@@ -30672,12 +30678,6 @@ window.POLLA_DATA = {
       "equipo": "Argelia",
       "goles": 1,
       "votos_polla": 0
-    },
-    {
-      "nombre": "Cristiano Ronaldo",
-      "equipo": "Portugal",
-      "goles": 1,
-      "votos_polla": 1
     },
     {
       "nombre": "Nuno Mendes",
