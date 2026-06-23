@@ -1545,7 +1545,7 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Portugal",
       "eq2": "Uzbekistán",
-      "g1_real": 3,
+      "g1_real": 4,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-23",
