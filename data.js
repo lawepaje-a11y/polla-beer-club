@@ -1011,7 +1011,7 @@ window.POLLA_DATA = {
       "grupo": "C",
       "eq1": "Marruecos",
       "eq2": "Haití",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-24",
@@ -30723,8 +30723,8 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Lenny Joseph",
-      "equipo": "Haití",
+      "nombre": "Achraf Hakimi",
+      "equipo": "Marruecos",
       "goles": 1,
       "votos_polla": 0
     }
