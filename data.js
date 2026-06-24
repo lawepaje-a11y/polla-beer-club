@@ -939,7 +939,7 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Suiza",
       "eq2": "Canadá",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-24",
@@ -30139,6 +30139,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Johan Manzambi",
+      "equipo": "Suiza",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Jonathan David",
       "equipo": "Canadá",
       "goles": 3,
@@ -30213,12 +30219,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Daniel Muñoz",
       "equipo": "Colombia",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Johan Manzambi",
-      "equipo": "Suiza",
       "goles": 2,
       "votos_polla": 0
     },
