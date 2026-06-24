@@ -1024,7 +1024,7 @@ window.POLLA_DATA = {
       "eq1": "Escocia",
       "eq2": "Brasil",
       "g1_real": 0,
-      "g2_real": 2,
+      "g2_real": 3,
       "jugado": false,
       "fecha": "2026-06-24",
       "hora": "05:00 PM",
@@ -30165,6 +30165,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Matheus Cunha",
+      "equipo": "Brasil",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Cyle Larin",
       "equipo": "Canadá",
       "goles": 2,
@@ -30233,12 +30239,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Ermin Mahmic",
       "equipo": "Bosnia y Herz.",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Matheus Cunha",
-      "equipo": "Brasil",
       "goles": 2,
       "votos_polla": 0
     },
