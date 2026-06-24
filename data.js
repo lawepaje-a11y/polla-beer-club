@@ -1557,7 +1557,7 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Colombia",
       "eq2": "Congo",
-      "g1_real": 1,
+      "g1_real": 0,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-23",
@@ -30209,12 +30209,6 @@ window.POLLA_DATA = {
       "votos_polla": 15
     },
     {
-      "nombre": "Daniel Muñoz",
-      "equipo": "Colombia",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
       "nombre": "Johan Manzambi",
       "equipo": "Suiza",
       "goles": 2,
@@ -30511,6 +30505,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Caleb Yirenkyi",
       "equipo": "Ghana",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Daniel Muñoz",
+      "equipo": "Colombia",
       "goles": 1,
       "votos_polla": 0
     },
