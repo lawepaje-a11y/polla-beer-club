@@ -1024,7 +1024,7 @@ window.POLLA_DATA = {
       "eq1": "Escocia",
       "eq2": "Brasil",
       "g1_real": 0,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-24",
       "hora": "05:00 PM",
@@ -30123,6 +30123,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Vinícius Júnior",
+      "equipo": "Brasil",
+      "goles": 4,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Kylian Mbappé",
       "equipo": "Francia",
       "goles": 4,
@@ -30137,12 +30143,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Ismael Saibari",
       "equipo": "Marruecos",
-      "goles": 3,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Vinícius Júnior",
-      "equipo": "Brasil",
       "goles": 3,
       "votos_polla": 0
     },
