@@ -1011,7 +1011,7 @@ window.POLLA_DATA = {
       "grupo": "C",
       "eq1": "Marruecos",
       "eq2": "Haití",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-24",
@@ -30135,6 +30135,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Ismael Saibari",
+      "equipo": "Marruecos",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Vinícius Júnior",
       "equipo": "Brasil",
       "goles": 3,
@@ -30167,12 +30173,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Folarin Balogun",
       "equipo": "Estados Unidos",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Ismael Saibari",
-      "equipo": "Marruecos",
       "goles": 2,
       "votos_polla": 0
     },
