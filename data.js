@@ -1016,18 +1016,19 @@ window.POLLA_DATA = {
       "jugado": false,
       "fecha": "2026-06-24",
       "hora": "05:00 PM",
-      "en_vivo": false
+      "en_vivo": true
     },
     {
       "numero": 18,
       "grupo": "C",
       "eq1": "Escocia",
       "eq2": "Brasil",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-24",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 19,
