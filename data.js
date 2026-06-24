@@ -940,7 +940,7 @@ window.POLLA_DATA = {
       "eq1": "Suiza",
       "eq2": "Canadá",
       "g1_real": 2,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-24",
       "hora": "02:00 PM",
@@ -30711,6 +30711,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Hassan Al-Haydos",
       "equipo": "Catar",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Promise David",
+      "equipo": "Canadá",
       "goles": 1,
       "votos_polla": 0
     }
