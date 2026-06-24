@@ -1627,7 +1627,7 @@ window.POLLA_DATA = {
       "eq1": "Panamá",
       "eq2": "Croacia",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-23",
       "hora": "06:00 PM",
@@ -30690,6 +30690,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Rafael Leão",
       "equipo": "Portugal",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Ante Budimir",
+      "equipo": "Croacia",
       "goles": 1,
       "votos_polla": 0
     }
