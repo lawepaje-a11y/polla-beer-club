@@ -1011,7 +1011,7 @@ window.POLLA_DATA = {
       "grupo": "C",
       "eq1": "Marruecos",
       "eq2": "Haití",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-24",
@@ -30731,6 +30731,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Wilson Isidor",
       "equipo": "Haití",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Soufiane Rahimi",
+      "equipo": "Marruecos",
       "goles": 1,
       "votos_polla": 0
     }
