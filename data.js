@@ -1011,7 +1011,7 @@ window.POLLA_DATA = {
       "grupo": "C",
       "eq1": "Marruecos",
       "eq2": "Haití",
-      "g1_real": 3,
+      "g1_real": 4,
       "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-24",
@@ -30736,6 +30736,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Soufiane Rahimi",
+      "equipo": "Marruecos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Gessime Yassine",
       "equipo": "Marruecos",
       "goles": 1,
       "votos_polla": 0
