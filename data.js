@@ -951,7 +951,7 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Bosnia y Herz.",
       "eq2": "Catar",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-24",
@@ -30229,6 +30229,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Ermin Mahmic",
+      "equipo": "Bosnia y Herz.",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Matheus Cunha",
       "equipo": "Brasil",
       "goles": 2,
@@ -30549,12 +30555,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Teboho Mokoena",
       "equipo": "Sudáfrica",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Ermin Mahmic",
-      "equipo": "Bosnia y Herz.",
       "goles": 1,
       "votos_polla": 0
     },
