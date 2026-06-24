@@ -939,22 +939,24 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Suiza",
       "eq2": "Canadá",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-24",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 12,
       "grupo": "B",
       "eq1": "Bosnia y Herz.",
       "eq2": "Catar",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-24",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 13,
