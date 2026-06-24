@@ -951,7 +951,7 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Bosnia y Herz.",
       "eq2": "Catar",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-24",
@@ -30699,6 +30699,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Ante Budimir",
       "equipo": "Croacia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Kerim Alajbegovic",
+      "equipo": "Bosnia y Herz.",
       "goles": 1,
       "votos_polla": 0
     }
