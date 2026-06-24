@@ -952,7 +952,7 @@ window.POLLA_DATA = {
       "eq1": "Bosnia y Herz.",
       "eq2": "Catar",
       "g1_real": 2,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-24",
       "hora": "02:00 PM",
@@ -30705,6 +30705,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Kerim Alajbegovic",
       "equipo": "Bosnia y Herz.",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Hassan Al-Haydos",
+      "equipo": "Catar",
       "goles": 1,
       "votos_polla": 0
     }
