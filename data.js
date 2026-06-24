@@ -939,7 +939,7 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Suiza",
       "eq2": "Canadá",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-24",
@@ -30223,6 +30223,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Rubén Vargas",
+      "equipo": "Suiza",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Matheus Cunha",
       "equipo": "Brasil",
       "goles": 2,
@@ -30543,12 +30549,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Teboho Mokoena",
       "equipo": "Sudáfrica",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Rubén Vargas",
-      "equipo": "Suiza",
       "goles": 1,
       "votos_polla": 0
     },
