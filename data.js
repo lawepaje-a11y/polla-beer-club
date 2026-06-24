@@ -951,7 +951,7 @@ window.POLLA_DATA = {
       "grupo": "B",
       "eq1": "Bosnia y Herz.",
       "eq2": "Catar",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-24",
