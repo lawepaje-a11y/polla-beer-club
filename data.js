@@ -1012,7 +1012,7 @@ window.POLLA_DATA = {
       "eq1": "Marruecos",
       "eq2": "Haití",
       "g1_real": 1,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-24",
       "hora": "05:00 PM",
@@ -30725,6 +30725,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Achraf Hakimi",
       "equipo": "Marruecos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Wilson Isidor",
+      "equipo": "Haití",
       "goles": 1,
       "votos_polla": 0
     }
