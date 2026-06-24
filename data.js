@@ -1012,7 +1012,7 @@ window.POLLA_DATA = {
       "eq1": "Marruecos",
       "eq2": "Haití",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-24",
       "hora": "05:00 PM",
@@ -1024,7 +1024,7 @@ window.POLLA_DATA = {
       "eq1": "Escocia",
       "eq2": "Brasil",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-24",
       "hora": "05:00 PM",
@@ -30135,6 +30135,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Vinícius Júnior",
+      "equipo": "Brasil",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Deniz Undav",
       "equipo": "Alemania",
       "goles": 3,
@@ -30167,12 +30173,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Ismael Saibari",
       "equipo": "Marruecos",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Vinícius Júnior",
-      "equipo": "Brasil",
       "goles": 2,
       "votos_polla": 0
     },
@@ -30719,6 +30719,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Promise David",
       "equipo": "Canadá",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Lenny Joseph",
+      "equipo": "Haití",
       "goles": 1,
       "votos_polla": 0
     }
