@@ -882,7 +882,7 @@ window.POLLA_DATA = {
       "eq1": "Chequia",
       "eq2": "México",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-24",
       "hora": "08:00 PM",
@@ -30745,6 +30745,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Gessime Yassine",
       "equipo": "Marruecos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Mateo Chávez",
+      "equipo": "México",
       "goles": 1,
       "votos_polla": 0
     }
