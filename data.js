@@ -1155,22 +1155,24 @@ window.POLLA_DATA = {
       "grupo": "E",
       "eq1": "Curazao",
       "eq2": "Costa de Marfil",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-25",
-      "hora": "03:00 PM"
+      "hora": "03:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 30,
       "grupo": "E",
       "eq1": "Ecuador",
       "eq2": "Alemania",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-25",
-      "hora": "03:00 PM"
+      "hora": "03:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 31,
@@ -30763,6 +30765,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Thapelo Maseko",
       "equipo": "Sudáfrica",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Leroy Sané",
+      "equipo": "Alemania",
       "goles": 1,
       "votos_polla": 0
     }
