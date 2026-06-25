@@ -869,7 +869,7 @@ window.POLLA_DATA = {
       "grupo": "A",
       "eq1": "Sudáfrica",
       "eq2": "Corea del Sur",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-24",
@@ -882,7 +882,7 @@ window.POLLA_DATA = {
       "eq1": "Chequia",
       "eq2": "México",
       "g1_real": 0,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-24",
       "hora": "08:00 PM",
@@ -30173,6 +30173,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Julián Quiñones",
+      "equipo": "México",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Cyle Larin",
       "equipo": "Canadá",
       "goles": 2,
@@ -30279,12 +30285,6 @@ window.POLLA_DATA = {
       "equipo": "Portugal",
       "goles": 2,
       "votos_polla": 1
-    },
-    {
-      "nombre": "Julián Quiñones",
-      "equipo": "México",
-      "goles": 1,
-      "votos_polla": 0
     },
     {
       "nombre": "Raúl Jiménez",
@@ -30751,6 +30751,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Mateo Chávez",
       "equipo": "México",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Thapelo Maseko",
+      "equipo": "Sudáfrica",
       "goles": 1,
       "votos_polla": 0
     }
