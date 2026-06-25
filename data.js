@@ -1228,7 +1228,7 @@ window.POLLA_DATA = {
       "eq1": "Túnez",
       "eq2": "Países Bajos",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-25",
       "hora": "06:00 PM",
