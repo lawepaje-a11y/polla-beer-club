@@ -1228,7 +1228,7 @@ window.POLLA_DATA = {
       "eq1": "Túnez",
       "eq2": "Países Bajos",
       "g1_real": 0,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-25",
       "hora": "06:00 PM",
@@ -30177,6 +30177,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Brian Brobbey",
+      "equipo": "Países Bajos",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 2,
@@ -30251,12 +30257,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Ermin Mahmic",
       "equipo": "Bosnia y Herz.",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Brian Brobbey",
-      "equipo": "Países Bajos",
       "goles": 2,
       "votos_polla": 0
     },
