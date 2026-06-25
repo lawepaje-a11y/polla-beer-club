@@ -1167,7 +1167,7 @@ window.POLLA_DATA = {
       "grupo": "E",
       "eq1": "Ecuador",
       "eq2": "Alemania",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-25",
@@ -30782,6 +30782,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Nilson Angulo",
+      "equipo": "Ecuador",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Gonzalo Plata",
       "equipo": "Ecuador",
       "goles": 1,
       "votos_polla": 0
