@@ -1156,7 +1156,7 @@ window.POLLA_DATA = {
       "eq1": "Curazao",
       "eq2": "Costa de Marfil",
       "g1_real": 0,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-25",
       "hora": "03:00 PM",
@@ -30289,6 +30289,12 @@ window.POLLA_DATA = {
       "votos_polla": 1
     },
     {
+      "nombre": "Nicolas Pépé",
+      "equipo": "Costa de Marfil",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Raúl Jiménez",
       "equipo": "México",
       "goles": 1,
@@ -30765,12 +30771,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Thapelo Maseko",
       "equipo": "Sudáfrica",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Nicolas Pépé",
-      "equipo": "Costa de Marfil",
       "goles": 1,
       "votos_polla": 0
     },
