@@ -1227,22 +1227,24 @@ window.POLLA_DATA = {
       "grupo": "F",
       "eq1": "Túnez",
       "eq2": "Países Bajos",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-25",
-      "hora": "06:00 PM"
+      "hora": "06:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 36,
       "grupo": "F",
       "eq1": "Japón",
       "eq2": "Suecia",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-25",
-      "hora": "06:00 PM"
+      "hora": "06:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 37,
