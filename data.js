@@ -869,22 +869,24 @@ window.POLLA_DATA = {
       "grupo": "A",
       "eq1": "Sudáfrica",
       "eq2": "Corea del Sur",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-24",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 6,
       "grupo": "A",
       "eq1": "Chequia",
       "eq2": "México",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-24",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 7,
