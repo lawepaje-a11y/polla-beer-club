@@ -1168,7 +1168,7 @@ window.POLLA_DATA = {
       "eq1": "Ecuador",
       "eq2": "Alemania",
       "g1_real": 0,
-      "g2_real": 1,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-25",
       "hora": "03:00 PM",
@@ -30765,12 +30765,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Thapelo Maseko",
       "equipo": "Sudáfrica",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Leroy Sané",
-      "equipo": "Alemania",
       "goles": 1,
       "votos_polla": 0
     }
