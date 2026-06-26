@@ -1228,7 +1228,7 @@ window.POLLA_DATA = {
       "eq1": "Túnez",
       "eq2": "Países Bajos",
       "g1_real": 1,
-      "g2_real": 2,
+      "g2_real": 3,
       "jugado": false,
       "fecha": "2026-06-25",
       "hora": "06:00 PM",
@@ -30803,6 +30803,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Hazem Mastouri",
       "equipo": "Túnez",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Jan Paul van Hecke",
+      "equipo": "Países Bajos",
       "goles": 1,
       "votos_polla": 0
     }
