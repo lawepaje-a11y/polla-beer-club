@@ -1442,7 +1442,7 @@ window.POLLA_DATA = {
       "eq1": "Noruega",
       "eq2": "Francia",
       "g1_real": 1,
-      "g2_real": 2,
+      "g2_real": 3,
       "jugado": false,
       "fecha": "2026-06-26",
       "hora": "02:00 PM",
@@ -30151,6 +30151,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "goles": 4,
+      "votos_polla": 3
+    },
+    {
       "nombre": "Ismael Saibari",
       "equipo": "Marruecos",
       "goles": 3,
@@ -30185,12 +30191,6 @@ window.POLLA_DATA = {
       "equipo": "Países Bajos",
       "goles": 3,
       "votos_polla": 0
-    },
-    {
-      "nombre": "Ousmane Dembélé",
-      "equipo": "Francia",
-      "goles": 3,
-      "votos_polla": 3
     },
     {
       "nombre": "Julián Quiñones",
