@@ -1085,7 +1085,7 @@ window.POLLA_DATA = {
       "grupo": "D",
       "eq1": "Turquía",
       "eq2": "Estados Unidos",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-25",
@@ -30822,6 +30822,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Arda Güler",
+      "equipo": "Turquía",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Orkun Kökçü",
       "equipo": "Turquía",
       "goles": 1,
       "votos_polla": 0
