@@ -1085,7 +1085,7 @@ window.POLLA_DATA = {
       "grupo": "D",
       "eq1": "Turquía",
       "eq2": "Estados Unidos",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-25",
@@ -30817,6 +30817,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Auston Trusty",
       "equipo": "Estados Unidos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Arda Güler",
+      "equipo": "Turquía",
       "goles": 1,
       "votos_polla": 0
     }
