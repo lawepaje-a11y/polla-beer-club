@@ -1227,7 +1227,7 @@ window.POLLA_DATA = {
       "grupo": "F",
       "eq1": "Túnez",
       "eq2": "Países Bajos",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-25",
@@ -30791,6 +30791,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Gonzalo Plata",
       "equipo": "Ecuador",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Hazem Mastouri",
+      "equipo": "Túnez",
       "goles": 1,
       "votos_polla": 0
     }
