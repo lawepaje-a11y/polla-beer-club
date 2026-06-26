@@ -1453,7 +1453,7 @@ window.POLLA_DATA = {
       "grupo": "I",
       "eq1": "Senegal",
       "eq2": "Irak",
-      "g1_real": 2,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-26",
@@ -30193,12 +30193,6 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Ismaïla Sarr",
-      "equipo": "Senegal",
-      "goles": 3,
-      "votos_polla": 0
-    },
-    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 2,
@@ -30297,6 +30291,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Mikel Oyarzabal",
       "equipo": "España",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Ismaïla Sarr",
+      "equipo": "Senegal",
       "goles": 2,
       "votos_polla": 0
     },
