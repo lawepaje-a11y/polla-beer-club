@@ -4,7 +4,7 @@ window.POLLA_DATA = {
     "nombre_polla": "POLLA BEER CLUB",
     "torneo": "MUNDIAL FIFA 2026",
     "total_participantes": 67,
-    "partidos_jugados_grupos": 58,
+    "partidos_jugados_grupos": 59,
     "partidos_totales_grupos": 72,
     "goleador_real": null,
     "partidos_jugados_elim": 0
@@ -16,10 +16,10 @@ window.POLLA_DATA = {
       "nombre": "JEISON ESTIBEN AVILA SIERRA",
       "goleador": "Ousmane Dembélé",
       "pts": {
-        "grupos": 61,
+        "grupos": 62,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 61
+        "total": 62
       }
     },
     {
@@ -59,6 +59,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 19,
+      "pagina": 19,
+      "nombre": "Diego Jose De Silvestri Leon",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 53,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 53
+      }
+    },
+    {
       "id": 49,
       "pagina": 49,
       "nombre": "Gabriel Monjura",
@@ -68,6 +80,18 @@ window.POLLA_DATA = {
         "eliminatorias": 0,
         "goleador": 0,
         "total": 53
+      }
+    },
+    {
+      "id": 12,
+      "pagina": 12,
+      "nombre": "Victor Alvarado",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 52,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 52
       }
     },
     {
@@ -143,21 +167,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 12,
-      "pagina": 12,
-      "nombre": "Victor Alvarado",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 51,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 51
-      }
-    },
-    {
-      "id": 19,
-      "pagina": 19,
-      "nombre": "Diego Jose De Silvestri Leon",
+      "id": 24,
+      "pagina": 24,
+      "nombre": "Angela Milena",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 50,
@@ -179,15 +191,15 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 24,
-      "pagina": 24,
-      "nombre": "Angela Milena",
+      "id": 30,
+      "pagina": 30,
+      "nombre": "Ricardo Sanchez",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 49,
+        "grupos": 50,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 49
+        "total": 50
       }
     },
     {
@@ -218,18 +230,6 @@ window.POLLA_DATA = {
       "id": 47,
       "pagina": 47,
       "nombre": "PAULA MORENO Y MIGUEL TRIZY",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 49,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 49
-      }
-    },
-    {
-      "id": 30,
-      "pagina": 30,
-      "nombre": "Ricardo Sanchez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 49,
@@ -335,6 +335,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 51,
+      "pagina": 51,
+      "nombre": "Jairo Enrique Galvis",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 46,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 46
+      }
+    },
+    {
       "id": 10,
       "pagina": 10,
       "nombre": "Julian Avila",
@@ -351,6 +363,18 @@ window.POLLA_DATA = {
       "pagina": 56,
       "nombre": "Nelson Montaña",
       "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 46,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 46
+      }
+    },
+    {
+      "id": 54,
+      "pagina": 54,
+      "nombre": "Oscar Pinilla",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 46,
         "eliminatorias": 0,
@@ -399,30 +423,6 @@ window.POLLA_DATA = {
       "pagina": 14,
       "nombre": "Felipe Sanchez",
       "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 45,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 45
-      }
-    },
-    {
-      "id": 51,
-      "pagina": 51,
-      "nombre": "Jairo Enrique Galvis",
-      "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 45,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 45
-      }
-    },
-    {
-      "id": 54,
-      "pagina": 54,
-      "nombre": "Oscar Pinilla",
-      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 45,
         "eliminatorias": 0,
@@ -539,6 +539,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 52,
+      "pagina": 52,
+      "nombre": "Carlos Andres Paez Medina",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 42,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 42
+      }
+    },
+    {
       "id": 64,
       "pagina": 64,
       "nombre": "Franco N. Vargas",
@@ -603,18 +615,6 @@ window.POLLA_DATA = {
       "pagina": 38,
       "nombre": "CARLOS LAITON",
       "goleador": "Michael Olise",
-      "pts": {
-        "grupos": 41,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 41
-      }
-    },
-    {
-      "id": 52,
-      "pagina": 52,
-      "nombre": "Carlos Andres Paez Medina",
-      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 41,
         "eliminatorias": 0,
@@ -779,6 +779,18 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 50,
+      "pagina": 50,
+      "nombre": "GEOUANNI ROSSI",
+      "goleador": "Lamine Yamal",
+      "pts": {
+        "grupos": 35,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 35
+      }
+    },
+    {
       "id": 42,
       "pagina": 42,
       "nombre": "Mamito",
@@ -788,18 +800,6 @@ window.POLLA_DATA = {
         "eliminatorias": 0,
         "goleador": 0,
         "total": 35
-      }
-    },
-    {
-      "id": 50,
-      "pagina": 50,
-      "nombre": "GEOUANNI ROSSI",
-      "goleador": "Lamine Yamal",
-      "pts": {
-        "grupos": 34,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 34
       }
     },
     {
@@ -1099,10 +1099,10 @@ window.POLLA_DATA = {
       "eq2": "Australia",
       "g1_real": 0,
       "g2_real": 0,
-      "jugado": false,
+      "jugado": true,
       "fecha": "2026-06-25",
       "hora": "09:00 PM",
-      "en_vivo": true
+      "en_vivo": false
     },
     {
       "numero": 25,
@@ -30827,7 +30827,7 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Orkun Kökçü",
+      "nombre": "Baris Alper Yilmaz",
       "equipo": "Turquía",
       "goles": 1,
       "votos_polla": 0
