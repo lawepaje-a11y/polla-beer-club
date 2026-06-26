@@ -1453,7 +1453,7 @@ window.POLLA_DATA = {
       "grupo": "I",
       "eq1": "Senegal",
       "eq2": "Irak",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-26",
@@ -30854,6 +30854,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Habib Diarra",
+      "equipo": "Senegal",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Pape Gueye",
       "equipo": "Senegal",
       "goles": 1,
       "votos_polla": 0
