@@ -1086,7 +1086,7 @@ window.POLLA_DATA = {
       "eq1": "Turquía",
       "eq2": "Estados Unidos",
       "g1_real": 2,
-      "g2_real": 2,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-25",
       "hora": "09:00 PM",
@@ -30829,12 +30829,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Orkun Kökçü",
       "equipo": "Turquía",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Sebastian Berhalter",
-      "equipo": "Estados Unidos",
       "goles": 1,
       "votos_polla": 0
     }
