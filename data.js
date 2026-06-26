@@ -1441,8 +1441,8 @@ window.POLLA_DATA = {
       "grupo": "I",
       "eq1": "Noruega",
       "eq2": "Francia",
-      "g1_real": 0,
-      "g2_real": 1,
+      "g1_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-26",
       "hora": "02:00 PM",
@@ -30187,6 +30187,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "goles": 3,
+      "votos_polla": 3
+    },
+    {
       "nombre": "Julián Quiñones",
       "equipo": "México",
       "goles": 2,
@@ -30287,12 +30293,6 @@ window.POLLA_DATA = {
       "equipo": "España",
       "goles": 2,
       "votos_polla": 0
-    },
-    {
-      "nombre": "Ousmane Dembélé",
-      "equipo": "Francia",
-      "goles": 2,
-      "votos_polla": 3
     },
     {
       "nombre": "Ismaïla Sarr",
@@ -30843,6 +30843,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Kaan Ayhan",
       "equipo": "Turquía",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Thelo Aasgaard",
+      "equipo": "Noruega",
       "goles": 1,
       "votos_polla": 0
     },
