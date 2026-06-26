@@ -1090,7 +1090,7 @@ window.POLLA_DATA = {
       "jugado": false,
       "fecha": "2026-06-25",
       "hora": "09:00 PM",
-      "en_vivo": true
+      "en_vivo": false
     },
     {
       "numero": 24,
@@ -1102,7 +1102,7 @@ window.POLLA_DATA = {
       "jugado": false,
       "fecha": "2026-06-25",
       "hora": "09:00 PM",
-      "en_vivo": true
+      "en_vivo": false
     },
     {
       "numero": 25,
@@ -30811,12 +30811,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Jan Paul van Hecke",
       "equipo": "Países Bajos",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Auston Trusty",
-      "equipo": "Estados Unidos",
       "goles": 1,
       "votos_polla": 0
     }
