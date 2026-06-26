@@ -1442,7 +1442,7 @@ window.POLLA_DATA = {
       "eq1": "Noruega",
       "eq2": "Francia",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-26",
       "hora": "02:00 PM",
@@ -1453,7 +1453,7 @@ window.POLLA_DATA = {
       "grupo": "I",
       "eq1": "Senegal",
       "eq2": "Irak",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-26",
@@ -30289,6 +30289,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Ousmane Dembélé",
+      "equipo": "Francia",
+      "goles": 2,
+      "votos_polla": 3
+    },
+    {
       "nombre": "Ismaïla Sarr",
       "equipo": "Senegal",
       "goles": 2,
@@ -30673,12 +30679,6 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Ousmane Dembélé",
-      "equipo": "Francia",
-      "goles": 1,
-      "votos_polla": 3
-    },
-    {
       "nombre": "Marcus Holmgren Pedersen",
       "equipo": "Noruega",
       "goles": 1,
@@ -30843,6 +30843,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Kaan Ayhan",
       "equipo": "Turquía",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Habib Diarra",
+      "equipo": "Senegal",
       "goles": 1,
       "votos_polla": 0
     }
