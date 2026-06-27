@@ -1600,7 +1600,7 @@ window.POLLA_DATA = {
       "eq1": "Congo",
       "eq2": "Uzbekistán",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-27",
       "hora": "06:30 PM",
@@ -30935,6 +30935,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Nikola Vlasic",
       "equipo": "Croacia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Eldor Shomurodov",
+      "equipo": "Uzbekistán",
       "goles": 1,
       "votos_polla": 0
     }
