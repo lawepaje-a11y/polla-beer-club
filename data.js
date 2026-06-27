@@ -1657,22 +1657,24 @@ window.POLLA_DATA = {
       "grupo": "L",
       "eq1": "Panamá",
       "eq2": "Inglaterra",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-27",
-      "hora": "04:00 PM"
+      "hora": "04:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 72,
       "grupo": "L",
       "eq1": "Croacia",
       "eq2": "Ghana",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-27",
-      "hora": "04:00 PM"
+      "hora": "04:00 PM",
+      "en_vivo": true
     }
   ],
   "matches_elim": [
