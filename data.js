@@ -1384,7 +1384,7 @@ window.POLLA_DATA = {
       "eq1": "Uruguay",
       "eq2": "España",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-26",
       "hora": "07:00 PM",
@@ -30875,6 +30875,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Iliman Ndiaye",
       "equipo": "Senegal",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Álex Baena",
+      "equipo": "España",
       "goles": 1,
       "votos_polla": 0
     }
