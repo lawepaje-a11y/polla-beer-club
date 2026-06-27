@@ -1314,7 +1314,7 @@ window.POLLA_DATA = {
       "eq1": "Egipto",
       "eq2": "Irán",
       "g1_real": 1,
-      "g2_real": 2,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-26",
       "hora": "10:00 PM",
