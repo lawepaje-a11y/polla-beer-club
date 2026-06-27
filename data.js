@@ -1669,7 +1669,7 @@ window.POLLA_DATA = {
       "grupo": "L",
       "eq1": "Croacia",
       "eq2": "Ghana",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-27",
@@ -30915,6 +30915,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Alexis Saelemaekers",
       "equipo": "Bélgica",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Petar Sucic",
+      "equipo": "Croacia",
       "goles": 1,
       "votos_polla": 0
     }
