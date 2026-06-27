@@ -1658,7 +1658,7 @@ window.POLLA_DATA = {
       "eq1": "Panamá",
       "eq2": "Inglaterra",
       "g1_real": 0,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-27",
       "hora": "04:00 PM",
@@ -30181,6 +30181,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Harry Kane",
+      "equipo": "Inglaterra",
+      "goles": 3,
+      "votos_polla": 15
+    },
+    {
       "nombre": "Johan Manzambi",
       "equipo": "Suiza",
       "goles": 3,
@@ -30263,12 +30269,6 @@ window.POLLA_DATA = {
       "equipo": "Irán",
       "goles": 2,
       "votos_polla": 0
-    },
-    {
-      "nombre": "Harry Kane",
-      "equipo": "Inglaterra",
-      "goles": 2,
-      "votos_polla": 15
     },
     {
       "nombre": "Jude Bellingham",
