@@ -1313,7 +1313,7 @@ window.POLLA_DATA = {
       "grupo": "G",
       "eq1": "Egipto",
       "eq2": "Irán",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-26",
@@ -30883,6 +30883,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Álex Baena",
       "equipo": "España",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Mahmoud Saber",
+      "equipo": "Egipto",
       "goles": 1,
       "votos_polla": 0
     }
