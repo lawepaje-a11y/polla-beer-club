@@ -1658,7 +1658,7 @@ window.POLLA_DATA = {
       "eq1": "Panamá",
       "eq2": "Inglaterra",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-27",
       "hora": "04:00 PM",
@@ -30271,6 +30271,12 @@ window.POLLA_DATA = {
       "votos_polla": 15
     },
     {
+      "nombre": "Jude Bellingham",
+      "equipo": "Inglaterra",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Daniel Muñoz",
       "equipo": "Colombia",
       "goles": 2,
@@ -30555,12 +30561,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Petar Musa",
       "equipo": "Croacia",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Jude Bellingham",
-      "equipo": "Inglaterra",
       "goles": 1,
       "votos_polla": 0
     },
