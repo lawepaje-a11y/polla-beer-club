@@ -1302,7 +1302,7 @@ window.POLLA_DATA = {
       "eq1": "Nueva Zelanda",
       "eq2": "Bélgica",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-26",
       "hora": "10:00 PM",
@@ -30889,6 +30889,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Mahmoud Saber",
       "equipo": "Egipto",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Leandro Trossard",
+      "equipo": "Bélgica",
       "goles": 1,
       "votos_polla": 0
     }
