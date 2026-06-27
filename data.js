@@ -1314,7 +1314,7 @@ window.POLLA_DATA = {
       "eq1": "Egipto",
       "eq2": "Irán",
       "g1_real": 1,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-26",
       "hora": "10:00 PM",
@@ -30257,6 +30257,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Ramin Rezaeian",
+      "equipo": "Irán",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Harry Kane",
       "equipo": "Inglaterra",
       "goles": 2,
@@ -30469,12 +30475,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Abdulelah Al-Amri",
       "equipo": "Arabia Saudita",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Ramin Rezaeian",
-      "equipo": "Irán",
       "goles": 1,
       "votos_polla": 0
     },
