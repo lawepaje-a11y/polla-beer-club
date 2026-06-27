@@ -1599,7 +1599,7 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Congo",
       "eq2": "Uzbekistán",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-27",
@@ -30941,6 +30941,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Eldor Shomurodov",
       "equipo": "Uzbekistán",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Nathanaël Mbuku",
+      "equipo": "Congo",
       "goles": 1,
       "votos_polla": 0
     }
