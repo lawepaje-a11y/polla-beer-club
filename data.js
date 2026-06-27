@@ -1371,22 +1371,24 @@ window.POLLA_DATA = {
       "grupo": "H",
       "eq1": "Cabo Verde",
       "eq2": "Arabia Saudita",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-26",
-      "hora": "07:00 PM"
+      "hora": "07:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 48,
       "grupo": "H",
       "eq1": "Uruguay",
       "eq2": "España",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-26",
-      "hora": "07:00 PM"
+      "hora": "07:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 49,
