@@ -1302,7 +1302,7 @@ window.POLLA_DATA = {
       "eq1": "Nueva Zelanda",
       "eq2": "Bélgica",
       "g1_real": 1,
-      "g2_real": 3,
+      "g2_real": 4,
       "jugado": false,
       "fecha": "2026-06-26",
       "hora": "10:00 PM",
@@ -30900,6 +30900,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Kevin De Bruyne",
+      "equipo": "Bélgica",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Romelu Lukaku",
       "equipo": "Bélgica",
       "goles": 1,
       "votos_polla": 0
