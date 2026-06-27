@@ -4,7 +4,7 @@ window.POLLA_DATA = {
     "nombre_polla": "POLLA BEER CLUB",
     "torneo": "MUNDIAL FIFA 2026",
     "total_participantes": 67,
-    "partidos_jugados_grupos": 66,
+    "partidos_jugados_grupos": 67,
     "partidos_totales_grupos": 72,
     "goleador_real": null,
     "partidos_jugados_elim": 0
@@ -16,10 +16,10 @@ window.POLLA_DATA = {
       "nombre": "JEISON ESTIBEN AVILA SIERRA",
       "goleador": "Ousmane Dembélé",
       "pts": {
-        "grupos": 67,
+        "grupos": 70,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 67
+        "total": 70
       }
     },
     {
@@ -27,6 +27,30 @@ window.POLLA_DATA = {
       "pagina": 18,
       "nombre": "Tatiana Camargo",
       "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 63,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 63
+      }
+    },
+    {
+      "id": 12,
+      "pagina": 12,
+      "nombre": "Victor Alvarado",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 63,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 63
+      }
+    },
+    {
+      "id": 49,
+      "pagina": 49,
+      "nombre": "Gabriel Monjura",
+      "goleador": "Julián Álvarez",
       "pts": {
         "grupos": 62,
         "eliminatorias": 0,
@@ -40,10 +64,10 @@ window.POLLA_DATA = {
       "nombre": "Marlon Ceron",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 61,
+        "grupos": 62,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 61
+        "total": 62
       }
     },
     {
@@ -51,6 +75,30 @@ window.POLLA_DATA = {
       "pagina": 21,
       "nombre": "Tomás Forero",
       "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 62,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 62
+      }
+    },
+    {
+      "id": 24,
+      "pagina": 24,
+      "nombre": "Angela Milena",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 61,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 61
+      }
+    },
+    {
+      "id": 15,
+      "pagina": 15,
+      "nombre": "Antonio Rodríguez",
+      "goleador": "Raphinha",
       "pts": {
         "grupos": 61,
         "eliminatorias": 0,
@@ -64,70 +112,10 @@ window.POLLA_DATA = {
       "nombre": "Diego Jose De Silvestri Leon",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 60,
+        "grupos": 61,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 60
-      }
-    },
-    {
-      "id": 12,
-      "pagina": 12,
-      "nombre": "Victor Alvarado",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 60,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 60
-      }
-    },
-    {
-      "id": 49,
-      "pagina": 49,
-      "nombre": "Gabriel Monjura",
-      "goleador": "Julián Álvarez",
-      "pts": {
-        "grupos": 59,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 59
-      }
-    },
-    {
-      "id": 59,
-      "pagina": 59,
-      "nombre": "Andrés Rivera",
-      "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 58,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 58
-      }
-    },
-    {
-      "id": 24,
-      "pagina": 24,
-      "nombre": "Angela Milena",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 58,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 58
-      }
-    },
-    {
-      "id": 15,
-      "pagina": 15,
-      "nombre": "Antonio Rodríguez",
-      "goleador": "Raphinha",
-      "pts": {
-        "grupos": 58,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 58
+        "total": 61
       }
     },
     {
@@ -136,22 +124,10 @@ window.POLLA_DATA = {
       "nombre": "Isabella Rodriguez",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 58,
+        "grupos": 61,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 58
-      }
-    },
-    {
-      "id": 35,
-      "pagina": 35,
-      "nombre": "Julio Cardillo",
-      "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 58,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 58
+        "total": 61
       }
     },
     {
@@ -160,10 +136,10 @@ window.POLLA_DATA = {
       "nombre": "Miguel Andrés",
       "goleador": "Harry Kane",
       "pts": {
-        "grupos": 58,
+        "grupos": 61,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 58
+        "total": 61
       }
     },
     {
@@ -172,10 +148,10 @@ window.POLLA_DATA = {
       "nombre": "Pedro Sanchez",
       "goleador": "Lamine Yamal",
       "pts": {
-        "grupos": 58,
+        "grupos": 61,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 58
+        "total": 61
       }
     },
     {
@@ -184,10 +160,10 @@ window.POLLA_DATA = {
       "nombre": "Ricardo Sanchez",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 58,
+        "grupos": 61,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 58
+        "total": 61
       }
     },
     {
@@ -196,22 +172,34 @@ window.POLLA_DATA = {
       "nombre": "Juan Sebastian Castillo Sanchez, Kevin Raul Gonzalez Castellanos",
       "goleador": "Harry Kane",
       "pts": {
-        "grupos": 57,
+        "grupos": 60,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 57
+        "total": 60
       }
     },
     {
-      "id": 47,
-      "pagina": 47,
-      "nombre": "PAULA MORENO Y MIGUEL TRIZY",
-      "goleador": "Kylian Mbappé",
+      "id": 59,
+      "pagina": 59,
+      "nombre": "Andrés Rivera",
+      "goleador": "Harry Kane",
       "pts": {
-        "grupos": 57,
+        "grupos": 59,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 57
+        "total": 59
+      }
+    },
+    {
+      "id": 35,
+      "pagina": 35,
+      "nombre": "Julio Cardillo",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 59,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 59
       }
     },
     {
@@ -220,10 +208,10 @@ window.POLLA_DATA = {
       "nombre": "Julián Tibaduiza",
       "goleador": "Harry Kane",
       "pts": {
-        "grupos": 55,
+        "grupos": 58,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 55
+        "total": 58
       }
     },
     {
@@ -232,6 +220,42 @@ window.POLLA_DATA = {
       "nombre": "Karen Avila",
       "goleador": "Kylian Mbappé",
       "pts": {
+        "grupos": 58,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 58
+      }
+    },
+    {
+      "id": 47,
+      "pagina": 47,
+      "nombre": "PAULA MORENO Y MIGUEL TRIZY",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 58,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 58
+      }
+    },
+    {
+      "id": 25,
+      "pagina": 25,
+      "nombre": "Miguel Rodriguez",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 56,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 56
+      }
+    },
+    {
+      "id": 22,
+      "pagina": 22,
+      "nombre": "Cristian Rodriguez",
+      "goleador": "Cristiano Ronaldo",
+      "pts": {
         "grupos": 55,
         "eliminatorias": 0,
         "goleador": 0,
@@ -239,9 +263,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 25,
-      "pagina": 25,
-      "nombre": "Miguel Rodriguez",
+      "id": 48,
+      "pagina": 48,
+      "nombre": "Fidel Rodriguez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 55,
@@ -251,10 +275,22 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 22,
-      "pagina": 22,
-      "nombre": "Cristian Rodriguez",
-      "goleador": "Cristiano Ronaldo",
+      "id": 34,
+      "pagina": 34,
+      "nombre": "Jahir Peñuela D.",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 55,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 55
+      }
+    },
+    {
+      "id": 4,
+      "pagina": 4,
+      "nombre": "Leandro Murcia",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 54,
         "eliminatorias": 0,
@@ -268,106 +304,10 @@ window.POLLA_DATA = {
       "nombre": "Samuel Penuela",
       "goleador": "Harry Kane",
       "pts": {
-        "grupos": 53,
+        "grupos": 54,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 53
-      }
-    },
-    {
-      "id": 37,
-      "pagina": 37,
-      "nombre": "FELIPE SÁNCHEZ Y LA IA",
-      "goleador": "Julián Álvarez",
-      "pts": {
-        "grupos": 52,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 52
-      }
-    },
-    {
-      "id": 48,
-      "pagina": 48,
-      "nombre": "Fidel Rodriguez",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 52,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 52
-      }
-    },
-    {
-      "id": 34,
-      "pagina": 34,
-      "nombre": "Jahir Peñuela D.",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 52,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 52
-      }
-    },
-    {
-      "id": 51,
-      "pagina": 51,
-      "nombre": "Jairo Enrique Galvis",
-      "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 52,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 52
-      }
-    },
-    {
-      "id": 2,
-      "pagina": 2,
-      "nombre": "Juan David Nandar",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 52,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 52
-      }
-    },
-    {
-      "id": 54,
-      "pagina": 54,
-      "nombre": "Oscar Pinilla",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 52,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 52
-      }
-    },
-    {
-      "id": 4,
-      "pagina": 4,
-      "nombre": "Leandro Murcia",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 51,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 51
-      }
-    },
-    {
-      "id": 56,
-      "pagina": 56,
-      "nombre": "Nelson Montaña",
-      "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 51,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 51
+        "total": 54
       }
     },
     {
@@ -376,34 +316,46 @@ window.POLLA_DATA = {
       "nombre": "Sebastian Flaco",
       "goleador": "Luis Díaz",
       "pts": {
-        "grupos": 51,
+        "grupos": 54,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 51
+        "total": 54
       }
     },
     {
-      "id": 52,
-      "pagina": 52,
-      "nombre": "Carlos Andres Paez Medina",
+      "id": 37,
+      "pagina": 37,
+      "nombre": "FELIPE SÁNCHEZ Y LA IA",
+      "goleador": "Julián Álvarez",
+      "pts": {
+        "grupos": 53,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 53
+      }
+    },
+    {
+      "id": 51,
+      "pagina": 51,
+      "nombre": "Jairo Enrique Galvis",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 53,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 53
+      }
+    },
+    {
+      "id": 2,
+      "pagina": 2,
+      "nombre": "Juan David Nandar",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 50,
+        "grupos": 53,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 50
-      }
-    },
-    {
-      "id": 10,
-      "pagina": 10,
-      "nombre": "Julian Avila",
-      "goleador": "Ferran Torres",
-      "pts": {
-        "grupos": 50,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 50
+        "total": 53
       }
     },
     {
@@ -412,10 +364,58 @@ window.POLLA_DATA = {
       "nombre": "LEONARDO RIVERA - CARLOS LAITON",
       "goleador": "Michael Olise",
       "pts": {
-        "grupos": 50,
+        "grupos": 53,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 50
+        "total": 53
+      }
+    },
+    {
+      "id": 54,
+      "pagina": 54,
+      "nombre": "Oscar Pinilla",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 53,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 53
+      }
+    },
+    {
+      "id": 56,
+      "pagina": 56,
+      "nombre": "Nelson Montaña",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 52,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 52
+      }
+    },
+    {
+      "id": 52,
+      "pagina": 52,
+      "nombre": "Carlos Andres Paez Medina",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 51,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 51
+      }
+    },
+    {
+      "id": 10,
+      "pagina": 10,
+      "nombre": "Julian Avila",
+      "goleador": "Ferran Torres",
+      "pts": {
+        "grupos": 51,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 51
       }
     },
     {
@@ -424,10 +424,10 @@ window.POLLA_DATA = {
       "nombre": "Miguel Laiton",
       "goleador": "Ousmane Dembélé",
       "pts": {
-        "grupos": 50,
+        "grupos": 51,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 50
+        "total": 51
       }
     },
     {
@@ -436,10 +436,22 @@ window.POLLA_DATA = {
       "nombre": "Rome",
       "goleador": "Vinicius Jr.",
       "pts": {
-        "grupos": 50,
+        "grupos": 51,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 50
+        "total": 51
+      }
+    },
+    {
+      "id": 13,
+      "pagina": 13,
+      "nombre": "SANTIAGO MEDINA",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 51,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 51
       }
     },
     {
@@ -448,10 +460,10 @@ window.POLLA_DATA = {
       "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 50,
+        "grupos": 51,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 50
+        "total": 51
       }
     },
     {
@@ -459,6 +471,18 @@ window.POLLA_DATA = {
       "pagina": 33,
       "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 51,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 51
+      }
+    },
+    {
+      "id": 58,
+      "pagina": 58,
+      "nombre": "Fabián Montaña",
+      "goleador": "Vinicius Jr.",
       "pts": {
         "grupos": 50,
         "eliminatorias": 0,
@@ -472,10 +496,10 @@ window.POLLA_DATA = {
       "nombre": "Felipe Sanchez",
       "goleador": "Harry Kane",
       "pts": {
-        "grupos": 49,
+        "grupos": 50,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 49
+        "total": 50
       }
     },
     {
@@ -484,82 +508,10 @@ window.POLLA_DATA = {
       "nombre": "Franco N. Vargas",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 49,
+        "grupos": 50,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 49
-      }
-    },
-    {
-      "id": 5,
-      "pagina": 5,
-      "nombre": "Leandro Murcia #2",
-      "goleador": "Lamine Yamal",
-      "pts": {
-        "grupos": 48,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 48
-      }
-    },
-    {
-      "id": 13,
-      "pagina": 13,
-      "nombre": "SANTIAGO MEDINA",
-      "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 48,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 48
-      }
-    },
-    {
-      "id": 40,
-      "pagina": 40,
-      "nombre": "Yesid Forero",
-      "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 48,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 48
-      }
-    },
-    {
-      "id": 58,
-      "pagina": 58,
-      "nombre": "Fabián Montaña",
-      "goleador": "Vinicius Jr.",
-      "pts": {
-        "grupos": 47,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 47
-      }
-    },
-    {
-      "id": 20,
-      "pagina": 20,
-      "nombre": "Luis Rodolfo Sanchez",
-      "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 47,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 47
-      }
-    },
-    {
-      "id": 46,
-      "pagina": 46,
-      "nombre": "Manuel Fino",
-      "goleador": "Lamine Yamal",
-      "pts": {
-        "grupos": 47,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 47
+        "total": 50
       }
     },
     {
@@ -568,22 +520,10 @@ window.POLLA_DATA = {
       "nombre": "Nicolás Andrés",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 47,
+        "grupos": 50,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 47
-      }
-    },
-    {
-      "id": 6,
-      "pagina": 6,
-      "nombre": "Olga Lucia Carranza",
-      "goleador": "Michael Olise",
-      "pts": {
-        "grupos": 47,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 47
+        "total": 50
       }
     },
     {
@@ -592,10 +532,82 @@ window.POLLA_DATA = {
       "nombre": "Ximena Fino y Will Amaya",
       "goleador": "Harry Kane",
       "pts": {
-        "grupos": 47,
+        "grupos": 50,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 47
+        "total": 50
+      }
+    },
+    {
+      "id": 5,
+      "pagina": 5,
+      "nombre": "Leandro Murcia #2",
+      "goleador": "Lamine Yamal",
+      "pts": {
+        "grupos": 49,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 49
+      }
+    },
+    {
+      "id": 40,
+      "pagina": 40,
+      "nombre": "Yesid Forero",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 49,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 49
+      }
+    },
+    {
+      "id": 20,
+      "pagina": 20,
+      "nombre": "Luis Rodolfo Sanchez",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 48,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 48
+      }
+    },
+    {
+      "id": 46,
+      "pagina": 46,
+      "nombre": "Manuel Fino",
+      "goleador": "Lamine Yamal",
+      "pts": {
+        "grupos": 48,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 48
+      }
+    },
+    {
+      "id": 6,
+      "pagina": 6,
+      "nombre": "Olga Lucia Carranza",
+      "goleador": "Michael Olise",
+      "pts": {
+        "grupos": 48,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 48
+      }
+    },
+    {
+      "id": 8,
+      "pagina": 8,
+      "nombre": "Omar Yesid Russi",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 48,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 48
       }
     },
     {
@@ -604,10 +616,10 @@ window.POLLA_DATA = {
       "nombre": "Brandon Wilches",
       "goleador": "Harry Kane",
       "pts": {
-        "grupos": 46,
+        "grupos": 47,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 46
+        "total": 47
       }
     },
     {
@@ -616,10 +628,10 @@ window.POLLA_DATA = {
       "nombre": "Julian Cruz",
       "goleador": "Harry Kane",
       "pts": {
-        "grupos": 46,
+        "grupos": 47,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 46
+        "total": 47
       }
     },
     {
@@ -628,10 +640,10 @@ window.POLLA_DATA = {
       "nombre": "René Giletto Aulo Sandín",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 46,
+        "grupos": 47,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 46
+        "total": 47
       }
     },
     {
@@ -640,10 +652,10 @@ window.POLLA_DATA = {
       "nombre": "Valeria Sanchez",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 46,
+        "grupos": 47,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 46
+        "total": 47
       }
     },
     {
@@ -652,6 +664,30 @@ window.POLLA_DATA = {
       "nombre": "JHONYER LAITÓN",
       "goleador": "Ferran Torres",
       "pts": {
+        "grupos": 46,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 46
+      }
+    },
+    {
+      "id": 11,
+      "pagina": 11,
+      "nombre": "Juan Pablo Alvarado",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 46,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 46
+      }
+    },
+    {
+      "id": 38,
+      "pagina": 38,
+      "nombre": "CARLOS LAITON",
+      "goleador": "Michael Olise",
+      "pts": {
         "grupos": 45,
         "eliminatorias": 0,
         "goleador": 0,
@@ -659,9 +695,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 11,
-      "pagina": 11,
-      "nombre": "Juan Pablo Alvarado",
+      "id": 1,
+      "pagina": 1,
+      "nombre": "Edson Medina",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 45,
@@ -671,10 +707,22 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 8,
-      "pagina": 8,
-      "nombre": "Omar Yesid Russi",
+      "id": 60,
+      "pagina": 60,
+      "nombre": "Miguel Arturo Rodriguez",
       "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 45,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 45
+      }
+    },
+    {
+      "id": 53,
+      "pagina": 53,
+      "nombre": "Oscar Lagos",
+      "goleador": "Ousmane Dembélé",
       "pts": {
         "grupos": 45,
         "eliminatorias": 0,
@@ -695,63 +743,15 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 38,
-      "pagina": 38,
-      "nombre": "CARLOS LAITON",
-      "goleador": "Michael Olise",
-      "pts": {
-        "grupos": 44,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 44
-      }
-    },
-    {
-      "id": 1,
-      "pagina": 1,
-      "nombre": "Edson Medina",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 44,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 44
-      }
-    },
-    {
-      "id": 60,
-      "pagina": 60,
-      "nombre": "Miguel Arturo Rodriguez",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 44,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 44
-      }
-    },
-    {
-      "id": 53,
-      "pagina": 53,
-      "nombre": "Oscar Lagos",
-      "goleador": "Ousmane Dembélé",
-      "pts": {
-        "grupos": 44,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 44
-      }
-    },
-    {
       "id": 28,
       "pagina": 28,
       "nombre": "Santos Camargo",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 43,
+        "grupos": 44,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 43
+        "total": 44
       }
     },
     {
@@ -767,15 +767,27 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 42,
+      "pagina": 42,
+      "nombre": "Mamito",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 41,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 41
+      }
+    },
+    {
       "id": 50,
       "pagina": 50,
       "nombre": "GEOUANNI ROSSI",
       "goleador": "Lamine Yamal",
       "pts": {
-        "grupos": 39,
+        "grupos": 40,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 39
+        "total": 40
       }
     },
     {
@@ -791,27 +803,15 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 42,
-      "pagina": 42,
-      "nombre": "Mamito",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 38,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 38
-      }
-    },
-    {
       "id": 7,
       "pagina": 7,
       "nombre": "Carlos Diaz",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 36,
+        "grupos": 37,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 36
+        "total": 37
       }
     }
   ],
@@ -1659,10 +1659,10 @@ window.POLLA_DATA = {
       "eq2": "Inglaterra",
       "g1_real": 0,
       "g2_real": 2,
-      "jugado": false,
+      "jugado": true,
       "fecha": "2026-06-27",
       "hora": "04:00 PM",
-      "en_vivo": true
+      "en_vivo": false
     },
     {
       "numero": 72,
