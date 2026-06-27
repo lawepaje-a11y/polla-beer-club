@@ -1669,7 +1669,7 @@ window.POLLA_DATA = {
       "grupo": "L",
       "eq1": "Croacia",
       "eq2": "Ghana",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-27",
@@ -30927,6 +30927,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Derrick Luckassen",
       "equipo": "Ghana",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Nikola Vlasic",
+      "equipo": "Croacia",
       "goles": 1,
       "votos_polla": 0
     }
