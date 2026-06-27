@@ -1302,7 +1302,7 @@ window.POLLA_DATA = {
       "eq1": "Nueva Zelanda",
       "eq2": "Bélgica",
       "g1_real": 1,
-      "g2_real": 4,
+      "g2_real": 5,
       "jugado": false,
       "fecha": "2026-06-26",
       "hora": "10:00 PM",
@@ -1314,7 +1314,7 @@ window.POLLA_DATA = {
       "eq1": "Egipto",
       "eq2": "Irán",
       "g1_real": 1,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-26",
       "hora": "10:00 PM",
@@ -30899,6 +30899,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Shoja Khalilzadeh",
+      "equipo": "Irán",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Kevin De Bruyne",
       "equipo": "Bélgica",
       "goles": 1,
@@ -30906,6 +30912,12 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Romelu Lukaku",
+      "equipo": "Bélgica",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Alexis Saelemaekers",
       "equipo": "Bélgica",
       "goles": 1,
       "votos_polla": 0
