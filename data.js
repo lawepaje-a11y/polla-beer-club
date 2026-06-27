@@ -1598,11 +1598,12 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Congo",
       "eq2": "Uzbekistán",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-27",
-      "hora": "06:30 PM"
+      "hora": "06:30 PM",
+      "en_vivo": true
     },
     {
       "numero": 67,
