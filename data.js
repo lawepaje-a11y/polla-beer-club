@@ -1301,7 +1301,7 @@ window.POLLA_DATA = {
       "grupo": "G",
       "eq1": "Nueva Zelanda",
       "eq2": "Bélgica",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 3,
       "jugado": false,
       "fecha": "2026-06-26",
@@ -30173,6 +30173,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Elijah Just",
+      "equipo": "Nueva Zelanda",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Johan Manzambi",
       "equipo": "Suiza",
       "goles": 3,
@@ -30247,12 +30253,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Maxi Araújo",
       "equipo": "Uruguay",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Elijah Just",
-      "equipo": "Nueva Zelanda",
       "goles": 2,
       "votos_polla": 0
     },
