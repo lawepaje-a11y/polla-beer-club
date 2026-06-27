@@ -1670,7 +1670,7 @@ window.POLLA_DATA = {
       "eq1": "Croacia",
       "eq2": "Ghana",
       "g1_real": 1,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-27",
       "hora": "04:00 PM",
@@ -30921,6 +30921,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Petar Sucic",
       "equipo": "Croacia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Derrick Luckassen",
+      "equipo": "Ghana",
       "goles": 1,
       "votos_polla": 0
     }
