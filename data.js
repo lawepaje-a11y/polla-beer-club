@@ -1517,7 +1517,7 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Argelia",
       "eq2": "Austria",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-27",
@@ -30949,6 +30949,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Fiston Mayele",
       "equipo": "Congo",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Rafik Belghali",
+      "equipo": "Argelia",
       "goles": 1,
       "votos_polla": 0
     },
