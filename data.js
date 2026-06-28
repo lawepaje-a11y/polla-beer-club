@@ -1599,7 +1599,7 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Congo",
       "eq2": "Uzbekistán",
-      "g1_real": 2,
+      "g1_real": 3,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-27",
@@ -30183,6 +30183,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Yoane Wissa",
+      "equipo": "Congo",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Harry Kane",
       "equipo": "Inglaterra",
       "goles": 3,
@@ -30269,12 +30275,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Ramin Rezaeian",
       "equipo": "Irán",
-      "goles": 2,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Yoane Wissa",
-      "equipo": "Congo",
       "goles": 2,
       "votos_polla": 0
     },
