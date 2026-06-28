@@ -1518,7 +1518,7 @@ window.POLLA_DATA = {
       "eq1": "Argelia",
       "eq2": "Austria",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-27",
       "hora": "09:00 PM",
@@ -30281,6 +30281,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Marko Arnautovic",
+      "equipo": "Austria",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Jude Bellingham",
       "equipo": "Inglaterra",
       "goles": 2,
@@ -30541,12 +30547,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Ali Olwan",
       "equipo": "Jordania",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Marko Arnautovic",
-      "equipo": "Austria",
       "goles": 1,
       "votos_polla": 0
     },
