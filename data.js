@@ -1518,7 +1518,7 @@ window.POLLA_DATA = {
       "eq1": "Argelia",
       "eq2": "Austria",
       "g1_real": 1,
-      "g2_real": 1,
+      "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-27",
       "hora": "09:00 PM",
@@ -1529,7 +1529,7 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Jordania",
       "eq2": "Argentina",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-27",
@@ -30959,6 +30959,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Marcel Sabitzer",
+      "equipo": "Austria",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Giovani Lo Celso",
       "equipo": "Argentina",
       "goles": 1,
@@ -30967,6 +30973,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Lautaro Martínez",
       "equipo": "Argentina",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Mousa Al-Tamari",
+      "equipo": "Jordania",
       "goles": 1,
       "votos_polla": 0
     }
