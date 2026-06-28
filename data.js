@@ -1530,7 +1530,7 @@ window.POLLA_DATA = {
       "eq1": "Jordania",
       "eq2": "Argentina",
       "g1_real": 1,
-      "g2_real": 2,
+      "g2_real": 3,
       "jugado": false,
       "fecha": "2026-06-27",
       "hora": "09:00 PM",
@@ -30139,7 +30139,7 @@ window.POLLA_DATA = {
     {
       "nombre": "Lionel Messi",
       "equipo": "Argentina",
-      "goles": 5,
+      "goles": 6,
       "votos_polla": 0
     },
     {
