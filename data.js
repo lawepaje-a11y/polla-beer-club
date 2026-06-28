@@ -1599,7 +1599,7 @@ window.POLLA_DATA = {
       "grupo": "K",
       "eq1": "Congo",
       "eq2": "Uzbekistán",
-      "g1_real": 0,
+      "g1_real": 1,
       "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-27",
@@ -30273,6 +30273,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Yoane Wissa",
+      "equipo": "Congo",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Jude Bellingham",
       "equipo": "Inglaterra",
       "goles": 2,
@@ -30545,12 +30551,6 @@ window.POLLA_DATA = {
     {
       "nombre": "João Neves",
       "equipo": "Portugal",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Yoane Wissa",
-      "equipo": "Congo",
       "goles": 1,
       "votos_polla": 0
     },
