@@ -1517,7 +1517,7 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Argelia",
       "eq2": "Austria",
-      "g1_real": 1,
+      "g1_real": 2,
       "g2_real": 2,
       "jugado": false,
       "fecha": "2026-06-27",
@@ -30961,6 +30961,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Marcel Sabitzer",
       "equipo": "Austria",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Riyad Mahrez",
+      "equipo": "Argelia",
       "goles": 1,
       "votos_polla": 0
     },
