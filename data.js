@@ -1517,22 +1517,24 @@ window.POLLA_DATA = {
       "grupo": "J",
       "eq1": "Argelia",
       "eq2": "Austria",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-27",
-      "hora": "09:00 PM"
+      "hora": "09:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 60,
       "grupo": "J",
       "eq1": "Jordania",
       "eq2": "Argentina",
-      "g1_real": null,
-      "g2_real": null,
+      "g1_real": 0,
+      "g2_real": 0,
       "jugado": false,
       "fecha": "2026-06-27",
-      "hora": "09:00 PM"
+      "hora": "09:00 PM",
+      "en_vivo": true
     },
     {
       "numero": 61,
