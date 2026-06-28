@@ -1530,7 +1530,7 @@ window.POLLA_DATA = {
       "eq1": "Jordania",
       "eq2": "Argentina",
       "g1_real": 0,
-      "g2_real": 0,
+      "g2_real": 1,
       "jugado": false,
       "fecha": "2026-06-27",
       "hora": "09:00 PM",
@@ -30949,6 +30949,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Fiston Mayele",
       "equipo": "Congo",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Giovani Lo Celso",
+      "equipo": "Argentina",
       "goles": 1,
       "votos_polla": 0
     }
