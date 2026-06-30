@@ -22582,7 +22582,7 @@ window.POLLA_DATA = {
         ],
         "82": [
           "Bélgica",
-          "República Checa"
+          "Chequia"
         ],
         "83": [
           "Colombia",
