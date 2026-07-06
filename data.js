@@ -1,4 +1,4 @@
-// Generado automáticamente por update_data.py — no editar manualmente
+// Generado automáticamente por export_data.py — no editar manualmente
 window.POLLA_DATA = {
   "meta": {
     "nombre_polla": "POLLA BEER CLUB",
@@ -6,8 +6,7 @@ window.POLLA_DATA = {
     "total_participantes": 67,
     "partidos_jugados_grupos": 72,
     "partidos_totales_grupos": 72,
-    "goleador_real": null,
-    "partidos_jugados_elim": 0
+    "goleador_real": null
   },
   "participants": [
     {
@@ -23,39 +22,75 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 15,
+      "pagina": 15,
+      "nombre": "Antonio Rodríguez",
+      "goleador": "Raphinha",
+      "pts": {
+        "grupos": 64,
+        "eliminatorias": 3,
+        "goleador": 0,
+        "total": 67
+      }
+    },
+    {
+      "id": 16,
+      "pagina": 16,
+      "nombre": "Isabella Rodriguez",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 64,
+        "eliminatorias": 3,
+        "goleador": 0,
+        "total": 67
+      }
+    },
+    {
+      "id": 30,
+      "pagina": 30,
+      "nombre": "Ricardo Sanchez",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 64,
+        "eliminatorias": 3,
+        "goleador": 0,
+        "total": 67
+      }
+    },
+    {
+      "id": 41,
+      "pagina": 41,
+      "nombre": "Juan Sebastian Castillo Sanchez, Kevin Raul Gonzalez Castellanos",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 63,
+        "eliminatorias": 3,
+        "goleador": 0,
+        "total": 66
+      }
+    },
+    {
+      "id": 3,
+      "pagina": 3,
+      "nombre": "Pedro Sanchez",
+      "goleador": "Lamine Yamal",
+      "pts": {
+        "grupos": 66,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 66
+      }
+    },
+    {
       "id": 18,
       "pagina": 18,
       "nombre": "Tatiana Camargo",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 67,
+        "grupos": 66,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 67
-      }
-    },
-    {
-      "id": 12,
-      "pagina": 12,
-      "nombre": "Victor Alvarado",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 67,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 67
-      }
-    },
-    {
-      "id": 24,
-      "pagina": 24,
-      "nombre": "Angela Milena",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 65,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 65
+        "total": 66
       }
     },
     {
@@ -71,57 +106,21 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 30,
-      "pagina": 30,
-      "nombre": "Ricardo Sanchez",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 65,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 65
-      }
-    },
-    {
       "id": 21,
       "pagina": 21,
       "nombre": "Tomás Forero",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 65,
-        "eliminatorias": 0,
+        "grupos": 62,
+        "eliminatorias": 3,
         "goleador": 0,
         "total": 65
-      }
-    },
-    {
-      "id": 15,
-      "pagina": 15,
-      "nombre": "Antonio Rodríguez",
-      "goleador": "Raphinha",
-      "pts": {
-        "grupos": 64,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 64
       }
     },
     {
       "id": 19,
       "pagina": 19,
       "nombre": "Diego Jose De Silvestri Leon",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 64,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 64
-      }
-    },
-    {
-      "id": 16,
-      "pagina": 16,
-      "nombre": "Isabella Rodriguez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 64,
@@ -155,18 +154,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 3,
-      "pagina": 3,
-      "nombre": "Pedro Sanchez",
-      "goleador": "Lamine Yamal",
-      "pts": {
-        "grupos": 64,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 64
-      }
-    },
-    {
       "id": 59,
       "pagina": 59,
       "nombre": "Andrés Rivera",
@@ -179,10 +166,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 41,
-      "pagina": 41,
-      "nombre": "Juan Sebastian Castillo Sanchez, Kevin Raul Gonzalez Castellanos",
-      "goleador": "Harry Kane",
+      "id": 24,
+      "pagina": 24,
+      "nombre": "Angela Milena",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 63,
         "eliminatorias": 0,
@@ -191,15 +178,51 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 35,
-      "pagina": 35,
-      "nombre": "Julio Cardillo",
-      "goleador": "Harry Kane",
+      "id": 34,
+      "pagina": 34,
+      "nombre": "Jahir Peñuela D.",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 63,
         "eliminatorias": 0,
         "goleador": 0,
         "total": 63
+      }
+    },
+    {
+      "id": 65,
+      "pagina": 65,
+      "nombre": "Karen Avila",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 60,
+        "eliminatorias": 3,
+        "goleador": 0,
+        "total": 63
+      }
+    },
+    {
+      "id": 12,
+      "pagina": 12,
+      "nombre": "Victor Alvarado",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 63,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 63
+      }
+    },
+    {
+      "id": 25,
+      "pagina": 25,
+      "nombre": "Miguel Zelidez",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 62,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 62
       }
     },
     {
@@ -215,23 +238,11 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 27,
-      "pagina": 27,
-      "nombre": "Julián Tibaduiza",
+      "id": 35,
+      "pagina": 35,
+      "nombre": "Julio Cardillo",
       "goleador": "Harry Kane",
       "pts": {
-        "grupos": 61,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 61
-      }
-    },
-    {
-      "id": 34,
-      "pagina": 34,
-      "nombre": "Jahir Peñuela D.",
-      "goleador": "Kylian Mbappé",
-      "pts": {
         "grupos": 60,
         "eliminatorias": 0,
         "goleador": 0,
@@ -239,25 +250,13 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 65,
-      "pagina": 65,
-      "nombre": "Karen Avila",
+      "id": 29,
+      "pagina": 29,
+      "nombre": "Nicolás Andrés",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 60,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 60
-      }
-    },
-    {
-      "id": 25,
-      "pagina": 25,
-      "nombre": "Miguel Rodriguez",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 60,
-        "eliminatorias": 0,
+        "grupos": 54,
+        "eliminatorias": 6,
         "goleador": 0,
         "total": 60
       }
@@ -299,9 +298,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 43,
-      "pagina": 43,
-      "nombre": "Samuel Penuela",
+      "id": 27,
+      "pagina": 27,
+      "nombre": "Julián Tibaduiza",
       "goleador": "Harry Kane",
       "pts": {
         "grupos": 58,
@@ -311,15 +310,27 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 22,
-      "pagina": 22,
-      "nombre": "Cristian Rodriguez",
-      "goleador": "Cristiano Ronaldo",
+      "id": 4,
+      "pagina": 4,
+      "nombre": "Leandro Murcia",
+      "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 57,
+        "grupos": 58,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 57
+        "total": 58
+      }
+    },
+    {
+      "id": 43,
+      "pagina": 43,
+      "nombre": "Samuel Penuela",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 58,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 58
       }
     },
     {
@@ -335,39 +346,15 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 2,
-      "pagina": 2,
-      "nombre": "Juan David Nandar",
-      "goleador": "Kylian Mbappé",
+      "id": 22,
+      "pagina": 22,
+      "nombre": "Cristian Rodriguez",
+      "goleador": "Cristiano Ronaldo",
       "pts": {
-        "grupos": 57,
+        "grupos": 56,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 57
-      }
-    },
-    {
-      "id": 4,
-      "pagina": 4,
-      "nombre": "Leandro Murcia",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 57,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 57
-      }
-    },
-    {
-      "id": 56,
-      "pagina": 56,
-      "nombre": "Nelson Montaña",
-      "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 57,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 57
+        "total": 56
       }
     },
     {
@@ -419,10 +406,46 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 52,
+      "pagina": 52,
+      "nombre": "Carlos Andres Paez Medina",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 52,
+        "eliminatorias": 3,
+        "goleador": 0,
+        "total": 55
+      }
+    },
+    {
+      "id": 14,
+      "pagina": 14,
+      "nombre": "Felipe Sanchez",
+      "goleador": "Harry Kane",
+      "pts": {
+        "grupos": 55,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 55
+      }
+    },
+    {
       "id": 55,
       "pagina": 55,
       "nombre": "Miguel Laiton",
       "goleador": "Ousmane Dembélé",
+      "pts": {
+        "grupos": 55,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 55
+      }
+    },
+    {
+      "id": 56,
+      "pagina": 56,
+      "nombre": "Nelson Montaña",
+      "goleador": "Harry Kane",
       "pts": {
         "grupos": 55,
         "eliminatorias": 0,
@@ -443,9 +466,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 33,
-      "pagina": 33,
-      "nombre": "Sebastián Perez",
+      "id": 32,
+      "pagina": 32,
+      "nombre": "Sebastiao Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 55,
@@ -455,9 +478,9 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 32,
-      "pagina": 32,
-      "nombre": "Sebastiao Perez",
+      "id": 33,
+      "pagina": 33,
+      "nombre": "Sebastián Perez",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 55,
@@ -479,22 +502,34 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 10,
-      "pagina": 10,
-      "nombre": "Julian Avila",
-      "goleador": "Ferran Torres",
+      "id": 38,
+      "pagina": 38,
+      "nombre": "CARLOS LAITON",
+      "goleador": "Michael Olise",
       "pts": {
-        "grupos": 54,
-        "eliminatorias": 0,
+        "grupos": 51,
+        "eliminatorias": 3,
         "goleador": 0,
         "total": 54
       }
     },
     {
-      "id": 29,
-      "pagina": 29,
-      "nombre": "Nicolás Andrés",
+      "id": 64,
+      "pagina": 64,
+      "nombre": "Franco N. Vargas",
       "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 51,
+        "eliminatorias": 3,
+        "goleador": 0,
+        "total": 54
+      }
+    },
+    {
+      "id": 10,
+      "pagina": 10,
+      "nombre": "Julian Avila",
+      "goleador": "Ferran Torres",
       "pts": {
         "grupos": 54,
         "eliminatorias": 0,
@@ -508,46 +543,22 @@ window.POLLA_DATA = {
       "nombre": "Olga Lucia Carranza",
       "goleador": "Michael Olise",
       "pts": {
-        "grupos": 53,
-        "eliminatorias": 0,
+        "grupos": 51,
+        "eliminatorias": 3,
         "goleador": 0,
-        "total": 53
+        "total": 54
       }
     },
     {
-      "id": 52,
-      "pagina": 52,
-      "nombre": "Carlos Andres Paez Medina",
-      "goleador": "Kylian Mbappé",
+      "id": 53,
+      "pagina": 53,
+      "nombre": "Oscar Lagos",
+      "goleador": "Ousmane Dembélé",
       "pts": {
-        "grupos": 52,
-        "eliminatorias": 0,
+        "grupos": 51,
+        "eliminatorias": 3,
         "goleador": 0,
-        "total": 52
-      }
-    },
-    {
-      "id": 14,
-      "pagina": 14,
-      "nombre": "Felipe Sanchez",
-      "goleador": "Harry Kane",
-      "pts": {
-        "grupos": 52,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 52
-      }
-    },
-    {
-      "id": 5,
-      "pagina": 5,
-      "nombre": "Leandro Murcia #2",
-      "goleador": "Lamine Yamal",
-      "pts": {
-        "grupos": 52,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 52
+        "total": 54
       }
     },
     {
@@ -558,6 +569,18 @@ window.POLLA_DATA = {
       "pts": {
         "grupos": 52,
         "eliminatorias": 0,
+        "goleador": 0,
+        "total": 52
+      }
+    },
+    {
+      "id": 46,
+      "pagina": 46,
+      "nombre": "Manuel Fino",
+      "goleador": "Lamine Yamal",
+      "pts": {
+        "grupos": 49,
+        "eliminatorias": 3,
         "goleador": 0,
         "total": 52
       }
@@ -575,34 +598,10 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 38,
-      "pagina": 38,
-      "nombre": "CARLOS LAITON",
-      "goleador": "Michael Olise",
-      "pts": {
-        "grupos": 51,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 51
-      }
-    },
-    {
-      "id": 64,
-      "pagina": 64,
-      "nombre": "Franco N. Vargas",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 51,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 51
-      }
-    },
-    {
-      "id": 11,
-      "pagina": 11,
-      "nombre": "Juan Pablo Alvarado",
-      "goleador": "Kylian Mbappé",
+      "id": 5,
+      "pagina": 5,
+      "nombre": "Leandro Murcia #2",
+      "goleador": "Lamine Yamal",
       "pts": {
         "grupos": 51,
         "eliminatorias": 0,
@@ -623,13 +622,25 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 53,
-      "pagina": 53,
-      "nombre": "Oscar Lagos",
-      "goleador": "Ousmane Dembélé",
+      "id": 23,
+      "pagina": 23,
+      "nombre": "René Giletto Aulo Sandín",
+      "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 51,
         "eliminatorias": 0,
+        "goleador": 0,
+        "total": 51
+      }
+    },
+    {
+      "id": 28,
+      "pagina": 28,
+      "nombre": "Santos Camargo",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 48,
+        "eliminatorias": 3,
         "goleador": 0,
         "total": 51
       }
@@ -671,18 +682,6 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 46,
-      "pagina": 46,
-      "nombre": "Manuel Fino",
-      "goleador": "Lamine Yamal",
-      "pts": {
-        "grupos": 50,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 50
-      }
-    },
-    {
       "id": 61,
       "pagina": 61,
       "nombre": "JHONYER LAITÓN",
@@ -695,15 +694,27 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 23,
-      "pagina": 23,
-      "nombre": "René Giletto Aulo Sandín",
+      "id": 11,
+      "pagina": 11,
+      "nombre": "Juan Pablo Alvarado",
       "goleador": "Kylian Mbappé",
       "pts": {
         "grupos": 49,
         "eliminatorias": 0,
         "goleador": 0,
         "total": 49
+      }
+    },
+    {
+      "id": 2,
+      "pagina": 2,
+      "nombre": "Juan David Nandar",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 48,
+        "eliminatorias": 0,
+        "goleador": 0,
+        "total": 48
       }
     },
     {
@@ -719,39 +730,15 @@ window.POLLA_DATA = {
       }
     },
     {
-      "id": 28,
-      "pagina": 28,
-      "nombre": "Santos Camargo",
-      "goleador": "Kylian Mbappé",
+      "id": 50,
+      "pagina": 50,
+      "nombre": "GEOUANNI ROSSI",
+      "goleador": "Lamine Yamal",
       "pts": {
-        "grupos": 48,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 48
-      }
-    },
-    {
-      "id": 1,
-      "pagina": 1,
-      "nombre": "Edson Medina",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 47,
-        "eliminatorias": 0,
+        "grupos": 44,
+        "eliminatorias": 3,
         "goleador": 0,
         "total": 47
-      }
-    },
-    {
-      "id": 62,
-      "pagina": 62,
-      "nombre": "Wilson Rodriguez Saavedra",
-      "goleador": "Kylian Mbappé",
-      "pts": {
-        "grupos": 46,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 46
       }
     },
     {
@@ -764,18 +751,6 @@ window.POLLA_DATA = {
         "eliminatorias": 0,
         "goleador": 0,
         "total": 45
-      }
-    },
-    {
-      "id": 50,
-      "pagina": 50,
-      "nombre": "GEOUANNI ROSSI",
-      "goleador": "Lamine Yamal",
-      "pts": {
-        "grupos": 44,
-        "eliminatorias": 0,
-        "goleador": 0,
-        "total": 44
       }
     },
     {
@@ -803,15 +778,39 @@ window.POLLA_DATA = {
       }
     },
     {
+      "id": 62,
+      "pagina": 62,
+      "nombre": "Wilson Rodriguez Saavedra",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 40,
+        "eliminatorias": 3,
+        "goleador": 0,
+        "total": 43
+      }
+    },
+    {
       "id": 7,
       "pagina": 7,
       "nombre": "Carlos Diaz",
       "goleador": "Kylian Mbappé",
       "pts": {
-        "grupos": 40,
+        "grupos": 39,
+        "eliminatorias": 3,
+        "goleador": 0,
+        "total": 42
+      }
+    },
+    {
+      "id": 1,
+      "pagina": 1,
+      "nombre": "Edson Medina",
+      "goleador": "Kylian Mbappé",
+      "pts": {
+        "grupos": 33,
         "eliminatorias": 0,
         "goleador": 0,
-        "total": 40
+        "total": 33
       }
     }
   ],
@@ -825,8 +824,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-11",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 2,
@@ -837,8 +835,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-11",
-      "hora": "09:00 PM",
-      "en_vivo": false
+      "hora": "09:00 PM"
     },
     {
       "numero": 3,
@@ -849,8 +846,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-18",
-      "hora": "11:00 AM",
-      "en_vivo": false
+      "hora": "11:00 AM"
     },
     {
       "numero": 4,
@@ -861,8 +857,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-18",
-      "hora": "08:00 PM",
-      "en_vivo": false
+      "hora": "08:00 PM"
     },
     {
       "numero": 5,
@@ -873,8 +868,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "08:00 PM",
-      "en_vivo": false
+      "hora": "08:00 PM"
     },
     {
       "numero": 6,
@@ -885,8 +879,7 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "08:00 PM",
-      "en_vivo": false
+      "hora": "08:00 PM"
     },
     {
       "numero": 7,
@@ -897,8 +890,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-12",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 8,
@@ -909,8 +901,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-13",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 9,
@@ -921,8 +912,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-18",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 10,
@@ -933,8 +923,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-18",
-      "hora": "05:00 PM",
-      "en_vivo": false
+      "hora": "05:00 PM"
     },
     {
       "numero": 11,
@@ -945,8 +934,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 12,
@@ -957,8 +945,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 13,
@@ -969,8 +956,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-13",
-      "hora": "05:00 PM",
-      "en_vivo": false
+      "hora": "05:00 PM"
     },
     {
       "numero": 14,
@@ -981,8 +967,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-13",
-      "hora": "08:00 PM",
-      "en_vivo": false
+      "hora": "08:00 PM"
     },
     {
       "numero": 15,
@@ -993,8 +978,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-19",
-      "hora": "05:00 PM",
-      "en_vivo": false
+      "hora": "05:00 PM"
     },
     {
       "numero": 16,
@@ -1005,8 +989,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-19",
-      "hora": "07:30 PM",
-      "en_vivo": false
+      "hora": "07:30 PM"
     },
     {
       "numero": 17,
@@ -1017,8 +1000,7 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "05:00 PM",
-      "en_vivo": false
+      "hora": "05:00 PM"
     },
     {
       "numero": 18,
@@ -1029,8 +1011,7 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "05:00 PM",
-      "en_vivo": false
+      "hora": "05:00 PM"
     },
     {
       "numero": 19,
@@ -1041,8 +1022,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-12",
-      "hora": "08:00 PM",
-      "en_vivo": false
+      "hora": "08:00 PM"
     },
     {
       "numero": 20,
@@ -1053,8 +1033,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-13",
-      "hora": "11:00 PM",
-      "en_vivo": false
+      "hora": "11:00 PM"
     },
     {
       "numero": 21,
@@ -1065,8 +1044,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-19",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 22,
@@ -1077,8 +1055,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-19",
-      "hora": "10:00 PM",
-      "en_vivo": false
+      "hora": "10:00 PM"
     },
     {
       "numero": 23,
@@ -1089,8 +1066,7 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "09:00 PM",
-      "en_vivo": false
+      "hora": "09:00 PM"
     },
     {
       "numero": 24,
@@ -1101,8 +1077,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "09:00 PM",
-      "en_vivo": false
+      "hora": "09:00 PM"
     },
     {
       "numero": 25,
@@ -1113,8 +1088,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-14",
-      "hora": "12:00 PM",
-      "en_vivo": false
+      "hora": "12:00 PM"
     },
     {
       "numero": 26,
@@ -1125,8 +1099,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-14",
-      "hora": "06:00 PM",
-      "en_vivo": false
+      "hora": "06:00 PM"
     },
     {
       "numero": 27,
@@ -1137,8 +1110,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-20",
-      "hora": "03:00 PM",
-      "en_vivo": false
+      "hora": "03:00 PM"
     },
     {
       "numero": 28,
@@ -1149,8 +1121,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-20",
-      "hora": "07:00 PM",
-      "en_vivo": false
+      "hora": "07:00 PM"
     },
     {
       "numero": 29,
@@ -1161,8 +1132,7 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "03:00 PM",
-      "en_vivo": false
+      "hora": "03:00 PM"
     },
     {
       "numero": 30,
@@ -1173,8 +1143,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "03:00 PM",
-      "en_vivo": false
+      "hora": "03:00 PM"
     },
     {
       "numero": 31,
@@ -1185,8 +1154,7 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-14",
-      "hora": "03:00 PM",
-      "en_vivo": false
+      "hora": "03:00 PM"
     },
     {
       "numero": 32,
@@ -1197,8 +1165,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-14",
-      "hora": "09:00 PM",
-      "en_vivo": false
+      "hora": "09:00 PM"
     },
     {
       "numero": 33,
@@ -1209,8 +1176,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-20",
-      "hora": "12:00 PM",
-      "en_vivo": false
+      "hora": "12:00 PM"
     },
     {
       "numero": 34,
@@ -1221,8 +1187,7 @@ window.POLLA_DATA = {
       "g2_real": 4,
       "jugado": true,
       "fecha": "2026-06-20",
-      "hora": "11:00 PM",
-      "en_vivo": false
+      "hora": "11:00 PM"
     },
     {
       "numero": 35,
@@ -1233,8 +1198,7 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "06:00 PM",
-      "en_vivo": false
+      "hora": "06:00 PM"
     },
     {
       "numero": 36,
@@ -1245,8 +1209,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "06:00 PM",
-      "en_vivo": false
+      "hora": "06:00 PM"
     },
     {
       "numero": 37,
@@ -1257,8 +1220,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-15",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 38,
@@ -1269,8 +1231,7 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-15",
-      "hora": "08:00 PM",
-      "en_vivo": false
+      "hora": "08:00 PM"
     },
     {
       "numero": 39,
@@ -1281,8 +1242,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-21",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 40,
@@ -1293,8 +1253,7 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-21",
-      "hora": "08:00 PM",
-      "en_vivo": false
+      "hora": "08:00 PM"
     },
     {
       "numero": 41,
@@ -1305,8 +1264,7 @@ window.POLLA_DATA = {
       "g2_real": 5,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "10:00 PM",
-      "en_vivo": false
+      "hora": "10:00 PM"
     },
     {
       "numero": 42,
@@ -1317,8 +1275,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "10:00 PM",
-      "en_vivo": false
+      "hora": "10:00 PM"
     },
     {
       "numero": 43,
@@ -1329,8 +1286,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-15",
-      "hora": "11:00 AM",
-      "en_vivo": false
+      "hora": "11:00 AM"
     },
     {
       "numero": 44,
@@ -1341,8 +1297,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-15",
-      "hora": "05:00 PM",
-      "en_vivo": false
+      "hora": "05:00 PM"
     },
     {
       "numero": 45,
@@ -1353,8 +1308,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-21",
-      "hora": "11:00 AM",
-      "en_vivo": false
+      "hora": "11:00 AM"
     },
     {
       "numero": 46,
@@ -1365,8 +1319,7 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-21",
-      "hora": "05:00 PM",
-      "en_vivo": false
+      "hora": "05:00 PM"
     },
     {
       "numero": 47,
@@ -1377,8 +1330,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "07:00 PM",
-      "en_vivo": false
+      "hora": "07:00 PM"
     },
     {
       "numero": 48,
@@ -1389,8 +1341,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "07:00 PM",
-      "en_vivo": false
+      "hora": "07:00 PM"
     },
     {
       "numero": 49,
@@ -1401,8 +1352,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-16",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 50,
@@ -1413,8 +1363,7 @@ window.POLLA_DATA = {
       "g2_real": 4,
       "jugado": true,
       "fecha": "2026-06-16",
-      "hora": "05:00 PM",
-      "en_vivo": false
+      "hora": "05:00 PM"
     },
     {
       "numero": 51,
@@ -1425,8 +1374,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-22",
-      "hora": "04:00 PM",
-      "en_vivo": false
+      "hora": "04:00 PM"
     },
     {
       "numero": 52,
@@ -1437,8 +1385,7 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-22",
-      "hora": "07:00 PM",
-      "en_vivo": false
+      "hora": "07:00 PM"
     },
     {
       "numero": 53,
@@ -1449,8 +1396,7 @@ window.POLLA_DATA = {
       "g2_real": 4,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 54,
@@ -1461,8 +1407,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "02:00 PM",
-      "en_vivo": false
+      "hora": "02:00 PM"
     },
     {
       "numero": 55,
@@ -1473,8 +1418,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-16",
-      "hora": "08:00 PM",
-      "en_vivo": false
+      "hora": "08:00 PM"
     },
     {
       "numero": 56,
@@ -1485,8 +1429,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-16",
-      "hora": "11:00 PM",
-      "en_vivo": false
+      "hora": "11:00 PM"
     },
     {
       "numero": 57,
@@ -1497,8 +1440,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-22",
-      "hora": "12:00 PM",
-      "en_vivo": false
+      "hora": "12:00 PM"
     },
     {
       "numero": 58,
@@ -1509,8 +1451,7 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-22",
-      "hora": "10:00 PM",
-      "en_vivo": false
+      "hora": "10:00 PM"
     },
     {
       "numero": 59,
@@ -1521,8 +1462,7 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "09:00 PM",
-      "en_vivo": false
+      "hora": "09:00 PM"
     },
     {
       "numero": 60,
@@ -1533,8 +1473,7 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "09:00 PM",
-      "en_vivo": false
+      "hora": "09:00 PM"
     },
     {
       "numero": 61,
@@ -1545,8 +1484,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-17",
-      "hora": "12:00 PM",
-      "en_vivo": false
+      "hora": "12:00 PM"
     },
     {
       "numero": 62,
@@ -1557,8 +1495,7 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-17",
-      "hora": "09:00 PM",
-      "en_vivo": false
+      "hora": "09:00 PM"
     },
     {
       "numero": 63,
@@ -1569,8 +1506,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-23",
-      "hora": "12:00 PM",
-      "en_vivo": false
+      "hora": "12:00 PM"
     },
     {
       "numero": 64,
@@ -1581,8 +1517,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-23",
-      "hora": "09:00 PM",
-      "en_vivo": false
+      "hora": "09:00 PM"
     },
     {
       "numero": 65,
@@ -1593,8 +1528,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "06:30 PM",
-      "en_vivo": false
+      "hora": "06:30 PM"
     },
     {
       "numero": 66,
@@ -1605,8 +1539,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "06:30 PM",
-      "en_vivo": false
+      "hora": "06:30 PM"
     },
     {
       "numero": 67,
@@ -1617,8 +1550,7 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-17",
-      "hora": "03:00 PM",
-      "en_vivo": false
+      "hora": "03:00 PM"
     },
     {
       "numero": 68,
@@ -1629,8 +1561,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-17",
-      "hora": "06:00 PM",
-      "en_vivo": false
+      "hora": "06:00 PM"
     },
     {
       "numero": 69,
@@ -1641,8 +1572,7 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-23",
-      "hora": "03:00 PM",
-      "en_vivo": false
+      "hora": "03:00 PM"
     },
     {
       "numero": 70,
@@ -1653,8 +1583,7 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-23",
-      "hora": "06:00 PM",
-      "en_vivo": false
+      "hora": "06:00 PM"
     },
     {
       "numero": 71,
@@ -1665,8 +1594,7 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "04:00 PM",
-      "en_vivo": false
+      "hora": "04:00 PM"
     },
     {
       "numero": 72,
@@ -1677,128 +1605,127 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "04:00 PM",
-      "en_vivo": false
+      "hora": "04:00 PM"
     }
   ],
   "matches_elim": [
     {
       "numero": 73,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "Brasil",
+      "eq2_real": "Japón",
+      "eq_ganador": "Brasil",
+      "jugado": true
     },
     {
       "numero": 74,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "Costa de Marfil",
+      "eq2_real": "Noruega",
+      "eq_ganador": "Noruega",
+      "jugado": true
     },
     {
       "numero": 75,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "Francia",
+      "eq2_real": "Suecia",
+      "eq_ganador": "Francia",
+      "jugado": true
     },
     {
       "numero": 76,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "México",
+      "eq2_real": "Ecuador",
+      "eq_ganador": "México",
+      "jugado": true
     },
     {
       "numero": 77,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "Inglaterra",
+      "eq2_real": "Congo",
+      "eq_ganador": "Inglaterra",
+      "jugado": true
     },
     {
       "numero": 78,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "Estados Unidos",
+      "eq2_real": "Bosnia y Herz.",
+      "eq_ganador": "Estados Unidos",
+      "jugado": true
     },
     {
       "numero": 79,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "España",
+      "eq2_real": "Austria",
+      "eq_ganador": "España",
+      "jugado": true
     },
     {
       "numero": 80,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "Portugal",
+      "eq2_real": "Croacia",
+      "eq_ganador": "Portugal",
+      "jugado": true
     },
     {
       "numero": 81,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "Suiza",
+      "eq2_real": "Argelia",
+      "eq_ganador": "Suiza",
+      "jugado": true
     },
     {
       "numero": 82,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "Colombia",
+      "eq2_real": "Ghana",
+      "eq_ganador": "Colombia",
+      "jugado": true
     },
     {
       "numero": 83,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "Canadá",
+      "eq2_real": "Marruecos",
+      "eq_ganador": "Marruecos",
+      "jugado": true
     },
     {
       "numero": 84,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
+      "eq1_real": "Alemania",
+      "eq2_real": "Paraguay",
       "eq_ganador": null,
       "jugado": false
     },
     {
       "numero": 85,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
+      "eq1_real": "Bélgica",
+      "eq2_real": "Senegal",
       "eq_ganador": null,
       "jugado": false
     },
     {
       "numero": 86,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
+      "eq1_real": "Australia",
+      "eq2_real": "Egipto",
       "eq_ganador": null,
       "jugado": false
     },
     {
       "numero": 87,
       "fase": "DIECISEISAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
+      "eq1_real": "Argentina",
+      "eq2_real": "Cabo Verde",
       "eq_ganador": null,
       "jugado": false
     },
@@ -1813,48 +1740,48 @@ window.POLLA_DATA = {
     {
       "numero": 89,
       "fase": "OCTAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "México",
+      "eq2_real": "Inglaterra",
+      "eq_ganador": "Inglaterra",
+      "jugado": true
     },
     {
       "numero": 90,
       "fase": "OCTAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
-      "eq_ganador": null,
-      "jugado": false
+      "eq1_real": "Portugal",
+      "eq2_real": "España",
+      "eq_ganador": "España",
+      "jugado": true
     },
     {
       "numero": 91,
       "fase": "OCTAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
+      "eq1_real": "Estados Unidos",
+      "eq2_real": "Bélgica",
       "eq_ganador": null,
       "jugado": false
     },
     {
       "numero": 92,
       "fase": "OCTAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
+      "eq1_real": "Argentina",
+      "eq2_real": "Egipto",
       "eq_ganador": null,
       "jugado": false
     },
     {
       "numero": 93,
       "fase": "OCTAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
+      "eq1_real": "Suiza",
+      "eq2_real": "Colombia",
       "eq_ganador": null,
       "jugado": false
     },
     {
       "numero": 94,
       "fase": "OCTAVOS",
-      "eq1_real": null,
-      "eq2_real": null,
+      "eq1_real": "Francia",
+      "eq2_real": "Marruecos",
       "eq_ganador": null,
       "jugado": false
     },
@@ -1877,8 +1804,8 @@ window.POLLA_DATA = {
     {
       "numero": 97,
       "fase": "CUARTOS",
-      "eq1_real": null,
-      "eq2_real": null,
+      "eq1_real": "Noruega",
+      "eq2_real": "Inglaterra",
       "eq_ganador": null,
       "jugado": false
     },
@@ -1991,7 +1918,7 @@ window.POLLA_DATA = {
           0
         ],
         "13": [
-          2,
+          1,
           2
         ],
         "14": [
@@ -2016,83 +1943,83 @@ window.POLLA_DATA = {
         ],
         "19": [
           1,
-          2
+          1
         ],
         "20": [
-          0,
+          2,
           1
         ],
         "21": [
           1,
-          1
+          2
         ],
         "22": [
-          2,
+          3,
           1
         ],
         "23": [
           1,
-          0
+          2
         ],
         "24": [
           2,
-          1
+          2
         ],
         "25": [
+          1,
+          2
+        ],
+        "26": [
+          2,
+          1
+        ],
+        "27": [
           4,
           0
         ],
-        "26": [
+        "28": [
           1,
           3
         ],
-        "27": [
-          2,
+        "29": [
+          1,
           0
         ],
-        "28": [
+        "30": [
           3,
           0
         ],
-        "29": [
+        "31": [
           0,
           3
-        ],
-        "30": [
-          1,
-          2
-        ],
-        "31": [
-          2,
-          1
         ],
         "32": [
           1,
-          0
-        ],
-        "33": [
-          3,
           2
         ],
+        "33": [
+          2,
+          1
+        ],
         "34": [
-          0,
+          1,
           2
         ],
         "35": [
-          0,
-          3
+          2,
+          1
         ],
         "36": [
-          2,
-          2
+          1,
+          0
         ],
         "37": [
           3,
           1
         ],
         "38": [
-          0,
-          0
+          1,
+          2
         ],
         "39": [
           2,
@@ -2100,15 +2027,15 @@ window.POLLA_DATA = {
         ],
         "40": [
           1,
-          2
+          3
         ],
         "41": [
           0,
-          3
+          2
         ],
         "42": [
-          2,
-          1
+          3,
+          0
         ],
         "43": [
           5,
@@ -2123,44 +2050,44 @@ window.POLLA_DATA = {
           0
         ],
         "46": [
-          3,
+          0,
           0
         ],
         "47": [
-          0,
-          4
-        ],
-        "48": [
           2,
           2
         ],
+        "48": [
+          1,
+          1
+        ],
         "49": [
           3,
-          1
+          3
         ],
         "50": [
           0,
           2
         ],
         "51": [
-          3,
-          0
+          2,
+          1
         ],
         "52": [
           1,
-          2
+          0
         ],
         "53": [
-          0,
-          2
+          2,
+          1
         ],
         "54": [
-          3,
-          0
+          0,
+          3
         ],
         "55": [
           3,
-          0
+          3
         ],
         "56": [
           1,
@@ -2172,47 +2099,47 @@ window.POLLA_DATA = {
         ],
         "58": [
           1,
-          1
+          3
         ],
         "59": [
-          1,
+          0,
           2
         ],
         "60": [
           0,
-          3
+          2
         ],
         "61": [
-          3,
-          1
-        ],
-        "62": [
-          0,
-          3
-        ],
-        "63": [
-          2,
-          0
-        ],
-        "64": [
-          7,
-          0
-        ],
-        "65": [
           2,
           2
         ],
-        "66": [
+        "62": [
+          3,
+          2
+        ],
+        "63": [
+          1,
+          2
+        ],
+        "64": [
           1,
           1
         ],
+        "65": [
+          2,
+          1
+        ],
+        "66": [
+          1,
+          2
+        ],
         "67": [
-          3,
-          3
+          0,
+          2
         ],
         "68": [
           2,
-          0
+          2
         ],
         "69": [
           2,
@@ -2220,11 +2147,11 @@ window.POLLA_DATA = {
         ],
         "70": [
           1,
-          3
+          1
         ],
         "71": [
-          0,
-          3
+          2,
+          2
         ],
         "72": [
           2,
@@ -2241,7 +2168,7 @@ window.POLLA_DATA = {
           1
         ],
         "3": [
-          2,
+          1,
           1
         ],
         "4": [
@@ -2293,7 +2220,7 @@ window.POLLA_DATA = {
           2
         ],
         "16": [
-          3,
+          2,
           0
         ],
         "17": [
@@ -2309,15 +2236,15 @@ window.POLLA_DATA = {
           1
         ],
         "20": [
-          1,
+          0,
           2
         ],
         "21": [
           1,
-          1
+          0
         ],
         "22": [
-          1,
+          2,
           0
         ],
         "23": [
@@ -2325,8 +2252,8 @@ window.POLLA_DATA = {
           1
         ],
         "24": [
-          2,
-          1
+          1,
+          2
         ],
         "25": [
           4,
@@ -2338,10 +2265,10 @@ window.POLLA_DATA = {
         ],
         "27": [
           2,
-          1
+          0
         ],
         "28": [
-          3,
+          2,
           0
         ],
         "29": [
@@ -2349,19 +2276,19 @@ window.POLLA_DATA = {
           2
         ],
         "30": [
-          1,
-          2
+          2,
+          0
         ],
         "31": [
-          2,
-          1
+          1,
+          0
         ],
         "32": [
           1,
           0
         ],
         "33": [
-          1,
+          0,
           0
         ],
         "34": [
@@ -2369,20 +2296,20 @@ window.POLLA_DATA = {
           1
         ],
         "35": [
-          0,
-          2
+          2,
+          1
         ],
         "36": [
           1,
-          0
+          2
         ],
         "37": [
           2,
           1
         ],
         "38": [
-          2,
-          0
+          0,
+          2
         ],
         "39": [
           2,
@@ -2405,19 +2332,19 @@ window.POLLA_DATA = {
           0
         ],
         "44": [
-          0,
-          1
+          1,
+          0
         ],
         "45": [
           3,
           0
         ],
         "46": [
-          2,
-          0
+          1,
+          2
         ],
         "47": [
-          1,
+          0,
           1
         ],
         "48": [
@@ -2441,12 +2368,12 @@ window.POLLA_DATA = {
           1
         ],
         "53": [
-          1,
-          2
+          2,
+          0
         ],
         "54": [
           2,
-          0
+          1
         ],
         "55": [
           2,
@@ -2469,7 +2396,7 @@ window.POLLA_DATA = {
           1
         ],
         "60": [
-          0,
+          1,
           2
         ],
         "61": [
@@ -2493,16 +2420,16 @@ window.POLLA_DATA = {
           2
         ],
         "66": [
-          1,
-          0
+          0,
+          2
         ],
         "67": [
           2,
           1
         ],
         "68": [
-          1,
-          0
+          0,
+          2
         ],
         "69": [
           2,
@@ -2510,15 +2437,15 @@ window.POLLA_DATA = {
         ],
         "70": [
           0,
-          2
+          3
         ],
         "71": [
-          0,
-          3
+          1,
+          0
         ],
         "72": [
           1,
-          0
+          2
         ]
       },
       "3": {
@@ -2615,7 +2542,7 @@ window.POLLA_DATA = {
           2
         ],
         "24": [
-          2,
+          3,
           0
         ],
         "25": [
@@ -2739,15 +2666,15 @@ window.POLLA_DATA = {
           1
         ],
         "55": [
-          2,
-          0
+          1,
+          2
         ],
         "56": [
           2,
           0
         ],
         "57": [
-          0,
+          2,
           0
         ],
         "58": [
@@ -2894,7 +2821,7 @@ window.POLLA_DATA = {
         ],
         "21": [
           2,
-          0
+          2
         ],
         "22": [
           2,
@@ -3029,7 +2956,7 @@ window.POLLA_DATA = {
           0
         ],
         "55": [
-          2,
+          3,
           0
         ],
         "56": [
@@ -3038,7 +2965,7 @@ window.POLLA_DATA = {
         ],
         "57": [
           2,
-          1
+          0
         ],
         "58": [
           0,
@@ -3279,7 +3206,7 @@ window.POLLA_DATA = {
           2
         ],
         "45": [
-          2,
+          3,
           0
         ],
         "46": [
@@ -3287,12 +3214,12 @@ window.POLLA_DATA = {
           0
         ],
         "47": [
-          0,
-          2
+          1,
+          0
         ],
         "48": [
           0,
-          2
+          3
         ],
         "49": [
           3,
@@ -3331,7 +3258,7 @@ window.POLLA_DATA = {
           0
         ],
         "58": [
-          0,
+          1,
           1
         ],
         "59": [
@@ -3375,7 +3302,7 @@ window.POLLA_DATA = {
           2
         ],
         "69": [
-          3,
+          2,
           0
         ],
         "70": [
@@ -3457,12 +3384,12 @@ window.POLLA_DATA = {
           0
         ],
         "17": [
-          3,
+          2,
           0
         ],
         "18": [
           0,
-          3
+          2
         ],
         "19": [
           1,
@@ -3489,7 +3416,7 @@ window.POLLA_DATA = {
           2
         ],
         "25": [
-          3,
+          2,
           0
         ],
         "26": [
@@ -3497,7 +3424,7 @@ window.POLLA_DATA = {
           2
         ],
         "27": [
-          3,
+          2,
           1
         ],
         "28": [
@@ -3593,7 +3520,7 @@ window.POLLA_DATA = {
           2
         ],
         "51": [
-          3,
+          2,
           0
         ],
         "52": [
@@ -3743,7 +3670,7 @@ window.POLLA_DATA = {
           2
         ],
         "16": [
-          7,
+          4,
           0
         ],
         "17": [
@@ -3779,7 +3706,7 @@ window.POLLA_DATA = {
           0
         ],
         "25": [
-          7,
+          4,
           0
         ],
         "26": [
@@ -3791,12 +3718,12 @@ window.POLLA_DATA = {
           0
         ],
         "28": [
-          7,
+          3,
           1
         ],
         "29": [
-          0,
-          4
+          1,
+          1
         ],
         "30": [
           0,
@@ -3844,14 +3771,14 @@ window.POLLA_DATA = {
         ],
         "41": [
           1,
-          3
+          2
         ],
         "42": [
           1,
           1
         ],
         "43": [
-          7,
+          3,
           0
         ],
         "44": [
@@ -3863,16 +3790,16 @@ window.POLLA_DATA = {
           0
         ],
         "46": [
-          5,
+          6,
           0
         ],
         "47": [
           0,
-          3
+          2
         ],
         "48": [
-          0,
-          2
+          1,
+          1
         ],
         "49": [
           3,
@@ -3920,7 +3847,7 @@ window.POLLA_DATA = {
         ],
         "60": [
           1,
-          7
+          4
         ],
         "61": [
           2,
@@ -3940,15 +3867,15 @@ window.POLLA_DATA = {
         ],
         "65": [
           1,
-          3
+          2
         ],
         "66": [
-          3,
-          0
+          2,
+          1
         ],
         "67": [
           1,
-          1
+          0
         ],
         "68": [
           2,
@@ -3985,7 +3912,7 @@ window.POLLA_DATA = {
           0
         ],
         "4": [
-          2,
+          3,
           1
         ],
         "5": [
@@ -4524,7 +4451,7 @@ window.POLLA_DATA = {
         ],
         "66": [
           1,
-          3
+          1
         ],
         "67": [
           2,
@@ -4670,7 +4597,7 @@ window.POLLA_DATA = {
         ],
         "30": [
           1,
-          3
+          0
         ],
         "31": [
           2,
@@ -4701,8 +4628,8 @@ window.POLLA_DATA = {
           1
         ],
         "38": [
-          1,
-          2
+          2,
+          1
         ],
         "39": [
           3,
@@ -4810,7 +4737,7 @@ window.POLLA_DATA = {
         ],
         "65": [
           1,
-          1
+          2
         ],
         "66": [
           0,
@@ -4928,7 +4855,7 @@ window.POLLA_DATA = {
         ],
         "22": [
           1,
-          1
+          0
         ],
         "23": [
           1,
@@ -5011,7 +4938,7 @@ window.POLLA_DATA = {
           0
         ],
         "43": [
-          3,
+          2,
           0
         ],
         "44": [
@@ -5019,7 +4946,7 @@ window.POLLA_DATA = {
           1
         ],
         "45": [
-          3,
+          2,
           0
         ],
         "46": [
@@ -5043,7 +4970,7 @@ window.POLLA_DATA = {
           3
         ],
         "51": [
-          4,
+          0,
           0
         ],
         "52": [
@@ -5056,7 +4983,7 @@ window.POLLA_DATA = {
         ],
         "54": [
           1,
-          0
+          2
         ],
         "55": [
           2,
@@ -5134,7 +5061,7 @@ window.POLLA_DATA = {
       "12": {
         "1": [
           2,
-          0
+          1
         ],
         "2": [
           1,
@@ -5213,7 +5140,7 @@ window.POLLA_DATA = {
           1
         ],
         "21": [
-          2,
+          1,
           0
         ],
         "22": [
@@ -5405,7 +5332,7 @@ window.POLLA_DATA = {
           1
         ],
         "69": [
-          3,
+          2,
           1
         ],
         "70": [
@@ -5753,11 +5680,11 @@ window.POLLA_DATA = {
           1
         ],
         "11": [
-          2,
+          1,
           0
         ],
         "12": [
-          0,
+          2,
           0
         ],
         "13": [
@@ -5765,11 +5692,11 @@ window.POLLA_DATA = {
           0
         ],
         "14": [
-          0,
-          3
+          2,
+          0
         ],
         "15": [
-          0,
+          2,
           2
         ],
         "16": [
@@ -5789,20 +5716,20 @@ window.POLLA_DATA = {
           0
         ],
         "20": [
-          0,
-          2
+          2,
+          1
         ],
         "21": [
           2,
-          2
+          0
         ],
         "22": [
           0,
-          0
+          3
         ],
         "23": [
           0,
-          1
+          0
         ],
         "24": [
           1,
@@ -5821,7 +5748,7 @@ window.POLLA_DATA = {
           1
         ],
         "28": [
-          3,
+          2,
           0
         ],
         "29": [
@@ -5873,7 +5800,7 @@ window.POLLA_DATA = {
           2
         ],
         "41": [
-          1,
+          2,
           4
         ],
         "42": [
@@ -5902,7 +5829,7 @@ window.POLLA_DATA = {
         ],
         "48": [
           0,
-          3
+          2
         ],
         "49": [
           3,
@@ -5914,11 +5841,11 @@ window.POLLA_DATA = {
         ],
         "51": [
           4,
-          0
+          2
         ],
         "52": [
           2,
-          2
+          1
         ],
         "53": [
           1,
@@ -5942,15 +5869,15 @@ window.POLLA_DATA = {
         ],
         "58": [
           1,
-          3
+          0
         ],
         "59": [
           2,
-          0
+          1
         ],
         "60": [
           1,
-          4
+          1
         ],
         "61": [
           2,
@@ -5958,10 +5885,10 @@ window.POLLA_DATA = {
         ],
         "62": [
           0,
-          3
+          2
         ],
         "63": [
-          3,
+          2,
           1
         ],
         "64": [
@@ -6890,11 +6817,11 @@ window.POLLA_DATA = {
         ],
         "5": [
           1,
-          2
+          3
         ],
         "6": [
           1,
-          3
+          2
         ],
         "7": [
           3,
@@ -6997,7 +6924,7 @@ window.POLLA_DATA = {
           1
         ],
         "32": [
-          1,
+          0,
           0
         ],
         "33": [
@@ -7179,12 +7106,12 @@ window.POLLA_DATA = {
           1
         ],
         "5": [
-          1,
-          2
-        ],
-        "6": [
           0,
           1
+        ],
+        "6": [
+          1,
+          2
         ],
         "7": [
           1,
@@ -7522,7 +7449,7 @@ window.POLLA_DATA = {
         ],
         "18": [
           1,
-          3
+          2
         ],
         "19": [
           2,
@@ -7744,7 +7671,7 @@ window.POLLA_DATA = {
       "21": {
         "1": [
           2,
-          0
+          null
         ],
         "2": [
           1,
@@ -7783,7 +7710,7 @@ window.POLLA_DATA = {
           0
         ],
         "11": [
-          1,
+          2,
           0
         ],
         "12": [
@@ -7904,7 +7831,7 @@ window.POLLA_DATA = {
         ],
         "41": [
           0,
-          1
+          3
         ],
         "42": [
           2,
@@ -7988,7 +7915,7 @@ window.POLLA_DATA = {
         ],
         "62": [
           0,
-          3
+          4
         ],
         "63": [
           2,
@@ -8034,14 +7961,14 @@ window.POLLA_DATA = {
       "22": {
         "1": [
           2,
-          0
+          1
         ],
         "2": [
           1,
           1
         ],
         "3": [
-          1,
+          0,
           0
         ],
         "4": [
@@ -8058,7 +7985,7 @@ window.POLLA_DATA = {
         ],
         "7": [
           2,
-          0
+          1
         ],
         "8": [
           1,
@@ -8113,7 +8040,7 @@ window.POLLA_DATA = {
           1
         ],
         "21": [
-          2,
+          1,
           1
         ],
         "22": [
@@ -8194,7 +8121,7 @@ window.POLLA_DATA = {
         ],
         "41": [
           0,
-          3
+          1
         ],
         "42": [
           1,
@@ -8209,19 +8136,19 @@ window.POLLA_DATA = {
           2
         ],
         "45": [
-          2,
-          0
+          1,
+          2
         ],
         "46": [
           3,
-          0
+          1
         ],
         "47": [
-          0,
+          2,
           2
         ],
         "48": [
-          1,
+          2,
           3
         ],
         "49": [
@@ -8294,7 +8221,7 @@ window.POLLA_DATA = {
         ],
         "66": [
           2,
-          3
+          1
         ],
         "67": [
           1,
@@ -8431,7 +8358,7 @@ window.POLLA_DATA = {
           0
         ],
         "28": [
-          2,
+          1,
           0
         ],
         "29": [
@@ -8520,7 +8447,7 @@ window.POLLA_DATA = {
         ],
         "50": [
           1,
-          0
+          3
         ],
         "51": [
           2,
@@ -8591,8 +8518,8 @@ window.POLLA_DATA = {
           1
         ],
         "68": [
-          1,
-          2
+          2,
+          1
         ],
         "69": [
           2,
@@ -8614,7 +8541,7 @@ window.POLLA_DATA = {
       "24": {
         "1": [
           2,
-          0
+          1
         ],
         "2": [
           1,
@@ -8924,7 +8851,7 @@ window.POLLA_DATA = {
         ],
         "6": [
           1,
-          2
+          1
         ],
         "7": [
           2,
@@ -8932,7 +8859,7 @@ window.POLLA_DATA = {
         ],
         "8": [
           0,
-          2
+          1
         ],
         "9": [
           2,
@@ -8992,7 +8919,7 @@ window.POLLA_DATA = {
         ],
         "23": [
           1,
-          2
+          0
         ],
         "24": [
           2,
@@ -9003,7 +8930,7 @@ window.POLLA_DATA = {
           0
         ],
         "26": [
-          2,
+          1,
           2
         ],
         "27": [
@@ -9020,7 +8947,7 @@ window.POLLA_DATA = {
         ],
         "30": [
           1,
-          2
+          0
         ],
         "31": [
           1,
@@ -9127,8 +9054,8 @@ window.POLLA_DATA = {
           0
         ],
         "57": [
-          2,
-          1
+          1,
+          0
         ],
         "58": [
           0,
@@ -9136,14 +9063,14 @@ window.POLLA_DATA = {
         ],
         "59": [
           1,
-          2
+          1
         ],
         "60": [
           0,
-          4
+          1
         ],
         "61": [
-          4,
+          1,
           0
         ],
         "62": [
@@ -9487,7 +9414,7 @@ window.POLLA_DATA = {
           1
         ],
         "2": [
-          1,
+          4,
           0
         ],
         "3": [
@@ -9563,7 +9490,7 @@ window.POLLA_DATA = {
           2
         ],
         "21": [
-          2,
+          1,
           1
         ],
         "22": [
@@ -9579,7 +9506,7 @@ window.POLLA_DATA = {
           1
         ],
         "25": [
-          3,
+          2,
           0
         ],
         "26": [
@@ -9639,7 +9566,7 @@ window.POLLA_DATA = {
           0
         ],
         "40": [
-          0,
+          2,
           2
         ],
         "41": [
@@ -9707,7 +9634,7 @@ window.POLLA_DATA = {
           0
         ],
         "57": [
-          2,
+          1,
           1
         ],
         "58": [
@@ -10390,7 +10317,7 @@ window.POLLA_DATA = {
         ],
         "10": [
           2,
-          0
+          2
         ],
         "11": [
           1,
@@ -10510,7 +10437,7 @@ window.POLLA_DATA = {
         ],
         "40": [
           0,
-          1
+          2
         ],
         "41": [
           0,
@@ -10643,7 +10570,7 @@ window.POLLA_DATA = {
       },
       "31": {
         "1": [
-          3,
+          2,
           1
         ],
         "2": [
@@ -10720,7 +10647,7 @@ window.POLLA_DATA = {
         ],
         "20": [
           0,
-          2
+          1
         ],
         "21": [
           1,
@@ -10759,8 +10686,8 @@ window.POLLA_DATA = {
           2
         ],
         "30": [
-          1,
-          3
+          3,
+          1
         ],
         "31": [
           2,
@@ -10768,7 +10695,7 @@ window.POLLA_DATA = {
         ],
         "32": [
           2,
-          0
+          1
         ],
         "33": [
           3,
@@ -10780,19 +10707,19 @@ window.POLLA_DATA = {
         ],
         "35": [
           0,
-          2
+          1
         ],
         "36": [
           2,
           1
         ],
         "37": [
-          3,
+          2,
           0
         ],
         "38": [
           1,
-          1
+          0
         ],
         "39": [
           4,
@@ -10816,7 +10743,7 @@ window.POLLA_DATA = {
         ],
         "44": [
           0,
-          3
+          2
         ],
         "45": [
           3,
@@ -11228,7 +11155,7 @@ window.POLLA_DATA = {
         ],
         "2": [
           1,
-          1
+          2
         ],
         "3": [
           2,
@@ -11605,7 +11532,7 @@ window.POLLA_DATA = {
           0
         ],
         "24": [
-          2,
+          0,
           0
         ],
         "25": [
@@ -11847,7 +11774,7 @@ window.POLLA_DATA = {
           1
         ],
         "12": [
-          2,
+          1,
           1
         ],
         "13": [
@@ -11915,12 +11842,12 @@ window.POLLA_DATA = {
           1
         ],
         "29": [
-          1,
-          3
-        ],
-        "30": [
           0,
           1
+        ],
+        "30": [
+          1,
+          0
         ],
         "31": [
           1,
@@ -11931,12 +11858,12 @@ window.POLLA_DATA = {
           1
         ],
         "33": [
-          2,
+          3,
           1
         ],
         "34": [
           1,
-          3
+          2
         ],
         "35": [
           1,
@@ -11944,7 +11871,7 @@ window.POLLA_DATA = {
         ],
         "36": [
           1,
-          1
+          2
         ],
         "37": [
           3,
@@ -12059,7 +11986,7 @@ window.POLLA_DATA = {
           0
         ],
         "65": [
-          1,
+          3,
           0
         ],
         "66": [
@@ -12189,7 +12116,7 @@ window.POLLA_DATA = {
           1
         ],
         "25": [
-          3,
+          1,
           0
         ],
         "26": [
@@ -13342,7 +13269,7 @@ window.POLLA_DATA = {
         ],
         "23": [
           1,
-          1
+          2
         ],
         "24": [
           2,
@@ -15081,7 +15008,7 @@ window.POLLA_DATA = {
           2
         ],
         "23": [
-          1,
+          4,
           2
         ],
         "24": [
@@ -15130,7 +15057,7 @@ window.POLLA_DATA = {
         ],
         "35": [
           0,
-          3
+          2
         ],
         "36": [
           2,
@@ -15145,7 +15072,7 @@ window.POLLA_DATA = {
           1
         ],
         "39": [
-          2,
+          1,
           0
         ],
         "40": [
@@ -15154,35 +15081,35 @@ window.POLLA_DATA = {
         ],
         "41": [
           1,
-          3
+          1
         ],
         "42": [
           1,
-          0
+          3
         ],
         "43": [
-          3,
+          1,
           0
         ],
         "44": [
           0,
-          2
+          0
         ],
         "45": [
           4,
-          0
+          1
         ],
         "46": [
           3,
           0
         ],
         "47": [
-          0,
+          1,
           1
         ],
         "48": [
-          1,
-          2
+          2,
+          0
         ],
         "49": [
           3,
@@ -15190,10 +15117,10 @@ window.POLLA_DATA = {
         ],
         "50": [
           1,
-          3
+          2
         ],
         "51": [
-          3,
+          2,
           1
         ],
         "52": [
@@ -15233,7 +15160,7 @@ window.POLLA_DATA = {
           3
         ],
         "61": [
-          3,
+          2,
           0
         ],
         "62": [
@@ -15241,7 +15168,7 @@ window.POLLA_DATA = {
           2
         ],
         "63": [
-          3,
+          2,
           0
         ],
         "64": [
@@ -17894,7 +17821,7 @@ window.POLLA_DATA = {
       "56": {
         "1": [
           2,
-          0
+          1
         ],
         "2": [
           2,
@@ -19681,7 +19608,7 @@ window.POLLA_DATA = {
           1
         ],
         "13": [
-          3,
+          2,
           1
         ],
         "14": [
@@ -19729,7 +19656,7 @@ window.POLLA_DATA = {
           0
         ],
         "25": [
-          3,
+          2,
           0
         ],
         "26": [
@@ -19737,8 +19664,8 @@ window.POLLA_DATA = {
           2
         ],
         "27": [
-          2,
-          1
+          1,
+          2
         ],
         "28": [
           2,
@@ -19750,7 +19677,7 @@ window.POLLA_DATA = {
         ],
         "30": [
           1,
-          3
+          1
         ],
         "31": [
           1,
@@ -19865,7 +19792,7 @@ window.POLLA_DATA = {
           1
         ],
         "59": [
-          3,
+          2,
           0
         ],
         "60": [
@@ -19874,7 +19801,7 @@ window.POLLA_DATA = {
         ],
         "61": [
           2,
-          0
+          1
         ],
         "62": [
           2,
@@ -19886,7 +19813,7 @@ window.POLLA_DATA = {
         ],
         "64": [
           1,
-          0
+          1
         ],
         "65": [
           1,
@@ -22420,7 +22347,7 @@ window.POLLA_DATA = {
         ],
         "74": [
           "Alemania",
-          "Chequia"
+          "República Checa"
         ],
         "75": [
           "Países Bajos",
@@ -22582,7 +22509,7 @@ window.POLLA_DATA = {
         ],
         "82": [
           "Bélgica",
-          "Chequia"
+          "República Checa"
         ],
         "83": [
           "Colombia",
@@ -24496,7 +24423,7 @@ window.POLLA_DATA = {
       "25": {
         "73": [
           "Chequia",
-          "Suiza"
+          "Catar"
         ],
         "74": [
           "Alemania",
@@ -24528,11 +24455,11 @@ window.POLLA_DATA = {
         ],
         "81": [
           "Estados Unidos",
-          "Bosnia y Herz."
+          "Botsuana"
         ],
         "82": [
           "Bélgica",
-          "Argelia"
+          "Argentina"
         ],
         "83": [
           "Colombia",
@@ -24552,7 +24479,7 @@ window.POLLA_DATA = {
         ],
         "87": [
           "Portugal",
-          "Ghana"
+          "Gana"
         ],
         "88": [
           "Paraguay",
@@ -24563,7 +24490,7 @@ window.POLLA_DATA = {
           "Francia"
         ],
         "90": [
-          "Suiza",
+          "Catar",
           "Países Bajos"
         ],
         "91": [
@@ -25276,11 +25203,11 @@ window.POLLA_DATA = {
       "31": {
         "73": [
           "Corea del Sur",
-          "Bosnia y Herz."
+          "Bélgica"
         ],
         "74": [
           "Ecuador",
-          "Escocia"
+          "Corea del Sur"
         ],
         "75": [
           "Países Bajos",
@@ -25300,11 +25227,11 @@ window.POLLA_DATA = {
         ],
         "79": [
           "México",
-          "Noruega"
+          "Nueva Zelanda"
         ],
         "80": [
           "Inglaterra",
-          "Austria"
+          "Australia"
         ],
         "81": [
           "Paraguay",
@@ -25324,22 +25251,22 @@ window.POLLA_DATA = {
         ],
         "85": [
           "Suiza",
-          "Costa de Marfil"
+          "Catar"
         ],
         "86": [
-          "Argelia",
+          "Arabia Saudita",
           "Uruguay"
         ],
         "87": [
           "Portugal",
-          "Turquía"
+          "Irán"
         ],
         "88": [
-          "Estados Unidos",
+          "Egipto",
           "Egipto"
         ],
         "89": [
-          "Ecuador",
+          "Corea del Sur",
           "Francia"
         ],
         "90": [
@@ -25363,11 +25290,11 @@ window.POLLA_DATA = {
           "Bélgica"
         ],
         "95": [
-          "Argelia",
-          "Estados Unidos"
+          "Argentina",
+          "Chequia"
         ],
         "96": [
-          "Costa de Marfil",
+          "Corea del Sur",
           "Portugal"
         ],
         "97": [
@@ -25383,7 +25310,7 @@ window.POLLA_DATA = {
           "Inglaterra"
         ],
         "100": [
-          "Argelia",
+          "Argentina",
           "Portugal"
         ],
         "101": [
@@ -27242,7 +27169,7 @@ window.POLLA_DATA = {
         ],
         "77": [
           "Francia",
-          "Escocia"
+          "Túnez"
         ],
         "78": [
           "Ecuador",
@@ -27254,7 +27181,7 @@ window.POLLA_DATA = {
         ],
         "80": [
           "Inglaterra",
-          "Costa de Marfil"
+          "Curazao"
         ],
         "81": [
           "Paraguay",
@@ -27262,7 +27189,7 @@ window.POLLA_DATA = {
         ],
         "82": [
           "Bélgica",
-          "Chequia"
+          "Ghana"
         ],
         "83": [
           "Colombia",
@@ -27274,7 +27201,7 @@ window.POLLA_DATA = {
         ],
         "85": [
           "Suiza",
-          "Argelia"
+          "Argentina"
         ],
         "86": [
           "Argentina",
@@ -29313,47 +29240,47 @@ window.POLLA_DATA = {
           "Australia"
         ],
         "75": [
-          "Países Bajos",
+          "Suiza",
           "Marruecos"
         ],
         "76": [
           "Brasil",
-          "Japón"
+          "España"
         ],
         "77": [
           "Noruega",
-          "Suecia"
+          "Austria"
         ],
         "78": [
-          "Ecuador",
-          "Francia"
+          "Cecilia",
+          "Panamá"
         ],
         "79": [
           "México",
-          "Escocia"
+          "Cecilia"
         ],
         "80": [
           "Croacia",
-          "Colombia"
+          "Croacia"
         ],
         "81": [
-          "Turquía",
-          "Senegal"
+          "Irak",
+          "Escocia"
         ],
         "82": [
           "Bélgica",
-          "Corea del Sur"
+          "Congo"
         ],
         "83": [
-          "Uzbekistán",
-          "Inglaterra"
+          "Noruega",
+          "Bulgaria"
         ],
         "84": [
-          "España",
-          "Argelia"
+          "Suiza",
+          "Malta"
         ],
         "85": [
-          "Suiza",
+          "Suecia",
           "Austria"
         ],
         "86": [
@@ -29365,7 +29292,7 @@ window.POLLA_DATA = {
           "Ghana"
         ],
         "88": [
-          "Paraguay",
+          "Uruguay",
           "Egipto"
         ],
         "89": [
@@ -29373,8 +29300,8 @@ window.POLLA_DATA = {
           "Suecia"
         ],
         "90": [
-          "Canadá",
-          "Países Bajos"
+          "Córdoba",
+          "Brasil"
         ],
         "91": [
           "Brasil",
@@ -29389,20 +29316,20 @@ window.POLLA_DATA = {
           "España"
         ],
         "94": [
-          "Turquía",
+          "Paraguay",
           "Bélgica"
         ],
         "95": [
           "Argentina",
-          "Paraguay"
+          "Portugal"
         ],
         "96": [
-          "Suiza",
-          "Portugal"
+          "Curazao",
+          "Pakistán"
         ],
         "97": [
           "Alemania",
-          "Países Bajos"
+          "Brasil"
         ],
         "98": [
           "España",
@@ -29425,8 +29352,8 @@ window.POLLA_DATA = {
           "Portugal"
         ],
         "103": [
-          null,
-          null
+          "4°",
+          "3°"
         ],
         "104": [
           "España",
@@ -30088,7 +30015,7 @@ window.POLLA_DATA = {
   "goleadores_ranking": [
     {
       "goleador": "Kylian Mbappé",
-      "votos": 32
+      "votos": 33
     },
     {
       "goleador": "Harry Kane",
@@ -30129,17 +30056,37 @@ window.POLLA_DATA = {
     {
       "goleador": "Cristiano Ronaldo",
       "votos": 1
-    },
-    {
-      "goleador": "Cavani",
-      "votos": 1
     }
   ],
   "goleadores_reales": [
     {
+      "nombre": "Kylian Mbappé",
+      "equipo": "Francia",
+      "goles": 7,
+      "votos_polla": 33
+    },
+    {
+      "nombre": "Erling Haaland",
+      "equipo": "Noruega",
+      "goles": 7,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Lionel Messi",
       "equipo": "Argentina",
       "goles": 6,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Harry Kane",
+      "equipo": "Inglaterra",
+      "goles": 6,
+      "votos_polla": 15
+    },
+    {
+      "nombre": "Julián Quiñones",
+      "equipo": "México",
+      "goles": 4,
       "votos_polla": 0
     },
     {
@@ -30149,14 +30096,14 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Kylian Mbappé",
-      "equipo": "Francia",
+      "nombre": "Jude Bellingham",
+      "equipo": "Inglaterra",
       "goles": 4,
-      "votos_polla": 33
+      "votos_polla": 0
     },
     {
-      "nombre": "Erling Haaland",
-      "equipo": "Noruega",
+      "nombre": "Mikel Oyarzabal",
+      "equipo": "España",
       "goles": 4,
       "votos_polla": 0
     },
@@ -30165,6 +30112,18 @@ window.POLLA_DATA = {
       "equipo": "Francia",
       "goles": 4,
       "votos_polla": 3
+    },
+    {
+      "nombre": "Raúl Jiménez",
+      "equipo": "México",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Folarin Balogun",
+      "equipo": "Estados Unidos",
+      "goles": 3,
+      "votos_polla": 0
     },
     {
       "nombre": "Ismael Saibari",
@@ -30189,12 +30148,6 @@ window.POLLA_DATA = {
       "equipo": "Congo",
       "goles": 3,
       "votos_polla": 0
-    },
-    {
-      "nombre": "Harry Kane",
-      "equipo": "Inglaterra",
-      "goles": 3,
-      "votos_polla": 15
     },
     {
       "nombre": "Johan Manzambi",
@@ -30227,10 +30180,10 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Julián Quiñones",
-      "equipo": "México",
-      "goles": 2,
-      "votos_polla": 0
+      "nombre": "Cristiano Ronaldo",
+      "equipo": "Portugal",
+      "goles": 3,
+      "votos_polla": 1
     },
     {
       "nombre": "Cyle Larin",
@@ -30239,8 +30192,8 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Folarin Balogun",
-      "equipo": "Estados Unidos",
+      "nombre": "Breel Embolo",
+      "equipo": "Suiza",
       "goles": 2,
       "votos_polla": 0
     },
@@ -30263,6 +30216,12 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Amad Diallo",
+      "equipo": "Costa de Marfil",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Yasin Ayari",
       "equipo": "Suecia",
       "goles": 2,
@@ -30281,14 +30240,14 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Marko Arnautovic",
-      "equipo": "Austria",
+      "nombre": "Bradley Barcola",
+      "equipo": "Francia",
       "goles": 2,
       "votos_polla": 0
     },
     {
-      "nombre": "Jude Bellingham",
-      "equipo": "Inglaterra",
+      "nombre": "Marko Arnautovic",
+      "equipo": "Austria",
       "goles": 2,
       "votos_polla": 0
     },
@@ -30329,16 +30288,10 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Mikel Oyarzabal",
-      "equipo": "España",
+      "nombre": "Soufiane Rahimi",
+      "equipo": "Marruecos",
       "goles": 2,
       "votos_polla": 0
-    },
-    {
-      "nombre": "Cristiano Ronaldo",
-      "equipo": "Portugal",
-      "goles": 2,
-      "votos_polla": 1
     },
     {
       "nombre": "Nicolas Pépé",
@@ -30365,9 +30318,9 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Raúl Jiménez",
-      "equipo": "México",
-      "goles": 1,
+      "nombre": "Azzedine Ounahi",
+      "equipo": "Marruecos",
+      "goles": 2,
       "votos_polla": 0
     },
     {
@@ -30403,12 +30356,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Giovanni Reyna",
       "equipo": "Estados Unidos",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Breel Embolo",
-      "equipo": "Suiza",
       "goles": 1,
       "votos_polla": 0
     },
@@ -30473,12 +30420,6 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Amad Diallo",
-      "equipo": "Costa de Marfil",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
       "nombre": "Alexander Isak",
       "equipo": "Suecia",
       "goles": 1,
@@ -30517,12 +30458,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Mohammad Mohebbi",
       "equipo": "Irán",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Bradley Barcola",
-      "equipo": "Francia",
       "goles": 1,
       "votos_polla": 0
     },
@@ -30779,12 +30714,6 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Soufiane Rahimi",
-      "equipo": "Marruecos",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
       "nombre": "Gessime Yassine",
       "equipo": "Marruecos",
       "goles": 1,
@@ -30991,6 +30920,90 @@ window.POLLA_DATA = {
     {
       "nombre": "Mousa Al-Tamari",
       "equipo": "Jordania",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Stephen Eustáquio",
+      "equipo": "Canadá",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Kaishu Sano",
+      "equipo": "Japón",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Casemiro",
+      "equipo": "Brasil",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Gabriel Martinelli",
+      "equipo": "Brasil",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Antonio Nusa",
+      "equipo": "Noruega",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Brian Cipenga",
+      "equipo": "Congo",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Malik Tillman",
+      "equipo": "Estados Unidos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Pedro Porro",
+      "equipo": "España",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Ivan Perisic",
+      "equipo": "Croacia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Gonçalo Ramos",
+      "equipo": "Portugal",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Dan Ndoye",
+      "equipo": "Suiza",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Jhon Arias",
+      "equipo": "Colombia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Neymar",
+      "equipo": "Brasil",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Mikel Merino",
+      "equipo": "España",
       "goles": 1,
       "votos_polla": 0
     }
