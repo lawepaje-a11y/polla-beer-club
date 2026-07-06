@@ -1,4 +1,4 @@
-// Generado automáticamente por export_data.py — no editar manualmente
+// Generado automáticamente por update_data.py — no editar manualmente
 window.POLLA_DATA = {
   "meta": {
     "nombre_polla": "POLLA BEER CLUB",
@@ -6,7 +6,8 @@ window.POLLA_DATA = {
     "total_participantes": 67,
     "partidos_jugados_grupos": 72,
     "partidos_totales_grupos": 72,
-    "goleador_real": null
+    "goleador_real": null,
+    "partidos_jugados_elim": 13
   },
   "participants": [
     {
@@ -824,7 +825,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-11",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 2,
@@ -835,7 +837,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-11",
-      "hora": "09:00 PM"
+      "hora": "09:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 3,
@@ -846,7 +849,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-18",
-      "hora": "11:00 AM"
+      "hora": "11:00 AM",
+      "en_vivo": false
     },
     {
       "numero": 4,
@@ -857,7 +861,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-18",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 5,
@@ -868,7 +873,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 6,
@@ -879,7 +885,8 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 7,
@@ -890,7 +897,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-12",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 8,
@@ -901,7 +909,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-13",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 9,
@@ -912,7 +921,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-18",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 10,
@@ -923,7 +933,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-18",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 11,
@@ -934,7 +945,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 12,
@@ -945,7 +957,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 13,
@@ -956,7 +969,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-13",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 14,
@@ -967,7 +981,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-13",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 15,
@@ -978,7 +993,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-19",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 16,
@@ -989,7 +1005,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-19",
-      "hora": "07:30 PM"
+      "hora": "07:30 PM",
+      "en_vivo": false
     },
     {
       "numero": 17,
@@ -1000,7 +1017,8 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 18,
@@ -1011,7 +1029,8 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-24",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 19,
@@ -1022,7 +1041,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-12",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 20,
@@ -1033,7 +1053,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-13",
-      "hora": "11:00 PM"
+      "hora": "11:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 21,
@@ -1044,7 +1065,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-19",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 22,
@@ -1055,7 +1077,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-19",
-      "hora": "10:00 PM"
+      "hora": "10:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 23,
@@ -1066,7 +1089,8 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "09:00 PM"
+      "hora": "09:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 24,
@@ -1077,7 +1101,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "09:00 PM"
+      "hora": "09:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 25,
@@ -1088,7 +1113,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-14",
-      "hora": "12:00 PM"
+      "hora": "12:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 26,
@@ -1099,7 +1125,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-14",
-      "hora": "06:00 PM"
+      "hora": "06:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 27,
@@ -1110,7 +1137,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-20",
-      "hora": "03:00 PM"
+      "hora": "03:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 28,
@@ -1121,7 +1149,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-20",
-      "hora": "07:00 PM"
+      "hora": "07:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 29,
@@ -1132,7 +1161,8 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "03:00 PM"
+      "hora": "03:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 30,
@@ -1143,7 +1173,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "03:00 PM"
+      "hora": "03:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 31,
@@ -1154,7 +1185,8 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-14",
-      "hora": "03:00 PM"
+      "hora": "03:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 32,
@@ -1165,7 +1197,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-14",
-      "hora": "09:00 PM"
+      "hora": "09:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 33,
@@ -1176,7 +1209,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-20",
-      "hora": "12:00 PM"
+      "hora": "12:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 34,
@@ -1187,7 +1221,8 @@ window.POLLA_DATA = {
       "g2_real": 4,
       "jugado": true,
       "fecha": "2026-06-20",
-      "hora": "11:00 PM"
+      "hora": "11:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 35,
@@ -1198,7 +1233,8 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "06:00 PM"
+      "hora": "06:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 36,
@@ -1209,7 +1245,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-25",
-      "hora": "06:00 PM"
+      "hora": "06:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 37,
@@ -1220,7 +1257,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-15",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 38,
@@ -1231,7 +1269,8 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-15",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 39,
@@ -1242,7 +1281,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-21",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 40,
@@ -1253,7 +1293,8 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-21",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 41,
@@ -1264,7 +1305,8 @@ window.POLLA_DATA = {
       "g2_real": 5,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "10:00 PM"
+      "hora": "10:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 42,
@@ -1275,7 +1317,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "10:00 PM"
+      "hora": "10:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 43,
@@ -1286,7 +1329,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-15",
-      "hora": "11:00 AM"
+      "hora": "11:00 AM",
+      "en_vivo": false
     },
     {
       "numero": 44,
@@ -1297,7 +1341,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-15",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 45,
@@ -1308,7 +1353,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-21",
-      "hora": "11:00 AM"
+      "hora": "11:00 AM",
+      "en_vivo": false
     },
     {
       "numero": 46,
@@ -1319,7 +1365,8 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-21",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 47,
@@ -1330,7 +1377,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "07:00 PM"
+      "hora": "07:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 48,
@@ -1341,7 +1389,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "07:00 PM"
+      "hora": "07:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 49,
@@ -1352,7 +1401,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-16",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 50,
@@ -1363,7 +1413,8 @@ window.POLLA_DATA = {
       "g2_real": 4,
       "jugado": true,
       "fecha": "2026-06-16",
-      "hora": "05:00 PM"
+      "hora": "05:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 51,
@@ -1374,7 +1425,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-22",
-      "hora": "04:00 PM"
+      "hora": "04:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 52,
@@ -1385,7 +1437,8 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-22",
-      "hora": "07:00 PM"
+      "hora": "07:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 53,
@@ -1396,7 +1449,8 @@ window.POLLA_DATA = {
       "g2_real": 4,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 54,
@@ -1407,7 +1461,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-26",
-      "hora": "02:00 PM"
+      "hora": "02:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 55,
@@ -1418,7 +1473,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-16",
-      "hora": "08:00 PM"
+      "hora": "08:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 56,
@@ -1429,7 +1485,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-16",
-      "hora": "11:00 PM"
+      "hora": "11:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 57,
@@ -1440,7 +1497,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-22",
-      "hora": "12:00 PM"
+      "hora": "12:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 58,
@@ -1451,7 +1509,8 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-22",
-      "hora": "10:00 PM"
+      "hora": "10:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 59,
@@ -1462,7 +1521,8 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "09:00 PM"
+      "hora": "09:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 60,
@@ -1473,7 +1533,8 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "09:00 PM"
+      "hora": "09:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 61,
@@ -1484,7 +1545,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-17",
-      "hora": "12:00 PM"
+      "hora": "12:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 62,
@@ -1495,7 +1557,8 @@ window.POLLA_DATA = {
       "g2_real": 3,
       "jugado": true,
       "fecha": "2026-06-17",
-      "hora": "09:00 PM"
+      "hora": "09:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 63,
@@ -1506,7 +1569,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-23",
-      "hora": "12:00 PM"
+      "hora": "12:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 64,
@@ -1517,7 +1581,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-23",
-      "hora": "09:00 PM"
+      "hora": "09:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 65,
@@ -1528,7 +1593,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "06:30 PM"
+      "hora": "06:30 PM",
+      "en_vivo": false
     },
     {
       "numero": 66,
@@ -1539,7 +1605,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "06:30 PM"
+      "hora": "06:30 PM",
+      "en_vivo": false
     },
     {
       "numero": 67,
@@ -1550,7 +1617,8 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-17",
-      "hora": "03:00 PM"
+      "hora": "03:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 68,
@@ -1561,7 +1629,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-17",
-      "hora": "06:00 PM"
+      "hora": "06:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 69,
@@ -1572,7 +1641,8 @@ window.POLLA_DATA = {
       "g2_real": 0,
       "jugado": true,
       "fecha": "2026-06-23",
-      "hora": "03:00 PM"
+      "hora": "03:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 70,
@@ -1583,7 +1653,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-23",
-      "hora": "06:00 PM"
+      "hora": "06:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 71,
@@ -1594,7 +1665,8 @@ window.POLLA_DATA = {
       "g2_real": 2,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "04:00 PM"
+      "hora": "04:00 PM",
+      "en_vivo": false
     },
     {
       "numero": 72,
@@ -1605,7 +1677,8 @@ window.POLLA_DATA = {
       "g2_real": 1,
       "jugado": true,
       "fecha": "2026-06-27",
-      "hora": "04:00 PM"
+      "hora": "04:00 PM",
+      "en_vivo": false
     }
   ],
   "matches_elim": [
@@ -30074,7 +30147,7 @@ window.POLLA_DATA = {
     {
       "nombre": "Lionel Messi",
       "equipo": "Argentina",
-      "goles": 6,
+      "goles": 7,
       "votos_polla": 0
     },
     {
@@ -30086,6 +30159,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Julián Quiñones",
       "equipo": "México",
+      "goles": 4,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Ismael Saibari",
+      "equipo": "Marruecos",
       "goles": 4,
       "votos_polla": 0
     },
@@ -30114,6 +30193,12 @@ window.POLLA_DATA = {
       "votos_polla": 3
     },
     {
+      "nombre": "Ismaïla Sarr",
+      "equipo": "Senegal",
+      "goles": 4,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Raúl Jiménez",
       "equipo": "México",
       "goles": 3,
@@ -30126,8 +30211,8 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Ismael Saibari",
-      "equipo": "Marruecos",
+      "nombre": "Kai Havertz",
+      "equipo": "Alemania",
       "goles": 3,
       "votos_polla": 0
     },
@@ -30174,8 +30259,8 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Ismaïla Sarr",
-      "equipo": "Senegal",
+      "nombre": "Cody Gakpo",
+      "equipo": "Países Bajos",
       "goles": 3,
       "votos_polla": 0
     },
@@ -30186,8 +30271,20 @@ window.POLLA_DATA = {
       "votos_polla": 1
     },
     {
+      "nombre": "Soufiane Rahimi",
+      "equipo": "Marruecos",
+      "goles": 3,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Cyle Larin",
       "equipo": "Canadá",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Maurício",
+      "equipo": "Paraguay",
       "goles": 2,
       "votos_polla": 0
     },
@@ -30198,7 +30295,7 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Kai Havertz",
+      "nombre": "Jamal Musiala",
       "equipo": "Alemania",
       "goles": 2,
       "votos_polla": 0
@@ -30224,6 +30321,12 @@ window.POLLA_DATA = {
     {
       "nombre": "Yasin Ayari",
       "equipo": "Suecia",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Emam Ashour",
+      "equipo": "Egipto",
       "goles": 2,
       "votos_polla": 0
     },
@@ -30270,8 +30373,8 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Cody Gakpo",
-      "equipo": "Países Bajos",
+      "nombre": "Matías Galarza",
+      "equipo": "Paraguay",
       "goles": 2,
       "votos_polla": 0
     },
@@ -30288,8 +30391,8 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Soufiane Rahimi",
-      "equipo": "Marruecos",
+      "nombre": "Mohamed Salah",
+      "equipo": "Egipto",
       "goles": 2,
       "votos_polla": 0
     },
@@ -30300,8 +30403,20 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Habib Diarra",
+      "equipo": "Senegal",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Pape Gueye",
       "equipo": "Senegal",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Mahmoud Saber",
+      "equipo": "Egipto",
       "goles": 2,
       "votos_polla": 0
     },
@@ -30312,8 +30427,20 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Romelu Lukaku",
+      "equipo": "Bélgica",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Riyad Mahrez",
       "equipo": "Argelia",
+      "goles": 2,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Youri Tielemans",
+      "equipo": "Bélgica",
       "goles": 2,
       "votos_polla": 0
     },
@@ -30344,12 +30471,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Jovo Lukic",
       "equipo": "Bosnia y Herz.",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Maurício",
-      "equipo": "Paraguay",
       "goles": 1,
       "votos_polla": 0
     },
@@ -30396,12 +30517,6 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Jamal Musiala",
-      "equipo": "Alemania",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
       "nombre": "Nathaniel Brown",
       "equipo": "Alemania",
       "goles": 1,
@@ -30440,12 +30555,6 @@ window.POLLA_DATA = {
     {
       "nombre": "Mattias Svanberg",
       "equipo": "Suecia",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Emam Ashour",
-      "equipo": "Egipto",
       "goles": 1,
       "votos_polla": 0
     },
@@ -30576,12 +30685,6 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Matías Galarza",
-      "equipo": "Paraguay",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
       "nombre": "Franck Kessié",
       "equipo": "Costa de Marfil",
       "goles": 1,
@@ -30625,12 +30728,6 @@ window.POLLA_DATA = {
     },
     {
       "nombre": "Mostafa Zico",
-      "equipo": "Egipto",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Mohamed Salah",
       "equipo": "Egipto",
       "goles": 1,
       "votos_polla": 0
@@ -30816,12 +30913,6 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Habib Diarra",
-      "equipo": "Senegal",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
       "nombre": "Iliman Ndiaye",
       "equipo": "Senegal",
       "goles": 1,
@@ -30834,19 +30925,7 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
-      "nombre": "Mahmoud Saber",
-      "equipo": "Egipto",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
       "nombre": "Kevin De Bruyne",
-      "equipo": "Bélgica",
-      "goles": 1,
-      "votos_polla": 0
-    },
-    {
-      "nombre": "Romelu Lukaku",
       "equipo": "Bélgica",
       "goles": 1,
       "votos_polla": 0
@@ -30948,6 +31027,60 @@ window.POLLA_DATA = {
       "votos_polla": 0
     },
     {
+      "nombre": "Julio Enciso",
+      "equipo": "Paraguay",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Joshua Kimmich",
+      "equipo": "Alemania",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Gustavo Gómez",
+      "equipo": "Paraguay",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Nadiem Amiri",
+      "equipo": "Alemania",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "José Canale",
+      "equipo": "Paraguay",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Issa Diop",
+      "equipo": "Marruecos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Teun Koopmeiners",
+      "equipo": "Países Bajos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Wout Weghorst",
+      "equipo": "Países Bajos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Chemsdine Talbi",
+      "equipo": "Marruecos",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
       "nombre": "Antonio Nusa",
       "equipo": "Noruega",
       "goles": 1,
@@ -30986,6 +31119,48 @@ window.POLLA_DATA = {
     {
       "nombre": "Dan Ndoye",
       "equipo": "Suiza",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Jackson Irvine",
+      "equipo": "Australia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Ramy Rabia",
+      "equipo": "Egipto",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Awer Mabil",
+      "equipo": "Australia",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Hossam Abdelmaguid",
+      "equipo": "Egipto",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Deroy Duarte",
+      "equipo": "Cabo Verde",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Lisandro Martínez",
+      "equipo": "Argentina",
+      "goles": 1,
+      "votos_polla": 0
+    },
+    {
+      "nombre": "Sidny Lopes Cabral",
+      "equipo": "Cabo Verde",
       "goles": 1,
       "votos_polla": 0
     },
